@@ -36,7 +36,7 @@ import {
 
   createUserWithEmailAndPassword, signOut,
 
-  GoogleAuthProvider, signInWithRedirect, getRedirectResult, updateProfile
+  GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, updateProfile
 
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
@@ -121,771 +121,771 @@ const SUBJECTS = [
 const MOCK_TESTS = [
   {
     id: 'mock-me24-f-adv1',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.2,
     cutoff: '25-28',
     air100: '66-70',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 1",
     subject: null,
     questions: 69,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Advance Level Full Syllabus Test #1. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.2/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.2/10)."
   },
   {
     id: 'mock-me24-f-adv2',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.4,
     cutoff: '24-27',
     air100: '65-69',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 2",
     subject: null,
     questions: 66,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Advance Level Full Syllabus Test #2. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.4/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.4/10)."
   },
   {
     id: 'mock-me24-f-adv3',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.5,
     cutoff: '23-26',
     air100: '64-68',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 3",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Advance Level Full Syllabus Test #3. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.5/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.5/10)."
   },
   {
     id: 'mock-me24-f-adv4',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.6,
     cutoff: '22-25',
     air100: '63-67',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 4",
     subject: null,
     questions: 68,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Advance Level Full Syllabus Test #4. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.6/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.6/10)."
   },
   {
     id: 'mock-me24-f-bsc1',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.0,
     cutoff: '29-33',
     air100: '72-77',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 5",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Basic Level Full Syllabus Test #1. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.0/10)."
   },
   {
     id: 'mock-me24-f-bsc2',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.2,
     cutoff: '28-32',
     air100: '71-76',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 6",
     subject: null,
     questions: 68,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Basic Level Full Syllabus Test #2. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.2/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.2/10)."
   },
   {
     id: 'mock-me24-f-bsc3',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.3,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 7",
     subject: null,
     questions: 69,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Basic Level Full Syllabus Test #3. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.3/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.3/10)."
   },
   {
     id: 'mock-me24-f-bsc4',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.4,
     cutoff: '27-31',
     air100: '69-74',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 8",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Basic Level Full Syllabus Test #4. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.4/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.4/10)."
   },
   {
     id: 'mock-me24-mock-3',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.8,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Made Easy National All-India Mock',
+    tier: 'National All-India Mock',
     name: "Mock 9",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Nationwide All-India GATE Mock Test #3. Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.8/10)."
+    desc: "Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.8/10)."
   },
   {
     id: 'mock-me24-mock-4',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.2,
     cutoff: '26-30',
     air100: '67-72',
-    tier: 'Made Easy National All-India Mock',
+    tier: 'National All-India Mock',
     name: "Mock 10",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2024 Nationwide All-India GATE Mock Test #4. Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.2/10)."
+    desc: "Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.2/10)."
   },
   {
     id: 'mock-me23-f-adv1',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.0,
     cutoff: '25-28',
     air100: '66-70',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 11",
     subject: null,
     questions: 65,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Advance Level Full Syllabus Test #1. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.0/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.0/10)."
   },
   {
     id: 'mock-me23-f-adv2',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.2,
     cutoff: '24-27',
     air100: '65-69',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 12",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Advance Level Full Syllabus Test #2. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.2/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.2/10)."
   },
   {
     id: 'mock-me23-f-adv3',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.3,
     cutoff: '24-27',
     air100: '65-69',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 13",
     subject: null,
     questions: 69,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Advance Level Full Syllabus Test #3. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.3/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.3/10)."
   },
   {
     id: 'mock-me23-f-adv4',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.4,
     cutoff: '23-26',
     air100: '64-68',
-    tier: 'Made Easy Advance Full Mock',
+    tier: 'Advance Level Full Mock',
     name: "Mock 14",
     subject: null,
     questions: 66,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Advance Level Full Syllabus Test #4. High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.4/10)."
+    desc: "High-difficulty capstone mock testing multi-concept analytical questions and intricate derivations (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.4/10)."
   },
   {
     id: 'mock-me23-f-bsc1',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'easy',
     rating: 5.6,
     cutoff: '32-36',
     air100: '74-79',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 15",
     subject: null,
     questions: 65,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Basic Level Full Syllabus Test #1. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 5.6/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 5.6/10)."
   },
   {
     id: 'mock-me23-f-bsc2',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.0,
     cutoff: '29-33',
     air100: '72-77',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 16",
     subject: null,
     questions: 68,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Basic Level Full Syllabus Test #2. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.0/10)."
   },
   {
     id: 'mock-me23-f-bsc3',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.1,
     cutoff: '28-32',
     air100: '71-76',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 17",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Basic Level Full Syllabus Test #3. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.1/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.1/10)."
   },
   {
     id: 'mock-me23-f-bsc4',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.2,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Made Easy Basic Full Mock',
+    tier: 'Basic Foundational Full Mock',
     name: "Mock 18",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Basic Level Full Syllabus Test #4. Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.2/10)."
+    desc: "Balanced full-length test designed to build speed, accuracy, and foundational confidence (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.2/10)."
   },
   {
     id: 'mock-me23-mock-2',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.5,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Made Easy National All-India Mock',
+    tier: 'National All-India Mock',
     name: "Mock 19",
     subject: null,
     questions: 65,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Nationwide All-India GATE Mock Test #2. Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.5/10)."
+    desc: "Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.5/10)."
   },
   {
     id: 'mock-me23-mock-3',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.7,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Made Easy National All-India Mock',
+    tier: 'National All-India Mock',
     name: "Mock 20",
     subject: null,
     questions: 68,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Nationwide All-India GATE Mock Test #3. Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.7/10)."
+    desc: "Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.7/10)."
   },
   {
     id: 'mock-me23-mock-4',
-    provider: "Made Easy",
+    provider: "Comprehensive Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.9,
     cutoff: '27-31',
     air100: '69-74',
-    tier: 'Made Easy National All-India Mock',
+    tier: 'National All-India Mock',
     name: "Mock 21",
     subject: null,
     questions: 67,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Made Easy | Prime Test Series] Made Easy 2023 Nationwide All-India GATE Mock Test #4. Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.9/10)."
+    desc: "Authentic nationwide mock exam simulating official GATE testing conditions across the complete syllabus (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.9/10)."
   },
   {
     id: 'mock-go-ts25-aim-02',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.8,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 22",
     subject: null,
     questions: 63,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 02. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.8/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.8/10)."
   },
   {
     id: 'mock-go-ts25-aim-03',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 7.0,
     cutoff: '27-31',
     air100: '69-74',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 23",
     subject: null,
     questions: 63,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 03. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 7.0/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
   },
   {
     id: 'mock-go-ts25-aim-04',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 7.1,
     cutoff: '26-30',
     air100: '68-73',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 24",
     subject: null,
     questions: 63,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 04. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 7.1/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.1/10)."
   },
   {
     id: 'mock-go-ts25-aim-05',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.5,
     cutoff: '25-29',
     air100: '66-71',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 25",
     subject: null,
     questions: 62,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 05. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.5/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.5/10)."
   },
   {
     id: 'mock-go-ts26-aim-01',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.8,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 26",
     subject: null,
     questions: 62,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 01. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.8/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.8/10)."
   },
   {
     id: 'mock-go-ts26-aim-02',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 7.0,
     cutoff: '27-31',
     air100: '69-74',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 27",
     subject: null,
     questions: 61,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 02. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 7.0/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
   },
   {
     id: 'mock-go-ts26-aim-03',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 7.2,
     cutoff: '26-30',
     air100: '68-73',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 28",
     subject: null,
     questions: 61,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 03. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 7.2/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.2/10)."
   },
   {
     id: 'mock-go-ts26-aim-04',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.6,
     cutoff: '25-29',
     air100: '66-71',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 29",
     subject: null,
     questions: 60,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 04. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.6/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.6/10)."
   },
   {
     id: 'mock-go-ts26-aim-05-s1',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.7,
     cutoff: '24-28',
     air100: '65-70',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 30",
     subject: null,
     questions: 59,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 05-S1. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.7/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.7/10)."
   },
   {
     id: 'mock-go-ts26-aim-05-s2',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.7,
     cutoff: '24-28',
     air100: '65-70',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 31",
     subject: null,
     questions: 59,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 05-S2. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.7/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.7/10)."
   },
   {
     id: 'mock-go-ts26-aim-06',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 8.0,
     cutoff: '23-27',
     air100: '64-69',
-    tier: 'GO Classes / Gate Overflow All-India Mock',
+    tier: 'All-India National Mock',
     name: "Mock 32",
     subject: null,
     questions: 58,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official All-India Mock (AIM) Test 06. Full-length exam created jointly by GO Classes & Gate Overflow replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.0/10)."
+    desc: "Full-length exam replicating official GATE pattern with in-depth solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.0/10)."
   },
   {
     id: 'mock-go-ts25-mg-01',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.8,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 33",
     subject: null,
     questions: 62,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #01. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.8/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.8/10)."
   },
   {
     id: 'mock-go-ts25-mg-02',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.9,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 34",
     subject: null,
     questions: 58,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #02. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.9/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.9/10)."
   },
   {
     id: 'mock-go-ts25-mg-03',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 7.0,
     cutoff: '27-31',
     air100: '69-74',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 35",
     subject: null,
     questions: 60,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #03. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 7.0/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
   },
   {
     id: 'mock-go-ts25-mg-04',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 7.1,
     cutoff: '26-30',
     air100: '68-73',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 36",
     subject: null,
     questions: 61,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #04. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 7.1/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.1/10)."
   },
   {
     id: 'mock-go-ts25-mg-05',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 7.2,
     cutoff: '26-30',
     air100: '68-73',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 37",
     subject: null,
     questions: 60,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #05. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 7.2/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.2/10)."
   },
   {
     id: 'mock-go-ts25-mg-06',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.4,
     cutoff: '25-29',
     air100: '67-72',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 38",
     subject: null,
     questions: 57,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #06. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.4/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.4/10)."
   },
   {
     id: 'mock-go-ts25-mg-07',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.5,
     cutoff: '25-29',
     air100: '66-71',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 39",
     subject: null,
     questions: 49,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #07. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.5/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.5/10)."
   },
   {
     id: 'mock-go-ts25-mg-08',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.6,
     cutoff: '24-28',
     air100: '65-70',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 40",
     subject: null,
     questions: 55,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #08. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.6/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.6/10)."
   },
   {
     id: 'mock-go-ts25-mg-09',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'hard',
     rating: 7.8,
     cutoff: '24-28',
     air100: '65-70',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 41",
     subject: null,
     questions: 56,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #09. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.8/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.8/10)."
   },
   {
     id: 'mock-go-ts25-mg-14',
-    provider: "GO Classes & Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.6,
     cutoff: '29-33',
     air100: '71-76',
-    tier: 'GO Classes / Gate Overflow Mock GATE',
+    tier: 'Full Syllabus Mock GATE',
     name: "Mock 42",
     subject: null,
     questions: 51,
     duration: 180,
     marks: 100,
-    desc: "[Provider: GO Classes & Gate Overflow] Official GO Classes Mock GATE Exam #14. Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.6/10)."
+    desc: "Full-syllabus mock testing core CS subjects and GA with standard GATE difficulty (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.6/10)."
   },
   {
     id: 'mock-go25-mg-01',
-    provider: "Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.5,
     cutoff: '30-34',
     air100: '72-77',
-    tier: 'Gate Overflow Test Series Mock',
+    tier: 'Standard Test Series Mock',
     name: "Mock 43",
     subject: null,
     questions: 60,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Gate Overflow] Official Gate Overflow Test Series Mock GATE #01. Full-syllabus GATE CS mock paper created by Gate Overflow team with verified community solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.5/10)."
+    desc: "Full-syllabus GATE CS mock paper with verified detailed solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.5/10)."
   },
   {
     id: 'mock-go25-mg-02',
-    provider: "Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.6,
     cutoff: '29-33',
     air100: '71-76',
-    tier: 'Gate Overflow Test Series Mock',
+    tier: 'Standard Test Series Mock',
     name: "Mock 44",
     subject: null,
     questions: 59,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Gate Overflow] Official Gate Overflow Test Series Mock GATE #02. Full-syllabus GATE CS mock paper created by Gate Overflow team with verified community solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.6/10)."
+    desc: "Full-syllabus GATE CS mock paper with verified detailed solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.6/10)."
   },
   {
     id: 'mock-go25-mg-03',
-    provider: "Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.7,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Gate Overflow Test Series Mock',
+    tier: 'Standard Test Series Mock',
     name: "Mock 45",
     subject: null,
     questions: 57,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Gate Overflow] Official Gate Overflow Test Series Mock GATE #03. Full-syllabus GATE CS mock paper created by Gate Overflow team with verified community solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.7/10)."
+    desc: "Full-syllabus GATE CS mock paper with verified detailed solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.7/10)."
   },
   {
     id: 'mock-go25-mg-04',
-    provider: "Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.6,
     cutoff: '29-33',
     air100: '71-76',
-    tier: 'Gate Overflow Test Series Mock',
+    tier: 'Standard Test Series Mock',
     name: "Mock 46",
     subject: null,
     questions: 52,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Gate Overflow] Official Gate Overflow Test Series Mock GATE #04. Full-syllabus GATE CS mock paper created by Gate Overflow team with verified community solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.6/10)."
+    desc: "Full-syllabus GATE CS mock paper with verified detailed solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.6/10)."
   },
   {
     id: 'mock-go25-mg-05',
-    provider: "Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.8,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Gate Overflow Test Series Mock',
+    tier: 'Standard Test Series Mock',
     name: "Mock 47",
     subject: null,
     questions: 52,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Gate Overflow] Official Gate Overflow Test Series Mock GATE #05. Full-syllabus GATE CS mock paper created by Gate Overflow team with verified community solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.8/10)."
+    desc: "Full-syllabus GATE CS mock paper with verified detailed solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.8/10)."
   },
   {
     id: 'mock-go25-mg-06',
-    provider: "Gate Overflow",
+    provider: "National Series",
     type: 'full',
     difficulty: 'medium',
     rating: 6.7,
     cutoff: '28-32',
     air100: '70-75',
-    tier: 'Gate Overflow Test Series Mock',
+    tier: 'Standard Test Series Mock',
     name: "Mock 48",
     subject: null,
     questions: 48,
     duration: 180,
     marks: 100,
-    desc: "[Provider: Gate Overflow] Official Gate Overflow Test Series Mock GATE #06. Full-syllabus GATE CS mock paper created by Gate Overflow team with verified community solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.7/10)."
+    desc: "Full-syllabus GATE CS mock paper with verified detailed solutions (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.7/10)."
   },
   {
 
@@ -914,7 +914,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #01. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 4.5/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 4.5/10)."
 
   },
   {
@@ -944,7 +944,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #02. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.0/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.0/10)."
 
   },
   {
@@ -974,7 +974,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #03. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.5/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.5/10)."
 
   },
   {
@@ -1004,7 +1004,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #04. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.4/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.4/10)."
 
   },
   {
@@ -1034,7 +1034,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #05. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.2/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.2/10)."
 
   },
   {
@@ -1064,7 +1064,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #06. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.8/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.8/10)."
 
   },
   {
@@ -1094,7 +1094,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #07. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.6/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.6/10)."
 
   },
   {
@@ -1124,7 +1124,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #08. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.0/10)."
 
   },
   {
@@ -1154,7 +1154,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #09. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.1/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 6.1/10)."
 
   },
   {
@@ -1184,7 +1184,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #10. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.9/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.9/10)."
 
   },
   {
@@ -1214,7 +1214,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #11. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 6.8/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 6.8/10)."
 
   },
   {
@@ -1244,7 +1244,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #12. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.5/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.5/10)."
 
   },
   {
@@ -1274,7 +1274,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #13. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.0/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.0/10)."
 
   },
   {
@@ -1304,7 +1304,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #14. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.4/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.4/10)."
 
   },
   {
@@ -1334,7 +1334,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #15. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.0/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.0/10)."
 
   },
   {
@@ -1364,7 +1364,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #16. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.8/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.8/10)."
 
   },
   {
@@ -1394,7 +1394,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #17. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 7.9/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.9/10)."
 
   },
   {
@@ -1424,7 +1424,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #18. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.4/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.4/10)."
 
   },
   {
@@ -1454,7 +1454,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #19. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 8.6/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 8.6/10)."
 
   },
   {
@@ -1484,7 +1484,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Compendium Mock Series] Compendium Full Mock Exam #20. Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 9.2/10)."
+    desc: "Comprehensive full-syllabus simulation covering multi-topic numerical and conceptual challenges (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 9.2/10)."
 
   },
   {
@@ -1506,7 +1506,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Standard GATE Full Simulation] Full-Length Mock Exam #69. Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 6.0/10)."
+    desc: "Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 7.0/10)."
 
   },
   {
@@ -1528,7 +1528,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Standard GATE Full Simulation] Full-Length Mock Exam #70. Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1550,7 +1550,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Standard GATE Full Simulation] Full-Length Mock Exam #71. Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 6.0/10)."
+    desc: "Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.0/10)."
 
   },
   {
@@ -1572,7 +1572,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Standard GATE Full Simulation] Full-Length Mock Exam #72. Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1594,7 +1594,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Standard GATE Full Simulation] Full-Length Mock Exam #73. Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 6.0/10)."
+    desc: "Comprehensive GATE CSE standard simulation across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.0/10)."
 
   },
   {
@@ -1616,7 +1616,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #1. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 7.0/10)."
 
   },
   {
@@ -1638,7 +1638,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #2. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 7.0/10)."
 
   },
   {
@@ -1660,7 +1660,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #3. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1682,7 +1682,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #4. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1704,7 +1704,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #5. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1726,7 +1726,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #1. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1748,7 +1748,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #2. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1770,7 +1770,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #3. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1792,7 +1792,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #4. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 7.0/10)."
 
   },
   {
@@ -1814,7 +1814,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Category Core CS Series] Category Core CS Full Mock Exam #5. High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Hard (Rating: 6.0/10)."
+    desc: "High-weightage topic-focused full-syllabus mock covering core concepts (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Hard (Rating: 7.0/10)."
 
   },
   {
@@ -1844,7 +1844,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #01. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 4.8/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 4.8/10)."
 
   },
   {
@@ -1874,7 +1874,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #02. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 4.8/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 4.8/10)."
 
   },
   {
@@ -1904,7 +1904,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #03. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 4.9/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 4.9/10)."
 
   },
   {
@@ -1934,7 +1934,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #04. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 4.9/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 4.9/10)."
 
   },
   {
@@ -1964,7 +1964,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #05. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 4.9/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 4.9/10)."
 
   },
   {
@@ -1994,7 +1994,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #06. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.0/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.0/10)."
 
   },
   {
@@ -2024,7 +2024,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #07. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.0/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.0/10)."
 
   },
   {
@@ -2054,7 +2054,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #08. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.0/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.0/10)."
 
   },
   {
@@ -2084,7 +2084,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #09. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.0/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.0/10)."
 
   },
   {
@@ -2114,7 +2114,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #10. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.1/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.1/10)."
 
   },
   {
@@ -2144,7 +2144,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #11. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.1/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.1/10)."
 
   },
   {
@@ -2174,7 +2174,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #12. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.1/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.1/10)."
 
   },
   {
@@ -2204,7 +2204,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #13. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.2/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.2/10)."
 
   },
   {
@@ -2234,7 +2234,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #14. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.2/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.2/10)."
 
   },
   {
@@ -2264,7 +2264,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #15. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.2/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.2/10)."
 
   },
   {
@@ -2294,7 +2294,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #16. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.2/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.2/10)."
 
   },
   {
@@ -2324,7 +2324,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #17. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.3/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.3/10)."
 
   },
   {
@@ -2354,7 +2354,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #18. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.3/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.3/10)."
 
   },
   {
@@ -2384,7 +2384,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #19. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.3/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.3/10)."
 
   },
   {
@@ -2414,7 +2414,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #20. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.4/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.4/10)."
 
   },
   {
@@ -2444,7 +2444,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #21. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.4/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.4/10)."
 
   },
   {
@@ -2474,7 +2474,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #22. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.4/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.4/10)."
 
   },
   {
@@ -2504,7 +2504,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #23. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.5/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.5/10)."
 
   },
   {
@@ -2534,7 +2534,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #24. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.5/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.5/10)."
 
   },
   {
@@ -2564,7 +2564,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #25. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.5/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.5/10)."
 
   },
   {
@@ -2594,7 +2594,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #26. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.5/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.5/10)."
 
   },
   {
@@ -2624,7 +2624,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #27. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.6/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.6/10)."
 
   },
   {
@@ -2654,7 +2654,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #28. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.6/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.6/10)."
 
   },
   {
@@ -2684,7 +2684,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #29. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.6/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.6/10)."
 
   },
   {
@@ -2714,7 +2714,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Standard Series] Standard GATE Medium Mock Exam #30. Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Medium (Rating: 5.7/10)."
+    desc: "Standard official GATE difficulty with balanced distribution of MCQs, MSQs, and NATs across all subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Medium (Rating: 5.7/10)."
 
   },
   {
@@ -2744,7 +2744,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #01. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2774,7 +2774,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #02. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2804,7 +2804,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #03. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2834,7 +2834,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #04. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2864,7 +2864,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #05. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2894,7 +2894,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #06. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2924,7 +2924,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #07. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2954,7 +2954,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #08. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -2984,7 +2984,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #09. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3014,7 +3014,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #10. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3044,7 +3044,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #11. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3074,7 +3074,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #12. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3104,7 +3104,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #13. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3134,7 +3134,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #14. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3164,7 +3164,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #15. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3194,7 +3194,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #16. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3224,7 +3224,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #17. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3254,7 +3254,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #18. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3284,7 +3284,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #19. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3314,7 +3314,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #20. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3344,7 +3344,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #21. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3374,7 +3374,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #22. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3404,7 +3404,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #23. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3434,7 +3434,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #24. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3464,7 +3464,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #25. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3494,7 +3494,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #26. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3524,7 +3524,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #27. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3554,7 +3554,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #28. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3584,7 +3584,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #29. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   {
@@ -3614,7 +3614,7 @@ const MOCK_TESTS = [
 
     marks: 100,
 
-    desc: "[Provider: Curated GATE CS Easy Series] Foundational Easy Mock Exam #30. Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Difficulty: Easy (Rating: 3.5/10)."
+    desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
   { id:'paper-full-1',
@@ -3629,8 +3629,8 @@ const MOCK_TESTS = [
     provider: "Practice Paper", mockId:'paper-theory', name: "Mock 148", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Theory of Computation','Compiler Design'], questions:35, duration:90, marks:60, desc: "[Provider: Curated Practice Paper] Curated Practice Set #148. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
   { id:'paper-maths',
     provider: "Practice Paper", mockId:'paper-maths', name: "Mock 149", type:'practice-set', difficulty:'medium', rating:4.5, subjects:['Discrete Mathematics','Engineering Mathematics','Aptitude'], questions:45, duration:110, marks:70, desc: "[Provider: Curated Practice Paper] Curated Practice Set #149. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
-  { id:'paper-gate-overflow-decade',
-    provider: "Practice Paper", mockId:'paper-gate-overflow-decade', name: "Mock 150", type:'practice-set', difficulty:'medium', rating:5.5, cutoff:'28-30', air100:'72-76', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #150. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.5/10)." },
+  { id:'paper-decade-pyq',
+    provider: "Practice Paper", mockId:'paper-decade-pyq', name: "Mock 150", type:'practice-set', difficulty:'medium', rating:5.5, cutoff:'28-30', air100:'72-76', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #150. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.5/10)." },
   { id:'mock-subwise-ds',   type:'subwise', difficulty:'medium', name:'Data Structures Full Mock',           subject:'Data Structures',         questions:30, duration:60, marks:45, desc:'Arrays, linked lists, trees, BSTs, heaps, and hashing.' },
   { id:'mock-subwise-algo', type:'subwise', difficulty:'hard',   name:'Algorithms Deep Dive',                subject:'Algorithms',              questions:30, duration:60, marks:45, desc:'Sorting, divide & conquer, greedy, dynamic programming, and graphs.' },
   { id:'mock-subwise-os',   type:'subwise', difficulty:'medium', name:'Operating Systems Mock',              subject:'Operating Systems',       questions:30, duration:60, marks:45, desc:'Processes, CPU scheduling, virtual memory, synchronization, and deadlocks.' },
@@ -4261,7 +4261,7 @@ const FULL_LENGTH_PYQ_EXAMS = [
 
     name: 'GATE Decade Special PYQ Exam (2014–2024)',
 
-    institute: 'Gate Overflow Compilation',
+    institute: 'National Community Compilation',
 
     duration: 180,
 
@@ -6044,35 +6044,82 @@ function renderLoginPage() {
 
 
   window.handleGoogleAuth = async () => {
-
-    const provider = new GoogleAuthProvider();
-
-    try {
-
-      // Use redirect (more reliable than popup — no popup blocker issues)
-
-      await signInWithRedirect(auth, provider);
-
-      // Page will reload; result handled in init() via getRedirectResult
-
-    } catch(e) {
-
-      const errEl=document.getElementById('auth-error');
-
+    if (!auth) {
+      const errEl = document.getElementById('auth-error');
       if (errEl) {
-
-        errEl.textContent = e.code==='auth/unauthorized-domain'
-
-          ? '⚠️ Domain not authorized. Add it in Firebase Console → Auth → Authorized domains.'
-
-          : e.message;
-
-        errEl.className='auth-error show';
-
+        errEl.textContent = '⚠️ Firebase Auth is not active. Use "Continue as Guest".';
+        errEl.className = 'auth-error show';
       }
-
+      return;
     }
 
+    const btn = document.querySelector('.auth-btn-google');
+    const originalHTML = btn ? btn.innerHTML : '';
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = `<span style="display:inline-block;width:14px;height:14px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spin 0.8s linear infinite;margin-right:8px;vertical-align:middle;"></span> Connecting...`;
+    }
+
+    const errEl = document.getElementById('auth-error');
+    if (errEl) {
+      errEl.className = 'auth-error';
+      errEl.textContent = '';
+    }
+
+    const provider = new GoogleAuthProvider();
+    provider.setCustomParameters({ prompt: 'select_account' });
+
+    try {
+      // Primary: signInWithPopup avoids cross-origin redirect/cookie loops on GitHub Pages
+      const res = await signInWithPopup(auth, provider);
+      if (res && res.user) {
+        removeLoginPage();
+        await bootApp(res.user);
+        showToast(`✅ Welcome, ${res.user.displayName || res.user.email}!`, 'success');
+        return;
+      }
+    } catch(e) {
+      console.warn('[Google Auth] Popup result:', e.code, e.message);
+
+      if (e.code === 'auth/popup-closed-by-user') {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = originalHTML;
+        }
+        return;
+      }
+
+      if (e.code === 'auth/popup-blocked') {
+        // Fallback to redirect if popup is blocked
+        try {
+          await signInWithRedirect(auth, provider);
+          return;
+        } catch(redErr) {
+          displayGoogleAuthError(redErr, btn, originalHTML);
+          return;
+        }
+      }
+
+      displayGoogleAuthError(e, btn, originalHTML);
+    }
+  };
+
+  function displayGoogleAuthError(e, btn, originalHTML) {
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = originalHTML;
+    }
+    const errEl = document.getElementById('auth-error');
+    if (!errEl) return;
+
+    if (e.code === 'auth/unauthorized-domain') {
+      errEl.textContent = `⚠️ Domain "${window.location.hostname}" is not authorized. Add it in Firebase Console → Authentication → Settings → Authorized domains.`;
+    } else if (e.code === 'auth/operation-not-allowed') {
+      errEl.textContent = '⚠️ Google Sign-In is disabled in Firebase. Enable "Google" under Firebase Console → Authentication → Sign-in method.';
+    } else {
+      errEl.textContent = '⚠️ ' + (e.message || e.code);
+    }
+    errEl.className = 'auth-error show';
   };
 
 }
@@ -6482,8 +6529,8 @@ function renderDashboard(c) {
       <div class="series-card" style="--series-color:#06b6d4" onclick="navigate('mocks',{tab:'go'})">
         <div>
           <div class="series-badge" style="background:rgba(6,182,212,0.15);color:#06b6d4">🌐 ALL-INDIA MOCKS</div>
-          <div class="series-title">27 Gate Overflow Mocks</div>
-          <div class="series-sub">Rigorous full-length All-India Mock Tests (2025–2026) crafted by the Gate Overflow community for peak exam calibration.</div>
+          <div class="series-title">27 All-India Mocks</div>
+          <div class="series-sub">Rigorous full-length All-India Mock Tests (2025–2026) crafted for peak exam calibration.</div>
         </div>
         <div class="series-footer">
           <span>1,568 Qs • 27 Full Tests • 7.2/10</span>
@@ -6491,10 +6538,10 @@ function renderDashboard(c) {
         </div>
       </div>
 
-      <div class="series-card" style="--series-color:#8b5cf6" onclick="navigate('mocks',{tab:'made-easy'})">
+      <div class="series-card" style="--series-color:#8b5cf6" onclick="navigate('mocks',{tab:'comprehensive-mocks'})">
         <div>
           <div class="series-badge" style="background:rgba(139,92,246,0.15);color:#a78bfa">📘 ELITE COACHING</div>
-          <div class="series-title">21 Made Easy Full Mocks</div>
+          <div class="series-title">21 Comprehensive Full Mocks</div>
           <div class="series-sub">High-resolution visual question cards, Advance & Basic Level Full Syllabus Tests, and National Mock Exams (2023–2024).</div>
         </div>
         <div class="series-footer">
@@ -6654,276 +6701,229 @@ function jumpToSubjectPYQs(subName) {
 
 
 function buildOfficialSyllabusGuideHTML() {
-
   const sections = [
-
     {
-
       num: 'Section 1',
-
+      badge: 'SEC 01',
       title: 'Engineering Mathematics',
-
       subject: 'Engineering Mathematics',
-
+      icon: '📐',
+      color: '#8b5cf6',
+      weightage: '~15% Weightage',
+      tags: ['Discrete Math', 'Linear Algebra', 'Calculus', 'Probability & Stats'],
       topics: [
-
-        { label: 'Discrete Mathematics', text: 'Propositional and first order logic. Sets, relations, functions, partial orders and lattices. Monoids, Groups. Graphs: connectivity, matching, coloring. Combinatorics: counting, recurrence relations, generating functions.' },
-
-        { label: 'Linear Algebra', text: 'Matrices, determinants, system of linear equations, eigenvalues and eigenvectors, LU decomposition.' },
-
-        { label: 'Calculus', text: 'Limits, continuity and differentiability. Maxima and minima. Mean value theorem. Integration.' },
-
-        { label: 'Probability & Statistics', text: 'Random variables. Uniform, normal, exponential, Poisson and binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem.' }
-
+        { label: 'Discrete Mathematics', text: 'Propositional & first order logic, sets, relations, partial orders, lattices, monoids, groups, graphs, combinatorics, recurrence relations.' },
+        { label: 'Linear Algebra', text: 'Matrices, determinants, systems of linear equations, eigenvalues & eigenvectors, LU decomposition.' },
+        { label: 'Calculus', text: 'Limits, continuity, differentiability, maxima & minima, mean value theorem, integration.' },
+        { label: 'Probability & Statistics', text: 'Random variables, distributions (uniform, normal, exponential, Poisson, binomial), mean/median/mode, Bayes theorem.' }
       ]
-
     },
-
     {
-
       num: 'Section 2',
-
+      badge: 'SEC 02',
       title: 'Digital Logic',
-
       subject: 'Digital Logic',
-
+      icon: '🔌',
+      color: '#06b6d4',
+      weightage: '~5-6% Weightage',
+      tags: ['Boolean Algebra', 'K-Maps', 'Combinational', 'Sequential Circuits', 'Number Systems'],
       topics: [
-
-        { label: 'Core Topics', text: 'Boolean algebra. Combinational and sequential circuits. Minimization (algebraic technique, K-maps, tabular method). Number representations and computer arithmetic (fixed and floating point).' }
-
+        { label: 'Core Topics', text: 'Boolean algebra, combinational & sequential circuits, minimization (K-maps, tabular method), number representations, fixed and floating point arithmetic.' }
       ]
-
     },
-
     {
-
       num: 'Section 3',
-
+      badge: 'SEC 03',
       title: 'Computer Organization & Architecture',
-
       subject: 'Computer Organization',
-
+      icon: '🖩',
+      color: '#84cc16',
+      weightage: '~8-10% Weightage',
+      tags: ['Addressing Modes', 'ALU & Control Unit', 'Pipelining Hazards', 'Memory Hierarchy', 'DMA & I/O'],
       topics: [
-
-        { label: 'Core Topics', text: 'Machine instructions and addressing modes. ALU, data-path and control unit (hardwired and microprogrammed). Instruction pipelining, pipeline hazards. Memory hierarchy: cache, main memory and secondary storage; I/O interface (interrupt and DMA mode).' }
-
+        { label: 'Core Topics', text: 'Machine instructions & addressing modes, ALU, data-path & control unit, instruction pipelining & hazards, cache & main memory hierarchy, I/O interface (DMA).' }
       ]
-
     },
-
     {
-
       num: 'Section 4',
-
+      badge: 'SEC 04',
       title: 'Programming & Data Structures',
-
       subject: 'Data Structures',
-
+      icon: '🗂️',
+      color: '#6366f1',
+      weightage: '~10-12% Weightage',
+      tags: ['C Programming', 'Recursion & Pointers', 'Stacks & Queues', 'Trees & BST', 'Graphs & Heaps'],
       topics: [
-
-        { label: 'Core Topics', text: 'Programming in C. Recursion. Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs.' }
-
+        { label: 'Core Topics', text: 'Programming in C, recursion, arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs.' }
       ]
-
     },
-
     {
-
       num: 'Section 5',
-
+      badge: 'SEC 05',
       title: 'Algorithms',
-
       subject: 'Algorithms',
-
+      icon: '⚙️',
+      color: '#f97316',
+      weightage: '~8-10% Weightage',
+      tags: ['Asymptotic Complexity', 'Sorting & Hashing', 'Greedy & DP', 'Graph Traversals', 'Shortest Paths & MST'],
       topics: [
-
-        { label: 'Core Topics', text: 'Searching, sorting, hashing. Asymptotic worst case time and space complexity. Algorithm design techniques: greedy, dynamic programming and divide-and-conquer. Graph traversals, minimum spanning trees, shortest paths.' }
-
+        { label: 'Core Topics', text: 'Searching, sorting, hashing, asymptotic worst case complexity, greedy, dynamic programming, divide-and-conquer, graph traversals, MST, shortest paths.' }
       ]
-
     },
-
     {
-
       num: 'Section 6',
-
+      badge: 'SEC 06',
       title: 'Theory of Computation',
-
       subject: 'Theory of Computation',
-
+      icon: '🔣',
+      color: '#a855f7',
+      weightage: '~8-9% Weightage',
+      tags: ['Regular Expressions', 'Finite Automata', 'CFG & PDA', 'Pumping Lemma', 'Turing Machines'],
       topics: [
-
-        { label: 'Core Topics', text: 'Regular expressions and finite automata. Context-free grammars and push-down automata. Regular and context-free languages, pumping lemma. Turing machines and undecidability.' }
-
+        { label: 'Core Topics', text: 'Regular expressions, DFA / NFA, context-free grammars, push-down automata, regular & CFL pumping lemma, Turing machines, undecidability.' }
       ]
-
     },
-
     {
-
       num: 'Section 7',
-
+      badge: 'SEC 07',
       title: 'Compiler Design',
-
       subject: 'Compiler Design',
-
+      icon: '🔧',
+      color: '#f59e0b',
+      weightage: '~4-5% Weightage',
+      tags: ['Lexical Analysis', 'LL / LR Parsing', 'Syntax-Directed (SDT)', 'Intermediate Code', 'Optimization'],
       topics: [
-
-        { label: 'Core Topics', text: 'Lexical analysis, parsing, syntax-directed translation. Runtime environments. Intermediate code generation. Local optimisation, Data flow analyses: constant propagation, liveness analysis, common subexpression elimination.' }
-
+        { label: 'Core Topics', text: 'Lexical analysis, parsing, syntax-directed translation, runtime environments, intermediate code generation, local optimisation, data flow analyses.' }
       ]
-
     },
-
     {
-
       num: 'Section 8',
-
-      title: 'Operating System',
-
+      badge: 'SEC 08',
+      title: 'Operating Systems',
       subject: 'Operating Systems',
-
+      icon: '🖥️',
+      color: '#22c55e',
+      weightage: '~8-10% Weightage',
+      tags: ['Processes & Threads', 'CPU Scheduling', 'Deadlocks & Semaphores', 'Virtual Memory', 'File Systems'],
       topics: [
-
-        { label: 'Core Topics', text: 'System calls, processes, threads, inter-process communication, concurrency and synchronization, deadlocks. CPU and I/O scheduling. Memory management and virtual memory. File systems.' }
-
+        { label: 'Core Topics', text: 'System calls, processes, threads, IPC, concurrency & synchronization, deadlocks, CPU & I/O scheduling, memory management, virtual memory, file systems.' }
       ]
-
     },
-
     {
-
       num: 'Section 9',
-
-      title: 'Databases',
-
+      badge: 'SEC 09',
+      title: 'Databases (DBMS)',
       subject: 'DBMS',
-
+      icon: '🗄️',
+      color: '#ef4444',
+      weightage: '~7-8% Weightage',
+      tags: ['ER-Model', 'Relational Algebra', 'SQL Queries', 'BCNF / 3NF Normalization', 'B & B+ Trees', 'ACID'],
       topics: [
-
-        { label: 'Core Topics', text: 'ER-model. Relational model: relational algebra, tuple calculus, SQL. Integrity constraints, normal forms. File organization, indexing (e.g., B and B+ trees). Transactions and concurrency control.' }
-
+        { label: 'Core Topics', text: 'ER-model, relational algebra & calculus, SQL, integrity constraints, normal forms, file organization & indexing (B/B+ trees), transactions & concurrency.' }
       ]
-
     },
-
     {
-
       num: 'Section 10',
-
+      badge: 'SEC 10',
       title: 'Computer Networks',
-
       subject: 'Computer Networks',
-
+      icon: '🌐',
+      color: '#14b8a6',
+      weightage: '~8-10% Weightage',
+      tags: ['OSI & TCP/IP', 'Ethernet & Framing', 'IPv4, CIDR & NAT', 'Routing Protocols', 'Flow & Congestion', 'DNS / HTTP'],
       topics: [
-
-        { label: 'Core Topics', text: 'Concept of layering: OSI and TCP/IP protocol stacks; Basics of packet, circuit and virtual circuit switching; Data link layer: framing, error detection, Medium Access Control, Ethernet bridging; Routing protocols: shortest path, flooding, distance vector and link state routing; Fragmentation and IP addressing (IPv4, CIDR, NAT); Transport layer: flow control and congestion control, UDP, TCP, sockets; Application layer protocols: DNS, SMTP, HTTP, FTP, Email.' }
-
+        { label: 'Core Topics', text: 'OSI/TCP-IP stacks, packet & circuit switching, framing, error detection, MAC, Ethernet, distance vector & link state routing, IPv4, CIDR, NAT, TCP/UDP sockets, DNS, HTTP.' }
       ]
-
     },
-
     {
-
       num: 'General Aptitude',
-
+      badge: 'MANDATORY GA',
       title: 'General Aptitude (GA)',
-
       subject: 'Aptitude',
-
+      icon: '🧮',
+      color: '#38bdf8',
+      weightage: '15 Marks (Fixed)',
+      isFeatured: true,
+      tags: ['Verbal & Grammar', 'Reading Comprehension', 'Quantitative Aptitude', 'Logical Deduction', 'Spatial & Patterns'],
       topics: [
-
-        { label: 'Verbal & Quantitative', text: 'Basic English grammar, vocabulary, reading comprehension, narrative sequencing. Data interpretation, numerical computation and estimation (ratios, percentages, powers, exponents, series, permutations, combinations).' },
-
-        { label: 'Analytical & Spatial', text: 'Logic, deduction, analogy, numerical relations and reasoning. Transformation of shapes: translation, rotation, scaling, mirroring, paper folding, and patterns in 2D and 3D.' }
-
+        { label: 'Verbal & Quantitative', text: 'English grammar, vocabulary, reading comprehension, narrative sequencing. Data interpretation, numerical computation (ratios, percentages, powers, series, permutations).' },
+        { label: 'Analytical & Spatial', text: 'Logic, deduction, analogy, numerical relations & reasoning. Transformation of shapes: translation, rotation, scaling, mirroring, paper folding, 2D/3D patterns.' }
       ]
-
     }
-
   ];
 
-
-
   return `
-
     <div class="syllabus-guide-card">
-
       <div class="syllabus-guide-header" onclick="toggleSyllabusGuide()">
-
         <div class="syllabus-guide-title">
-
-          <span>🏛️</span>
-
-          <span>Official GATE CSE Syllabus Guide (IIT Madras Standards)</span>
-
-          <span class="badge" style="background:rgba(99,102,241,0.2);color:#818cf8;font-size:11px;font-weight:700">10 Sections + GA Verbatim</span>
-
-        </div>
-
-        <div style="display:flex;align-items:center;gap:10px">
-
-          <span style="font-size:12px;color:var(--text-muted)">Latest Official Pattern</span>
-
-          <button class="btn btn-secondary btn-sm" id="syllabus-toggle-icon" type="button" style="padding:4px 10px;font-size:12px">
-
-            ▲ Hide Guide
-
-          </button>
-
-        </div>
-
-      </div>
-
-      <div class="syllabus-sections-grid" id="syllabus-guide-body">
-
-        ${sections.map(s => `
-
-          <div class="syllabus-sec-card">
-
-            <div class="syllabus-sec-header">
-
-              <span class="syllabus-sec-title">${escapeHtml(s.num)}: ${escapeHtml(s.title)}</span>
-
-              <span class="chip" style="font-size:10px">${escapeHtml(s.subject)}</span>
-
+          <div class="syllabus-guide-icon">🏛️</div>
+          <div>
+            <div class="syllabus-guide-title-text">Official GATE CSE Syllabus Guide</div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:3px">
+              <span class="syllabus-guide-badge">IIT Madras Calibrated</span>
+              <span style="font-size:11px;color:var(--text-muted)">10 Core Sections + General Aptitude</span>
             </div>
-
-            <div class="syllabus-sec-desc">
-
-              ${s.topics.map(t => `<p style="margin-bottom:6px"><strong>${escapeHtml(t.label)}:</strong> ${escapeHtml(t.text)}</p>`).join('')}
-
-            </div>
-
-            <div class="syllabus-sec-actions">
-
-              <button class="btn btn-primary btn-sm" onclick="navigate('practice', { subject: '${escapeHtml(s.subject)}' })" style="padding:3px 10px;font-size:11px" type="button">
-
-                ▶ Practice
-
-              </button>
-
-              <button class="btn btn-secondary btn-sm" onclick="jumpToSubjectPYQs('${escapeHtml(s.subject)}')" style="padding:3px 10px;font-size:11px" type="button">
-
-                📑 PYQ Chapters
-
-              </button>
-
-            </div>
-
           </div>
-
-        `).join('')}
-
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <button class="syllabus-guide-toggle-btn" id="syllabus-toggle-icon" type="button">
+            <span>▲</span> <span>Hide Guide</span>
+          </button>
+        </div>
       </div>
-
+      <div class="syllabus-sections-grid" id="syllabus-guide-body">
+        ${sections.map(s => {
+          const stats = getSubjectStats(s.subject);
+          return `
+          <div class="syllabus-sec-card ${s.isFeatured ? 'syllabus-sec-card-featured' : ''}" style="--sec-color:${s.color};">
+            <div>
+              <div class="syllabus-card-topbar">
+                <div class="syllabus-badges-left">
+                  <span class="syllabus-badge-num" style="background:${s.color}20;color:${s.color};border:1px solid ${s.color}40">${escapeHtml(s.badge)}</span>
+                  <span class="syllabus-badge-weight">${escapeHtml(s.weightage)}</span>
+                </div>
+                ${stats.total > 0 ? `<span class="syllabus-qcount">📚 ${stats.total.toLocaleString()} Qs</span>` : ''}
+              </div>
+              <div class="syllabus-card-header">
+                <div class="syllabus-card-icon-wrap" style="background:${s.color}15;border-color:${s.color}35;color:${s.color}">
+                  <span class="syllabus-card-icon">${s.icon}</span>
+                </div>
+                <div class="syllabus-card-title-wrap">
+                  <h3 class="syllabus-card-title">${escapeHtml(s.title)}</h3>
+                  <span class="syllabus-card-canonical">${escapeHtml(s.subject)}</span>
+                </div>
+              </div>
+              <div class="syllabus-card-tags">
+                ${s.tags.map(t => `<span class="syllabus-tag-chip">${escapeHtml(t)}</span>`).join('')}
+              </div>
+              <div class="syllabus-card-topics">
+                ${s.topics.map(t => `
+                  <div class="syllabus-topic-block">
+                    <div class="syllabus-topic-heading">
+                      <span class="syllabus-topic-dot" style="background:${s.color}"></span>
+                      <span>${escapeHtml(t.label)}</span>
+                    </div>
+                    <p class="syllabus-topic-body">${escapeHtml(t.text)}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            <div class="syllabus-card-actions">
+              <button class="syllabus-action-btn syllabus-action-practice" onclick="navigate('practice', { subject: '${escapeHtml(s.subject)}' })" type="button">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span>Practice</span>
+              </button>
+              <button class="syllabus-action-btn syllabus-action-pyqs" onclick="jumpToSubjectPYQs('${escapeHtml(s.subject)}')" type="button">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <span>PYQ Chapters</span>
+              </button>
+            </div>
+          </div>
+        `}).join('')}
+      </div>
     </div>
-
   `;
-
 }
-
-
 
 function renderSubjects(c) {
 
@@ -8475,7 +8475,7 @@ function getMockQuestions(mockId) {
 
   }
 
-  if (mockId === 'pyq-exam-decade' || mockId === 'paper-gate-overflow-decade') {
+  if (mockId === 'pyq-exam-decade' || mockId === 'paper-decade-pyq') {
 
     const dqs = state.questions.filter(q => q.category === 'pyq');
 
@@ -9028,9 +9028,9 @@ function buildMockCompactList(mocks) {
     const isPinned = state.pinnedMocks && state.pinnedMocks.has(m.id);
 
     let providerBadge = '';
-    const provName = m.provider || (m.tier && m.tier.includes('Made Easy') ? 'Made Easy' : (m.tier && (m.tier.includes('Gate Overflow') || m.tier.includes('GO Classes')) ? 'GO Classes & Gate Overflow' : null));
+    const provName = m.provider || (m.tier && m.tier.includes('Comprehensive') ? 'Comprehensive Series' : (m.tier && (m.tier.includes('All-India') || m.tier.includes('National')) ? 'All-India Series' : null));
     if (provName) {
-      let icon = provName.includes('Made Easy') ? '📘' : provName.includes('GO') ? '🌐' : '🏆';
+      let icon = provName.includes('Comprehensive') ? '📘' : provName.includes('GO') ? '🌐' : '🏆';
       providerBadge = `<span class="q-badge" style="font-size:10px;padding:2px 6px;font-weight:600">${icon} ${provName}</span>`;
     }
 
@@ -9214,8 +9214,8 @@ function renderMocks(c, params={}){
       <button class="tab-btn ${activeTab==='easy'?'active':''}" onclick="switchMockTab('easy',this)" type="button">🟢 Easy (${easyCount})</button>
       <button class="tab-btn ${activeTab==='medium'?'active':''}" onclick="switchMockTab('medium',this)" type="button">🟡 Medium (${medCount})</button>
       <button class="tab-btn ${activeTab==='hard'?'active':''}" onclick="switchMockTab('hard',this)" type="button">🔴 Hard (${hardCount})</button>
-      <button class="tab-btn ${activeTab==='go'?'active':''}" onclick="switchMockTab('go',this)" type="button">🌐 Gate Overflow / GO Classes (${goCount})</button>
-      <button class="tab-btn ${activeTab==='made-easy'?'active':''}" onclick="switchMockTab('made-easy',this)" type="button">📘 Made Easy (${meCount})</button>
+      <button class="tab-btn ${activeTab==='go'?'active':''}" onclick="switchMockTab('go',this)" type="button">🌐 National All-India Mocks (${goCount})</button>
+      <button class="tab-btn ${activeTab==='comprehensive-mocks'?'active':''}" onclick="switchMockTab('comprehensive-mocks',this)" type="button">📘 Comprehensive Mocks (${meCount})</button>
       <button class="tab-btn ${activeTab==='practice-sets'?'active':''}" onclick="switchMockTab('practice-sets',this)" type="button">📝 Practice Sets (${psetsCount})</button>
       <button class="tab-btn ${activeTab==='subwise'?'active':''}" onclick="switchMockTab('subwise',this)" type="button">📂 Subject Mocks</button>
       <button class="tab-btn ${activeTab==='history'?'active':''}" onclick="switchMockTab('history',this)" type="button">📊 My History</button>
@@ -9275,12 +9275,12 @@ function getMockTabHTML(tab, fullMocks) {
     if (tab === 'go') {
     const list = fullMocks.filter(m => m.id.startsWith('mock-go-') || m.id.startsWith('mock-go25-'));
     const filtered = getFilteredAndSortedMocks(list);
-    return `${buildMockCalibrationGuide()}${buildMockSortBar(list, 'Gate Overflow / GO Classes All-India Mocks')}${buildMockGrid(filtered)}`;
+    return `${buildMockCalibrationGuide()}${buildMockSortBar(list, 'All-India National Mocks')}${buildMockGrid(filtered)}`;
   }
-  if (tab === 'made-easy') {
+  if (tab === 'comprehensive-mocks') {
     const list = fullMocks.filter(m => m.id.startsWith('mock-me24-') || m.id.startsWith('mock-me23-'));
     const filtered = getFilteredAndSortedMocks(list);
-    return `${buildMockCalibrationGuide()}${buildMockSortBar(list, 'Made Easy Prime Full Syllabus Mocks')}${buildMockGrid(filtered)}`;
+    return `${buildMockCalibrationGuide()}${buildMockSortBar(list, 'Comprehensive Full Syllabus Mocks')}${buildMockGrid(filtered)}`;
   }
   if (tab === 'practice-sets') {
 
@@ -9353,8 +9353,8 @@ function buildMockSortBar(list, sectionName) {
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
         <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Medium (${list.length})</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
-        <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 Gate Overflow / GO Classes</button>
-        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Made Easy Basic & Mocks</button>
+        <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 All-India National Mocks</button>
+        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Basic & Mocks</button>
         <button class="mock-subseries-pill ${subSeries==='med-30'?'active':''}" onclick="setMockSubSeries('med-30')">⚡ 30 Medium Series (30)</button>
         <button class="mock-subseries-pill ${subSeries==='flm-20'?'active':''}" onclick="setMockSubSeries('flm-20')">🏆 Compendium Mocks (10)</button>
         <button class="mock-subseries-pill ${subSeries==='cat-10'?'active':''}" onclick="setMockSubSeries('cat-10')">📚 Category Core CS (5)</button>
@@ -9365,8 +9365,8 @@ function buildMockSortBar(list, sectionName) {
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
         <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Hard (${list.length})</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
-        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Made Easy Advance (9)</button>
-        <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 GO Classes & Gate Overflow (10)</button>
+        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Advance (9)</button>
+        <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 All-India Series (10)</button>
         <button class="mock-subseries-pill ${subSeries==='flm-20'?'active':''}" onclick="setMockSubSeries('flm-20')">🏆 Compendium Hard Mocks (10)</button>
       </div>`;
   } else if (currentTab === 'easy') {
@@ -9375,7 +9375,7 @@ function buildMockSortBar(list, sectionName) {
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
         <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Easy (${list.length})</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
-        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Made Easy Basic (1)</button>
+        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Basic (1)</button>
         <button class="mock-subseries-pill ${subSeries==='easy-30'?'active':''}" onclick="setMockSubSeries('easy-30')">🌟 30 Easy Series (30)</button>
         <button class="mock-subseries-pill ${subSeries==='cat-10'?'active':''}" onclick="setMockSubSeries('cat-10')">📚 Category Topic Sets (5)</button>
       </div>`;
@@ -9383,17 +9383,17 @@ function buildMockSortBar(list, sectionName) {
     pillsHtml = `
       <div class="mock-subseries-pills">
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
-        <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All GO Tests (${list.length})</button>
+        <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All National Mocks (${list.length})</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
-        <button class="mock-subseries-pill ${subSeries==='go-aim'?'active':''}" onclick="setMockSubSeries('go-aim')">🎯 GO Classes AIM (11)</button>
-        <button class="mock-subseries-pill ${subSeries==='go-ts25-mg'?'active':''}" onclick="setMockSubSeries('go-ts25-mg')">⚡ GO Mock GATE TS25 (10)</button>
-        <button class="mock-subseries-pill ${subSeries==='go25-mg'?'active':''}" onclick="setMockSubSeries('go25-mg')">🌐 Gate Overflow TS25 (6)</button>
+        <button class="mock-subseries-pill ${subSeries==='go-aim'?'active':''}" onclick="setMockSubSeries('go-aim')">🎯 National Mock AIM (11)</button>
+        <button class="mock-subseries-pill ${subSeries==='go-ts25-mg'?'active':''}" onclick="setMockSubSeries('go-ts25-mg')">⚡ Full Mock GATE (10)</button>
+        <button class="mock-subseries-pill ${subSeries==='go25-mg'?'active':''}" onclick="setMockSubSeries('go25-mg')">🌐 National Series (6)</button>
       </div>`;
-  } else if (currentTab === 'made-easy') {
+  } else if (currentTab === 'comprehensive-mocks') {
     pillsHtml = `
       <div class="mock-subseries-pills">
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
-        <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Made Easy (${list.length})</button>
+        <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Comprehensive Mocks (${list.length})</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
         <button class="mock-subseries-pill ${subSeries==='me-2024'?'active':''}" onclick="setMockSubSeries('me-2024')">📘 2024 Series (10)</button>
         <button class="mock-subseries-pill ${subSeries==='me-2023'?'active':''}" onclick="setMockSubSeries('me-2023')">📙 2023 Series (11)</button>
@@ -9407,8 +9407,8 @@ function buildMockSortBar(list, sectionName) {
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
         <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All (${list.length})</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
-        <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 Gate Overflow / GO Classes (27)</button>
-        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Made Easy (21)</button>
+        <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 All-India National Mocks (27)</button>
+        <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Mocks (21)</button>
         <button class="mock-subseries-pill ${subSeries==='med-30'?'active':''}" onclick="setMockSubSeries('med-30')">⚡ 30 Medium Series</button>
         <button class="mock-subseries-pill ${subSeries==='easy-30'?'active':''}" onclick="setMockSubSeries('easy-30')">🌟 30 Easy Series</button>
         <button class="mock-subseries-pill ${subSeries==='flm-20'?'active':''}" onclick="setMockSubSeries('flm-20')">🏆 20 Compendium Mocks</button>
@@ -9538,17 +9538,17 @@ function buildMockGrid(mocks){
     const badgeType = m.type === 'practice-set' ? '📝 Practice Set' : m.type === 'full' ? '🏆 Full Mock' : '📂 Subject Mock';
 
     let providerBadge = '';
-    const provName = m.provider || (m.tier && m.tier.includes('Made Easy') ? 'Made Easy' : (m.tier && (m.tier.includes('Gate Overflow') || m.tier.includes('GO Classes')) ? 'GO Classes & Gate Overflow' : null));
+    const provName = m.provider || (m.tier && m.tier.includes('Comprehensive') ? 'Comprehensive Series' : (m.tier && (m.tier.includes('All-India') || m.tier.includes('National')) ? 'All-India Series' : null));
     if (provName) {
       let style = 'background:rgba(100,116,139,0.12);color:#64748b;border:1px solid rgba(100,116,139,0.3);';
       let icon = '📚';
-      if (provName.includes('Made Easy')) {
+      if (provName.includes('Comprehensive')) {
         style = 'background:rgba(59,130,246,0.14);color:#3b82f6;border:1px solid rgba(59,130,246,0.35);';
         icon = '📘';
-      } else if (provName.includes('GO Classes')) {
+      } else if (provName.includes('All-India')) {
         style = 'background:rgba(16,185,129,0.14);color:#10b981;border:1px solid rgba(16,185,129,0.35);';
         icon = '🌐';
-      } else if (provName.includes('Gate Overflow')) {
+      } else if (provName.includes('National')) {
         style = 'background:rgba(20,184,166,0.14);color:#14b8a6;border:1px solid rgba(20,184,166,0.35);';
         icon = '🌐';
       } else if (provName.includes('Official')) {
@@ -20769,7 +20769,7 @@ async function init() {
 
         getRedirectResult(auth),
 
-        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 2000))
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 4000))
 
       ]);
 

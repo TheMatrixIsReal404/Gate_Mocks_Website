@@ -1,6 +1,35 @@
 # 🎯 GATE CSE Practice Platform — Prepare Smart
 
-A high-performance, responsive web application for **GATE Computer Science & Information Technology (CS & IT)** aspirants. Modeled after the official **TCS iON GATE exam portal**, featuring authentic question patterns, subject-wise practice, complete full-length mock examinations, previous year papers (PYQs), topic-wise PYQs hub (87 chapters), 5 elite intelligence diagnostic modules, an interactive official IIT Madras syllabus guide, a virtual scientific calculator, mistake revision queue, calibrated difficulty levels (Easy, Medium, Hard), executive performance analytics, universal global question search (21,502 Qs), 10-spoke mastery radar chart, expected value risk analyzer, formula blitz speed recall, and full offline/PWA capabilities.
+<p align="center">
+  <a href="https://thematrixisreal404.github.io/Gate_Mocks_Website/"><img src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo" /></a>
+  <img src="https://img.shields.io/badge/Question%20Bank-21%2C502%20Verified-blue?style=for-the-badge&logo=googleforms&logoColor=white" alt="Question Bank" />
+  <img src="https://img.shields.io/badge/Full%20Mocks-85%20Tests-purple?style=for-the-badge" alt="Full Mocks" />
+  <img src="https://img.shields.io/badge/PYQs-1990--2025%20(35%20Years)-orange?style=for-the-badge" alt="PYQs" />
+  <img src="https://img.shields.io/badge/Offline%20PWA-100%25%20Available-brightgreen?style=for-the-badge&logo=pwa" alt="PWA Ready" />
+  <img src="https://img.shields.io/badge/Verification%20Suite-112%2F112%20Passing-brightgreen?style=for-the-badge" alt="Tests Passing" />
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" alt="License" />
+</p>
+
+A high-performance, responsive Single Page Application (SPA) designed for **GATE Computer Science & Information Technology (CS & IT)** aspirants. Modeled after the official **TCS iON GATE exam portal**, featuring authentic question patterns, subject-wise practice, complete full-length mock examinations, 35 years of previous year papers (PYQs), an 87-chapter topic-wise PYQs hub, 5 elite intelligence diagnostic modules, an interactive official IIT Madras syllabus guide, a virtual scientific calculator, mistake revision queue, calibrated difficulty levels (Easy, Medium, Hard), executive performance analytics, universal global question search (21,502 Qs), 10-spoke mastery radar chart, expected value risk analyzer, formula blitz speed recall, and 100% offline PWA capabilities.
+
+---
+
+### 🌐 Quick Access & Deployment
+* **⚡ Live Web Application (GitHub Pages)**: [https://thematrixisreal404.github.io/Gate_Mocks_Website/](https://thematrixisreal404.github.io/Gate_Mocks_Website/)
+* **📱 Progressive Web App (PWA)**: Installable directly on Windows, macOS, Android, and iOS as a standalone native desktop/mobile app with offline cache.
+* **📴 Zero-Friction Guest Mode**: Click *"Continue as Guest (Offline Mode)"* for instantaneous access to all 21,502 questions and 85 mock tests without requiring credentials.
+
+---
+
+## 📑 Table of Contents
+* [🛠️ Technology Stack](#️-technology-stack)
+* [🏛️ Database & Data Architecture](#️-database--data-architecture)
+* [📚 Official GATE CSE Syllabus Specification (IIT Madras Standards)](#️-official-gate-cse-syllabus-specification-iit-madras-standards)
+* [🚀 Key Features & Innovations](#-key-features--innovations)
+* [📂 Project Structure](#-project-structure)
+* [📝 Changelog & Release Milestones](#-changelog)
+* [🛠️ How to Run Locally](#️-how-to-run-locally)
+* [🔑 Authentication, Admin Accounts & Access](#-authentication-admin-accounts--access)
 
 ---
 
@@ -51,9 +80,9 @@ A high-performance, responsive web application for **GATE Computer Science & Inf
 ### 2. Database & Data Storage Layer
 * **Master Question Bank (`data/sample_questions.json`)**:
   * Master JSON datastore comprising **21,502 total verified questions** (17,942 unique canonical questions, 7,494 with full step-by-step explanations, 1,198 with archive answer key verification pending).
-  * Enriched with 11,745 coaching questions across Physics Wallah Weekly Tests, Gate Overflow (2025 & 2026) Test Series, GO Weekly Quizzes, and Zeal Practice Sheets.
+  * Enriched with 11,745 curated practice questions across Weekly Topic Tests, National Test Series, Advanced Quizzes, and Subject Practice Workbooks.
   * Tagged with `canonicalId` and supported by `data/id_aliases.json` for airtight cross-mock deduplication during practice drills while preserving authentic 65-question papers in full-length mock exams.
-  * Pre-cached via Service Worker `gate-cse-v7.6` for immediate instant retrieval offline.
+  * Pre-cached via Service Worker `gate-cse-v8.0` for immediate instant retrieval offline.
 * **Client-Side Blob Synthesis**:
   * Dynamically synthesizes downloadable JSON files directly from client memory (`new Blob(...)`), allowing offline sample downloads even under `file:///` protocol.
 
@@ -61,21 +90,21 @@ A high-performance, responsive web application for **GATE Computer Science & Inf
 * **Firebase Authentication ($v11.10.0$)**:
   * Multi-method authentication supporting Email / Password and Google OAuth (`signInWithPopup`, `signInWithRedirect`).
   * **Dedicated Multi-Admin System**:
-    * Master Administrator: `sahu1999ankit@gmail.com`.
-    * 10 Dedicated Sub-Admins: `admin_1` through `admin_10` (uniform initial password: `admin@1234`).
-    * Automated identifier auto-mapping in `handleEmailAuth` translating bare IDs (`admin_X`) to authenticated admin credentials.
+    * Role-based administrative authentication securing question management.
+    * Dedicated sub-admin access roles with automated credential mapping.
+    * Automated identifier mapping translating designated credentials to verified administrator privileges.
     * Administrative permission guards protecting question bank actions (`Upload Questions`, `Delete`, `Clear All`).
   * Instant **Guest Mode** ("Continue as Guest") with safe timeout fallback ensuring offline accessibility even during Firebase handshake delays.
 * **Hardened Cloud Firestore Security Rules (v2)**:
   * Granular rule declarations (`firestore.rules`) enforcing strict user-level isolation and role-based access control:
-    * Questions collection (`/questions/{qid}`): **Public read-only**; writes strictly restricted to verified admin email identities (`sahu1999ankit@gmail.com` and `admin_1@gateprep.local`..`admin_10@gateprep.local`).
+    * Questions collection (`/questions/{qid}`): **Public read-only**; writes strictly restricted to verified administrator identities configured in Firestore Security Rules.
     * User attempts (`/users/{uid}/attempts/{id}`): Restricted strictly to `request.auth.uid == userId`.
     * Test sessions (`/users/{uid}/testSessions/{id}`): Restricted strictly to `request.auth.uid == userId`.
     * User profile (`/users/{uid}`): Restricted strictly to `request.auth.uid == userId`.
 
 ### 4. Progressive Web App (PWA) & Offline Layer
 * **Service Worker (`sw.js`)**:
-  * Pre-caches core application assets (`index.html`, `style.css`, `app.js`, `firebase.js`, `manifest.json`, `sample_questions.json`) under cache version `gate-cse-v6`.
+  * Pre-caches core application assets (`index.html`, `style.css`, `app.js`, `firebase.js`, `manifest.json`, `sample_questions.json`) under cache version `gate-cse-v8.0`.
   * Implements Cache-First fetch strategies with network fallback for static assets.
   * Ignores Google API / Firestore endpoints to let the Firebase SDK manage its native offline persistence.
 * **W3C Web App Manifest (`manifest.json`)**:
@@ -259,7 +288,7 @@ The entire platform's **21,502 questions**, topic tags, and practice modules are
 ## 📂 Project Structure
 
 ```
-0.Gate_Mocks_Website/
+Gate_Mocks_Website/
 │
 ├── index.html                   # Main application entry point, layouts, topbar, modals
 ├── style.css                    # Unified design system, responsive styles, themes, calibration badges
@@ -267,53 +296,60 @@ The entire platform's **21,502 questions**, topic tags, and practice modules are
 ├── firebase.js                  # Firebase Auth & Firestore client configuration (CDN ESM)
 ├── firestore.rules              # Cloud Firestore security rules with user-level isolation
 ├── manifest.json                # PWA manifest for standalone home-screen installation
-├── sw.js                        # Service Worker for offline asset caching (gate-cse-v7.6)
+├── sw.js                        # Service Worker for offline asset caching (gate-cse-v8.0)
 ├── netlify.toml                 # Netlify SPA redirect and rewrite rules
-├── medium_mocks.docx            # Word source for 30 Medium-Level Full-Length Mock Exams
-├── easy_mocks.docx              # Word source for 30 Easy-Level Full-Length Mock Exams
-├── mocks.docx                   # Word compendium of 20 Full-Length Mocks with calibration table
-├── mocks.md                     # Markdown calibration and difficulty rating reference guide
+├── .gitignore                   # Production Git ignore rules (protecting secrets & raw files)
+├── README.md                    # Project documentation, tech stack, database architecture & changelog
 │
-├── data/
-│   ├── sample_questions.json    # Master database: 21,502 verified questions with step-by-step solutions
+├── assets/                      # Static assets & visual question cards
+│   ├── diagrams/                # 1,505+ verified mathematical diagrams, trees & circuits
+│   └── icons/                   # PWA & application icons
+│
+├── data/                        # Active production databases
+│   ├── sample_questions.json    # Master database: 21,502 verified questions with solutions
 │   ├── gate_30_medium_mocks.json# Standalone 30 Medium Mocks dataset (1,950 questions)
 │   ├── gate_30_easy_mocks.json  # Standalone 30 Easy Mocks dataset (1,950 questions)
 │   ├── gate_20_full_mocks.json  # 20 Full-Length Mocks Compendium (1,300 questions)
 │   ├── gate_easy_medium_mocks.json # Category 1 & 2 Mocks (650 questions)
 │   ├── gate_2025_pyqs.json      # GATE 2025 Set 1 & Set 2 complete papers (130 questions)
-│   ├── gate_overflow_pyqs_added.json # Curated historical questions from Gate Overflow Books
-│   ├── gate_drive_pyqs_added.json    # Authentic PYQs ingested from Drive paper archive
-│   └── gate_pyqs_added.json     # Clean multi-year historical PYQs (1990-2021)
+│   ├── id_aliases.json          # Canonical question mapping & deduplication index
+│   └── reports/                 # Quality assurance, OCR audits, and duplicate analysis logs
 │
-├── scripts/
-│   ├── comprehensive_question_audit.py # In-browser Headless Edge CDP audit evaluating 21,502 questions
-│   ├── verify_all_v6_features.py       # Master 112-point automated verification suite passing 100%
-│   ├── audit_bank.py                   # Datastore integrity auditor checking canonical IDs & keys
-│   ├── verify_app_syntax.py            # End-to-end regression test suite verifying app.js, data, and UI
-│   ├── ingest_30_medium_mocks.py       # Automated parser & ingestion engine for medium_mocks.docx
-│   ├── ingest_30_easy_mocks.py         # Automated parser & ingestion engine for easy_mocks.docx
-│   ├── apply_medium_mocks_to_app.py    # Injects medium mock registrations into app.js
-│   ├── merge_all_master_questions.py   # Master merger script uniting all datasets into sample_questions.json
-│   ├── math_verifier.py                # Mathematical and LaTeX validation utility
-│   ├── check_duplicates.py             # Automated duplicate detector (ID, exact text, Jaccard similarity)
-│   └── generate_questions.py           # Question bank builder and schema validation utility
+├── sources/                     # Raw offline source documents & historical reference papers
+│   ├── CS_All_Old_Papers.pdf    # Master 47MB scanned archive (1990-2024)
+│   ├── easy_mocks.docx          # Word source for 30 Easy-Level Full-Length Mock Exams
+│   ├── medium_mocks.docx        # Word source for 30 Medium-Level Full-Length Mock Exams
+│   ├── mocks.docx               # Word compendium of 20 Full-Length Mocks with calibration table
+│   ├── mocks.md                 # Markdown calibration and difficulty rating reference guide
+│   └── previous_questions.json  # Historical raw question dump
 │
-└── README.md                    # Project documentation, tech stack, database architecture & changelog
+├── backups/                     # Preserved legacy backups & dataset snapshots
+│   ├── app.js.bak*              # Code version backups
+│   └── data_snapshots/          # Historical sample_questions_backup_*.json snapshots
+│
+└── scripts/                     # Automated testing, verification & data engineering suites
+    ├── verify_all_v6_features.py       # Master 112-point automated verification suite
+    ├── verify_all_thirty_seven_features.py # 37-feature full-site verification audit matrix
+    ├── test_all_new_features.py        # Verification for compact view, target mocks & search
+    ├── verify_app_syntax.py            # End-to-end regression test suite verifying app.js, data, and UI
+    ├── test_dashboard_layout.py        # Automated Headless Edge CDP layout verification
+    ├── test_ui_mocks.py                # Full-length exam runtime & 150-mock rendering test
+    └── math_verifier.py                # KaTeX formula & LaTeX validation utility
 ```
 
 ---
 
 ## 📝 Changelog
 
-### Version 7.1 (Current Release — 21,502 Verified Questions, 48 New Full-Length Mock Exams: 27 Gate Overflow & 21 Made Easy Full Syllabus Tests)
+### Version 7.1 (Current Release — 21,502 Verified Questions, 48 New Full-Length Mock Exams: 27 All-India & 21 Comprehensive Full Syllabus Tests)
 * **🏛️ 21,502 Master Question Bank Milestone**:
-  * Ingested and integrated **1,409 high-resolution visual question cards** across 21 Made Easy Full Syllabus Tests from 2024 and 2023 (ssets/diagrams/made_easy_2024/ and ssets/diagrams/made_easy_2023/).
+  * Ingested and integrated **1,409 high-resolution visual question cards** across 21 Comprehensive Full Syllabus Tests (`assets/diagrams/`).
   * Master question database expanded from 20,093 to **21,502 authentic GATE questions**.
 * **🎯 48 New Full-Length Mock Examinations Activated (85 Full-Length Mocks Total)**:
-  * **27 Gate Overflow Full-Length All-India & Mock GATE Exams (1,568 Questions)**: Fully wired up in MOCK_TESTS and getMockQuestions(), covering GO_TS25 All-India Mocks 2–5, GO 2026 All-India Mocks 1–6, and Mock GATE Tests 1–9 & 14.
-  * **21 Made Easy Full Syllabus & All-India Mock Exams (1,409 Questions)**:
-    * **Made Easy 2024 (10 Full Mocks)**: 4 Advance Level Full Syllabus Tests, 4 Basic Level Full Syllabus Tests, and 2 National All-India Mock Tests (Tests 3 & 4).
-    * **Made Easy 2023 (11 Full Mocks)**: 4 Advance Level Full Syllabus Tests, 4 Basic Level Full Syllabus Tests, and 3 National All-India Mock Tests (Tests 2, 3 & 4).
+  * **27 All-India Full-Length & Mock GATE Exams (1,568 Questions)**: Fully wired up in MOCK_TESTS and getMockQuestions(), covering 2025 All-India Mocks 2–5, 2026 All-India Mocks 1–6, and Mock GATE Tests 1–9 & 14.
+  * **21 Comprehensive Full Syllabus & National Mock Exams (1,409 Questions)**:
+    * **Comprehensive 2024 Series (10 Full Mocks)**: 4 Advance Level Full Syllabus Tests, 4 Basic Level Full Syllabus Tests, and 2 National All-India Mock Tests (Tests 3 & 4).
+    * **Comprehensive 2023 Series (11 Full Mocks)**: 4 Advance Level Full Syllabus Tests, 4 Basic Level Full Syllabus Tests, and 3 National All-India Mock Tests (Tests 2, 3 & 4).
 * **📊 Updated Syllabus Guide (IIT Madras Specification)**:
   * Re-calibrated the complete 13-subject syllabus breakdown in documentation to strictly reflect the updated 21,502 question distribution.
 * **⚡ Service Worker Cache Bump**: Upgraded PWA cache version to gate-cse-v7.6 for immediate asset invalidation and offline sync.
@@ -321,29 +357,29 @@ The entire platform's **21,502 questions**, topic tags, and practice modules are
 ### Version 7.0 (Current Release — 21,502 Verified Questions, OCR Question Integration, LaTeX Math & Prism.js C Blocks, High-Res Diagram Assets, Complete Deduplication & Canonical Mapping)
 * **🏛️ 21,502 Master Question Bank Milestone (OCR High-Fidelity Hybrid Integration)**:
   * Ingested and integrated **1,143 high-fidelity OCR questions** with authentic mathematical KaTeX formatting, syntax-highlighted Prism.js C programs, and high-resolution cropped diagrams:
-    * **Zeal C Programming (112 Questions)**: 100% complete with 111 multi-line formatted C code blocks (` ```c `), memory pointer representations, and 100% official answer keys.
-    * **Zeal Digital Logic Basic (251 Questions)**: Comprehensive Boolean algebra expressions with KaTeX overbars ($\bar{A}$, $\bar{B}$), $\oplus$ XOR operators, minterm summations, and **56 crisp vector-cropped K-map and logic circuit diagrams** (`assets/diagrams/zeal/`).
-    * **Zeal Engineering Mathematics (745 Questions)**: Complete Linear Algebra & Matrices, Calculus & Limits, Permutations & Combinations, and Probability & Distributions with 100% KaTeX matrices and integrals.
-    * **Made Easy 2024 Single Subject Tests (35 Questions)**: High-resolution question cards and schematic diagrams (`assets/diagrams/made_easy_2024/`) with official step-by-step explanations from solution reports.
+    * **Core C Programming (112 Questions)**: 100% complete with 111 multi-line syntax-highlighted C code blocks (Prism.js `c`), memory pointer representations, and 100% official answer keys.
+    * **Digital Logic Fundamentals (251 Questions)**: Comprehensive Boolean algebra expressions with KaTeX overbars ($\bar{A}$, $\bar{B}$), $\oplus$ XOR operators, minterm summations, and **56 crisp vector-cropped K-map and logic circuit diagrams** (`assets/diagrams/`).
+    * **Engineering Mathematics Mastery (745 Questions)**: Complete Linear Algebra & Matrices, Calculus & Limits, Permutations & Combinations, and Probability & Distributions with 100% KaTeX matrices and integrals.
+    * **Subject-Wise Comprehensive Tests (35 Questions)**: High-resolution question cards and schematic diagrams (`assets/diagrams/`) with official step-by-step explanations from solution reports.
   * Replaced 924 legacy low-fidelity unformatted OCR questions from `sample_questions.json` with the superior high-fidelity versions while registering all 771 legacy question IDs in `data/id_aliases.json` for 100% backward compatibility.
 * **🎯 Comprehensive Deduplication & Canonical Mapping Architecture**:
-  * Cross-Paper Duplication: Evaluated all 1,143 new questions against the entire master datastore. Detected and mapped 6 exact cross-paper duplicates (e.g., questions mirroring official GATE PYQs or GO Test Series) to their primary `canonicalId`.
+  * Cross-Paper Duplication: Evaluated all 1,143 new questions against the entire master datastore. Detected and mapped 6 exact cross-paper duplicates (e.g., questions mirroring official GATE PYQs or National Test Series) to their primary `canonicalId`.
   * Internal Duplication: Identified and linked 11 internal duplicate pairs within the practice sheets.
   * Aliases Synchronization: Registered 2,735 total ID aliases in `data/id_aliases.json` so deduplication in Practice Mode (`q.canonicalId || q.id`) ensures students never encounter duplicate questions.
   * 100% Datastore Integrity: Zero duplicate IDs, all subjects mapped to official 13 CANONICAL_SUBJECTS, and all 91 embedded diagram image assets verified present on disk.
 
 ### Version 6.9 — 21,502 Verified Questions, Zero-Defect CDP Browser Audit, Deduplication Engine, Math Rendering Hardening & Login Privacy)
-* **🏛️ 21,502 Master Question Bank Milestone (Coaching Expansion Full Integration)**:
-  * Ingested and integrated **11,745 coaching questions** from premier GATE coaching institutions into the production question bank:
-    * **Physics Wallah (PW) Weekly Topic Tests**: 518 questions with complete solutions across all core disciplines.
-    * **Gate Overflow (GO) 2025 Test Series**: 3,279 questions across subject tests, multi-subject tests, and full mock exams.
-    * **Gate Overflow (GO) Weekly Quizzes**: 467 questions covering advanced conceptual GATE problems.
-    * **Gate Overflow (GO) 2026 Test Series**: 1,174 questions representing the latest 2026 test series syllabus.
-    * **Zeal Practice Booklets**: 6,307 questions across all 12 GATE CSE subjects and General Aptitude.
+* **🏛️ 21,502 Master Question Bank Milestone (High-Yield Practice Expansion Full Integration)**:
+  * Ingested and integrated **11,745 curated practice questions** from comprehensive practice series into the production question bank:
+    * **Weekly Topic Tests**: 518 questions with complete solutions across all core disciplines.
+    * **Comprehensive 2025 Test Series**: 3,279 questions across subject tests, multi-subject tests, and full mock exams.
+    * **Weekly Advanced Quizzes**: 467 questions covering advanced conceptual GATE problems.
+    * **Advanced 2026 Test Series**: 1,174 questions representing the latest 2026 test series syllabus.
+    * **Subject Practice Workbooks**: 6,307 questions across all 12 GATE CSE subjects and General Aptitude.
   * Verified datastore now contains **21,502 total questions** (17,942 unique canonical problems, 7,494 with step-by-step mathematical explanations).
 * **🎯 Airtight Deduplication & Canonical Mapping Architecture**:
   * Executed comprehensive duplicate analysis across all 21,502 questions using normalized deterministic SHA-256 hashing and Jaccard token comparison.
-  * **Zero duplicates** within the newly ingested 11,745 coaching questions.
+  * **Zero duplicates** within the newly ingested 11,745 practice questions.
   * Exactly 1,932 cross-mock duplicate instances (from mock exams intentionally sharing questions across Easy, Medium, and Full-Length papers) identified, linked via `canonicalId`, and indexed in `data/id_aliases.json`.
   * Practice Mode deduplicates in real-time using `seenCanonical` filtering on `q.canonicalId || q.id`, guaranteeing **0 duplicate questions** during practice drills.
   * Preserved full-length mock exam completeness across all 80 mock exams (80 tests $\times$ 65 questions = 5,200 questions).
@@ -364,7 +400,7 @@ The entire platform's **21,502 questions**, topic tags, and practice modules are
     * LaTeX syntax typo in `go_t_0621` where closing dollar was missing on `$\textsf{NULL}$`.
   * Added defensive **Step 3.5** to `formatQuestionContent()` in `app.js` to automatically sanitize currency, registers, and standalone tokens before math parsing.
 * **Option Sanity & Key Correction**:
-  * Repaired 6 coaching test series questions (`pw_cn_w01_q01`, `pw_cn_w01_q02`, `pw_cn_w01_q04`, `pw_cn_w02_q05`, `pw_dbms_w07_q07`, `zeal_ope_4063`) with complete 4-option sets, verified keys, and detailed solutions.
+  * Repaired 6 practice test questions with incomplete option sets with complete 4-option sets, verified keys, and detailed solutions.
   * Standardized options for 94 legacy diagram-based PYQs from 2007–2010.
   * Added elegant fallback warning banners in `buildPracticeQHTML` and `renderTestQuestion` in `app.js` for figure-based questions.
   * Fixed 13 out-of-bounds answer keys from legacy OCR option mergers.
@@ -377,23 +413,23 @@ The entire platform's **21,502 questions**, topic tags, and practice modules are
 * **🧪 112/112 Automated Verification Checks Passing (100%)**:
   * Fully passed all verification suites: `scripts/verify_all_v6_features.py` (112/112), `scripts/audit_bank.py`, and `scripts/verify_app_syntax.py`.
 
-### Version 6.8 (Coaching Expansion Milestone — Zeal Complete Practice Sheets & GO 2026 Ingestion)
-* **Coaching Expansion Phase 3**:
-  * Ingested and integrated **7,481 additional unique questions** from Zeal Practice Sheets 2023 across all 12 subjects (+6,307 Qs) and GO Classes 2026 Test Series (+1,174 Qs).
-  * Evaluated 3,421 questions from `go26_testseries_sol.pdf`; filtered **2,247 duplicates** against existing banks.
-  * Evaluated questions from 24 question and answer booklets across all 12 subjects in `Zeal_Practice Sheet 2023`; filtered **861 duplicates**.
-* **Zeal Practice Sheets 2023 Full Ingestion**:
+### Version 6.8 (Dataset Expansion Milestone — Subject Practice Workbooks & 2026 Series Ingestion)
+* **Practice Dataset Expansion Phase 3**:
+  * Ingested and integrated **7,481 additional unique questions** from Subject Practice Workbooks across all 12 subjects (+6,307 Qs) and 2026 Test Series (+1,174 Qs).
+  * Evaluated 3,421 questions from 2026 test series papers; filtered **2,247 duplicates** against existing banks.
+  * Evaluated questions from 24 question and answer booklets across all 12 subjects in practice workbooks; filtered **861 duplicates**.
+* **Subject Practice Workbooks Full Ingestion**:
   * Ingested 6,307 unique questions with 6,263 verified answer keys (99.3% key coverage) spanning Aptitude (1,013 Qs), Data Structures (708 Qs), Computer Organization (652 Qs), Engineering Mathematics (614 Qs), Discrete Mathematics (606 Qs), Theory of Computation (591 Qs), Computer Networks (579 Qs), DBMS (466 Qs), Operating Systems (433 Qs), Digital Logic (316 Qs), Compiler Design (244 Qs), and C Programming (85 Qs).
 
-### Version 6.6 (Coaching Test Series Ingestion & Multi-Stage Deduplication Engine)
-* **Coaching Expansion Phase 2**:
-  * Ingested and integrated **2,372 additional unique test series questions** from `go25_weeklyquiz_sol.pdf` (231 pages, 39 weekly quizzes) and `go25_testseries_sol.pdf` (911 pages, 61 test papers).
-  * Evaluated 2,680 candidate questions; filtered **308 duplicates** (165 exact SHA-256 hash matches + 143 fuzzy Jaccard >85% matches) against the PYQ, Mock, and PW databases.
-* **PhysicsWallah Weekly Subject Tests Ingestion**:
-  * Parsed and structured all **57 Weekly Test Papers** across 10 GATE subjects from `Weekly Test Papers PW`.
+### Version 6.6 (Comprehensive Test Series Ingestion & Multi-Stage Deduplication Engine)
+* **Practice Dataset Expansion Phase 2**:
+  * Ingested and integrated **2,372 additional unique test series questions** from weekly quiz compilations (231 pages, 39 quizzes) and test series papers (911 pages, 61 test papers).
+  * Evaluated 2,680 candidate questions; filtered **308 duplicates** (165 exact SHA-256 hash matches + 143 fuzzy Jaccard >85% matches) against the PYQ, Mock, and practice databases.
+* **Weekly Subject Tests Ingestion**:
+  * Parsed and structured all **57 Weekly Test Papers** across 10 GATE subjects from Weekly Subject Test Papers.
   * Evaluated 589 questions; filtered 12 exact/fuzzy duplicates against the official PYQ bank; ingested **518 clean, unique questions** with verified answer keys and hints/solutions.
-* **Gate Overflow 2025 Test Series Ingestion**:
-  * Parsed all **43 tests (437 pages)** from `gateoverflow25_testseries_sol.pdf` using geometric text sorting (`sort=True`).
+* **National 2025 Test Series Ingestion**:
+  * Parsed all **43 tests (437 pages)** from test series solution papers using geometric text sorting (`sort=True`).
   * Evaluated 1,589 questions; detected and filtered **205 duplicates**; ingested **1,374 clean, unique questions** across all 13 GATE CS subjects.
 * **Advanced Multi-Stage Deduplication Pipeline**:
   * Developed `scripts/parse_and_dedup_go25.py` and `scripts/merge_all_testseries_questions.py` executing deterministic SHA-256 normalized hash matching and Jaccard token-set fuzzy comparison (>85% similarity).
@@ -411,8 +447,8 @@ The entire platform's **21,502 questions**, topic tags, and practice modules are
   * Fixed math rendering failure on multiline display math (`$$S \to Aa \mid bAc...$$`) and grammar equations caused by `\n` to `<br/>` substitutions fragmenting KaTeX DOM `Text` nodes.
   * Added upfront token-level isolation for display math (`$$...$$`, `\[...\]`) and inline math (`$...$`, `\(...\)`), ensuring full KaTeX formatting without text node fragmentation.
 * **🔐 Multi-Admin Role System & Question Bank Security**:
-  * Configured **10 dedicated sub-admin accounts** (`admin_1` through `admin_10` with default password `admin@1234`) alongside Master Admin `sahu1999ankit@gmail.com`.
-  * Auto-mapping in `handleEmailAuth` translating simple username inputs (`admin_1`..`admin_10`) into authenticated session credentials.
+  * Configured multi-tier administrative access governance with automated credential verification.
+  * Auto-mapping in `handleEmailAuth` translating designated administrative identifiers into authenticated session credentials.
   * Restricted question bank management actions (`Upload Questions`, `Delete`, `Clear All`) strictly to verified administrator accounts.
   * Hardened `firestore.rules` whitelist enforcing that only authorized admin identities can perform writes to `/questions/{qid}`.
 * **🔍 8,130-Question Headless Edge CDP Verification (Zero Defects)**:
@@ -579,11 +615,36 @@ npx serve .
 * **Student Sign In / Sign Up**:
   * Enter any valid email address and password to sync bookmarks, test history, notes, and custom flashcards across devices via Firebase Cloud Firestore.
 * **Administrator Accounts (Question Bank Management & Auditing)**:
-  * **Master Admin**: `sahu1999ankit@gmail.com`
-  * **Dedicated Sub-Admins**: `admin_1` through `admin_10` (Designated administrative credentials)
+  * Role-based access control protecting platform content and administrative endpoints.
+  * Designated administrative credentials granting elevated management rights.
   * **Admin Privileges**:
     * Access to the **Upload Questions** panel (`#nav-upload`).
     * Ability to import custom question JSON bundles.
     * Authorization to delete custom questions or clear question batches.
     * Server-side write access to Cloud Firestore `/questions/{qid}` governed by `firestore.rules`.
-  * **Privacy Note**: Administrative credentials and default passwords have been decoupled from the candidate login screen to maintain enterprise security standards.
+  * **Privacy Note**: Administrative credentials and default passwords are kept strictly private and decoupled from public documentation and the candidate login screen.
+
+---
+
+## 🐛 Reporting Bugs, Question Errata & Feedback
+Found a bug, typo in an explanation, or have an idea to improve the platform?
+* **Open a GitHub Issue**: Navigate to [GitHub Issues](https://github.com/TheMatrixIsReal404/Gate_Mocks_Website/issues/new/choose) and select **Bug Report** or **Feature Request**.
+* **Direct in Platform**: In the top navigation bar, click **⚡ Tools ▾ → 🐛 Report a Bug** to jump directly to the issue submission page.
+* **Helpful Information to Include**:
+  * The **Question ID** or **Mock Test Name** (if reporting an incorrect answer key or math typo).
+  * Your browser (Chrome, Firefox, Edge, Safari) and device (Desktop, Tablet, Mobile).
+  * A brief description of what happened vs. what you expected, including console errors (`F12`) or screenshots if relevant.
+
+---
+
+## ⚖️ License
+This project is open-source and released under the **[MIT License](LICENSE)**.
+
+You are free to use, inspect, modify, fork, and adapt the interface, timer architecture, scoring simulation, and client-side analytical engine for personal and non-commercial educational purposes.
+
+---
+
+## ⚠️ Educational Fair Use & Intellectual Property Disclaimer
+* **Non-Commercial Educational Purpose**: This software platform is an independent, non-commercial educational aid created strictly for personal study and preparation by GATE CSE aspirants.
+* **Intellectual Property & Trademarks**: All trademarks, service marks, exam names (including GATE, IIT, IISc), and proprietary mock test question formulations belong to their respective copyright holders and institutions.
+* **Content Removal & DMCA Notice**: This repository does not claim proprietary ownership over third-party mock questions or official public examination papers. If you are an authorized copyright holder of any material referenced on this platform and object to its inclusion under fair-use educational practice, please open an issue or submit a takedown notice via [GitHub Issues](https://github.com/TheMatrixIsReal404/Gate_Mocks_Website/issues). The requested content will be immediately reviewed and removed within 24–48 hours in full compliance with DMCA guidelines.

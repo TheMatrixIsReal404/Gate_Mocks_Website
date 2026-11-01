@@ -6062,7 +6062,7 @@
     "difficulty": "medium",
     "year": 2026,
     "marks": 2,
-    "question": "What is the output of the following program?\n\nint fun(char *x)\n{\n  char *ptr = x;\n  while (*ptr != '\\0') ptr++;\n  return (ptr - x);\n}\n\nmain()\n{\n  char str[30] = \"This is GO Classes AIMT\";\n  printf(\"%d\", fun(str));\n}",
+    "question": "What is the output of the following program?\n\nint fun(char *x)\n{\n  char *ptr = x;\n  while (*ptr != '\\0') ptr++;\n  return (ptr - x);\n}\n\nmain()\n{\n  char str[30] = \"This is National Series AIMT\";\n  printf(\"%d\", fun(str));\n}",
     "options": [
       "16",
       "23",
@@ -8151,7 +8151,7 @@
     "difficulty": "medium",
     "year": 2026,
     "marks": 2,
-    "question": "60 GO Classes' GATE CS students are allotted to 7 different IITs for M.Tech admissions. Which of the\nfollowing must be true?",
+    "question": "60 National Series' GATE CS students are allotted to 7 different IITs for M.Tech admissions. Which of the\nfollowing must be true?",
     "options": [
       "At least one IIT will get at least 8 students.",
       "At least one IIT will get at least 9 students.",

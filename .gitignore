@@ -1,0 +1,104 @@
+# ==============================================================================
+# GATE CSE Practice Platform — Git Ignore Configuration
+# ==============================================================================
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+
+# --- Editor and IDE Settings ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Python Bytecode, Caches & Virtual Environments ---
+__pycache__/
+scripts/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+build/
+
+# --- Local Python Test & Utility Scripts (Local Testing Only) ---
+scripts/*.py
+scripts/**/*.py
+*.py
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# --- NodeJS / Web Dependencies & Logs ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+*.log
+
+# --- Environment Variables, Credentials & Secret Keys ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+serviceAccountKey.json
+firebase-adminsdk*.json
+
+# --- Temporary Files, Scratch Scripts & Backups ---
+backups/
+*.bak
+*.bak*
+*.tmp
+*.temp
+app.js.bak*
+previous_questions.json
+
+# --- Offline Source Documents (Not required for website runtime) ---
+# Prevents large binary files from bloating GitHub repository
+sources/*.pdf
+sources/*.docx
+sources/previous_questions.json
+*.pdf
+*.docx
+
+# --- Database Snapshot Backups & Reports (Prevent Repository Bloat) ---
+# Note: Active master database data/sample_questions.json is tracked
+data/reports/
+data/*backup*.json
+data/*_backup*.json
+data/complete_duplicate_audit_report.json
+data/complete_ocr_duplicate_audit_report.json
+
+# --- Automated Browser Test Screenshots & Artifacts ---
+scripts/*.png
+scripts/dashboard_fixed.png
+scripts/scratch/

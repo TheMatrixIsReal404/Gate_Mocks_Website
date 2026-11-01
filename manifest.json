@@ -3,7 +3,10 @@
   "short_name": "GATE CSE",
   "description": "Comprehensive GATE CSE Practice, Mocks, PYQs and Practice Papers with full offline support.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "any",
+  "categories": ["education", "reference"],
   "background_color": "#0a0a14",
   "theme_color": "#6c63ff",
   "icons": [
