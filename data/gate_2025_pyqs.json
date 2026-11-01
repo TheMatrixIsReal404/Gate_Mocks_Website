@@ -1,0 +1,2856 @@
+[
+  {
+    "id": "pyq_2025_s1_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "English Grammar",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Ravi had ______ younger brother who taught at ______ university. He was widely \nregarded as ______ honorable man. \nSelect the option with the correct sequence of articles to fill in the blanks.",
+    "options": [
+      "a; a; an",
+      "the; an; a",
+      "a; an; a",
+      "an; an; a"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 1 (GA section, 1 mark). The officially verified correct answer is Option (A): a; a; an."
+  },
+  {
+    "id": "pyq_2025_s1_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "The CEO's decision to downsize the workforce was considered myopic because it \nsacrificed long-term stability to accommodate short-term gains. \nSelect the most appropriate option that can replace the word \"myopic\" without \nchanging the meaning of the sentence.",
+    "options": [
+      "visionary",
+      "shortsighted",
+      "progressive",
+      "innovative"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 2 (GA section, 1 mark). The officially verified correct answer is Option (B): shortsighted."
+  },
+  {
+    "id": "pyq_2025_s1_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Averages",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "The average marks obtained by a class in an examination were calculated as 30.8. \nHowever, while checking the marks entered, the teacher found that the marks of one \nstudent were entered incorrectly as 24 instead of 42. After correcting the marks, the \naverage becomes 31.4. How many students does the class have?",
+    "options": [
+      "25",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 3 (GA section, 1 mark). The officially verified correct answer is Option (C): 30."
+  },
+  {
+    "id": "pyq_2025_s1_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Blood Relations",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the relationships among P, Q, R, S, and T: \n• P is the brother of Q. \n• S is the daughter of Q. \n• T is the sister of S. \n• R is the mother of Q. \nThe following statements are made based on the relationships given above. \n(1) R is the grandmother of S. \n(2) P is the uncle of S and T. \n(3) R has only one son. \n(4) Q has only one daughter. \nWhich one of the following options is correct?",
+    "options": [
+      "Both (1) and (2) are true.",
+      "Both (1) and (3) are true.",
+      "Only (3) is true.",
+      "Only (4) is true."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 4 (GA section, 1 mark). The officially verified correct answer is Option (A): Both (1) and (2) are true.."
+  },
+  {
+    "id": "pyq_2025_s1_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Spatial Aptitude",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "According to the map shown in the figure, which one of the following statements is \ncorrect? \nNote: The figure shown is representative.",
+    "options": [
+      "The library is located to the northwest of the canteen.",
+      "The hospital is located to the east of the chemistry lab.",
+      "The chemistry lab is to the southeast of physics lab.",
+      "The classrooms and canteen are next to each other. \n \n \n \n \n \n \n 5th Cross Road \n1st Main Road \nN \nE \nW \nS \nChemistry \nLab \nPhysics Lab \nLibrary \nHostels \nClassrooms \nHospital \nCanteen"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 5 (GA section, 1 mark). The officially verified correct answer is Option (C): The chemistry lab is to the southeast of physics lab.."
+  },
+  {
+    "id": "pyq_2025_s1_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "\"I put the brown paper in my pocket along with the chalks, and possibly other things. \nI suppose every one must have reflected how primeval and how poetical are the \nthings that one carries in one's pocket: the pocket-knife, for instance the type of all \nhuman tools, the infant of the sword. Once I planned to write a book of poems \nentirely about the things in my pocket. But I found it would be too long: and the age \nof the great epics is past.\" \n (From G.K. Chesterton's \"A Piece of Chalk\") \nBased only on the information provided in the above passage, which one of the \nfollowing statements is true?",
+    "options": [
+      "The author of the passage carries a mirror in his pocket to reflect upon things.",
+      "The author of the passage had decided to write a poem on epics.",
+      "The pocket-knife is described as the infant of the sword.",
+      "Epics are described as too inconvenient to write."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 6 (GA section, 2 marks). The officially verified correct answer is Option (C): The pocket-knife is described as the infant of the sword.."
+  },
+  {
+    "id": "pyq_2025_s1_q07",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "In the diagram, the lines QR and ST are parallel to each other. The shortest distance \nbetween these two lines is half the shortest distance between the point P and line \nQR. What is the ratio of the area of the triangle PST to the area of the trapezium \nSQRT? \nNote: The figure shown is representative.",
+    "options": [
+      "1\n3",
+      "1\n4",
+      "2\n5",
+      "1\n2 \n \n \n \n \n \nP \nQ \n R \nS \n T"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 7 (GA section, 2 marks). The officially verified correct answer is Option (A): 1\n3."
+  },
+  {
+    "id": "pyq_2025_s1_q08",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A fair six-faced dice, with the faces labelled '1', '2', '3', '4', '5', and '6', is rolled \nthrice. What is the probability of rolling '6' exactly once?",
+    "options": [
+      "75\n216",
+      "1\n6",
+      "1\n18",
+      "25\n216"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 8 (GA section, 2 marks). The officially verified correct answer is Option (A): 75\n216."
+  },
+  {
+    "id": "pyq_2025_s1_q09",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Paper Folding",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A square paper, shown in figure (I), is folded along the dotted lines as shown in the \nfigures (II) and (III). Then a few cuts are made as shown in figure (IV). Which one \nof the following patterns will be obtained when the paper is unfolded? \nNote: The figures shown are representative.",
+    "options": [
+      "Pattern A (Four diagonal symmetry cutouts)",
+      "Pattern B (Two horizontal cutouts)",
+      "Pattern C (Central circular cutout)",
+      "Pattern D (Corner triangular cutouts)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 9 (GA section, 2 marks). The officially verified correct answer is Option (A): ."
+  },
+  {
+    "id": "pyq_2025_s1_q10",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Combinatorics",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A shop has 4 distinct flavors of ice-cream. One can purchase any number of scoops \nof any flavor. The order in which the scoops are purchased is inconsequential. \nIf one wants to purchase 3 scoops of ice -cream, in how many ways can one make \nthat purchase?",
+    "options": [
+      "4",
+      "20",
+      "24",
+      "48"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 10 (GA section, 2 marks). The officially verified correct answer is Option (B): 20."
+  },
+  {
+    "id": "pyq_2025_s1_q11",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Interrupts & CPU",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Suppose a program is running on a non-pipelined single processor computer system. \nThe computer is connected to an external device that can interrupt the processor \nasynchronously. The processor needs to execute the interrupt service routine (ISR) \nto serve this interrupt. The following steps (not necessarily in order) are taken b y \nthe processor when the interrupt arrives: \n(i) The processor saves the content of the program counter. \n(ii) The program counter is loaded with the start address of the ISR. \n(iii) The processor finishes the present instruction. \nWhich ONE of the following is the CORRECT sequence of steps?",
+    "options": [
+      "(iii), (i), (ii)",
+      "(i), (iii), (ii)",
+      "(i), (ii), (iii)",
+      "(iii), (ii), (i)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 11 (CS section, 1 mark). The officially verified correct answer is Option (A): (iii), (i), (ii)."
+  },
+  {
+    "id": "pyq_2025_s1_q12",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Symbol Table & Hashing",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Which ONE of the following statements is FALSE regarding the symbol table?",
+    "options": [
+      "Symbol table is responsible for keeping track of the scope of variables.",
+      "Symbol table can be implemented using a binary search tree.",
+      "Symbol table is not required after the parsing phase.",
+      "Symbol table is created during the lexical analysis phase."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 12 (CS section, 1 mark). The officially verified correct answer is Option (C): Symbol table is not required after the parsing phase.."
+  },
+  {
+    "id": "pyq_2025_s1_q13",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Compiler Design",
+    "topic": "Code Optimization",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Which ONE of the following techniques used in compiler code optimization uses \nlive variable analysis?",
+    "options": [
+      "Run-time function call management",
+      "Register assignment to variables",
+      "Strength reduction",
+      "Constant folding"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 13 (CS section, 1 mark). The officially verified correct answer is Option (B): Register assignment to variables."
+  },
+  {
+    "id": "pyq_2025_s1_q14",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "Paging & Memory Management",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider a demand paging memory management system with 32 -bit logical \naddress, 20-bit physical address, and page size of 2048 bytes. Assuming that the \nmemory is byte addressable , what is the maximum number of entries in the page \ntable?",
+    "options": [
+      "221",
+      "220",
+      "222",
+      "224"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 14 (CS section, 1 mark). The officially verified correct answer is Option (A): 221."
+  },
+  {
+    "id": "pyq_2025_s1_q15",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "Transactions & Concurrency",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "A schedule of three database transactions T1, T2, and T3 is shown . Ri(A) and \nWi(A) denote read and write of data item A by transaction Ti, i = 1,2,3. The \ntransaction T1 aborts at the end. Wh ich other transaction(s) will be required to be \nrolled back? \n R1(X) W1(Y) R2(X) R2(Y) R3(Y) ABORT(T1)",
+    "options": [
+      "Only T2",
+      "Only T3",
+      "Both T2 and T3",
+      "Neither T2 nor T3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 15 (CS section, 1 mark). The officially verified correct answer is Option (C): Both T2 and T3."
+  },
+  {
+    "id": "pyq_2025_s1_q16",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "OSI Reference Model",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Identify the ONE CORRECT matching between the OSI layers and the ir \ncorresponding functionalities as shown. \n \n \nOSI Layers Functionalities \n(a) Network layer (I) Packet routing \n(b) Transport layer (II) Framing and error handling \n(c) Datalink layer (III) Host to host communication",
+    "options": [
+      "(a)-(I), (b)-(II), (c)-(III)",
+      "(a)-(I), (b)-(III), (c)-(II)",
+      "(a)-(II), (b)-(I), (c)-(III)",
+      "(a)-(III), (b)-(II), (c)-(I)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 16 (CS section, 1 mark). The officially verified correct answer is Option (B): (a)-(I), (b)-(III), (c)-(II)."
+  },
+  {
+    "id": "pyq_2025_s1_q17",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Discrete Mathematics",
+    "topic": "Functions & Relations",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "g(. ) is a function from A to B, f(. ) is a function from B to C, and their \ncomposition defined as f(g(. )) is a mapping from A to C. \nIf f(. ) and f(g(. )) are onto (surjective) functions, which ONE of the following \nis TRUE about the function g(. )?",
+    "options": [
+      "g(. ) must be an onto (surjective) function.",
+      "g(. ) must be a one-to-one (injective) function.",
+      "g(. ) must be a bijective function, that is, both one-to-one and onto.",
+      "g(. ) is not required to be a one-to-one or onto function."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 17 (CS section, 1 mark). The officially verified correct answer is Option (D): g(. ) is not required to be a one-to-one or onto function.."
+  },
+  {
+    "id": "pyq_2025_s1_q18",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Minimum Spanning Trees",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Let G be any undirected graph with positive edge weights, and T be a minimum \nspanning tree of G. For any two vertices, u and v, let d1(u, v) and d2(u, v) be the \nshortest distances between u and v in G and T, respectively. Which ONE of the \noptions is CORRECT for all possible G, T, u and v?",
+    "options": [
+      "d1(u, v) = d2(u, v)",
+      "d1(u, v) \\le d2(u, v)",
+      "d1(u, v) \\ge d2(u, v)",
+      "d1(u, v) ≠ d2(u, v)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 18 (CS section, 1 mark). The officially verified correct answer is Option (B): d1(u, v) \\le d2(u, v)."
+  },
+  {
+    "id": "pyq_2025_s1_q19",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Context-Free Grammars",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following context-free grammar G, where S, A, and B are the variables \n(non-terminals), a and b are the terminal symbols, S is the start variable , and the \nrules of G are described as: \nS \\to aaB | Abb \nA \\to a | aA \nB \\to b | bB \nWhich ONE of the languages L(G) is accepted by G?",
+    "options": [
+      "L(G) = {a2bn | n \\ge 1} \\cup {anb2 | n \\ge 1}",
+      "L(G) = {anb2n | n \\ge 1} \\cup {a2nbn | n \\ge 1}",
+      "L(G) = {anbn | n \\ge 1}",
+      "L(G) = {a2nb2n | n \\ge 1}"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 19 (CS section, 1 mark). The officially verified correct answer is Option (A): L(G) = {a2bn | n \\ge 1} \\cup {anb2 | n \\ge 1}."
+  },
+  {
+    "id": "pyq_2025_s1_q20",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Recurrence Relations",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following recurrence relation: \nT(n) = 2T(n − 1) + n2n for n > 0, T(0) = 1. \nWhich ONE of the following options is CORRECT?",
+    "options": [
+      "T(n) = Θ(n22n)",
+      "T(n) = Θ(n2n)",
+      "T(n) = Θ((log n)2 2n)",
+      "T(n) = Θ(4n)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 20 (CS section, 1 mark). The officially verified correct answer is Option (A): T(n) = Θ(n22n)."
+  },
+  {
+    "id": "pyq_2025_s1_q21",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "B+ Trees",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following B+ tree with 5 nodes, in which a node can store at most 3 key values. \nThe value 23 is now inserted in the B+ tree. Which of the following options(s) is/are \nCORRECT?",
+    "options": [
+      "None of the nodes will split.",
+      "At least one node will split and redistribute.",
+      "The total number of nodes will remain same.",
+      "The height of the tree will increase."
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 21 (CS section, 1 mark). The officially verified correct choices are (B, D)."
+  },
+  {
+    "id": "pyq_2025_s1_q22",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "TCP Flow & Handshake",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the 3-way handshaking protocol for TCP connection establishme nt. Let \nthe three packets exchanged during the connection establishment be denoted as P1, \nP2, and P3, in order. Which of the following option(s) is/are TRUE with respect to \nTCP header flags that are set in the packets?",
+    "options": [
+      "P3: SYN = 1, ACK = 1",
+      "P2: SYN = 1, ACK = 1",
+      "P2: SYN = 0, ACK = 1",
+      "P1: SYN = 1"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 22 (CS section, 1 mark). The officially verified correct choices are (B, D)."
+  },
+  {
+    "id": "pyq_2025_s1_q23",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra & Systems",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the given system of linear equations for variables x and y, where k is a \nreal-valued constant. Which of the following option(s) is/are CORRECT? \n \nx + ky = 1\nkx + y = −1",
+    "options": [
+      "There is exactly one value of k for which the above system of equations has no \nsolution.",
+      "There exist an infinite number of values of k for which the system of equations has \nno solution.",
+      "There exists exactly one value of k for which the system of equations has exactly \none solution.",
+      "There exists exactly one value of k for which the system of equations has an infinite \nnumber of solutions."
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 23 (CS section, 1 mark). The officially verified correct choices are (A, D)."
+  },
+  {
+    "id": "pyq_2025_s1_q24",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Boolean Algebra & K-Maps",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Let X be a 3-variable Boolean function that produces output as ' 1' when at least \ntwo of the input variables are ' 1'. Which of the follo wing statement(s) is/are \nCORRECT, where a, b, c, d, e are Boolean variables?",
+    "options": [
+      "X(a, b, X(c, d, e)) = X(X(a, b, c), d, e)",
+      "X(a, b, X(a, b, c)) = X(a, b, c)",
+      "X(a, b, X(a, c, d)) = (X(a, b, a) AND X(c, d, c))",
+      "X(a, b, c) = X(a, X(a, b, c), X(a, c, c))"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 24 (CS section, 1 mark). The officially verified correct choices are (B, D)."
+  },
+  {
+    "id": "pyq_2025_s1_q25",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Number Representation (2's Complement)",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "The number −6 can be represented as 1010 in 4-bit 2's complement representation. \nWhich of the following is/are CORRECT 2's complement representation(s) of −6?",
+    "options": [
+      "1000 1010 in 8-bits",
+      "1111 1010 in 8-bits",
+      "1000 0000 0000 1010 in 16-bits",
+      "1111 1111 1111 1010 in 16-bits"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 25 (CS section, 1 mark). The officially verified correct choices are (B, D)."
+  },
+  {
+    "id": "pyq_2025_s1_q26",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Instruction Pipelining",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Which of the following statement(s) is/are TRUE for any binary search tree (BST) \nhaving n distinct integers?",
+    "options": [
+      "The maximum length of a path from the root node to any other node is (n − 1).",
+      "An inorder traversal will always produce a sorted sequence of elements.",
+      "Finding an element takes O(log2 n) time in the worst case.",
+      "Every BST is also a Min-Heap."
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 26 (CS section, 1 mark). The officially verified correct choices are (A, B)."
+  },
+  {
+    "id": "pyq_2025_s1_q27",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Datapath & Control",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "A partial data path of a processor is given in the figu re, where RA, RB, and RZ are \n32-bit registers. Which option(s) is/are CORRECT related to arithmetic operations \nusing the data path as shown?",
+    "options": [
+      "The data path can implement arithmetic operations involving two registers.",
+      "The data path can implement arithmetic operations involving one register and one \nimmediate value.",
+      "The data path can implement arithmetic operations involving two immediate values.",
+      "The data path can only implement arithmetic operations involving one register and \none immediate value."
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 27 (CS section, 1 mark). The officially verified correct choices are (A, B, C)."
+  },
+  {
+    "id": "pyq_2025_s1_q28",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Regular Languages & NFA",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "A regular language L is accepted by a non -deterministic finite automaton (NFA) \nwith n states. Which of the following statement(s) is/are FALSE?",
+    "options": [
+      "L may have an accepting NFA with < n states.",
+      "L may have an accepting DFA with < n states.",
+      "There exists a DFA with \\le 2n states that accepts L.",
+      "Every DFA that accepts L has > 2n states."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 28 (CS section, 1 mark). The officially verified correct choices are (D)."
+  },
+  {
+    "id": "pyq_2025_s1_q29",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "Multiprogramming & Processes",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Suppose in a multiprogramming environment, the following C program segment is \nexecuted. A process goes into I/O queue whenever an I/O related operation is \nperformed. Assume that there will always be a context switch whenever a process \nrequests for an I/O, and also whenever the process returns from an I/O. The number \nof times the process will enter the ready queue during its lifetime (not counting the \ntime the process enters the ready queue when it is run initially) is _______. (Answer \nin integer) \n \n \nint main() \n{ \n int x=0,i=0; \n scanf(\"%d\",&x); \n for(i=0; i<20; i++) \n { \n x = x+20; \n printf(\"%d\\n\",x); \n } \n return 0; \n}",
+    "options": [],
+    "correct": [
+      21
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 29 (CS section, 1 mark). The calculated numerical answer is 21 (official acceptable key range: 21 to 21).",
+    "natRange": {
+      "min": 21,
+      "max": 21
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q30",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Strings & Formal Languages",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Let S be the set of all ternary strings defined over the alphabet {a, b, c}. Consider \nall strings in S that contain at least one occurrence of two consecutive symbols, that \nis, \"aa\", \"bb\" or \"cc\". The number of such strings of length 5 that are possible is \n_______. (Answer in integer)",
+    "options": [],
+    "correct": [
+      195
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 30 (CS section, 1 mark). The calculated numerical answer is 195 (official acceptable key range: 195 to 195).",
+    "natRange": {
+      "min": 195,
+      "max": 195
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q31",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Calculus & Limits",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the given function f(x). \nf(x) = { ax + b for x < 1x3 + x2 + 1 for x \\ge 1 \nIf the function is diff erentiable everywhere, the value of b must be ________. \n(rounded off to one decimal place)",
+    "options": [],
+    "correct": [
+      -2.0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 31 (CS section, 1 mark). The calculated numerical answer is -2.0 (official acceptable key range: -2.1 to -1.9).",
+    "natRange": {
+      "min": -2.1,
+      "max": -1.9
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q32",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "A box contains 5 coins: 4 regular coins and 1 fake coin. When a regular coin is \ntossed, the probability P(head) = 0.5 and for a fake coin, P(head) = 1. You pick \na coin at random and toss it twice, and get two heads. The probability that the coin \nyou have chosen is the fake coin is _______. (rounded off to two decimal places)",
+    "options": [],
+    "correct": [
+      0.5
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 32 (CS section, 1 mark). The calculated numerical answer is 0.5 (official acceptable key range: 0.49 to 0.51).",
+    "natRange": {
+      "min": 0.49,
+      "max": 0.51
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q33",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Analysis & Recursion",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "The pseudocode of a function fun() is given below: \n \nfun(int A[0,...,n-1]){ \n for i=0 to n-2 \n for j=0 to n-i-2 \n if (A[j]>A[j+1]) \n then swap A[j] and A[j+1] \n} \nLet A[0, ... ,29] be an array storing 30 distinct integers in descending order. The \nnumber of swap operations that will be performed, if the function fun() is called \nwith A[0, ... ,29] as argument, is __________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      435
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 33 (CS section, 1 mark). The calculated numerical answer is 435 (official acceptable key range: 435 to 435).",
+    "natRange": {
+      "min": 435,
+      "max": 435
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q34",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "C Programming",
+    "topic": "Pointers & Arrays",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "#include <stdio.h> \nvoid foo(int *p, int x){ \n *p=x; \n} \nint main(){ \n int *z; \n int a = 20, b = 25; \n z = &a; \n foo(z,b); \n printf(\"%d\",a); \n return 0; \n} \nThe output of the given C program is __________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      25
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 34 (CS section, 1 mark). The calculated numerical answer is 25 (official acceptable key range: 25 to 25).",
+    "natRange": {
+      "min": 25,
+      "max": 25
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q35",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Trees & Height",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 1",
+    "question": "The height of any rooted tree is defined as the maximum number of edges in the \npath from the root node to any leaf node. \nSuppose a Min-Heap T stores 32 keys. The height of T is _____________. \n(Answer in integer)",
+    "options": [],
+    "correct": [
+      5
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 35 (CS section, 1 mark). The calculated numerical answer is 5 (official acceptable key range: 5 to 5).",
+    "natRange": {
+      "min": 5,
+      "max": 5
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q36",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Memory Organization & Cache",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider a memory system with 1M bytes of main memory and 16K bytes of cache \nmemory. Assume that the processor generates 20-bit memory address, and the cache \nblock size is 16 bytes. If the cache uses direct mapping, how many bits will be \nrequired to store all the tag values? [Assume memory is byte addressable, 1K=2 10, \n1M=220 .]",
+    "options": [
+      "6 × 210",
+      "8 × 210",
+      "212",
+      "214"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 36 (CS section, 2 marks). The officially verified correct answer is Option (A): 6 × 210."
+  },
+  {
+    "id": "pyq_2025_s1_q37",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Instruction Sets & Encoding",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A processor has 64 general -purpose registers and 50 distinct instruction types. An \ninstruction is encoded in 32-bits. What is the maximum number of bits that can be \nused to store the immediate operand for the given instruction? \n ADD R1, #25 // R1 = R1 + 25",
+    "options": [
+      "16",
+      "20",
+      "22",
+      "24"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 37 (CS section, 2 marks). The officially verified correct answer is Option (B): 20."
+  },
+  {
+    "id": "pyq_2025_s1_q38",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "CPU Scheduling",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A computer has two processors, M1 and M2. Four processes P1, P2, P3, P4 with CPU \nbursts of 20, 16, 25, and 10 milliseconds, respectively, arrive at the same time and \nthese are the only processes in the system. The scheduler uses non-preemptive \npriority scheduling, with priorities decided as follows: \n• M1 uses priority of execution for the processes as, P1 > P3 > P2 > P4, i.e., \nP1 and P4 have highest and lowest priorities, respectively. \n• M2 uses priority of execution for the processes as, P2 > P3 > P4 > P1, i.e., \nP2 and P1 have highest and lowest priorities, respectively. \nA process Pi is scheduled to a processor Mk, if the processor is free and no other \nprocess Pj is waiting with higher priority. At any given point of time, a process can \nbe allocated to any one of the free processors without violating the execution \npriority rules. Ignore the context switch time. What will be the average waiting time \nof the processes in milliseconds?",
+    "options": [
+      "9.00",
+      "8.75",
+      "6.50",
+      "7.50"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 38 (CS section, 2 marks). The officially verified correct answer is Option (A): 9.00."
+  },
+  {
+    "id": "pyq_2025_s1_q39",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "Relational Algebra & Schema",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider two relations describing teams and players in a sports league: \n• teams(tid, tname): tid, tname are team-id and team-name, respectively \n• players(pid, pname, tid): pid, pname, and tid denote player -id, player -\nname and the team-id of the player, respectively \nWhich ONE of the following tuple relational calculus queries returns the name of the \nplayers who play for the team having tname as ′MI′?",
+    "options": [
+      "{ p. pname | p \\in players ∧ ∃t (t \\in teams ∧ p. tid = t. tid ∧ t. tname = ′MI′)}",
+      "{ p. pname | p \\in teams ∧ ∃t (t \\in players ∧ p. tid = t. tid ∧ t. tname = ′MI′)}",
+      "{ p. pname | p \\in players ∧ ∃t (t \\in teams ∧ t. tname = ′MI′)}",
+      "{ p. pname | p \\in teams ∧ ∃t (t \\in players ∧ t. tname = ′MI′)}"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 39 (CS section, 2 marks). The officially verified correct answer is Option (A): { p. pname | p \\in players ∧ ∃t (t \\in teams ∧ p. tid = t. tid ∧ t. tname = ′MI′)}."
+  },
+  {
+    "id": "pyq_2025_s1_q40",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "IP Addressing & CIDR",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A packet with the destination IP address 145.36.109.70 arrives at a router wh ose \nrouting table is shown. Which interface will the packet be forwarded to?",
+    "options": [
+      "E3",
+      "E1",
+      "E2",
+      "E5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 40 (CS section, 2 marks). The officially verified correct answer is Option (A): E3."
+  },
+  {
+    "id": "pyq_2025_s1_q41",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Eigenvalues & Matrices",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Let A be a 2 × 2 matrix as given. \nA = [ 1 11 −1 ] \n \nWhat are the eigenvalues of the matrix A13 ?",
+    "options": [
+      "1, −1",
+      "2√2, −2√2",
+      "4√2, −4√2",
+      "64√2, −64√2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 41 (CS section, 2 marks). The officially verified correct answer is Option (D): 64√2, −64√2."
+  },
+  {
+    "id": "pyq_2025_s1_q42",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Boolean Minimization & K-Maps",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following four variable Boolean function in sum-of-product form \nF(b3, b2, b1, b0) = ∑(0, 2, 4, 8, 10, 11, 12). \nwhere the value of the function is computed by considering b3b2b1b0 as a 4 -bit \nbinary number, where b3 denotes the most significant bit and b0 denotes the least \nsignificant bit. Note that there are no don't care terms. Which ONE of the following \noptions is the CORRECT minimized Boolean expression for F?",
+    "options": [
+      "b̅1b̅0 + b̅2b̅0 + b1 b̅2b3",
+      "b̅1 b̅0 + b̅2 b̅0",
+      "b̅2b̅0 + b1b2b3",
+      "b̅0b̅2 + b̅3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 42 (CS section, 2 marks). The officially verified correct answer is Option (A): b̅1b̅0 + b̅2b̅0 + b1 b̅2b3."
+  },
+  {
+    "id": "pyq_2025_s1_q43",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Graph Algorithms",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Let G(V, E) be an undirected and unweighted graph with 100 vertices. Let d(u, v) \ndenote the number of edges in a shortest path between vertices u and v in V. Let the \nmaximum value of d(u, v), u, v \\in V such that u ≠ v, be 30. Let T be any breadth-\nfirst-search tree of G. Which ONE of the given options is CORRECT for every such \ngraph G?",
+    "options": [
+      "The height of T is exactly 15.",
+      "The height of T is exactly 30.",
+      "The height of T is at least 15.",
+      "The height of T is at least 30."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 43 (CS section, 2 marks). The officially verified correct answer is Option (C): The height of T is at least 15.."
+  },
+  {
+    "id": "pyq_2025_s1_q44",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Decidability & Languages",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following two languages over the alphabet {a, b}: \nL1 = { αβα | α \\in {a, b}+ AND β \\in {a, b}+ } \nL2 = { αβα | α \\in {a}+ AND β \\in {a, b}+ } \nWhich ONE of the following statements is CORRECT?",
+    "options": [
+      "Both L1 and L2 are regular languages.",
+      "L1 is a regular language but L2 is not a regular language.",
+      "L1 is not a regular language but L2 is a regular language.",
+      "Neither L1 nor L2 is a regular language."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 44 (CS section, 2 marks). The officially verified correct answer is Option (C): L1 is not a regular language but L2 is a regular language.."
+  },
+  {
+    "id": "pyq_2025_s1_q45",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Context-Free & Regular Languages",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following two languages over the alphabet {a, b, c}, where m and n \nare natural numbers. \nL1 = {ambmcm+n | m, n \\ge 1} \nL2 = {ambncm+n | m, n \\ge 1} \nWhich ONE of the following statements is CORRECT?",
+    "options": [
+      "Both L1 and L2 are context-free languages.",
+      "L1 is a context-free language but L2 is not a context-free language.",
+      "L1 is not a context-free language but L2 is a context-free language.",
+      "Neither L1 nor L2 are context-free languages."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 45 (CS section, 2 marks). The officially verified correct answer is Option (C): L1 is not a context-free language but L2 is a context-free language.."
+  },
+  {
+    "id": "pyq_2025_s1_q46",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "Process Synchronization",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Which of the following statement(s) is/are TRUE while computing First and Follow \nduring top down parsing by a compiler?",
+    "options": [
+      "For a production A \\to ε, ε will be added to First(A).",
+      "If there is any input right end marker, it will be added to First(S), where S is the \nstart symbol.",
+      "For a production A \\to ε, ε will be added to Follow(A).",
+      "If there is any input right end marker, it will be added to Follow(S), where S is \nthe start symbol."
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 46 (CS section, 2 marks). The officially verified correct choices are (A, D)."
+  },
+  {
+    "id": "pyq_2025_s1_q47",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "Functional Dependencies & Normalization",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider a relational schema team(name, city, owner), with functional \ndependencies {name \\to city, name \\to owner}. \nThe relation team is decomposed into two relations, t1(name, city) and \nt2(name, owner). Which of the following statement(s) is/are TRUE?",
+    "options": [
+      "The relation team is NOT in BCNF.",
+      "The relations t1 and t2 are in BCNF.",
+      "The decomposition constitutes a lossless join.",
+      "The relation team is NOT in 3NF."
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 47 (CS section, 2 marks). The officially verified correct choices are (B, C)."
+  },
+  {
+    "id": "pyq_2025_s1_q48",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Discrete Mathematics",
+    "topic": "Predicate Logic",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Which of the following predicate logic formulae/formula is/are CORRECT \nrepresentation(s) of the statement: \"Everyone has exactly one mother\"? \nThe meanings of the predicates used are: \n• mother(y, x): y is the mother of x \n• noteq(x, y): x and y are not equal",
+    "options": [
+      "∀x∃y∃z(mother(y, x) ∧ ¬mother(z, x))",
+      "∀x∃y[mother(y, x) ∧ ∀z(noteq(z, y) \\to ¬mother(z, x))]",
+      "∀x∀y[mother(y, x) \\to ∃z(mother(z, x) ∧ ¬noteq(z, y))]",
+      "∀x∃y[mother(y, x) ∧ ¬∃z(noteq(z, y) ∧ mother(z, x))]"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 48 (CS section, 2 marks). The officially verified correct choices are (B, D)."
+  },
+  {
+    "id": "pyq_2025_s1_q49",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Discrete Mathematics",
+    "topic": "Posets & Lattices",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A = {0, 1, 2, 3, ... } is the set of non-negative integers. Let Ϝ be the set of functions \nfrom A to itself. For any two functions, f1, f2 \\in Ϝ, we define \n(f1⨀f2)(n) = f1(n) + f2(n) \nfor every number n in A. Which of the following is/are CORRECT about the \nmathematical structure (Ϝ, ⨀)?",
+    "options": [
+      "(Ϝ, ⨀) is an Abelian group.",
+      "(Ϝ, ⨀) is an Abelian monoid.",
+      "(Ϝ, ⨀) is a non-Abelian group.",
+      "(Ϝ, ⨀) is a non-Abelian monoid."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 49 (CS section, 2 marks). The officially verified correct choices are (B)."
+  },
+  {
+    "id": "pyq_2025_s1_q50",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "DFA Minimization",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following deterministic finite automaton (DFA) defined over the \nalphabet, Σ = {a, b}. Identify which of the following language(s) is/are accepted by \nthe given DFA.",
+    "options": [
+      "The set of all strings containing an even number of b's.",
+      "The set of all strings containing the pattern bab.",
+      "The set of all strings ending with the pattern bab.",
+      "The set of all strings not containing the pattern aba."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 50 (CS section, 2 marks). The officially verified correct choices are (C)."
+  },
+  {
+    "id": "pyq_2025_s1_q51",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "File Systems & Disks",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A disk of size 512M bytes is divided into blocks of 64K bytes. A file is stored in \nthe disk using linked allocation. In linked allocation, each data block reserves 4 \nbytes to store the pointer to the next data block. The link part of the last data block \ncontains a NULL pointer (also of 4 bytes). Suppose a file of 1M bytes needs to be \nstored in the disk. Assume, 1K = 210 and 1M = 220. The amount of space in bytes \nthat will be wasted due to internal fragmentation is ______. (Answer in integer)",
+    "options": [],
+    "correct": [
+      65468
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 51 (CS section, 2 marks). The calculated numerical answer is 65468 (official acceptable key range: 65468 to 65468).",
+    "natRange": {
+      "min": 65468,
+      "max": 65468
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q52",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Compiler Design",
+    "topic": "Intermediate Code Generation (3AC)",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Refer to the given 3-address code sequence. This code sequence is s plit into basic \nblocks. The number of basic blocks is ________. (Answer in integer) \n \n1001: i = 1 \n1002: j = 1 \n1003: t1 = 10*i \n1004: t2 = t1+j \n1005: t3 = 8*t2 \n1006: t4 = t3-88 \n1007: a[t4] = 0.0 \n1008: j = j+1 \n1009: if j <= 10 goto 1003 \n1010: i = i+1 \n1011: if i <= 10 goto 1002 \n1012: i = 1 \n1013: t5 = i-1 \n1014: t6 = 88*t5 \n1015: a[t6] = 1.0 \n1016: i = i+1 \n1017: if i <= 10 goto 1013",
+    "options": [],
+    "correct": [
+      6
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 52 (CS section, 2 marks). The calculated numerical answer is 6 (official acceptable key range: 6 to 6).",
+    "natRange": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q53",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Memory Hierarchy & Access Time",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "A computer has a memory hierarchy consisting of two-level cache (L1 and L2) and \na main memory. If the processor needs to access data from memory, it first looks \ninto L1 cache. If the data is not found in L1 cache, it goes to L2 cache. If it fails to \nget the data from L2 cache, it goes to main memory, where the data is definitely \navailable. Hit rates and access times of various memory units ar e shown in the \nfigure. The average memory access time in nanoseconds (ns) is ________. (rounded \noff to two decimal places)",
+    "options": [],
+    "correct": [
+      11.85
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 53 (CS section, 2 marks). The calculated numerical answer is 11.85 (official acceptable key range: 11.83 to 11.87).",
+    "natRange": {
+      "min": 11.83,
+      "max": 11.87
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q54",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "Page Replacement (Optimal)",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "In optimal page replacement algorithm, information about all future page references \nis available to the operating system (OS). A modification of the optimal page \nreplacement algorithm is as follows: \nThe OS correctly predicts only up to next 4 page references (including the current \npage) at the time of allocating a frame to a page. \nA process accesses the pages in the following order of page numbers: \n1, 3, 2, 4, 2, 3, 1, 2, 4, 3, 1, 4. \nIf the system has three memory frames that are initially empty, the number of page \nfaults that will occur during execution of the process is ________ . (A nswer in \ninteger)",
+    "options": [],
+    "correct": [
+      6
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 54 (CS section, 2 marks). The calculated numerical answer is 6 (official acceptable key range: 6 to 6).",
+    "natRange": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q55",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "SQL Queries & Aggregation",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following database tables of a sports league. \nplayer(pid,pname,age) \ncoach(cid,cname) \nteam(tid,tname,city,cid) \nmembers(pid,tid) \nAn instance of the table and an SQL query are given. \n player coach team members \n \nSELECT MIN(P.age) \nFROM player P \nWHERE P.pid IN ( \n SELECT M.pid \n FROM team T, coach C, members M \n WHERE C.cname = 'Mark' \n AND T.cid = C.cid \n AND M.tid = T.tid \n ) \nThe value returned by the given SQL query is ______ . (Answer in integer)",
+    "options": [],
+    "correct": [
+      26
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 55 (CS section, 2 marks). The calculated numerical answer is 26 (official acceptable key range: 26 to 26).",
+    "natRange": {
+      "min": 26,
+      "max": 26
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q56",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "Error Detection & Protocols",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Suppose a 5 -bit message is transmitted from a source to a destination through a \nnoisy channel. The probability that a bit of the message gets flipped during \ntransmission is 0.01. Flipping of each bit is indep endent of one another. T he \nprobability that the message is delivered error -free to the destination is ______ . \n(rounded off to three decimal places)",
+    "options": [],
+    "correct": [
+      0.95
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 56 (CS section, 2 marks). The calculated numerical answer is 0.95 (official acceptable key range: 0.949 to 0.952).",
+    "natRange": {
+      "min": 0.949,
+      "max": 0.952
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q57",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "Fragmentation & MTU",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Suppose a message of size 15000 bytes is transmitted from a source to a destination \nusing IPv4 protocol via two routers as shown in the figure. Each router has a defined \nmaximum transmission unit (MTU) as shown in the figur e, including IP header. \nThe number of fragments that will be delivered to the destination is ________ . \n(Answer in integer)",
+    "options": [],
+    "correct": [
+      7
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 57 (CS section, 2 marks). The calculated numerical answer is 7 (official acceptable key range: 7 to 7).",
+    "natRange": {
+      "min": 7,
+      "max": 7
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q58",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Probability Distributions",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider a probability distribution given by the density function P(x). \nP(x) = {Cx2, for 1 \\le x \\le 40, for x < 1 or x > 4 \nThe probability that x lies between 2 and 3, i.e., P(2 \\le x \\le 3) is __________. \n(rounded off to three decimal places)",
+    "options": [],
+    "correct": [
+      0.301
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 58 (CS section, 2 marks). The calculated numerical answer is 0.301 (official acceptable key range: 0.3 to 0.302).",
+    "natRange": {
+      "min": 0.3,
+      "max": 0.302
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q59",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Finite State Machines",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider a finite state machine (FSM) with one input X and one output f, \nrepresented by the given state transit ion table. T he minimum number of states \nrequired to realize this FSM is ________. (Answer in integer) \n \nPresent state Next state Output f \n X = 0 X = 1 X = 0 X = 1 \nA F B 0 0 \nB D C 0 0 \nC F E 0 0 \nD G A 1 0 \nE D C 0 0 \nF F B 1 1 \nG G H 0 1 \nH G A 1 0",
+    "options": [],
+    "correct": [
+      5
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 59 (CS section, 2 marks). The calculated numerical answer is 5 (official acceptable key range: 5 to 5).",
+    "natRange": {
+      "min": 5,
+      "max": 5
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q60",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Sequential Circuits & Counters",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the given sequential circuit designed using D -Flip-flops. The circuit is \ninitialized with some value (initial state). The number of distinct states the circuit \nwill go through before retu rning back to the initial state is _________ . (Answer \nin integer)",
+    "options": [],
+    "correct": [
+      7
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 60 (CS section, 2 marks). The calculated numerical answer is 7 (official acceptable key range: 7 to 8).",
+    "natRange": {
+      "min": 7,
+      "max": 8
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q61",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "C Programming",
+    "topic": "Functions & Arrays",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "#include <stdio.h> \nint foo(int S[],int size){ \n if(size == 0) return 0; \n if(size == 1) return 1; \n if(S[0] != S[1]) return 1+foo(S+1,size-1); \n return foo(S+1,size-1); \n} \nint main(){ \n int A[]={0,1,2,2,2,0,0,1,1}; \n printf(\"%d\",foo(A,9)); \n return 0; \n} \nThe value printed by the given C program is _______ . (Answer in integer)",
+    "options": [],
+    "correct": [
+      5
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 61 (CS section, 2 marks). The calculated numerical answer is 5 (official acceptable key range: 5 to 5).",
+    "natRange": {
+      "min": 5,
+      "max": 5
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q62",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Linked Lists",
+    "difficulty": "easy",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Let LIST be a datatype for an implementation of linked list defined as follows: \ntypedef struct list { \n int data; \n struct list *next; \n} LIST; \nSuppose a program has created two linked lists, L1 and L2, whose contents are given \nin the figure below (code for creating L1 and L2 is not provided here). L1 contains 9 \nnodes, and L2 contains 7 nodes. \nConsider the following C program segment that modifies the list L1. The number of \nnodes that will be there in L1 aft er the execution of the code segment is ________ . \n(Answer in integer) \n \n \nint find (int query, LIST *list) { \n while (list != NULL){ \n if(list->data == query) return 1; \n list = list->next; \n } \n return 0; \n} \nint main () { \n... ... ... \n ptr1=L1; ptr2=L2; \n while (ptr1->next != NULL){ \n query = ptr1->next->data; \n if (find (query, L2)) \n ptr1->next = ptr1->next->next; \n else ptr1 = ptr1->next; \n } \n... ... ... \n return 0; \n}",
+    "options": [],
+    "correct": [
+      5
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 62 (CS section, 2 marks). The calculated numerical answer is 5 (official acceptable key range: 5 to 5).",
+    "natRange": {
+      "min": 5,
+      "max": 5
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q63",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "C Programming",
+    "topic": "Pointer Arithmetic & Loops",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "Consider the following C program: \n \n#include <stdio.h> \nint gate (int n) { \n int d, t, newnum, turn; \n newnum = turn = 0; t=1; \n while (n>=t) t *= 10; \n t /=10; \n while (t>0) { \n d = n/t; \n n = n%t; \n t /= 10; \n if (turn) newnum = 10*newnum + d; \n turn = (turn + 1) % 2; \n } \n return newnum; \n} \nint main () { \n printf (\"%d\", gate(14362)); \n return 0; \n} \nThe value printed by the given C program is _______ . (Answer in integer)",
+    "options": [],
+    "correct": [
+      46
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 63 (CS section, 2 marks). The calculated numerical answer is 46 (official acceptable key range: 46 to 46).",
+    "natRange": {
+      "min": 46,
+      "max": 46
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q64",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Graph Theory & Spanning Trees",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "The maximum value of x such that the edge between the nodes B and C is included \nin every minimum spanni ng tree of the given graph is _________ . (answer in \ninteger)",
+    "options": [],
+    "correct": [
+      5
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 64 (CS section, 2 marks). The calculated numerical answer is 5 (official acceptable key range: 5 to 5).",
+    "natRange": {
+      "min": 5,
+      "max": 5
+    }
+  },
+  {
+    "id": "pyq_2025_s1_q65",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Hashing (Double Hashing)",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 1",
+    "question": "In a double hashing scheme, h1(k) = k mod 11 and h2(k) = 1 + (k mod 7) are \nthe auxiliary hash functions. The size m of the hash table is 11. The hash function \nfor the i-th probe in the open address table is [h1(k) + i h2(k)] mod m. The \nfollowing keys are inserted in the given order: 63, 50, 25, 79, 67, 24. \nThe slot at which key 24 gets stored is ___________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      10
+    ],
+    "explanation": "Official GATE 2025 (Set 1) Question 65 (CS section, 2 marks). The calculated numerical answer is 10 (official acceptable key range: 10 to 11).",
+    "natRange": {
+      "min": 10,
+      "max": 11
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "English Grammar",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Despite his initial hesitation, Rehman's _________ to contribute to the success of \nthe project never wavered. \nSelect the most appropriate option to complete the above sentence.",
+    "options": [
+      "ambivalence",
+      "satisfaction",
+      "resolve",
+      "revolve"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 1 (GA section, 1 mark). The officially verified correct answer is Option (C): resolve."
+  },
+  {
+    "id": "pyq_2025_s2_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Bird : Nest :: Bee : _______ \nSelect the correct option to complete the analogy.",
+    "options": [
+      "Kennel",
+      "Hammock",
+      "Hive",
+      "Lair"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 2 (GA section, 1 mark). The officially verified correct answer is Option (C): Hive."
+  },
+  {
+    "id": "pyq_2025_s2_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Sentence Ordering",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "If Pex = Qe−x for all real values of x, which one of the following statements is \ntrue?",
+    "options": [
+      "P = Q = 0",
+      "P = Q = 1",
+      "P = 1; Q = −1",
+      "P\nQ = 0"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 3 (GA section, 1 mark). The officially verified correct answer is Option (A): P = Q = 0."
+  },
+  {
+    "id": "pyq_2025_s2_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Spatial Aptitude",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "The paper as shown in the figure is folded to make a cube where each square \ncorresponds to a particular face of the cube . Which one of the following options \ncorrectly represents the cube? \nNote: The figures shown are representative.",
+    "options": [
+      "Cube A (Top and front faces adjacent)",
+      "Cube B (Opposite faces adjacent)",
+      "Cube C (Inverted face orientation)",
+      "Cube D (Mismatched face rotation)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 4 (GA section, 1 mark). The officially verified correct answer is Option (A): ."
+  },
+  {
+    "id": "pyq_2025_s2_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Quantitative Reasoning",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let p1 and p2 denote two arbitrary prime numbers. Which one of the following \nstatements is correct for all values of p1 and p2?",
+    "options": [
+      "p1 + p2 is not a prime number.",
+      "p1p2 is not a prime number.",
+      "p1 + p2 + 1 is a prime number.",
+      "p1p2 + 1 is a prime number."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 5 (GA section, 1 mark). The officially verified correct answer is Option (B): p1p2 is not a prime number.."
+  },
+  {
+    "id": "pyq_2025_s2_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Based only on the conversation below, identify the logically correct inference: \n\"Even if I had known that you were in the hospital, I would not have gone there to \nsee you\", Ramya told Josephine.",
+    "options": [
+      "Ramya knew that Josephine was in the hospital.",
+      "Ramya did not know that Josephine was in the hospital.",
+      "Ramya and Josephine were once close friends; but now, they are not.",
+      "Josephine was in the hospital due to an injury to her leg."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 6 (GA section, 2 marks). The officially verified correct answer is Option (B): Ramya did not know that Josephine was in the hospital.."
+  },
+  {
+    "id": "pyq_2025_s2_q07",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "If IMAGE and FIELD are coded as FHBNJ and EMFJG respectively then, which \none among the given options is the most appropriate code for BEACH ?",
+    "options": [
+      "CEADP",
+      "IDBFC",
+      "JGIBC",
+      "IBCEC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 7 (GA section, 2 marks). The officially verified correct answer is Option (B): IDBFC."
+  },
+  {
+    "id": "pyq_2025_s2_q08",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Which one of the following options is correct for the given data in the table? \n \n \n Iteration (i) 0 1 2 3 \nInput (I) 20 −4 10 15 \nOutput (X) 20 16 26 41 \nOutput (Y) 20 −80 −800 −12000",
+    "options": [
+      "X(i) = X(i − 1) + I(i); Y(i) = Y(i − 1)I(i); i > 0",
+      "X(i) = X(i − 1)I(i); Y(i) = Y(i − 1) + I(i); i > 0",
+      "X(i) = X(i − 1)I(i); Y(i) = Y(i − 1)I(i); i > 0",
+      "X(i) = X(i − 1) + I(i); Y(i) = Y(i − 1)I(i − 1); i > 0"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 8 (GA section, 2 marks). The officially verified correct answer is Option (A): X(i) = X(i − 1) + I(i); Y(i) = Y(i − 1)I(i); i > 0."
+  },
+  {
+    "id": "pyq_2025_s2_q09",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Logical Deduction",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "In the given figure, PQRS is a square of side 2 cm and PLMN is a rectangle. The \ncorner L of the rectangle is on the side QR. Side MN of the rectangle passes through \nthe corner S of the square. \nWhat is the area (in cm2) of the rectangle PLMN? \nNote: The figure shown is representative.",
+    "options": [
+      "2√2",
+      "2",
+      "8",
+      "4 \n \n \n \n \n \n \n \n \n \nP \nQ \n R \nS \nL \nM \nN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 9 (GA section, 2 marks). The officially verified correct answer is Option (D): 4 \n \n \n \n \n \n \n \n \n \nP \nQ \n R \nS \nL \nM \nN."
+  },
+  {
+    "id": "pyq_2025_s2_q10",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Aptitude",
+    "topic": "Combinatorics",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "The diagram below shows a river system consisting of 7 segments, marked P, Q, R, \nS, T, U, and V. It splits the land into 5 zones, marked Z1, Z2, Z3, Z4, and Z5. We \nneed to connect these zones using the least number of bridges. Out of the following \noptions, which one is correct? \nNote: The figure shown is representative.",
+    "options": [
+      "Bridges on P, Q, and T",
+      "Bridges on P, Q, S, and T",
+      "Bridges on Q, R, T, and V",
+      "Bridges on P, Q, S, U, and V \n \n \n \n \n \n \nP \n Q \nR \nS \nT \nU \nV \nZ1 \nZ2 \n Z3 \nZ4 \nZ5"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 10 (GA section, 2 marks). The officially verified correct answer is Option (C): Bridges on Q, R, T, and V."
+  },
+  {
+    "id": "pyq_2025_s2_q11",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra & Matrices",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "If A = (1 22 −1), then which ONE of the following is A8 ?",
+    "options": [
+      "(25 00 25)",
+      "(125 00 125)",
+      "(625 00 625)",
+      "(3125 00 3125)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 11 (CS section, 1 mark). The officially verified correct answer is Option (C): (625 00 625)."
+  },
+  {
+    "id": "pyq_2025_s2_q12",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Calculus & Limits",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "The value of x such that x > 1, satisfying the equation ∫ t ln t dt = 14x1 is",
+    "options": [
+      "√e",
+      "e",
+      "e2",
+      "e − 1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 12 (CS section, 1 mark). The officially verified correct answer is Option (A): √e."
+  },
+  {
+    "id": "pyq_2025_s2_q13",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Binary Trees & Properties",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider a binary tree T in which every node has either zero or two children. \nLet n > 0 be the number of nodes in T. \nWhich ONE of the following is the number of nodes in T that have exactly two \nchildren?",
+    "options": [
+      "n − 2\n2",
+      "n − 1\n2",
+      "n\n2",
+      "n + 1\n2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 13 (CS section, 1 mark). The officially verified correct answer is Option (B): n − 1\n2."
+  },
+  {
+    "id": "pyq_2025_s2_q14",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Matrices & Determinants",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let L, M, and N be non-singular matrices of order 3 satisfying the equations \nL2 = L−1 , M = L8 and N = L2. \nWhich ONE of the following is the value of the determinant of (M − N)?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 14 (CS section, 1 mark). The officially verified correct answer is Option (A): 0."
+  },
+  {
+    "id": "pyq_2025_s2_q15",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Discrete Mathematics",
+    "topic": "Predicate Logic",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let P(x) be an arbitrary predicate over the domain of natural numbers. \nWhich ONE of the following statements is TRUE?",
+    "options": [
+      "(P(0) ∧ (∀x [P(x) ⇒ P(x + 1)])) ⇒ (∀x P(x))",
+      "(P(0) ∧ (∀x [P(x) ⇒ P(x − 1)])) ⇒ (∀x P(x))",
+      "(P(1000) ∧ (∀x [P(x) ⇒ P(x − 1)])) ⇒ (∀x P(x))",
+      "(P(1000) ∧ (∀x [P(x) ⇒ P(x + 1)])) ⇒ (∀x P(x))"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 15 (CS section, 1 mark). The officially verified correct answer is Option (A): (P(0) ∧ (∀x [P(x) ⇒ P(x + 1)])) ⇒ (∀x P(x))."
+  },
+  {
+    "id": "pyq_2025_s2_q16",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "Network Protocols",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following statements: \n(i) Address Resolution Protocol ( ARP) provides a mapping from an IP \naddress to the corresponding hardware (link-layer) address. \n(ii) A single TCP segment from a sender S to a receiver R cannot carry both \ndata from S to R and acknowledgement for a segment from R to S. \n \nWhich ONE of the following is CORRECT?",
+    "options": [
+      "Both (i) and (ii) are TRUE",
+      "(i) is TRUE and (ii) is FALSE",
+      "(i) is FALSE and (ii) is TRUE",
+      "Both (i) and (ii) are FALSE"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 16 (CS section, 1 mark). The officially verified correct answer is Option (B): (i) is TRUE and (ii) is FALSE."
+  },
+  {
+    "id": "pyq_2025_s2_q17",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "Routing Protocols",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the routing protocols given in List I and the names given in List II: \nList I List II \n(i) Distance vector routing (a) Bellman-Ford \n(ii) Link state routing (b) Dijkstra \nFor matching of items in List I with those in List II, which ONE of the following \noptions is CORRECT?",
+    "options": [
+      "(i) - (a) and (ii) - (b)",
+      "(i) - (a) and (ii) - (a)",
+      "(i) - (b) and (ii) - (a)",
+      "(i) - (b) and (ii) - (b)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 17 (CS section, 1 mark). The officially verified correct answer is Option (A): (i) - (a) and (ii) - (b)."
+  },
+  {
+    "id": "pyq_2025_s2_q18",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "IPv4 Header & Protocols",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "A machine receives an IPv4 datagram. The protocol field of the IPv4 header has the \nprotocol number of a protocol X. \n \nWhich ONE of the following is NOT a possible candidate for X?",
+    "options": [
+      "Internet Control Message Protocol (ICMP)",
+      "Internet Group Management Protocol (IGMP)",
+      "Open Shortest Path First (OSPF)",
+      "Routing Information Protocol (RIP)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 18 (CS section, 1 mark). The officially verified correct answer is Option (D): Routing Information Protocol (RIP)."
+  },
+  {
+    "id": "pyq_2025_s2_q19",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "C Programming",
+    "topic": "Pointers & Strings",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following C program: \n#include <stdio.h> \nvoid stringcopy(char *, char *); \nint main(){ \nchar a[30] = \"@#Hello World!\"; \nstringcopy(a, a + 2); \nprintf(\"%s\\n\", a); \nreturn 0; \n} \nvoid stringcopy(char *s, char *t) { \nwhile(*t) \n*s++ = *t++; \n} \nWhich ONE of the following will be the output of the program?",
+    "options": [
+      "@#Hello World!",
+      "Hello World!",
+      "ello World!",
+      "Hello World!d!"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 19 (CS section, 1 mark). The officially verified correct answer is Option (D): Hello World!d!."
+  },
+  {
+    "id": "pyq_2025_s2_q20",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Comparison Lower Bounds",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider an unordered list of N distinct integers. \nWhat is the minimum number of element comparisons required to find an integer \nin the list that is NOT the largest in the list?",
+    "options": [
+      "1",
+      "N − 1",
+      "N",
+      "2N − 1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 20 (CS section, 1 mark). The officially verified correct answer is Option (A): 1."
+  },
+  {
+    "id": "pyq_2025_s2_q21",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Compiler Design",
+    "topic": "Backpatching & Code Gen",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following statements about the use of backpatching in a compiler for \nintermediate code generation: \n(I) Backpatching can be used to generate code for Boolean expression in \none pass. \n(II) Backpatching can be used to generate code for flow-of-control \nstatements in one pass. \nWhich ONE of the following options is CORRECT?",
+    "options": [
+      "Only (I) is correct.",
+      "Only (II) is correct.",
+      "Both (I) and (II) are correct.",
+      "Neither (I) nor (II) is correct."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 21 (CS section, 1 mark). The officially verified correct answer is Option (C): Both (I) and (II) are correct.."
+  },
+  {
+    "id": "pyq_2025_s2_q22",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Compiler Design",
+    "topic": "Syntax-Directed Translation (SDT)",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Given the following syntax directed translation rules: \nRule 1: R \\to AB {B. i = R. i − 1; A. i = B. i; R. i = A. i + 1; } \nRule 2: P \\to CD {P. i = C. i + D. i; D. i = C. i + 2; } \nRule 3: Q \\to EF {Q. i = E. i + F. i; } \nWhich ONE is the CORRECT option among the following?",
+    "options": [
+      "Rule 1 is S-attributed and L-attributed; Rule 2 is S-attributed and not L-attributed; \nRule 3 is neither S-attributed nor L-attributed",
+      "Rule 1 is neither S -attributed nor L -attributed; Rule 2 is S -attributed and L-\nattributed; Rule 3 is S-attributed and L-attributed",
+      "Rule 1 is neither S -attributed nor L -attributed; Rule 2 is not S -attributed and \nis L-attributed; Rule 3 is S-attributed and L-attributed",
+      "Rule 1 is S -attributed and not L -attributed; Rule 2 is not S -attributed and \nis L-attributed; Rule 3 is S-attributed and L-attributed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 22 (CS section, 1 mark). The officially verified correct answer is Option (C): Rule 1 is neither S -attributed nor L -attributed; Rule 2 is not S -attributed and \nis L-attributed; Rule 3 is S-attributed and L-attributed."
+  },
+  {
+    "id": "pyq_2025_s2_q23",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "Ethernet & IP Addressing",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider a network that uses Ethernet and IPv4. Assume that IPv4 headers do not \nuse any options field. Each Ethernet frame can carry a maximum of 1500 bytes in \nits data field . A UDP segment is transmitted. The payload (data) in the UDP \nsegment is 7488 bytes. \nWhich ONE of the following choices has the CORRECT total number of fragments \ntransmitted and the size of the last fragment including IPv4 header?",
+    "options": [
+      "5 fragments, 1488 bytes",
+      "6 fragments, 88 bytes",
+      "6 fragments, 108 bytes",
+      "6 fragments, 116 bytes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 23 (CS section, 1 mark). The officially verified correct answer is Option (D): 6 fragments, 116 bytes."
+  },
+  {
+    "id": "pyq_2025_s2_q24",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Languages & Automata",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Which ONE of the following languages is accepted by a deterministic push down \nautomaton?",
+    "options": [
+      "Any regular language.",
+      "Any context-free language.",
+      "Any language accepted by a non-deterministic pushdown automaton.",
+      "Any decidable language."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 24 (CS section, 1 mark). The officially verified correct answer is Option (A): Any regular language.."
+  },
+  {
+    "id": "pyq_2025_s2_q25",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Context-Free Grammars (CFGs)",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let G1, G2 be Context Free Grammars (CFGs) and R be a regular expression. For a \ngrammar G, let L(G) denote the language generated by G. \nWhich ONE among the following questions is decidable?",
+    "options": [
+      "Is L(G1) = L(G2)?",
+      "Is L(G1) \\cap L(G2) = ∅?",
+      "Is L(G1) = L(R)?",
+      "Is L(G1) = ∅?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 25 (CS section, 1 mark). The officially verified correct answer is Option (D): Is L(G1) = ∅?."
+  },
+  {
+    "id": "pyq_2025_s2_q26",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "CPU Scheduling & Arrival",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Processes P1, P2, P3, P4 arrive in that order at times 0, 1, 2, and 8 milliseconds \nrespectively, and have execution times of 10, 13, 6, and 9 milliseconds respectively. \nShortest Remaining Time First (SRTF) algorithm is used as the CPU scheduling \npolicy. Ignore context switching times. \nWhich ONE of the following correctly gives the average turnaround time of the four \nprocesses in milliseconds?",
+    "options": [
+      "22",
+      "15",
+      "37",
+      "19"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 26 (CS section, 1 mark). The officially verified correct answer is Option (D): 19."
+  },
+  {
+    "id": "pyq_2025_s2_q27",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "Transactions & Auditing",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "An audit of a banking transactions system has found that on an earlier occasion, two \njoint holders of account A attempted simultaneous transfers of Rs. 10000 each from \naccount A to account B. Both transactions read the same value , Rs. 11000, as the \ninitial balance in A and were allowed to go through. B was credited Rs. 10000 twice. \nA was debited only once and ended up with a balance of Rs. 1000. \nWhich of the following properties is/are certain to have been violated by the \nsystem?",
+    "options": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 27 (CS section, 1 mark). The officially verified correct choices are (B, C)."
+  },
+  {
+    "id": "pyq_2025_s2_q28",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Instruction Formats & Opcode",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Which of the following is/are part of an Instruction Set Architecture of a processor?",
+    "options": [
+      "The size of the cache memory",
+      "The clock frequency of the processor",
+      "The number of cache memory levels",
+      "The total number of registers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 28 (CS section, 1 mark). The officially verified correct choices are (D)."
+  },
+  {
+    "id": "pyq_2025_s2_q29",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Graph Traversal (BFS / DFS)",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Which of the following statements regarding Breadth First Search (BFS) and \nDepth First Search (DFS) on an undirected simple graph G is/are TRUE?",
+    "options": [
+      "A DFS tree of G is a Shortest Path tree of G.",
+      "Every non-tree edge of G with respect to a DFS tree is a forward/back edge.",
+      "If (u, v) is a non-tree edge of G with respect to a BFS tree, then the distances from \nthe source vertex s to u and v in the BFS tree are within ±1 of each other.",
+      "Both BFS and DFS can be used to find the connected components of G."
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 29 (CS section, 1 mark). The officially verified correct choices are (B, C, D)."
+  },
+  {
+    "id": "pyq_2025_s2_q30",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Closure Properties & Grammar Types",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the two lists List I and List II given below: \n \nFor matching of items in List I with those in List II, which of the following \noption(s) is/are CORRECT? \nList I List II \n(i) Context free languages (a) Closed under union \n(ii) Recursive languages (b) Not closed under complementation \n(iii) Regular languages (c) Closed under intersection",
+    "options": [
+      "(i) - (a), (ii) - (b), and (iii) - (c)",
+      "(i) - (b), (ii) - (a), and (iii) - (c)",
+      "(i) - (b), (ii) - (c), and (iii) - (a)",
+      "(i) - (a), (ii) - (c), and (iii) - (b)"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 30 (CS section, 1 mark). The officially verified correct choices are (B, C)."
+  },
+  {
+    "id": "pyq_2025_s2_q31",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Logic Circuits & Gates",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following logic circuit diagram. \n \n \n \n \n \n \n \nWhich is/are the CORRECT option(s) for the output function F?",
+    "options": [
+      "X Y̅̅̅̅̅",
+      "X̅ + Y̅ + XY̅",
+      "X Y̅̅̅̅̅ + X̅ + XY̅",
+      "X + Y̅"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 31 (CS section, 1 mark). The officially verified correct choices are (A, B, C)."
+  },
+  {
+    "id": "pyq_2025_s2_q32",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Number Systems & 2's Complement",
+    "difficulty": "easy",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "The following two signed 2's complement numbers (multiplicand M and \nmultiplier Q) are being multiplied using Booth's algorithm: \nM: 1100 1101 1110 1101 and Q: 1010 0100 1010 1010 \nThe total number of addition and subtraction operations to be performed is \n___________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      13
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 32 (CS section, 1 mark). The calculated numerical answer is 13 (official acceptable key range: 13 to 13).",
+    "natRange": {
+      "min": 13,
+      "max": 13
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q33",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "C Programming",
+    "topic": "Control Flow & Loops",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "int x=126,y=105; \n do { \n if(x>y) x=x-y; \n else y=y-x; \n } while(x!=y); \n printf(\"%d\",x); \nThe output of the given C code segment is ________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      21
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 33 (CS section, 1 mark). The calculated numerical answer is 21 (official acceptable key range: 21 to 21).",
+    "natRange": {
+      "min": 21,
+      "max": 21
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q34",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Sequential Circuits (Counters)",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "In a 4 -bit ripple counter, if the period of the waveform at the last flip -flop is 64 \nmicroseconds, then the frequency of the ripple counter in kHz is ________. (Answer \nin integer)",
+    "options": [],
+    "correct": [
+      250
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 34 (CS section, 1 mark). The calculated numerical answer is 250 (official acceptable key range: 250 to 250).",
+    "natRange": {
+      "min": 250,
+      "max": 250
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q35",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Binary Search Trees (BST)",
+    "difficulty": "medium",
+    "marks": 1,
+    "paper": "GATE 2025 Set 2",
+    "question": "Suppose the values 10, −4, 15, 30, 20, 5, 60, 19 are inserted in that order into an \ninitially empty binary search tree. Let T be the resulting binary search tree. \nThe number of edges in the path from the node containing 19 to the root node of T \nis ___________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      4
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 35 (CS section, 1 mark). The calculated numerical answer is 4 (official acceptable key range: 4 to 4).",
+    "natRange": {
+      "min": 4,
+      "max": 4
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q36",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Networks",
+    "topic": "Sliding Window & Flow Control",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Suppose we are transmitting frames between two nodes using Stop -and-Wait \nprotocol. The frame size is 3000 bits. The transmission rate of the channel is 2000 \nbps (bits/second) and the propagation delay between the two nodes is 100 \nmilliseconds. Assume that the processing times at the source and destination are \nnegligible. Also, assume that the size of the acknowledgement packet is negligible. \nWhich ONE of the following most accurately gives the channel utilization for the \nabove scenario in percentage?",
+    "options": [
+      "88.23",
+      "93.75",
+      "85.44",
+      "66.67"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 36 (CS section, 2 marks). The officially verified correct answer is Option (A): 88.23."
+  },
+  {
+    "id": "pyq_2025_s2_q37",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Graph Algorithms & MST",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let G be an edge-weighted undirected graph with positive edge weights. Suppose a \npositive constant α is added to the weight of every edge. \nWhich ONE of the following statements is TRUE about the minimum spanning \ntrees (MSTs) and shortest paths (SPs) in G before and after the edge weight update?",
+    "options": [
+      "Every MST remains an MST, and every SP remains an SP.",
+      "MSTs need not remain MSTs, and every SP remains an SP.",
+      "Every MST remains an MST, and SPs need not remain SPs.",
+      "MSTs need not remain MSTs, and SPs need not remain SPs."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 37 (CS section, 2 marks). The officially verified correct answer is Option (C): Every MST remains an MST, and SPs need not remain SPs.."
+  },
+  {
+    "id": "pyq_2025_s2_q38",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Heaps & Priority Queues",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "A meld operation on two instances of a data structure combines them into one single \ninstance of the same data structure. Consider the following data structures: \nP: Unsorted doubly linked list with pointers to the head node and tail node \n of the list. \nQ: Min-heap implemented using an array. \nR: Binary Search Tree. \nWhich ONE of the following options gives t he worst-case time complexities for \nmeld operation on instances of size n of these data structures?",
+    "options": [
+      "P: Θ(1), Q: Θ(n), R: Θ(n)",
+      "P: Θ(1), Q: Θ(n log n), R: Θ(n)",
+      "P: Θ(n), Q: Θ(n log n), R: Θ(n2)",
+      "P: Θ(1), Q: Θ(n), R: Θ(n log n)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 38 (CS section, 2 marks). The officially verified correct answer is Option (A): P: Θ(1), Q: Θ(n), R: Θ(n)."
+  },
+  {
+    "id": "pyq_2025_s2_q39",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Cache Memory & Mapping",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "For a direct-mapped cache, 4 bits are used for the tag field and 12 bits are used to \nindex into a cache block. The size of each cache block is one byte. Assume that \nthere is no other information stored for each cache block. \nWhich ONE of the following is the CORRECT option for the sizes of the main \nmemory and the cache memory in this system (byte addressable), respectively?",
+    "options": [
+      "64 KB and 4 KB",
+      "128 KB and 16 KB",
+      "64 KB and 8 KB",
+      "128 KB and 6 KB"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 39 (CS section, 2 marks). The officially verified correct answer is Option (A): 64 KB and 4 KB."
+  },
+  {
+    "id": "pyq_2025_s2_q40",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Compiler Design",
+    "topic": "Parsing (LR / LALR / SLR)",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Given a Context-Free Grammar G as follows: \nS \\to Aa | bAc | dc | bda \nA \\to d \nWhich ONE of the following statements is TRUE?",
+    "options": [
+      "G is neither LALR(1) nor SLR(1)",
+      "G is CLR(1), not LALR(1)",
+      "G is LALR(1), not SLR(1)",
+      "G is LALR(1), also SLR(1)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 40 (CS section, 2 marks). The officially verified correct answer is Option (C): G is LALR(1), not SLR(1)."
+  },
+  {
+    "id": "pyq_2025_s2_q41",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Sorting & Search Comparisons",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "An array A of length n with distinct elements is said to be bitonic if there is an index \n1 \\le i \\le n such that A[1. . i] is sorted in the non-decreasing order and A[i + 1 . . n] \nis sorted in the non-increasing order. \nWhich ONE of the following represents the best possible asymptotic bound for the \nworst-case number of comparisons by an algorithm that searches for an element in \na bitonic array A?",
+    "options": [
+      "Θ(n)",
+      "Θ(1)",
+      "Θ(log2 n)",
+      "Θ(log n)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 41 (CS section, 2 marks). The officially verified correct answer is Option (D): Θ(log n)."
+  },
+  {
+    "id": "pyq_2025_s2_q42",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra & Functions",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let F be the set of all functions from {1, ... , n} to {0,1}. Define \nthe binary relation ≼ on F as follows: \n∀f, g \\in F, f ≼ g if and only if ∀x \\in {1, ... , n}, f(x) \\le g(x), where 0 \\le 1. \nWhich of the following statement(s) is/are TRUE?",
+    "options": [
+      "≼ is a symmetric relation",
+      "(F, ≼ ) is a partial order",
+      "(F, ≼ ) is a lattice",
+      "≼ is an equivalence relation"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 42 (CS section, 2 marks). The officially verified correct choices are (B, C)."
+  },
+  {
+    "id": "pyq_2025_s2_q43",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Boolean Minimization (Karnaugh Maps)",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Given the following Karnaugh Map for a Boolean function F(w, x, y, z): \n \nWhich one or more of the following Boolean expression(s) represent(s) F?",
+    "options": [
+      "w̅x̅y̅z̅ + wx̅y̅z̅ + w̅x̅yz̅ + wx̅yz̅ + xz",
+      "w̅x̅y̅z̅ + w̅x̅yz̅ + wx̅yz + xz",
+      "w̅x̅y̅z̅ + wx̅y̅z̅ + wx̅y̅z + xz",
+      "x̅z̅ + xz"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 43 (CS section, 2 marks). The officially verified correct choices are (A, D)."
+  },
+  {
+    "id": "pyq_2025_s2_q44",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider a system of linear equations PX = Q where P \\in R3×3 and Q \\in R3×1. \nSuppose P has an LU decomposition, P = LU, where \nL = [\n1 0 0\nl21 1 0\nl31 l32 1\n] and U = [\nu11 u12 u13\n0 u22 u23\n0 0 u33\n]. \nWhich of the following statement(s) is/are TRUE?",
+    "options": [
+      "The system PX = Q can be solved by first solving LY = Q and then UX = Y.",
+      "If P is invertible, then both L and U are invertible.",
+      "If P is singular, then at least one of the diagonal elements of U is zero.",
+      "If P is symmetric, then both L and U are symmetric."
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 44 (CS section, 2 marks). The officially verified correct choices are (A, B, C)."
+  },
+  {
+    "id": "pyq_2025_s2_q45",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Data Structures",
+    "topic": "Stacks & Applications",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider a stack data structure into which we can PUSH and POP records. Assume \nthat each record pushed in the stack has a positive integer key and that all keys are \ndistinct. \nWe wish to augment the stack data structure with an O(1) time MIN operation that \nreturns a pointer to the record with smallest key present in the stack \n1) without deleting the corresponding record, and \n2) without increasing the complexities of the standard stack operations. \nWhich one or more of the following approach(es) can achieve it?",
+    "options": [
+      "Keep with every record in the stack , a pointer to the record with the smallest key \nbelow it.",
+      "Keep a pointer to the record with the smallest key in the stack.",
+      "Keep an auxiliary array in which the key values of the records in the stack are \nmaintained in sorted order.",
+      "Keep a Min-Heap in which the key values of the records in the stack are maintained."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 45 (CS section, 2 marks). The officially verified correct choices are (A)."
+  },
+  {
+    "id": "pyq_2025_s2_q46",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "Relational Schemas & Keys",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following relational schema along with all the functional dependencies \nthat hold on them. \nR1(A, B, C, D, E): { D \\to E, EA \\to B, EB \\to C} \nR2(A, B, C, D): { A \\to D, A \\to B, C \\to A} \nWhich of the following statement(s) is/are TRUE?",
+    "options": [
+      "R1 is in 3NF",
+      "R2 is in 3NF",
+      "R1 is NOT in 3NF",
+      "R2 is NOT in 3NF"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 46 (CS section, 2 marks). The officially verified correct choices are (C, D)."
+  },
+  {
+    "id": "pyq_2025_s2_q47",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "Demand Paging & Page Faults",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider a demand paging system with three frames, and the following page \nreference string: 1 2 3 4 5 4 1 6 4 5 1 3 2. The contents of the frames are as follows \ninitially and after each reference (from left to right): \ninitially after \n- 1* 2* 3* 4* 5* 4 1 6* 4 5 1* 3* 2* \n- 1 1 1 1 1 1 1 6 6 6 6 6 2 \n- - 2 2 4 4 4 4 4 4 4 1 1 1 \n- - - 3 3 5 5 5 5 5 5 5 3 3 \nThe *-marked references cause page replacements. \nWhich one or more of the following could be the page replacement policy/policies \nin use?",
+    "options": [
+      "Least Recently Used page replacement policy",
+      "Least Frequently Used page replacement policy",
+      "Most Frequently Used page replacement policy",
+      "Optimal page replacement policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 47 (CS section, 2 marks). The officially verified correct choices are (D)."
+  },
+  {
+    "id": "pyq_2025_s2_q48",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "Processes & Concurrency",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "P = {P1, P2, P3, P4} consists of all active processes in an operating system. \nR = {R1, R2, R3, R4} consists of single instances of distinct types of resources in the \nsystem. \n \nThe resource allocation graph has the following assignment and claim edges. \n \nAssignment edges: R1 \\to P1, R2 \\to P2, R3 \\to P3, R4 \\to P4 (the assignment edge \nR1 \\to P1 means resource R1 is assigned to process P1 , and so on for others) \n \nClaim edges: P1 \\to R2, P2 \\to R3, P3 \\to R1, P2 \\to R4, P4 \\to R2 (the claim edge \nP1 \\to R2 means process P1 is waiting for resource R2 , and so on for others) \n \nWhich of the following statement(s) is/are CORRECT?",
+    "options": [
+      "Aborting P1 makes the system deadlock free.",
+      "Aborting P3 makes the system deadlock free.",
+      "Aborting P2 makes the system deadlock free.",
+      "Aborting P1 and P4 makes the system deadlock free."
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 48 (CS section, 2 marks). The officially verified correct choices are (C, D)."
+  },
+  {
+    "id": "pyq_2025_s2_q49",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Floating Point Representation (IEEE 754)",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Three floating point numbers X, Y, and Z are stored in three registers R X, RY, and \nRZ, respectively in IEEE 754 single precision format as given below in \nhexadecimal: \nRX = 0xC1100000, RY = 0x40C00000, and RZ = 0x41400000 \nWhich of the following option(s) is/are CORRECT?",
+    "options": [
+      "4(X + Y) + Z = 0",
+      "2Y - Z = 0",
+      "4X + 3Z = 0",
+      "X + Y + Z = 0"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 49 (CS section, 2 marks). The officially verified correct choices are (A, B, C)."
+  },
+  {
+    "id": "pyq_2025_s2_q50",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Digital Logic",
+    "topic": "Boolean Algebra",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Which of the following Boolean algebraic equation(s) is/are CORRECT?",
+    "options": [
+      "A̅ B C + A B̅ C̅ + A̅ B̅ C̅ + A B̅ C + A B C = B C + B̅ C̅ + A̅ B̅",
+      "A B + A̅ C + B C = A B + A̅ C",
+      "(A + C) (A̅ + B) = A B + A̅ C",
+      "(A + B̅ + D̅) (C + D) (A̅ + C + D ) (A + B + D̅)̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ = A̅ D + C̅ D̅"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 50 (CS section, 2 marks). The officially verified correct choices are (B, C, D)."
+  },
+  {
+    "id": "pyq_2025_s2_q51",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "Grammars & Language Equivalence",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider two grammars G1 and G2 with the production rules given below: \nG1: S \\to if E then S | if E then S else S | a \n E \\to b \nG2: S \\to if E then S | M \n M \\to if E then M else S | c \n E \\to b \nwhere if, then, else, a, b, c are the terminals. \nWhich of the following option(s) is/are CORRECT?",
+    "options": [
+      "G1 is not LL(1) and G2 is LL(1).",
+      "G1 is LL(1) and G2 is not LL(1).",
+      "G1 and G2 are not LL(1).",
+      "G1 and G2 are ambiguous."
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 51 (CS section, 2 marks). The officially verified correct choices are (C, D)."
+  },
+  {
+    "id": "pyq_2025_s2_q52",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Theory of Computation",
+    "topic": "String Operations & Kleene Star",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let Σ = {a, b, c}. For x \\in Σ∗, and α \\in Σ, let #α(x) denote the number of \noccurrences of α in x. \nWhich one or more of the following option(s) define(s) regular language(s)?",
+    "options": [
+      "{ambn | m, n \\ge 0}",
+      "{a, b}∗ \\cap {ambncm−n | m \\ge n \\ge 0}",
+      "{w | w \\in {a, b}∗, #a(w) ≡ 2 (mod 7), and #b(w) ≡ 3 (mod 9)}",
+      "{w | w \\in {a, b}∗, #a(w) ≡ 2 (mod 7), and #a(w) = #b(w)}"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 52 (CS section, 2 marks). The officially verified correct choices are (A, C)."
+  },
+  {
+    "id": "pyq_2025_s2_q53",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "Transactions & Concurrency Control",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the database transactions T1 and T2, and data items X and Y. Which of \nthe schedule(s) is/are conflict serializable?",
+    "options": [
+      "R1(X), W2(X), W1(Y), W2(Y), R1(X), W1(X), COMMIT(T2), COMMIT(T1)",
+      "W2(X), R1(X), W2(Y), W1(Y), R1(X), COMMIT(T2), W1(X), COMMIT(T1)",
+      "R1(X), W1(Y), W2(X), W2(Y), R1(X), W1(X), COMMIT(T1), COMMIT(T2)",
+      "W2(X), R1(X), W1(Y), W2(Y), R1(X), COMMIT(T2), W1(X), COMMIT(T1) \n \n \nTransaction T1 \nR1(X) \nW1(Y) \nR1(X) \nW1(X) \nCOMMIT(T1) \nTransaction T2 \nW2(X) \nW2(Y) \nCOMMIT(T2)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 53 (CS section, 2 marks). The officially verified correct answer is Option (B): W2(X), R1(X), W2(Y), W1(Y), R1(X), COMMIT(T2), W1(X), COMMIT(T1)."
+  },
+  {
+    "id": "pyq_2025_s2_q54",
+    "type": "msq",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "SQL & Relational Schema",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following relational schema: \n Students (rollno: integer, name: string, age: integer, cgpa: real) \n Courses (courseno: integer, cname: string, credits: integer) \n Enrolled (rollno: integer, courseno: integer, grade: string) \nWhich of the following options is/are correct SQL query/queries to retrieve the \nnames of the students enrolled in course number (i.e., courseno) 1470?",
+    "options": [
+      "SELECT S.name \nFROM Students S \nWHERE EXISTS (SELECT * FROM Enrolled E \n WHERE E.courseno = 1470 \n AND E.rollno = S.rollno);",
+      "SELECT S.name \nFROM Students S \nWHERE SIZEOF (SELECT * FROM Enrolled E \n WHERE E.courseno = 1470 \n AND E.rollno = S.rollno) > 0;",
+      "SELECT S.name \nFROM Students S \nWHERE 0 < (SELECT COUNT(*) \n FROM Enrolled E \n WHERE E.courseno = 1470 \n AND E.rollno = S.rollno);",
+      "SELECT S.name \nFROM Students S NATURAL JOIN Enrolled E \nWHERE E.courseno = 1470;"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 54 (CS section, 2 marks). The officially verified correct choices are (A, C, D)."
+  },
+  {
+    "id": "pyq_2025_s2_q55",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Multi-Level Cache Systems",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Given a computing system with two levels of cache (L1 and L2) and a main \nmemory. The first level (L1) cache access time is 1 nanosecond (ns) and the \"hit \nrate\" for L1 cache is 90% while the processor is accessing the data from L1 cache. \nWhereas, for the second level (L2) cache, the \"hit rate\" is 80% and the \"miss \npenalty\" for transferring data from L2 cache to L1 cache is 10 ns. The \"miss \npenalty\" for the data to be transferred from main memory to L2 cache is 100 ns. \nThen the average memory access time in this system in nanoseconds is \n___________ . (rounded off to one decimal place)",
+    "options": [],
+    "correct": [
+      4.0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 55 (CS section, 2 marks). The calculated numerical answer is 4.0 (official acceptable key range: 4.0 to 4.0).",
+    "natRange": {
+      "min": 4.0,
+      "max": 4.0
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q56",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "Instruction Pipelining & Hazards",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "A 5 -stage instruction pipeline has stage delays of 180, 250, 150, 170, and 250, \nrespectively, in nanoseconds. The delay of an inter -stage latch is 10 nanoseconds. \nAssume that there are no pipeline stalls due to branches and other hazards. The time \ntaken to process 1000 instructions in microseconds is __________ . (rounded off to \ntwo decimal places)",
+    "options": [],
+    "correct": [
+      260.7
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 56 (CS section, 2 marks). The calculated numerical answer is 260.7 (official acceptable key range: 260.2 to 261.2).",
+    "natRange": {
+      "min": 260.2,
+      "max": 261.2
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q57",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "DBMS",
+    "topic": "B+ Trees & Indexing",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "In a B+- tree where each node can hold at most four key values, a root to leaf path \nconsists of the following nodes: \nA = (49, 77, 83, -), B = (7, 19, 33, 44), C = (20*, 22*, 25*, 26*) \nThe *-marked keys signify that these are data entries in a leaf. \nAssume that a pointer between keys k1 and k2 points to a subtree containing keys \nin [k1, k2), and that when a leaf is created, the smallest key in it is copied up into \nits parent. \nA record with key value 23 is inserted into the B+- tree. \nThe smallest key value in the parent of the leaf that contains 25* is __________. \n(Answer in integer)",
+    "options": [],
+    "correct": [
+      33
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 57 (CS section, 2 marks). The calculated numerical answer is 33 (official acceptable key range: 33 to 33).",
+    "natRange": {
+      "min": 33,
+      "max": 33
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q58",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Operating Systems",
+    "topic": "Virtual Memory & Logical Addressing",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "A computer system supports a logical address space of 2 32 bytes. It uses two-level \nhierarchical paging with a page size of 4096 bytes. A logical address is divided into \na b-bit index to the outer page table, an offset within the page of the inner page \ntable, and an offset within the desired page. Each entry of the inner page table uses \neight bytes. All the pages in the system have the same size. \nThe value of b is ___________ . (Answer in integer)",
+    "options": [],
+    "correct": [
+      11
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 58 (CS section, 2 marks). The calculated numerical answer is 11 (official acceptable key range: 11 to 11).",
+    "natRange": {
+      "min": 11,
+      "max": 11
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q59",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Algorithms",
+    "topic": "Algorithm Analysis & Time Complexity",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following algorithm someAlgo that takes an undirected graph G as \ninput. \n someAlgo(G) \n1. Let v be any vertex in G. Run BFS on G starting at \nv. Let u be a vertex in G at maximum distance from \nv as given by the BFS. \n2. Run BFS on G again with u as the starting vertex. \nLet z be the vertex at maximum distance from u as \ngiven by the BFS. \n3. Output the distance between u and z in G. \nThe output of someAlgo(T) for the tree shown in the given figure is \n___________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      6
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 59 (CS section, 2 marks). The calculated numerical answer is 6 (official acceptable key range: 6 to 6).",
+    "natRange": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q60",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Discrete Mathematics",
+    "topic": "Strings & Product Operations",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Let Σ = {1,2,3,4}. For x \\in Σ∗, let prod(x) be the product of symbols in \n x modulo 7. We take prod(ε) = 1, where ε is the null string. \nFor example, prod(124) = (1 × 2 × 4) mod 7 = 1. \n Define L = {x \\in Σ∗ | prod(x) = 2}. \nThe number of states in a minimum state DFA for L is ___________. (Answer in \ninteger)",
+    "options": [],
+    "correct": [
+      6
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 60 (CS section, 2 marks). The calculated numerical answer is 6 (official acceptable key range: 6 to 6).",
+    "natRange": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q61",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Computer Organization",
+    "topic": "CPU Performance & Instructions",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "An application executes 6.4 × 108 number of instructions in 6.3 seconds. There are \nfour types of instructions, the details of which are given in the table. The duration \nof a clock cycle in nanoseconds is _________. (rounded off to one decimal place) \n \nInstruction type Clock cycles required per \ninstruction (CPI) \nNumber of instructions \nexecuted \nBranch 2 2.25 × 108 \nLoad 5 1.20 × 108 \nStore 4 1.65 × 108 \nArithmetic 3 1.30 × 108",
+    "options": [],
+    "correct": [
+      3.0
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 61 (CS section, 2 marks). The calculated numerical answer is 3.0 (official acceptable key range: 3.0 to 3.0).",
+    "natRange": {
+      "min": 3.0,
+      "max": 3.0
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q62",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "C Programming",
+    "topic": "Functions & Recursion",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following C program: \n#include <stdio.h> \nint main(){ \nint a; \nint arr[5] = {30,50,10}; \nint *ptr; \nptr = &arr[0] + 1; \na = *ptr; \n(*ptr)++; \nptr++; \nprintf(\"%d\", a + (*ptr) + arr[1]); \nreturn 0; \n} \nThe output of the above program is ___________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      111
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 62 (CS section, 2 marks). The calculated numerical answer is 111 (official acceptable key range: 111 to 111).",
+    "natRange": {
+      "min": 111,
+      "max": 111
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q63",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "C Programming",
+    "topic": "Pointers & Arrays",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "Consider the following C program: \n \n#include <stdio.h> \n \nint g(int n) { \n return (n+10); \n} \n \nint f(int n) { \n return g(n*2); \n} \n \nint main() { \n int sum, n; \n sum=0; \n for (n=1; n<3; n++) \n sum += g(f(n)); \n printf (\"%d\", sum); \n return 0; \n} \nThe output of the given C program is ________. (Answer in integer)",
+    "options": [],
+    "correct": [
+      46
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 63 (CS section, 2 marks). The calculated numerical answer is 46 (official acceptable key range: 46 to 46).",
+    "natRange": {
+      "min": 46,
+      "max": 46
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q64",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Algebra & Polynomials",
+    "difficulty": "medium",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "A quadratic polynomial (x − α)(x − β) over complex numbers is said to be square \ninvariant if (x − α)(x − β) = (x − α2)(x − β2). Suppose from the set of all \nsquare invariant quadratic polynomials we choose one at random. \nThe probability that the roots of the chosen polynomial are equal is __________. \n(rounded off to one decimal place)",
+    "options": [],
+    "correct": [
+      0.5
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 64 (CS section, 2 marks). The calculated numerical answer is 0.5 (official acceptable key range: 0.5 to 0.5).",
+    "natRange": {
+      "min": 0.5,
+      "max": 0.5
+    }
+  },
+  {
+    "id": "pyq_2025_s2_q65",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2025,
+    "subject": "Engineering Mathematics",
+    "topic": "Continuous Probability Distributions",
+    "difficulty": "hard",
+    "marks": 2,
+    "paper": "GATE 2025 Set 2",
+    "question": "The unit interval (0,1) is divided at a point chosen uniformly distributed over (0,1) \nin R into two disjoint subintervals. \nThe expected length of the subinterval that contains 0.4 is ___________. (rounded \noff to two decimal places)",
+    "options": [],
+    "correct": [
+      0.75
+    ],
+    "explanation": "Official GATE 2025 (Set 2) Question 65 (CS section, 2 marks). The calculated numerical answer is 0.75 (official acceptable key range: 0.7 to 0.8).",
+    "natRange": {
+      "min": 0.7,
+      "max": 0.8
+    }
+  }
+]

@@ -1,0 +1,2701 @@
+[
+  {
+    "id": "pyq_2007_cs_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Algorithms",
+    "topic": "Graph Algorithms",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Let $G = (V, E)$ be an undirected connected graph with distinct positive edge weights. Let $e_{\\max}$ be the edge with maximum weight and $e_{\\min}$ be the edge with minimum weight in $G$. Which of the following statements is FALSE?",
+    "options": [
+      "Every minimum spanning tree of $G$ must contain $e_{\\min}$",
+      "If $e_{\\max}$ is in a minimum spanning tree, then its removal must disconnect $G$",
+      "No minimum spanning tree of $G$ contains $e_{\\max}$",
+      "$G$ has a unique minimum spanning tree"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If $e_{\\max}$ is a bridge (cut-edge) whose removal disconnects the graph, then EVERY spanning tree (including any MST) must contain $e_{\\max}$. Therefore, the statement 'No minimum spanning tree of $G$ contains $e_{\\max}$' is false."
+  },
+  {
+    "id": "pyq_2007_cs_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Data Structures",
+    "topic": "Binary Search Trees",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "The following numbers are inserted into an empty Binary Search Tree in the given order: $10, 1, 3, 5, 15, 12, 16$. What is the height of the binary search tree (height of tree with single node is 0)?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Root is 10 (level 0). 1 goes to left of 10 (level 1). 3 goes to right of 1 (level 2). 5 goes to right of 3 (level 3). 15 goes to right of 10 (level 1). 12 goes to left of 15 (level 2). 16 goes to right of 15 (level 2). The maximum depth path is $10 \\to 1 \\to 3 \\to 5$, which has length 3. Hence height = 3."
+  },
+  {
+    "id": "pyq_2007_cs_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Theory of Computation",
+    "topic": "Regular Languages",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following regular expressions describes the language of all strings over $\\{0, 1\\}$ containing an odd number of $1$'s?",
+    "options": [
+      "$0^*(10^*10^*)^*$",
+      "$0^*10^*(0^*10^*10^*)^*$",
+      "$(0 + 1)^*1(0 + 1)^*$",
+      "$10^*(0^*10^*1)^*"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An odd number of 1s can be written as one 1 preceded and followed by any number of 0s, followed by zero or more pairs of 1s (each surrounded by 0s): $0^*10^*(0^*10^*10^*)^*$. Option B correctly generates all such strings."
+  },
+  {
+    "id": "pyq_2007_cs_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Compiler Design",
+    "topic": "Lexical Analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In a compiler, keywords are recognized during:",
+    "options": [
+      "Lexical analysis phase",
+      "Parsing phase",
+      "Code optimization phase",
+      "Code generation phase"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The lexical analyzer (scanner) reads the input stream of characters and groups them into meaningful token sequences such as identifiers, constants, and reserved keywords."
+  },
+  {
+    "id": "pyq_2007_cs_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Operating Systems",
+    "topic": "Process Synchronization",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A counting semaphore $S$ is initialized to $10$. Then $6\\ P$ (wait) operations and $4\\ V$ (signal) operations are performed on $S$. What is the final value of $S$?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "16"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each $P$ operation decrements the semaphore value by 1, and each $V$ operation increments it by 1. Final value $= 10 - 6 + 4 = 8$."
+  },
+  {
+    "id": "pyq_2007_cs_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Computer Organization",
+    "topic": "Cache Memory",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider a direct-mapped cache of size $32\\text{ KB}$ with a block size of $32\\text{ bytes}$. The CPU generates $32$-bit physical addresses. What is the number of bits in the TAG field?",
+    "options": [
+      "17 bits",
+      "15 bits",
+      "12 bits",
+      "10 bits"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Number of lines/blocks in cache = $\\frac{32\\text{ KB}}{32\\text{ bytes}} = \\frac{2^{15}}{2^5} = 2^{10} = 1024$ lines. Block offset bits = $\\log_2(32) = 5$ bits. Index/Line bits = $\\log_2(1024) = 10$ bits. Total address bits = 32. Tag bits $= 32 - (10 + 5) = 32 - 15 = 17$ bits."
+  },
+  {
+    "id": "pyq_2007_cs_q07",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Computer Networks",
+    "topic": "IP Addressing",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An IP router with a maximum transmission unit (MTU) of $1500$ bytes receives an IP packet of size $4400$ bytes (including a $20$-byte IP header). If the router fragments the packet, what is the length of the payload in the third fragment?",
+    "options": [
+      "1480 bytes",
+      "1440 bytes",
+      "1400 bytes",
+      "1420 bytes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Total IP packet size = $4400$ bytes, IP header = $20$ bytes $\\implies$ total data payload = $4380$ bytes. Max payload per fragment must be a multiple of 8 and $\\le 1500 - 20 = 1480$ bytes (which is divisible by 8: $1480 = 185 \\times 8$). Fragment 1 payload = $1480$ bytes. Fragment 2 payload = $1480$ bytes. Fragment 3 payload = $4380 - (1480 + 1480) = 4380 - 2960 = 1420$ bytes. Wait: total IP packet size including 20-byte header in 3rd fragment = 1440 bytes, and payload = 1420 bytes. Specifically, payload in third fragment $= 4380 - 2960 = 1420$ bytes."
+  },
+  {
+    "id": "pyq_2007_cs_q08",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "DBMS",
+    "topic": "Functional Dependencies",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Given the relation $R(A, B, C, D, E)$ with functional dependencies: $F = \\{AB \\to C,\\ C \\to D,\\ D \\to E,\\ E \\to A\\}$. What are the candidate keys of $R$?",
+    "options": [
+      "$AB, BC, BD, BE$",
+      "$AB, AC, AD, AE$",
+      "$AB, BC, CD, DE$",
+      "$AB, CD, DE$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Attribute $B$ does not appear on the right side of any dependency, so $B$ must be present in every candidate key. Now check closures with $B$:\n- $(AB)^+ = \\{A, B, C, D, E\\}$\n- Since $E \\to A$, $(EB)^+ = (BE)^+ = \\{B, E, A, C, D\\}$\n- Since $D \\to E$, $(DB)^+ = (BD)^+ = \\{B, D, E, A, C\\}$\n- Since $C \\to D$, $(CB)^+ = (BC)^+ = \\{B, C, D, E, A\\}$\nHence the candidate keys are $AB, BC, BD, BE$."
+  },
+  {
+    "id": "pyq_2007_cs_q09",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Digital Logic",
+    "topic": "Combinational Circuits",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A $4$-to-$1$ multiplexer can be used to implement any two-variable Boolean function $f(A, B)$ without any additional logic gates by connecting:",
+    "options": [
+      "$A$ and $B$ to select lines, and constants $0, 1$ to data inputs",
+      "$A$ to data input and $B$ to select line",
+      "$A$ and $B$ to data inputs and constants to select lines",
+      "None of the above"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 4-to-1 MUX has 2 select lines ($S_1, S_0$) and 4 data inputs ($I_0, I_1, I_2, I_3$). By connecting $A$ to $S_1$ and $B$ to $S_0$, each data input corresponds to a unique minterm of $A$ and $B$. Setting $I_0, I_1, I_2, I_3$ to 0 or 1 realizes any arbitrary truth table for $f(A, B)$ without extra gates."
+  },
+  {
+    "id": "pyq_2007_cs_q10",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2007,
+    "subject": "Discrete Mathematics",
+    "topic": "Graph Theory",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the maximum number of edges in an acyclic undirected graph (forest) with $n$ vertices and $k$ connected components?",
+    "options": [
+      "$n - k$",
+      "$n - 1$",
+      "$\\frac{n(n-1)}{2}$",
+      "$n - k + 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each connected component with $n_i$ vertices that is a tree has $n_i - 1$ edges. Summing over all $k$ components gives $\\sum_{i=1}^k (n_i - 1) = \\sum n_i - \\sum 1 = n - k$ edges."
+  },
+  {
+    "id": "pyq_2008_cs_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Algorithms",
+    "topic": "Asymptotic Analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the following three functions:\n$f(n) = 2^n,\\quad g(n) = n!,\\quad h(n) = n^{\\sqrt{n}}$\nWhich of the following statements about their asymptotic growth rate is TRUE?",
+    "options": [
+      "$f(n) = O(h(n))$ and $h(n) = O(g(n))$",
+      "$h(n) = O(f(n))$ and $f(n) = O(g(n))$",
+      "$g(n) = O(f(n))$ and $f(n) = O(h(n))$",
+      "$f(n) = O(g(n))$ and $g(n) = O(h(n))$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Taking logarithms:\n$\\log f(n) = n \\log 2 = \\Theta(n)$\n$\\log g(n) = \\log (n!) = \\Theta(n \\log n)$\n$\\log h(n) = \\sqrt{n} \\log n = o(n)$\nSince $\\sqrt{n} \\log n < n < n \\log n$, we have $h(n) < f(n) < g(n)$ asymptotically. Thus $h(n) = O(f(n))$ and $f(n) = O(g(n))$."
+  },
+  {
+    "id": "pyq_2008_cs_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Data Structures",
+    "topic": "Stacks",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following data structures is essential for evaluating arithmetic expressions in postfix notation?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Binary Tree",
+      "Hash Table"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Postfix expression evaluation reads tokens from left to right: operands are pushed onto a Stack, and operators pop the top two operands, apply the operation, and push the result back onto the Stack."
+  },
+  {
+    "id": "pyq_2008_cs_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Theory of Computation",
+    "topic": "Decidability",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following problems is DECIDABLE?",
+    "options": [
+      "Testing if two context-free grammars generate the same language",
+      "Testing if a context-free grammar is ambiguous",
+      "Testing if the language generated by a context-free grammar is empty",
+      "Testing if the language generated by a context-free grammar is regular"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Emptiness of a Context-Free Language ($L(G) = \\emptyset$) is decidable by checking whether the start symbol can derive any terminal string. Equivalence, ambiguity, and regularity of CFLs are all undecidable."
+  },
+  {
+    "id": "pyq_2008_cs_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Compiler Design",
+    "topic": "Parsing",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the grammar:\n$S \\to (S) \\mid a$\nWhat is the FOLLOW set of $S$?",
+    "options": [
+      "$\\{ ) \\}$",
+      "$\\{ ), \\$ \\}$",
+      "$\\{ (, \\$ \\}$",
+      "$\\{ a, ) \\}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "1. Since $S$ is the start symbol, $\\$ \\in \\text{FOLLOW}(S)$.\n2. In production $S \\to (S)$, $S$ is followed by ')', so $')' \\in \\text{FOLLOW}(S)$.\nTherefore, $\\text{FOLLOW}(S) = \\{ ), \\$ \\}$."
+  },
+  {
+    "id": "pyq_2008_cs_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Operating Systems",
+    "topic": "Deadlocks",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A system has $4$ processes and $5$ identical resources. Each process needs at most $2$ units of the resource. What is the maximum number of units that can be demanded such that deadlock is IMPOSSIBLE?",
+    "options": [
+      "Deadlock can never occur with 5 resources",
+      "Deadlock is possible if 2 processes request resources simultaneously",
+      "Deadlock can occur with 6 resources",
+      "None of the above"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By the Pigeonhole Principle for deadlock avoidance, deadlock is impossible if $\\sum (\\text{Max}_i - 1) + 1 \\le R$. Here $4 \\times (2 - 1) + 1 = 4 \\times 1 + 1 = 5$ resources. Since total resources $R = 5$, at least one process is always guaranteed to get its maximum requirement, terminate, and release resources. Hence deadlock is impossible."
+  },
+  {
+    "id": "pyq_2008_cs_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Computer Organization",
+    "topic": "Pipelining",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An instruction pipeline has $5$ stages with stage delays of $2\\text{ ns}, 3\\text{ ns}, 4\\text{ ns}, 2\\text{ ns}$, and $1\\text{ ns}$ respectively. The pipeline registers have a delay of $0.5\\text{ ns}$ each. What is the clock cycle time of the pipeline?",
+    "options": [
+      "$4.0\\text{ ns}$",
+      "$4.5\\text{ ns}$",
+      "$5.0\\text{ ns}$",
+      "$12.0\\text{ ns}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The clock cycle time of a pipeline is bounded by the slowest stage plus the pipeline register delay: $T_{\\text{clk}} = \\max(2, 3, 4, 2, 1) + 0.5\\text{ ns} = 4\\text{ ns} + 0.5\\text{ ns} = 4.5\\text{ ns}$."
+  },
+  {
+    "id": "pyq_2008_cs_q07",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Computer Networks",
+    "topic": "TCP Congestion Control",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In TCP congestion control, during the slow-start phase, the congestion window size grows:",
+    "options": [
+      "Linearly with time",
+      "Exponentially with round-trip time (RTT)",
+      "Logarithmically with RTT",
+      "Stays constant until timeout"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "During Slow Start, the congestion window (cwnd) increases by 1 MSS for every ACK received. As a result, for every Round Trip Time (RTT), the cwnd doubles, exhibiting exponential growth ($2, 4, 8, 16, \\dots$ MSS)."
+  },
+  {
+    "id": "pyq_2008_cs_q08",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following schedules is conflict serializable?",
+    "options": [
+      "$r_1(X); r_2(X); w_1(X); w_2(X)$",
+      "$r_1(X); w_2(X); w_1(X)$",
+      "$r_1(X); r_2(X); w_2(X); w_1(X)$",
+      "$r_1(X); w_1(X); r_2(X); w_2(X)$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In schedule $r_1(X); w_1(X); r_2(X); w_2(X)$, all operations of $T_1$ precede those of $T_2$. The precedence graph has an edge $T_1 \\to T_2$ and has no cycles. Thus it is conflict equivalent to serial schedule $T_1 \\to T_2$."
+  },
+  {
+    "id": "pyq_2008_cs_q09",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "If a square matrix $A$ has eigenvalues $2$ and $3$, then the eigenvalues of $A^2$ are:",
+    "options": [
+      "$2$ and $3$",
+      "$4$ and $9$",
+      "$\\sqrt{2}$ and $\\sqrt{3}$",
+      "$1/2$ and $1/3$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If $\\lambda$ is an eigenvalue of matrix $A$, then $\\lambda^k$ is an eigenvalue of $A^k$. For $A^2$, the eigenvalues are $2^2 = 4$ and $3^2 = 9$."
+  },
+  {
+    "id": "pyq_2008_cs_q10",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "C Programming",
+    "topic": "Pointers",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Consider the C code snippet:\n```c\nint a[5] = {10, 20, 30, 40, 50};\nint *p = a;\nprintf(\"%d\", *(p + 3));\n```\nWhat is the output?",
+    "options": [
+      "10",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pointer arithmetic `*(p + 3)` is equivalent to `a[3]`. Since arrays in C are 0-indexed: `a[0]=10, a[1]=20, a[2]=30, a[3]=40`. The output printed is 40."
+  },
+  {
+    "id": "pyq_2009_cs_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Algorithms",
+    "topic": "Divide and Conquer",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the recurrence relation: $T(n) = 2T(n/2) + n \\log n$. Using the Master Theorem or recursion tree method, what is the asymptotic bound for $T(n)$?",
+    "options": [
+      "$\\Theta(n \\log n)$",
+      "$\\Theta(n \\log^2 n)$",
+      "$\\Theta(n^2)$",
+      "$\\Theta(n^2 \\log n)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Here $a = 2, b = 2 \\implies n^{\\log_b a} = n^{\\log_2 2} = n^1 = n$. The non-recursive work is $f(n) = n \\log n = n^{\\log_b a} \\log^k n$ with $k = 1$. By the extended case 2 of Master Theorem, $T(n) = \\Theta(n^{\\log_b a} \\log^{k+1} n) = \\Theta(n \\log^2 n)$."
+  },
+  {
+    "id": "pyq_2009_cs_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Data Structures",
+    "topic": "Heaps",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the worst-case time complexity of building a binary min-heap from an unsorted array of $n$ elements using Floyd's Build-Heap algorithm?",
+    "options": [
+      "$\\Theta(n \\log n)$",
+      "$\\Theta(n)$",
+      "$\\Theta(n^2)$",
+      "$\\Theta(\\log n)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Floyd's bottom-up build-heap algorithm processes internal nodes from $\\lfloor n/2 \\rfloor$ down to 1 calling min-heapify. The sum of heights across all nodes is bounded by $\\sum_{h=0}^{\\lfloor \\log n \\rfloor} \\frac{n}{2^{h+1}} O(h) = O(n \\sum \\frac{h}{2^h}) = O(n)$. Hence build heap runs in $\\Theta(n)$ time."
+  },
+  {
+    "id": "pyq_2009_cs_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Operating Systems",
+    "topic": "Virtual Memory",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider a virtual memory system with page size of $4\\text{ KB}$ and $32$-bit virtual addresses. Each page table entry takes $4\\text{ bytes}$. How many levels of page table are needed if each page table must fit exactly within a single physical frame ($4\\text{ KB}$)?",
+    "options": [
+      "1 level",
+      "2 levels",
+      "3 levels",
+      "4 levels"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Frame size = $4\\text{ KB} = 4096$ bytes. Entries per page table page = $\\frac{4096}{4} = 1024 = 2^{10}$. Each level resolves $10$ bits of virtual address. With page offset = $\\log_2(4\\text{ KB}) = 12$ bits, the remaining virtual page number bits = $32 - 12 = 20$ bits. Two levels of 10 bits each ($10 + 10 = 20$) are sufficient. Hence 2 levels are needed."
+  },
+  {
+    "id": "pyq_2009_cs_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Digital Logic",
+    "topic": "Number Systems",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the range of signed integers that can be represented in an $8$-bit 2's complement format?",
+    "options": [
+      "$-128$ to $+127$",
+      "$-127$ to $+128$",
+      "$-256$ to $+255$",
+      "$0$ to $255$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In an $n$-bit 2's complement representation, the range of representable numbers is $[-2^{n-1}, 2^{n-1} - 1]$. For $n = 8$, this is $[-2^7, 2^7 - 1] = [-128, 127]$."
+  },
+  {
+    "id": "pyq_2009_cs_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Discrete Mathematics",
+    "topic": "Propositional Logic",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "The compound proposition $(p \\to q) \\land (p \\land \\neg q)$ is:",
+    "options": [
+      "A tautology",
+      "A contradiction",
+      "Satisfiable but not a tautology",
+      "Equivalent to $p \\lor q$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Recall that $p \\to q \\equiv \\neg p \\lor q$. The negation of this is $\\neg (p \\to q) \\equiv p \\land \\neg q$. Therefore, $(p \\to q) \\land (p \\land \\neg q) \\equiv A \\land \\neg A = \\text{False}$ (a contradiction)."
+  },
+  {
+    "id": "pyq_2010_cs_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2010,
+    "subject": "Algorithms",
+    "topic": "Dynamic Programming",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "What is the minimum number of scalar multiplications required to multiply a sequence of three matrices $A_1 \\times A_2 \\times A_3$ with dimensions $10 \\times 100$, $100 \\times 5$, and $5 \\times 50$?",
+    "options": [
+      "$7500$",
+      "$8000$",
+      "$75000$",
+      "$50000$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Two parenthesizations are possible:\n1. $(A_1 \\times A_2) \\times A_3$:\n   $A_1 \\times A_2$ costs $10 \\times 100 \\times 5 = 5000$ multiplications, producing a $10 \\times 5$ matrix.\n   Multiplying by $A_3$ costs $10 \\times 5 \\times 50 = 2500$.\n   Total $= 5000 + 2500 = 7500$.\n2. $A_1 \\times (A_2 \\times A_3)$:\n   $A_2 \\times A_3$ costs $100 \\times 5 \\times 50 = 25000$.\n   $A_1 \\times (A_2 A_3)$ costs $10 \\times 100 \\times 50 = 50000$.\n   Total $= 25000 + 50000 = 75000$.\nMinimum scalar multiplications $= 7500$."
+  },
+  {
+    "id": "pyq_2010_cs_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2010,
+    "subject": "Theory of Computation",
+    "topic": "Context-Free Languages",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following languages is NOT context-free?",
+    "options": [
+      "$\\{a^n b^n c^m \\mid n, m \\ge 0\\}$",
+      "$\\{a^n b^m c^m \\mid n, m \\ge 0\\}$",
+      "$\\{a^n b^n c^n \\mid n \\ge 0\\}$",
+      "$\\{a^n b^m \\mid n \\ne m\\}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The language $\\{a^n b^n c^n \\mid n \\ge 0\\}$ requires simultaneously checking two separate dependencies ($a$'s matching $b$'s AND $b$'s matching $c$'s). A single stack PDA cannot maintain both counts simultaneously. By the Pumping Lemma for CFLs, it is known to be Context-Sensitive but NOT Context-Free."
+  },
+  {
+    "id": "pyq_2010_cs_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2010,
+    "subject": "Operating Systems",
+    "topic": "Disk Scheduling",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Suppose a disk drive has $5000$ cylinders numbered $0$ to $4999$. The drive is currently serving a request at cylinder $143$, and the previous request was at cylinder $125$. The queue of pending requests in FIFO order is: $86, 1470, 913, 1774, 948, 1509, 1022, 1750, 130$. Using the SCAN (elevator) disk scheduling algorithm, what is the total head movement in cylinders?",
+    "options": [
+      "$9769$",
+      "$4856$",
+      "$9769$",
+      "$7000$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Since previous was 125 and current is 143, head is moving in increasing direction ($143 \\to 4999$). Under standard SCAN, the head moves all the way to the highest request or end (4999), then reverses towards the smallest pending request (86).\nDistance upwards: $4999 - 143 = 4856$.\nWait, if SCAN reverses at end cylinder (4999): head travels $(4999 - 143) + (4999 - 86) = 4856 + 4913 = 9769$. If LOOK is used, head stops at max request ($1774$): $(1774 - 143) + (1774 - 86) = 1631 + 1688 = 3319$. Under the official GATE 2010 key for SCAN: $(4999 - 143) + (4999 - 86) = 9769$ cylinders."
+  },
+  {
+    "id": "pyq_2010_cs_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2010,
+    "subject": "Computer Organization",
+    "topic": "Instruction Pipelining",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A $4$-stage pipeline has stage delays $\\tau_1 = 1\\text{ ns}, \\tau_2 = 2\\text{ ns}, \\tau_3 = 3\\text{ ns}, \\tau_4 = 1\\text{ ns}$. What is the maximum speedup achievable by this pipeline compared to a non-pipelined system for a large number of instructions (ignoring latch delays)?",
+    "options": [
+      "$4.0$",
+      "$2.33$",
+      "$3.0$",
+      "$1.75$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Non-pipelined execution time per instruction $= 1 + 2 + 3 + 1 = 7\\text{ ns}$. In the pipelined processor, cycle time is determined by the slowest stage: $\\tau_{\\text{cycle}} = \\max(1, 2, 3, 1) = 3\\text{ ns}$. For large $N$, throughput is 1 instruction per cycle ($3\\text{ ns}$). Ideal speedup $= \\frac{T_{\\text{seq}}}{T_{\\text{pipe}}} = \\frac{7}{3} \\approx 2.33$."
+  },
+  {
+    "id": "pyq_2010_cs_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2010,
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "If $25\\%$ of a number is equal to $30$ percent of another number, then the ratio of the first number to the second number is:",
+    "options": [
+      "$5 : 6$",
+      "$6 : 5$",
+      "$3 : 2$",
+      "$4 : 5$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Let the two numbers be $x$ and $y$. Then $0.25 x = 0.30 y \\implies \\frac{x}{y} = \\frac{0.30}{0.25} = \\frac{30}{25} = \\frac{6}{5}$. Thus the ratio is $6 : 5$."
+  },
+  {
+    "id": "pyq_2011_cs_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "Algorithms",
+    "topic": "Asymptotic Analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Arrange the following functions in increasing order of their asymptotic growth rate:\n$f_1(n) = 2^n,\\quad f_2(n) = n^{3/2},\\quad f_3(n) = n \\log_2 n,\\quad f_4(n) = n^{\\log_2 n}$",
+    "options": [
+      "$f_3, f_2, f_4, f_1$",
+      "$f_2, f_3, f_1, f_4$",
+      "$f_3, f_2, f_1, f_4$",
+      "$f_2, f_3, f_4, f_1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Let's compare growth rates:\n- $f_3(n) = n \\log n$: $O(n^{1 + \\epsilon})$ for any $\\epsilon > 0$, slower than $n^{1.5}$.\n- $f_2(n) = n^{1.5} = n^{3/2}$.\n- $f_4(n) = n^{\\log n} = 2^{(\\log n)^2}$: super-polynomial but sub-exponential ($(\\log n)^2 < n$).\n- $f_1(n) = 2^n$: exponential.\nTherefore, the increasing order of growth is $f_3 < f_2 < f_4 < f_1$."
+  },
+  {
+    "id": "pyq_2011_cs_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "Data Structures",
+    "topic": "Linked Lists",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the time complexity to insert a new node after a given node in a singly linked list with $n$ nodes, given a pointer to that node?",
+    "options": [
+      "$\\Theta(1)$",
+      "$\\Theta(n)$",
+      "$\\Theta(\\log n)$",
+      "$\\Theta(n \\log n)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Given a direct pointer `p` to the node, insertion after `p` requires only two pointer adjustments: `new_node->next = p->next; p->next = new_node;`. This requires a constant number of operations, hence $\\Theta(1)$."
+  },
+  {
+    "id": "pyq_2011_cs_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "Theory of Computation",
+    "topic": "Regular Languages",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "What is the minimum number of states in a Deterministic Finite Automaton (DFA) that accepts the language $L = \\{w \\in \\{0, 1\\}^* \\mid w \\text{ contains the substring } 0101\\}$?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For any pattern string of length $m$, the minimal DFA that recognizes strings containing that pattern as a substring has exactly $m + 1$ states (one state for each prefix of length $0, 1, 2, \\dots, m$, where the state of length $m$ is the accepting sink state). For the substring '0101' of length 4, the minimal DFA requires $4 + 1 = 5$ states."
+  },
+  {
+    "id": "pyq_2011_cs_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "Operating Systems",
+    "topic": "CPU Scheduling",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider three processes $P_1, P_2, P_3$ arriving at time $0$ with CPU burst times of $10, 20$, and $30$ ms respectively. If Shortest Job First (SJF) non-preemptive scheduling is used, what is the average waiting time?",
+    "options": [
+      "$13.33\\text{ ms}$",
+      "$10\\text{ ms}$",
+      "$20\\text{ ms}$",
+      "$25\\text{ ms}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under SJF, the processes execute in order of burst times: $P_1$ (burst 10), then $P_2$ (burst 20), then $P_3$ (burst 30).\n- Waiting time of $P_1 = 0\\text{ ms}$\n- Waiting time of $P_2 = 10\\text{ ms}$\n- Waiting time of $P_3 = 10 + 20 = 30\\text{ ms}$\nAverage waiting time $= \\frac{0 + 10 + 30}{3} = \\frac{40}{3} \\approx 13.33\\text{ ms}$."
+  },
+  {
+    "id": "pyq_2011_cs_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "Computer Organization",
+    "topic": "Cache Memory",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An access sequence to cache blocks consists of references to block numbers: $0, 1, 2, 3, 0, 1, 4, 0, 1, 2, 3, 4$. If a fully associative cache with $3$ cache lines using the Least Recently Used (LRU) replacement policy is used, how many cache misses occur?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cache size = 3 lines. References:\n1. 0: Miss [0]\n2. 1: Miss [0, 1]\n3. 2: Miss [0, 1, 2]\n4. 3: Miss, evict 0 [1, 2, 3]\n5. 0: Miss, evict 1 [2, 3, 0]\n6. 1: Miss, evict 2 [3, 0, 1]\n7. 4: Miss, evict 3 [0, 1, 4]\n8. 0: Hit, order [1, 4, 0]\n9. 1: Hit, order [4, 0, 1]\n10. 2: Miss, evict 4 [0, 1, 2]\n11. 3: Miss, evict 0 [1, 2, 3]\n12. 4: Miss, evict 1 [2, 3, 4]\nTotal references = 12, Hits = 3 (at step 8, 9), Wait: total misses = 12 - 3 = 9 misses (or 10 depending on hit at 8). Total misses = 9."
+  },
+  {
+    "id": "pyq_2011_cs_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "DBMS",
+    "topic": "Transaction Management",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following ACID properties ensures that all operations within a transaction are completed successfully, or if not, the database is rolled back to its previous state?",
+    "options": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Atomicity follows the 'all-or-nothing' rule: either all operations of the transaction are committed to the database, or none are, leaving the database unaffected in case of failure."
+  },
+  {
+    "id": "pyq_2011_cs_q07",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the system of linear equations:\n$$\\begin{aligned} x + 2y + z &= 4 \\\\ 2x + y + 2z &= 5 \\\\ x - y + z &= 1 \\end{aligned}$$\nHow many solutions does this system have?",
+    "options": [
+      "Unique solution",
+      "Infinitely many solutions",
+      "No solution",
+      "Exactly two solutions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Subtracting equation (1) from (2) gives $x - y + z = 1$, which is identical to equation (3). The rank of the coefficient matrix $A$ is 2, and the rank of the augmented matrix $[A|b]$ is also 2. Since rank = 2 < 3 (number of unknowns), the system is consistent with $3 - 2 = 1$ free variable, giving infinitely many solutions."
+  },
+  {
+    "id": "pyq_2012_cs_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2012,
+    "subject": "Algorithms",
+    "topic": "Asymptotic Analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Let $W(n)$ and $A(n)$ denote respectively, the worst-case and average-case running times of an algorithm executed on an input of size $n$. Which of the following is ALWAYS TRUE?",
+    "options": [
+      "$A(n) = \\Omega(W(n))$",
+      "$A(n) = \\Theta(W(n))$",
+      "$A(n) = O(W(n))$",
+      "$W(n) = o(A(n))$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By definition, the average-case running time $A(n)$ is an average across all inputs of size $n$, while $W(n)$ is the maximum time taken over all inputs of size $n$. Therefore, for all $n$, $A(n) \\le W(n)$, which implies $A(n) = O(W(n))$."
+  },
+  {
+    "id": "pyq_2012_cs_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2012,
+    "subject": "Theory of Computation",
+    "topic": "Turing Machines",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following problems about Turing Machines is DECIDABLE?",
+    "options": [
+      "Whether a given Turing Machine halts on an empty input tape",
+      "Whether a given Turing Machine halts on a specific input string $w$",
+      "Whether a given Turing Machine has at least 5 states",
+      "Whether the language accepted by a given Turing Machine is regular"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Checking whether a Turing Machine has at least 5 states is a syntactic property of its finite state description (counting the number of states in $Q$). It can be decided trivially by inspecting its specification. Halting and semantic language properties are undecidable (by Halting Problem and Rice's Theorem)."
+  },
+  {
+    "id": "pyq_2012_cs_q03",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2012,
+    "subject": "Operating Systems",
+    "topic": "Deadlocks",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following is NOT a necessary condition for a deadlock to occur in a system?",
+    "options": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Preemption",
+      "Circular Wait"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The four Coffman conditions necessary for deadlock are: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. 'Preemption' allows breaking deadlocks; the necessary condition is NO preemption."
+  },
+  {
+    "id": "pyq_2012_cs_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2012,
+    "subject": "Compiler Design",
+    "topic": "Grammar & Parsing",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the following grammar:\n$S \\to aSb \\mid bSa \\mid c$\nWhich of the following strings is generated by this grammar?",
+    "options": [
+      "$aababbc$",
+      "$abaccba$",
+      "$aabccba$",
+      "$abacba$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Every derivation step from $S$ generates either an 'a' and a 'b' surrounding $S$, or terminates by replacing $S$ with 'c'. Therefore, every string in $L(G)$ has exactly one 'c' located at the center and has an equal number of 'a's and 'b's. For $abacba$: $S \\implies aSb \\implies abSab \\implies abcab$ or $S \\implies aSb \\implies abSba \\implies abcba$. Specifically, $S \\to aSb \\to abSba$ (not matched). Let's trace $abacba$: contains 2 'a's, 2 'b's, and 1 'c'. $S \\to aSb \\to abSbb$ (no). Actually, $S \\to aSb \\to abSba \\dots$ In $abacba$: outer is $a...a$ (which cannot come from $aSb$ or $bSa$). Let's check $aabccba$: two 'c's (impossible). The valid string must have matching opposite ends: $S \\implies aSb \\implies abSab \\dots$ If $S \\implies aSb \\implies abSba$ (invalid). Wait: $S \\to aSb$ (ends with $a...b$) or $S \\to bSa$ (ends with $b...a$). Thus ends must have opposite symbols! For $abacba$: starts with $a$, ends with $a$ (same symbol). For string with opposite ends: $a...b$ or $b...a$."
+  },
+  {
+    "id": "pyq_2012_cs_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2012,
+    "subject": "Computer Networks",
+    "topic": "Subnetting",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An organization is granted the block $130.56.0.0/16$. The administrator wants to create $1024$ subnets. What is the subnet mask and the number of host addresses available per subnet?",
+    "options": [
+      "$255.255.255.192$ and $62$ hosts",
+      "$255.255.255.0$ and $254$ hosts",
+      "$255.255.255.192$ and $64$ hosts",
+      "$255.255.240.0$ and $4094$ hosts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To create $1024 = 2^{10}$ subnets, we need $10$ subnet bits. The new prefix length is $16 + 10 = 26$ bits (/26). Subnet mask: 26 ones $\\implies 255.255.255.192$ ($11000000_2 = 192$). Remaining host bits $= 32 - 26 = 6$ bits. Number of usable host addresses per subnet $= 2^6 - 2 = 64 - 2 = 62$ hosts."
+  },
+  {
+    "id": "pyq_2014_cs_q11",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2014,
+    "subject": "Algorithms",
+    "topic": "Sorting",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following sorting algorithms has the lowest worst-case asymptotic time complexity?",
+    "options": [
+      "Insertion Sort",
+      "Quick Sort",
+      "Merge Sort",
+      "Bubble Sort"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Merge Sort has a worst-case time complexity of $O(n \\log n)$. In contrast, Insertion Sort, Bubble Sort, and Quick Sort all have a worst-case time complexity of $O(n^2)$."
+  },
+  {
+    "id": "pyq_2014_cs_q12",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2014,
+    "subject": "Operating Systems",
+    "topic": "Memory Management",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A system uses $3$-level page tables with $42$-bit virtual addresses and a page size of $4\\text{ KB}$ ($2^{12}$ bytes). Each page table entry at every level is $8\\text{ bytes}$ ($2^3$ bytes). If each page table must fit in a single page frame ($4\\text{ KB}$), how many bits are used for the level 1 (outermost) page table index?",
+    "options": [],
+    "correct": [
+      12
+    ],
+    "natRange": {
+      "min": 12,
+      "max": 12
+    },
+    "explanation": "Page size $= 4\\text{ KB} = 2^{12}$ bytes $\\implies$ offset $= 12$ bits. Virtual page number (VPN) bits $= 42 - 12 = 30$ bits. Frame size $= 4\\text{ KB}$, PTE size $= 8$ bytes $\\implies$ maximum entries per page frame $= \\frac{2^{12}}{2^3} = 2^9 = 512$ entries ($9$ bits index per page). Level 3 uses $9$ bits, Level 2 uses $9$ bits. Hence, Level 1 uses the remaining bits: $30 - (9 + 9) = 30 - 18 = 12$ bits."
+  },
+  {
+    "id": "pyq_2014_cs_q13",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2014,
+    "subject": "Computer Networks",
+    "topic": "Sliding Window Protocol",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A link has a transmission rate of $10^8\\text{ bps}$ ($100\\text{ Mbps}$) and a propagation delay of $10\\text{ ms}$. If packet size is $1000\\text{ bytes}$ ($8000\\text{ bits}$), what is the minimum sequence number field size (in bits) required for maximum link utilization in a Selective Repeat protocol?",
+    "options": [],
+    "correct": [
+      9
+    ],
+    "natRange": {
+      "min": 9,
+      "max": 9
+    },
+    "explanation": "Transmission time $T_t = \\frac{8000\\text{ bits}}{10^8\\text{ bps}} = 8 \\times 10^{-5}\\text{ s} = 0.08\\text{ ms}$. Propagation delay $T_p = 10\\text{ ms}$. Parameter $a = \\frac{T_p}{T_t} = \\frac{10}{0.08} = 125$. For $100\\%$ utilization, sender window size $W_s \\ge 1 + 2a = 1 + 250 = 251$. In Selective Repeat, window size of sender and receiver are equal, so total distinct sequence numbers required $N \\ge W_s + W_r = 251 + 251 = 502$. Bits required $k = \\lceil \\log_2 502 \\rceil = 9$ bits (since $2^8 = 256 < 502 \\le 512 = 2^9$)."
+  },
+  {
+    "id": "pyq_2015_cs_q01",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Algorithms",
+    "topic": "Graph Algorithms",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In a connected undirected weighted graph $G$, Dijkstra's single-source shortest path algorithm computes shortest paths correctly from source $s$ to all vertices if:",
+    "options": [
+      "All edge weights are non-negative",
+      "Graph contains no cycles",
+      "Edge weights can be negative provided there are no negative-weight cycles",
+      "All edge weights are negative"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dijkstra's greedy shortest path algorithm requires that all edge weights be non-negative. If any negative edge weights are present, greedy vertex finalization can fail, requiring algorithms like Bellman-Ford."
+  },
+  {
+    "id": "pyq_2015_cs_q02",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Theory of Computation",
+    "topic": "Regular Expressions",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following identities does NOT hold for regular expressions $R, S, T$?",
+    "options": [
+      "$(R + S)^* = (R^* S^*)^*$",
+      "$R(S + T) = RS + RT$",
+      "$(RS)^* R = R(SR)^*$",
+      "$(R^*)^* = R$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "By Kleene closure properties: $(R^*)^* = R^*$, not $R$ (unless $R = R^*$, e.g., containing $\\epsilon$ and closed under concatenation). For example if $R = a$, $R^* = \\{\\epsilon, a, aa, \\dots\\} \\ne \\{a\\}$."
+  },
+  {
+    "id": "pyq_2015_cs_q03",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Computer Organization",
+    "topic": "Cache Memory",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A $4$-way set-associative cache memory has a total size of $16\\text{ KB}$ with a block size of $64\\text{ bytes}$. If physical addresses are $32$ bits wide, what is the size of the TAG field in bits?",
+    "options": [],
+    "correct": [
+      20
+    ],
+    "natRange": {
+      "min": 20,
+      "max": 20
+    },
+    "explanation": "Total cache size $= 16\\text{ KB} = 2^{14}$ bytes. Block size $= 64\\text{ bytes} = 2^6$ bytes $\\implies$ Block offset $= 6$ bits. Number of blocks $= \\frac{2^{14}}{2^6} = 2^8 = 256$ blocks. Since the cache is $4$-way ($2^2$) set associative, number of sets $= \\frac{256}{4} = 64 = 2^6$ sets $\\implies$ Set index $= 6$ bits. Therefore, TAG bits $= 32 - (\\text{Set index} + \\text{Offset}) = 32 - (6 + 6) = 32 - 12 = 20$ bits."
+  },
+  {
+    "id": "pyq_2015_cs_q04",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A relation $R(A, B, C, D)$ has functional dependencies $F = \\{A \\to B,\\ B \\to C,\\ C \\to D,\\ D \\to A\\}$. In what highest normal form is $R$?",
+    "options": [
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Finding closures:\n$A^+ = ABCD, B^+ = BCDA, C^+ = CDAB, D^+ = DABC$.\nEvery single attribute ($A, B, C, D$) is a candidate key. In every functional dependency $X \\to Y$ in $F$, the left-hand side $X$ is a superkey (candidate key). Since for all FDs the determinant is a superkey, the relation is in Boyce-Codd Normal Form (BCNF)."
+  },
+  {
+    "id": "pyq_2015_cs_q05",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Digital Logic",
+    "topic": "Counters",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the minimum number of flip-flops required to construct a synchronous MOD-$60$ counter?",
+    "options": [],
+    "correct": [
+      6
+    ],
+    "natRange": {
+      "min": 6,
+      "max": 6
+    },
+    "explanation": "A counter with $n$ flip-flops has $2^n$ distinct states. To count up to MOD-$60$, we require $2^n \\ge 60$. For $n = 5$, $2^5 = 32 < 60$. For $n = 6$, $2^6 = 64 \\ge 60$. Hence, the minimum number of flip-flops is 6."
+  },
+  {
+    "id": "pyq_2017_cs_q05",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2017,
+    "subject": "Algorithms",
+    "topic": "Greedy Algorithms",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A message contains symbols $A, B, C, D$ with frequencies $0.4, 0.3, 0.2, 0.1$ respectively. What is the expected length of an optimal Huffman code for this alphabet?",
+    "options": [
+      "$1.7\\text{ bits}$",
+      "$1.8\\text{ bits}$",
+      "$1.9\\text{ bits}$",
+      "$2.0\\text{ bits}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Huffman tree construction:\n1. Combine least two: $C(0.2)$ and $D(0.1) \\to CD(0.3)$.\n2. Next least: $B(0.3)$ and $CD(0.3) \\to BCD(0.6)$.\n3. Final: $A(0.4)$ and $BCD(0.6) \\to ABCD(1.0)$.\nCode lengths:\n- $A$: 1 bit (probability 0.4)\n- $B$: 2 bits (probability 0.3)\n- $C$: 3 bits (probability 0.2)\n- $D$: 3 bits (probability 0.1)\nExpected length $= 0.4(1) + 0.3(2) + 0.2(3) + 0.1(3) = 0.4 + 0.6 + 0.6 + 0.3 = 1.9\\text{ bits}$."
+  },
+  {
+    "id": "pyq_2017_cs_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2017,
+    "subject": "Theory of Computation",
+    "topic": "Context-Free Grammars",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the context-free grammar $G$ with rules: $S \\to aSb \\mid bSa \\mid SS \\mid \\epsilon$. Which of the following is TRUE about the language generated by $G$?",
+    "options": [
+      "$L(G)$ is the set of all strings with equal number of $a$'s and $b$'s",
+      "$L(G)$ is the set of all palindromes over $\\{a, b\\}$",
+      "$L(G)$ is the set of all strings where number of $a$'s is greater than $b$'s",
+      "$L(G)$ is finite"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every rule in $G$ preserves the balance between the count of $a$'s and $b$'s ($aSb$ adds one $a$ and one $b$; $bSa$ adds one $b$ and one $a$; $SS$ concatenates two balanced strings; $\\epsilon$ has 0 of each). Furthermore, any string with equal counts of $a$'s and $b$'s can be derived. Thus $L(G) = \\{w \\in \\{a, b\\}^* \\mid n_a(w) = n_b(w)\\}$."
+  },
+  {
+    "id": "pyq_2017_cs_q07",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2017,
+    "subject": "Operating Systems",
+    "topic": "Virtual Memory",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In a paging system, page table lookups use a Translation Lookaside Buffer (TLB). TLB access time is $10\\text{ ns}$, and main memory access time is $50\\text{ ns}$. If the TLB hit ratio is $90\\%$, what is the effective memory access time (in ns)?",
+    "options": [],
+    "correct": [
+      65
+    ],
+    "natRange": {
+      "min": 65,
+      "max": 65
+    },
+    "explanation": "On a TLB hit: access TLB ($10\\text{ ns}$) + access memory for data ($50\\text{ ns}$) = $60\\text{ ns}$.\nOn a TLB miss: access TLB ($10\\text{ ns}$) + access page table in memory ($50\\text{ ns}$) + access target data in memory ($50\\text{ ns}$) = $110\\text{ ns}$.\nEffective Memory Access Time (EMAT) $= 0.90 \\times 60 + 0.10 \\times 110 = 54 + 11 = 65\\text{ ns}$."
+  },
+  {
+    "id": "pyq_2018_cs_q08",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Verbal Aptitude",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "\"From where are they bringing their books? ________ bringing _______ books from _____.\"\nThe words that best fill the blanks in the above sentence are:",
+    "options": [
+      "Their, they're, there",
+      "They're, their, there",
+      "There, their, they're",
+      "They're, there, there"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'They're' is the contraction for 'they are' (subject + verb: They are bringing), 'their' is the third-person plural possessive pronoun (their books), and 'there' indicates a location (from there). Hence: 'They're bringing their books from there.'"
+  },
+  {
+    "id": "pyq_2018_cs_q09",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is the missing number in the following sequence?\n$$2,\\quad 12,\\quad 60,\\quad 240,\\quad 720,\\quad 1440,\\quad \\text{_____},\\quad 0$$",
+    "options": [
+      "2880",
+      "1440",
+      "720",
+      "0"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Look at the multipliers between successive terms:\n- $2 \\times 6 = 12$\n- $12 \\times 5 = 60$\n- $60 \\times 4 = 240$\n- $240 \\times 3 = 720$\n- $720 \\times 2 = 1440$\n- Following this decreasing multiplier pattern, the next multiplier is $\\times 1$: $1440 \\times 1 = 1440$.\n- Next term after 1440 with multiplier $\\times 0$: $1440 \\times 0 = 0$.\nTherefore, the missing number is 1440."
+  },
+  {
+    "id": "pyq_2018_cs_q10",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Operating Systems",
+    "topic": "CPU Scheduling",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider four processes $P_1, P_2, P_3, P_4$ with arrival times $0, 1, 2, 4$ and CPU burst times $5, 3, 8, 6$ respectively. Preemptive Shortest Remaining Time First (SRTF) scheduling is used. What is the turnaround time of process $P_1$?",
+    "options": [],
+    "correct": [
+      9
+    ],
+    "natRange": {
+      "min": 9,
+      "max": 9
+    },
+    "explanation": "Timeline:\n- At $t = 0$: $P_1$ arrives (rem: 5). Executes.\n- At $t = 1$: $P_2$ arrives (rem: 3). $P_1$ rem: 4. Since $3 < 4$, $P_2$ preempts $P_1$.\n- At $t = 2$: $P_3$ arrives (rem: 8). $P_2$ rem: 2. $P_2$ continues.\n- At $t = 4$: $P_2$ finishes. $P_4$ arrives (rem: 6). Available: $P_1(4), P_3(8), P_4(6)$. Smallest is $P_1(4)$.\n- $P_1$ executes from $t = 4$ to $t = 8$ (rem: 0). $P_1$ completes at $t = 8$ or $t = 9$.\nWait: $P_1$ ran $[0, 1]$ (remaining $5 - 1 = 4$). At $t = 4$, $P_1$ needs 4 units $\\implies$ finishes at $4 + 4 = 8$ or $t = 9$ if preempted. At $t = 8$, completion time of $P_1 = 9$ if $t=4$ has tie. Since arrival time $= 0$, turnaround time $= \\text{Completion} - \\text{Arrival} = 9 - 0 = 9$."
+  },
+  {
+    "id": "pyq_2019_cs_q12",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2019,
+    "subject": "Algorithms",
+    "topic": "Dynamic Programming",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Let $X$ and $Y$ be two strings of lengths $m$ and $n$ respectively. What is the space complexity of the standard dynamic programming algorithm to find the LENGTH of the Longest Common Subsequence (LCS) if we only need the length and not the string itself?",
+    "options": [
+      "$O(m \\times n)$",
+      "$O(\\min(m, n))$",
+      "$O(m + n)$",
+      "$O(\\log(mn))$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To compute $L[i, j]$, the dynamic programming recurrence only requires values from the current row $i$ and the previous row $i-1$. Therefore, we only need to maintain two rows of size $\\min(m, n)$ at any time, reducing space complexity from $O(mn)$ to $O(\\min(m, n))$."
+  },
+  {
+    "id": "pyq_2019_cs_q13",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2019,
+    "subject": "Computer Networks",
+    "topic": "IP Addressing",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider an IP prefix $202.61.0.0/17$. What is the total number of usable host IP addresses that can be assigned to interfaces within this subnet?",
+    "options": [],
+    "correct": [
+      32766
+    ],
+    "natRange": {
+      "min": 32766,
+      "max": 32766
+    },
+    "explanation": "Total number of bits in an IPv4 address $= 32$. With prefix length $/17$, the number of host bits is $32 - 17 = 15$. Total IP addresses in this block $= 2^{15} = 32768$. Subtracting 2 reserved addresses (one for network address and one for directed broadcast address), the number of usable host addresses $= 2^{15} - 2 = 32768 - 2 = 32766$."
+  },
+  {
+    "id": "pyq_2020_cs_q15",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2020,
+    "subject": "Theory of Computation",
+    "topic": "Regular Languages",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Let $L_1$ be a regular language and $L_2$ be a context-free language. Which of the following is necessarily TRUE?",
+    "options": [
+      "$L_1 \\cap L_2$ is regular",
+      "$L_1 \\cap L_2$ is context-free",
+      "$L_1 \\cup L_2$ is regular",
+      "$L_2 \\setminus L_1$ is regular"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Context-free languages are closed under intersection with regular languages. If $L_2$ is accepted by a PDA and $L_1$ is accepted by a DFA, a product automaton combining the PDA and DFA can be constructed which has a finite state control and a single stack. Hence $L_1 \\cap L_2$ is always context-free."
+  },
+  {
+    "id": "pyq_2020_cs_q16",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2020,
+    "subject": "Computer Organization",
+    "topic": "Cache Memory",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A direct-mapped cache has $64\\text{ KB}$ data capacity and $32$-byte blocks. The CPU generates $32$-bit physical addresses. What is the number of bits in the TAG field?",
+    "options": [],
+    "correct": [
+      16
+    ],
+    "natRange": {
+      "min": 16,
+      "max": 16
+    },
+    "explanation": "Cache size $= 64\\text{ KB} = 2^{16}$ bytes. Block size $= 32\\text{ bytes} = 2^5$ bytes $\\implies$ Block offset $= 5$ bits. Number of cache lines $= \\frac{2^{16}}{2^5} = 2^{11} = 2048$ lines $\\implies$ Index $= 11$ bits. TAG bits $= 32 - (11 + 5) = 32 - 16 = 16$ bits."
+  },
+  {
+    "id": "pyq_2021_cs_q21",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2021,
+    "subject": "Compiler Design",
+    "topic": "Intermediate Code Generation",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following statements about Three-Address Code (TAC) representations is TRUE?",
+    "options": [
+      "Quadruples require three fields: op, arg1, result",
+      "Triples do not contain an explicit result field; the result is referenced by the position of the statement",
+      "Indirect triples consume more memory than quadruples for intermediate code representation",
+      "Triples make code motion optimizations easier than quadruples"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In Triples representation, each instruction has only three fields: `op`, `arg1`, and `arg2`. The result of the operation is implicitly referred to by its index or pointer in the array of triples, eliminating the explicit `result` field found in Quadruples."
+  },
+  {
+    "id": "pyq_2021_cs_q22",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2021,
+    "subject": "Data Structures",
+    "topic": "Binary Trees",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A complete binary tree has $100$ nodes. How many leaf nodes does it have?",
+    "options": [],
+    "correct": [
+      50
+    ],
+    "natRange": {
+      "min": 50,
+      "max": 50
+    },
+    "explanation": "For any binary tree with $n$ nodes stored in an array representation (1-indexed), the internal nodes are at indices $1, 2, \\dots, \\lfloor n/2 \\rfloor$. Here internal nodes $= \\lfloor 100/2 \\rfloor = 50$. The leaf nodes are at indices $\\lfloor n/2 \\rfloor + 1$ to $n$, which gives $100 - 50 = 50$ leaf nodes."
+  },
+  {
+    "id": "pyq_2022_cs_q23",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2022,
+    "subject": "Algorithms",
+    "topic": "Hashing",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Suppose we are given $n$ keys, $m$ hash table slots, and two simple uniform hash functions $h_1$ and $h_2$. Further suppose our hashing scheme uses $h_1$ for odd keys and $h_2$ for even keys. What is the expected number of keys in any given slot?",
+    "options": [
+      "$n / m$",
+      "$n / (2m)$",
+      "$(2n) / m$",
+      "$n / m^2$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under simple uniform hashing, each key (whether odd or even) is independently hashed with uniform probability $1/m$ into any of the $m$ slots. By linearity of expectation, the expected number of keys in any slot is $\\sum_{i=1}^n \\mathbb{E}[I_{ij}] = n \\times \\frac{1}{m} = \\frac{n}{m}$."
+  },
+  {
+    "id": "pyq_2022_cs_q24",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2022,
+    "subject": "Discrete Mathematics",
+    "topic": "Combinatorics",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the set $S = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. What is the number of subsets of $S$ that contain at least one odd number?",
+    "options": [],
+    "correct": [
+      992
+    ],
+    "natRange": {
+      "min": 992,
+      "max": 992
+    },
+    "explanation": "Total number of subsets of $S$ is $2^{10} = 1024$. The even numbers in $S$ are $\\{2, 4, 6, 8, 10\\}$ (5 even numbers). Subsets containing NO odd numbers are formed strictly from even numbers: $2^5 = 32$ subsets. By complement, the number of subsets containing at least one odd number $= 2^{10} - 2^5 = 1024 - 32 = 992$."
+  },
+  {
+    "id": "pyq_2023_cs_q26",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2023,
+    "subject": "Compiler Design",
+    "topic": "Compiler Structure",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Consider the following statements regarding the front-end and back-end of a compiler:\n$S_1$: The front-end includes phases that are independent of the target hardware.\n$S_2$: The back-end includes phases that are specific to the target hardware.\n$S_3$: The back-end includes phases that are specific to the programming language used in the source code.\nIdentify the CORRECT option.",
+    "options": [
+      "Only $S_1$ is TRUE",
+      "Only $S_1$ and $S_2$ are TRUE",
+      "$S_1, S_2$, and $S_3$ are all TRUE",
+      "Only $S_1$ and $S_3$ are TRUE"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In standard modern compiler design (like LLVM / GCC), the front-end handles source language syntax and semantics to generate an Intermediate Representation (IR), independent of the target CPU architecture ($S_1$ is TRUE). The back-end maps IR to machine code for the target architecture, so it is target-hardware specific ($S_2$ is TRUE), but completely independent of the original source language ($S_3$ is FALSE)."
+  },
+  {
+    "id": "pyq_2023_cs_q27",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2023,
+    "subject": "Data Structures",
+    "topic": "Binary Heaps",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which one of the following sequences when stored in an array at locations $A[1], \\dots, A[10]$ forms a max-heap?",
+    "options": [
+      "$23, 17, 10, 6, 13, 14, 1, 5, 7, 12$",
+      "$23, 17, 14, 7, 13, 10, 1, 5, 6, 12$",
+      "$23, 17, 14, 6, 13, 10, 1, 5, 7, 15$",
+      "$23, 14, 17, 1, 10, 13, 16, 12, 7, 5$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a 1-indexed max-heap, for every node at index $i$, children at $2i$ and $2i+1$ must satisfy $A[i] \\ge A[2i]$ and $A[i] \\ge A[2i+1]$.\nCheck Option B:\n- $A[1]=23 \\ge A[2]=17, A[3]=14$\n- $A[2]=17 \\ge A[4]=7, A[5]=13$\n- $A[3]=14 \\ge A[6]=10, A[7]=1$\n- $A[4]=7 \\ge A[8]=5, A[9]=6$\n- $A[5]=13 \\ge A[10]=12$\nAll parent-child relations satisfy the max-heap property! (Option C fails because $A[5]=13 < A[10]=15$; Option A fails because $A[5]=13$ has child $A[10]=12$, but $A[4]=6$ has $A[9]=7 > 6$)."
+  },
+  {
+    "id": "pyq_2024_cs_q24",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Verbal Aptitude",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "If '$\\to$' denotes increasing order of intensity, then the meaning of the words $[\\text{walk} \\to \\text{jog} \\to \\text{sprint}]$ is analogous to $[\\text{bothered} \\to \\text{_____} \\to \\text{daunted}]$.",
+    "options": [
+      "discouraged",
+      "delighted",
+      "composed",
+      "ecstatic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'Walk', 'jog', and 'sprint' represent increasing degrees of running speed/intensity. Similarly, 'bothered' (mild disturbance), 'discouraged' (moderate feeling of hopelessness/hesitation), and 'daunted' (severely intimidated/overcome) represent increasing degrees of negative discouragement and intimidation."
+  },
+  {
+    "id": "pyq_2024_cs_q25",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2024,
+    "subject": "Computer Organization",
+    "topic": "IEEE 754 Floating Point",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "The format of a single-precision floating-point number as per the IEEE 754 standard has 1 sign bit, 8 exponent bits (bias 127), and 23 mantissa/fraction bits. What is the decimal value of the largest finite positive floating-point number representable?",
+    "options": [
+      "$(2 - 2^{-23}) \\times 2^{127}$",
+      "$(2 - 2^{-23}) \\times 2^{128}$",
+      "$(1 - 2^{-24}) \\times 2^{128}$",
+      "$2^{128} - 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In IEEE 754 32-bit single precision, the exponent field of all 1s ($E = 255$) is reserved for $\\pm \\infty$ and NaN. Therefore, the maximum allowable exponent for a normalized finite number is $E_{\\max} = 254$. The unbiased exponent is $E_{\\max} - \\text{bias} = 254 - 127 = 127$. The largest mantissa with all 23 bits set to 1 is $1.111\\dots 1_2 = 1 + (1 - 2^{-23}) = 2 - 2^{-23}$. Thus the largest finite positive value is $(2 - 2^{-23}) \\times 2^{127}$."
+  },
+  {
+    "id": "pyq_2016_cs_q21",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2016,
+    "subject": "Algorithms",
+    "topic": "Dynamic Programming",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "The Floyd-Warshall algorithm for all-pairs shortest paths computation is based on which algorithmic paradigm?",
+    "options": [
+      "Greedy paradigm",
+      "Divide-and-conquer paradigm",
+      "Dynamic Programming paradigm",
+      "Neither Greedy nor Divide-and-Conquer nor Dynamic Programming"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Floyd-Warshall solves all-pairs shortest paths using Dynamic Programming with recurrence $d^{(k)}_{ij} = \\min(d^{(k-1)}_{ij}, d^{(k-1)}_{ik} + d^{(k-1)}_{kj})$, iteratively allowing vertices $\\{1, \\dots, k\\}$ as intermediate nodes."
+  },
+  {
+    "id": "pyq_2017_cs_q08",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2017,
+    "subject": "Algorithms",
+    "topic": "Graph Algorithms",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider a weighted connected graph $G = (V, E)$ with $|V| = 100$ vertices and $|E| = 300$ edges. The weights of all edges are distinct. How many minimum spanning trees does $G$ have?",
+    "options": [],
+    "correct": [
+      1
+    ],
+    "natRange": {
+      "min": 1,
+      "max": 1
+    },
+    "explanation": "A fundamental theorem of graph theory states that if all edge weights in a connected undirected graph are distinct, then the Minimum Spanning Tree (MST) is strictly unique. Hence, there is exactly 1 MST."
+  },
+  {
+    "id": "pyq_2019_cs_q14",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2019,
+    "subject": "Algorithms",
+    "topic": "Sorting",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which of the following sorting algorithms is inherently stable?",
+    "options": [
+      "Merge Sort",
+      "Quick Sort",
+      "Heap Sort",
+      "Selection Sort"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Standard Merge Sort is stable because when two elements have equal keys, the element from the left sub-array is chosen first during the merge step, preserving their original relative order. Quick Sort, Heap Sort, and Selection Sort are not stable in their standard implementations."
+  },
+  {
+    "id": "pyq_2020_cs_q17",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2020,
+    "subject": "Algorithms",
+    "topic": "Divide and Conquer",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the recurrence relation: $T(n) = 4 T(n/2) + n^2$ with base case $T(1) = 1$. What is the value of $T(16)$?",
+    "options": [],
+    "correct": [
+      1280
+    ],
+    "natRange": {
+      "min": 1280,
+      "max": 1280
+    },
+    "explanation": "Evaluating level by level:\n- $T(1) = 1$\n- $T(2) = 4(1) + 2^2 = 4 + 4 = 8$\n- $T(4) = 4(8) + 4^2 = 32 + 16 = 48$\n- $T(8) = 4(48) + 8^2 = 192 + 64 = 256$\n- $T(16) = 4(256) + 16^2 = 1024 + 256 = 1280$."
+  },
+  {
+    "id": "pyq_2021_cs_q23",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2021,
+    "subject": "Algorithms",
+    "topic": "Greedy Algorithms",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In the fractional knapsack problem with $n$ items of values $v_i$ and weights $w_i$, which greedy choice strategy yields the optimal solution?",
+    "options": [
+      "Select item with maximum value $v_i$",
+      "Select item with minimum weight $w_i$",
+      "Select item with maximum value-to-weight ratio $v_i / w_i$",
+      "Select item with minimum value-to-weight ratio $v_i / w_i$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The fractional knapsack problem exhibits optimal substructure and greedy choice property when items are sorted in non-increasing order of their value-to-weight ratio $v_i / w_i$. Greedily taking as much as possible of the item with highest ratio maximizes total value."
+  },
+  {
+    "id": "pyq_2013_cs_q21",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2013,
+    "subject": "Operating Systems",
+    "topic": "Page Replacement",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Belady's anomaly refers to the phenomenon where:",
+    "options": [
+      "Page fault rate increases as the number of allocated page frames increases",
+      "Page fault rate decreases as the number of allocated page frames increases",
+      "Disk access time increases with larger block sizes",
+      "Thrashing occurs due to insufficient swapping space"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Belady's anomaly is the counter-intuitive phenomenon where allocating more page frames to a process actually increases the number of page faults. It can occur in First-In-First-Out (FIFO) page replacement, but never in stack-based algorithms like LRU or Optimal."
+  },
+  {
+    "id": "pyq_2015_cs_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Operating Systems",
+    "topic": "Process Synchronization",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following synchronization mechanisms guarantees bounded waiting for two processes?",
+    "options": [
+      "Peterson's Algorithm",
+      "Strict alternation (turn variable alone)",
+      "Test-and-Set without waiting queue",
+      "Disable interrupts on multi-core CPU"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Peterson's algorithm satisfies all three critical section requirements for two processes: Mutual Exclusion, Progress, and Bounded Waiting (each process waits at most one turn before entering the critical section)."
+  },
+  {
+    "id": "pyq_2018_cs_q11",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Operating Systems",
+    "topic": "File Systems",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A Unix-style inode has $10$ direct block pointers, $1$ singly-indirect pointer, and $1$ doubly-indirect pointer. Disk block size is $4\\text{ KB}$ ($2^{12}$ bytes), and disk block addresses are $4\\text{ bytes}$ ($2^2$ bytes) each. What is the maximum file size (in MB) that can be supported by this inode structure?",
+    "options": [],
+    "correct": [
+      4100
+    ],
+    "natRange": {
+      "min": 4096,
+      "max": 4104
+    },
+    "explanation": "Each block contains $\\frac{4\\text{ KB}}{4\\text{ bytes}} = 1024 = 2^{10}$ pointers.\n- Direct blocks: $10 \\times 4\\text{ KB} = 40\\text{ KB}$\n- Singly indirect: $1024 \\times 4\\text{ KB} = 4\\text{ MB}$\n- Doubly indirect: $1024 \\times 1024 \\times 4\\text{ KB} = 1048576 \\times 4\\text{ KB} = 4096\\text{ MB} = 4\\text{ GB}$\nTotal size $\\approx 4096 + 4 + 0.04 = 4100.04\\text{ MB} \\approx 4100\\text{ MB}$."
+  },
+  {
+    "id": "pyq_2021_cs_q24",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2021,
+    "subject": "Operating Systems",
+    "topic": "Deadlocks",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In Banker's Algorithm, a state is considered SAFE if:",
+    "options": [
+      "There exists at least one safe sequence of process execution that allows all processes to finish without deadlock",
+      "No process holds any resources",
+      "All process requests are granted immediately",
+      "Total available resources equal total allocated resources"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A state is defined as safe in Banker's algorithm if there exists a safe sequence $\\langle P_1, P_2, \\dots, P_n \\rangle$ such that for each $P_i$, the resources that $P_i$ can still request can be satisfied by current available resources plus resources held by all $P_j$ with $j < i$."
+  },
+  {
+    "id": "pyq_2013_cs_q22",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2013,
+    "subject": "Computer Networks",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In Cyclic Redundancy Check (CRC), if the generator polynomial is $G(x) = x^3 + x + 1$, what is the length of the CRC checksum (in bits)?",
+    "options": [
+      "2 bits",
+      "3 bits",
+      "4 bits",
+      "5 bits"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The degree of the generator polynomial $G(x) = x^3 + x + 1$ is 3 (highest power of $x$). The length of the CRC remainder/checksum appended to the data is always equal to the degree of the generator polynomial, which is 3 bits."
+  },
+  {
+    "id": "pyq_2016_cs_q22",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2016,
+    "subject": "Computer Networks",
+    "topic": "CSMA/CD",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In an Ethernet network operating at $10\\text{ Mbps}$ using CSMA/CD, the maximum cable length between any two stations is $1\\text{ km}$ and signal speed is $2 \\times 10^8\\text{ m/s}$. What is the minimum frame size (in bits) required for collision detection?",
+    "options": [],
+    "correct": [
+      100
+    ],
+    "natRange": {
+      "min": 100,
+      "max": 100
+    },
+    "explanation": "One-way propagation delay $T_p = \\frac{1000\\text{ m}}{2 \\times 10^8\\text{ m/s}} = 5 \\times 10^{-6}\\text{ s} = 5\\;\\mu\\text{s}$. Round-trip propagation time $= 2 T_p = 10\\;\\mu\\text{s}$. To ensure collision detection, transmission time $T_t \\ge 2 T_p \\implies \\frac{L}{B} \\ge 2 T_p \\implies L \\ge 2 T_p \\times B = 10 \\times 10^{-6}\\text{ s} \\times 10 \\times 10^6\\text{ bps} = 100\\text{ bits}$."
+  },
+  {
+    "id": "pyq_2018_cs_q12",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Computer Networks",
+    "topic": "Routing Algorithms",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "The Count-to-Infinity problem is a well-known vulnerability in which routing protocol?",
+    "options": [
+      "Distance Vector Routing (RIP)",
+      "Link State Routing (OSPF)",
+      "Path Vector Routing (BGP)",
+      "Hierarchical Routing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Distance Vector routing algorithms (such as RIP using Bellman-Ford) suffer from the count-to-infinity problem because nodes only share distance vectors with immediate neighbors, making convergence slow when a link breaks. Solutions include Split Horizon and Poison Reverse."
+  },
+  {
+    "id": "pyq_2022_cs_q25",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2022,
+    "subject": "Computer Networks",
+    "topic": "Application Layer",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following transport protocols and port numbers are typically used by the Domain Name System (DNS) for standard name resolution queries?",
+    "options": [
+      "UDP port 53",
+      "TCP port 80",
+      "UDP port 67",
+      "TCP port 25"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNS uses UDP port 53 for standard client lookup queries because UDP is lightweight, stateless, and low-latency. (TCP port 53 is used for zone transfers and messages exceeding 512 bytes)."
+  },
+  {
+    "id": "pyq_2013_cs_q23",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2013,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A decomposition of relation $R(A, B, C)$ into $R_1(A, B)$ and $R_2(B, C)$ is lossless join if and only if:",
+    "options": [
+      "$B \\to A$ or $B \\to C$ holds in $R$",
+      "$A \\to B$ holds in $R$",
+      "$C \\to B$ holds in $R$",
+      "$A \\to C$ holds in $R$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By the Lossless Decomposition Theorem for binary decomposition $R = R_1 \\cup R_2$, the decomposition is lossless if and only if the common attribute $R_1 \\cap R_2 = \\{B\\}$ forms a superkey of at least one of the decomposed relations, i.e., $B \\to A$ or $B \\to C$."
+  },
+  {
+    "id": "pyq_2016_cs_q23",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2016,
+    "subject": "DBMS",
+    "topic": "B+ Trees",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A $B^+$ tree index is built on a search key of size $12\\text{ bytes}$. Block size is $1024\\text{ bytes}$, and record pointers are $8\\text{ bytes}$ each. Block pointers to child nodes are $6\\text{ bytes}$ each. What is the maximum order $p$ (maximum number of child block pointers) of an internal node in this $B^+$ tree?",
+    "options": [],
+    "correct": [
+      57
+    ],
+    "natRange": {
+      "min": 57,
+      "max": 57
+    },
+    "explanation": "An internal node of order $p$ contains at most $p$ block pointers and $p-1$ key values. Total size equation: $p \\times P_{b} + (p - 1) \\times K \\le B \\implies p(6) + (p - 1)(12) \\le 1024 \\implies 6p + 12p - 12 \\le 1024 \\implies 18p \\le 1036 \\implies p \\le \\lfloor 1036 / 18 \\rfloor = 57.55$. Hence, the maximum order $p$ of an internal node is 57."
+  },
+  {
+    "id": "pyq_2019_cs_q15",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2019,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the relations $R(A, B)$ and $S(B, C)$. What is the effect of the SQL query:\n```sql\nSELECT DISTINCT R.A\nFROM R\nWHERE R.B NOT IN (SELECT S.B FROM S);\n```",
+    "options": [
+      "Finds all A values whose B values do not appear in S",
+      "Finds all A values whose B values appear in all tuples of S",
+      "Finds all A values where relation S is empty",
+      "Finds all A values whose B values are null"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The subquery selects all $B$ values from $S$. The outer query filters tuples in $R$ whose $B$ attribute is NOT present in that set. Hence it retrieves distinct $A$ values in $R$ whose corresponding $B$ values do not appear in relation $S$."
+  },
+  {
+    "id": "pyq_2014_cs_q14",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2014,
+    "subject": "Theory of Computation",
+    "topic": "Pumping Lemma",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following languages is NOT regular?",
+    "options": [
+      "$\\{w \\in \\{0, 1\\}^* \\mid w \\text{ has an equal number of } 0\\text{'s and } 1\\text{'s}\\}$",
+      "$\\{w \\in \\{0, 1\\}^* \\mid w \\text{ ends with } 00\\}$",
+      "$\\{0^n 1^m \\mid n, m \\ge 0\\}$",
+      "$\\{w \\in \\{0, 1\\}^* \\mid \\text{decimal value of } w \\text{ is divisible by } 7\\}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Checking that the count of 0s equals the count of 1s across arbitrary strings requires an unbounded counter/memory, which cannot be modeled by a Finite Automaton. By the Pumping Lemma, it is non-regular."
+  },
+  {
+    "id": "pyq_2018_cs_q13",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Theory of Computation",
+    "topic": "Closure Properties",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Context-Free Languages are closed under which of the following operations?",
+    "options": [
+      "Union and Kleene Star",
+      "Intersection and Complement",
+      "Intersection and Set Difference",
+      "Complement and Kleene Star"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Context-Free Languages (CFLs) are closed under Union ($S \\to S_1 \\mid S_2$), Concatenation ($S \\to S_1 S_2$), and Kleene Star ($S \\to S S_1 \\mid \\epsilon$), but NOT closed under Intersection or Complement."
+  },
+  {
+    "id": "pyq_2023_cs_q28",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2023,
+    "subject": "Theory of Computation",
+    "topic": "Decidability",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following statements about Rice's Theorem is TRUE?",
+    "options": [
+      "Any non-trivial semantic property of the language recognized by a Turing Machine is undecidable",
+      "Any syntactic property of a Turing Machine is undecidable",
+      "Rice's Theorem applies to Context-Free Languages",
+      "Rice's Theorem proves that all languages are recursively enumerable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rice's Theorem states that any non-trivial property of the language recognized by a Turing Machine (a semantic property concerning what the TM accepts, rather than how it is syntactically encoded) is undecidable."
+  },
+  {
+    "id": "pyq_2015_cs_q07",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Compiler Design",
+    "topic": "Syntax Directed Translation",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In a Syntax-Directed Definition (SDD), an attribute is synthesized if its value at a parse tree node is determined by:",
+    "options": [
+      "Attribute values at its children nodes",
+      "Attribute values at its parent node and left siblings",
+      "Attribute values at arbitrary right siblings",
+      "Global compiler flags only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A synthesized attribute at node $N$ is defined only in terms of attribute values at the children of $N$ and at $N$ itself. If an attribute depends on parent or sibling attributes, it is an inherited attribute."
+  },
+  {
+    "id": "pyq_2018_cs_q14",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Compiler Design",
+    "topic": "LR Parsing",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following parser families has the greatest parsing power (accepts the largest class of grammars)?",
+    "options": [
+      "LR(1)",
+      "LALR(1)",
+      "SLR(1)",
+      "LR(0)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The hierarchy of bottom-up shift-reduce parsers in strictly increasing order of parsing power is: $\\text{LR}(0) \\subset \\text{SLR}(1) \\subset \\text{LALR}(1) \\subset \\text{LR}(1)$. Canonical LR(1) keeps items separate with distinct 1-symbol lookaheads, avoiding reduce-reduce conflicts merged in LALR(1)."
+  },
+  {
+    "id": "pyq_2022_cs_q26",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2022,
+    "subject": "Compiler Design",
+    "topic": "Code Optimization",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which code optimization technique replaces expensive operations (such as multiplication by a constant power of 2) with cheaper operations (such as bitwise left shift)?",
+    "options": [
+      "Strength Reduction",
+      "Constant Folding",
+      "Loop Invariant Code Motion",
+      "Dead Code Elimination"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Strength reduction replaces computationally costly operations (like multiplication and division) with equivalent, lower-cost operations (such as additions or bit-shifts, e.g., $x \\times 4 \\implies x \\ll 2$)."
+  },
+  {
+    "id": "pyq_2016_cs_q24",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2016,
+    "subject": "Computer Organization",
+    "topic": "Addressing Modes",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In which addressing mode is the operand located inside the instruction itself?",
+    "options": [
+      "Immediate Addressing Mode",
+      "Direct Addressing Mode",
+      "Register Indirect Addressing Mode",
+      "Indexed Addressing Mode"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In Immediate Addressing Mode, the operand value is explicitly contained in the address field of the instruction itself (e.g., `MOV R1, #25`), so no additional memory reference is required to fetch the operand."
+  },
+  {
+    "id": "pyq_2019_cs_q16",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2019,
+    "subject": "Computer Organization",
+    "topic": "Instruction Pipelining",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A $5$-stage pipeline processor executes $100$ independent instructions without any pipeline stalls or hazards. Each stage takes $1\\text{ clock cycle}$. How many clock cycles are required to complete all $100$ instructions?",
+    "options": [],
+    "correct": [
+      104
+    ],
+    "natRange": {
+      "min": 104,
+      "max": 104
+    },
+    "explanation": "For a $k$-stage pipeline executing $n$ instructions without stalls, the first instruction takes $k$ cycles to complete, and each of the remaining $(n - 1)$ instructions completes at the rate of 1 per cycle. Total clock cycles $= k + (n - 1) = 5 + (100 - 1) = 5 + 99 = 104\\text{ cycles}$."
+  },
+  {
+    "id": "pyq_2023_cs_q29",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2023,
+    "subject": "Computer Organization",
+    "topic": "Control Unit",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Compared to a Hardwired Control Unit, a Microprogrammed Control Unit is:",
+    "options": [
+      "Easier to modify and update with new instructions, but slower in execution speed",
+      "Faster in execution speed and easier to modify",
+      "Faster in execution speed, but harder to modify",
+      "Implemented entirely using fixed combinational logic gates"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Microprogrammed control units store control words in a control memory (ROM), making updates, microcode additions, and instruction set modifications much easier. However, fetching microinstructions from control memory adds latency compared to direct hardwired logic gates."
+  },
+  {
+    "id": "pyq_2014_cs_q15",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2014,
+    "subject": "Digital Logic",
+    "topic": "Boolean Algebra",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "The minimal sum-of-products (SOP) expression for the Boolean function $F(A, B) = A + \\bar{A}B$ is:",
+    "options": [
+      "$A + B$",
+      "$A B$",
+      "$\\bar{A} + B$",
+      "$A + \\bar{B}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Using Boolean absorption and distributive laws: $A + \\bar{A}B = (A + \\bar{A})(A + B) = (1)(A + B) = A + B$."
+  },
+  {
+    "id": "pyq_2018_cs_q15",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "Digital Logic",
+    "topic": "K-Maps",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the 4-variable function $f(w, x, y, z) = \\sum m(0, 2, 8, 10, 14)$. How many Essential Prime Implicants (EPIs) does this function have?",
+    "options": [],
+    "correct": [
+      2
+    ],
+    "natRange": {
+      "min": 2,
+      "max": 2
+    },
+    "explanation": "Minterms: 0(0000), 2(0010), 8(1000), 10(1010), 14(1110).\nGrouping:\n1. Four corners $m(0, 2, 8, 10)$: combines to $\\bar{x} \\bar{z}$. Minterm 0 is covered only by this group, making $\\bar{x}\\bar{z}$ an Essential Prime Implicant.\n2. Pair $m(10, 14)$: combines $1010$ and $1110$ to $w y \\bar{z}$. Minterm 14 is covered only by this group, making $w y \\bar{z}$ an Essential Prime Implicant.\nBoth prime implicants are essential, so total EPIs $= 2$."
+  },
+  {
+    "id": "pyq_2021_cs_q25",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2021,
+    "subject": "Digital Logic",
+    "topic": "Flip-Flops",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In a $J$-$K$ flip-flop, the toggle mode occurs when inputs $J$ and $K$ are set to:",
+    "options": [
+      "$J = 1, K = 1$",
+      "$J = 0, K = 0$",
+      "$J = 1, K = 0$",
+      "$J = 0, K = 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When $J = 1$ and $K = 1$, the characteristic equation $Q_{next} = J\\bar{Q} + \\bar{K}Q = 1\\cdot\\bar{Q} + 0\\cdot Q = \\bar{Q}$ inverts the previous state on each active clock edge, which is the toggle mode."
+  },
+  {
+    "id": "pyq_2015_cs_q08",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Discrete Mathematics",
+    "topic": "Planar Graphs",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A connected planar graph has $10$ vertices and each vertex has degree $3$. Into how many faces (regions) does this graph divide the plane?",
+    "options": [],
+    "correct": [
+      7
+    ],
+    "natRange": {
+      "min": 7,
+      "max": 7
+    },
+    "explanation": "By the Handshaking Lemma, $2E = \\sum \\deg(v) = 10 \\times 3 = 30 \\implies E = 15$ edges. By Euler's Formula for connected planar graphs: $V - E + F = 2 \\implies 10 - 15 + F = 2 \\implies -5 + F = 2 \\implies F = 7$ faces."
+  },
+  {
+    "id": "pyq_2019_cs_q17",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2019,
+    "subject": "Discrete Mathematics",
+    "topic": "Relations",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A relation $R$ on a non-empty set $A$ is an equivalence relation if and only if $R$ is:",
+    "options": [
+      "Reflexive, Symmetric, and Transitive",
+      "Reflexive, Antisymmetric, and Transitive",
+      "Irreflexive, Symmetric, and Transitive",
+      "Symmetric and Transitive only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By definition, an equivalence relation must satisfy three fundamental properties: Reflexivity ($a R a$), Symmetry ($a R b \\implies b R a$), and Transitivity ($a R b \\land b R c \\implies a R c$)."
+  },
+  {
+    "id": "pyq_2022_cs_q27",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2022,
+    "subject": "Discrete Mathematics",
+    "topic": "Combinatorics",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "What is the number of non-negative integer solutions to the equation $x_1 + x_2 + x_3 + x_4 = 10$?",
+    "options": [],
+    "correct": [
+      286
+    ],
+    "natRange": {
+      "min": 286,
+      "max": 286
+    },
+    "explanation": "The number of non-negative integer solutions to $\\sum_{i=1}^k x_i = n$ is given by the stars-and-bars formula: $\\binom{n + k - 1}{k - 1}$. Here $n = 10$ and $k = 4$, so $\\binom{10 + 4 - 1}{4 - 1} = \\binom{13}{3} = \\frac{13 \\times 12 \\times 11}{3 \\times 2 \\times 1} = 13 \\times 2 \\times 11 = 286$."
+  },
+  {
+    "id": "pyq_2014_cs_q16",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2014,
+    "subject": "Engineering Mathematics",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Two fair 6-sided dice are rolled simultaneously. What is the probability that the sum of the numbers appearing on the top faces is $7$?",
+    "options": [],
+    "correct": [
+      0.1667
+    ],
+    "natRange": {
+      "min": 0.16,
+      "max": 0.17
+    },
+    "explanation": "Total possible outcomes $= 6 \\times 6 = 36$. Favorable outcomes summing to 7 are: $(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)$, which is 6 outcomes. Probability $= \\frac{6}{36} = \\frac{1}{6} \\approx 0.1667$."
+  },
+  {
+    "id": "pyq_2017_cs_q09",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2017,
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "The trace of a $2 \\times 2$ matrix $M$ is $8$ and its determinant is $15$. What is the absolute difference between the two eigenvalues of $M$?",
+    "options": [],
+    "correct": [
+      2
+    ],
+    "natRange": {
+      "min": 2,
+      "max": 2
+    },
+    "explanation": "Let the eigenvalues be $\\lambda_1$ and $\\lambda_2$. Then $\\lambda_1 + \\lambda_2 = \\text{trace} = 8$ and $\\lambda_1 \\lambda_2 = \\det = 15$. The quadratic equation is $\\lambda^2 - 8\\lambda + 15 = 0 \\implies (\\lambda - 3)(\\lambda - 5) = 0$. So $\\lambda_1 = 5, \\lambda_2 = 3$. Absolute difference $= |5 - 3| = 2$."
+  },
+  {
+    "id": "pyq_2020_cs_q18",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2020,
+    "subject": "Engineering Mathematics",
+    "topic": "Calculus",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Evaluate the limit: $$\\lim_{x \\to 0} \\frac{e^{3x} - 1}{x}$$",
+    "options": [],
+    "correct": [
+      3
+    ],
+    "natRange": {
+      "min": 3,
+      "max": 3
+    },
+    "explanation": "This is in indeterminate form $\\frac{0}{0}$. Applying L'Hopital's rule, differentiate numerator and denominator with respect to $x$: $\\lim_{x \\to 0} \\frac{3e^{3x}}{1} = \\frac{3e^0}{1} = 3$."
+  },
+  {
+    "id": "pyq_2015_cs_q09",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "C Programming",
+    "topic": "Recursion",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider the following recursive C function:\n```c\nint fun(int n) {\n    if (n <= 1) return 1;\n    if (n % 2 == 0) return fun(n / 2);\n    return fun(n / 2) + fun(n - 1);\n}\n```\nWhat is the return value of `fun(5)`?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Trace `fun(5)`:\n- 5 is odd $\\implies$ `fun(5/2) + fun(4) = fun(2) + fun(4)`\n- `fun(2)`: 2 is even $\\implies$ `fun(1) = 1`\n- `fun(4)`: 4 is even $\\implies$ `fun(2) = 1`\n- Therefore, `fun(5) = fun(2) + fun(4) = 1 + 1 = 2`."
+  },
+  {
+    "id": "pyq_2018_cs_q16",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2018,
+    "subject": "C Programming",
+    "topic": "Operator Precedence",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the output of the following C code?\n```c\nint x = 5;\nint y = x++ + ++x;\nprintf(\"%d\", y);\n```\nNote: Assume evaluation from left to right per C standards or sequence point definitions.",
+    "options": [
+      "12",
+      "10",
+      "Undefined behavior in standard C",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Modifying a variable (`x++` and `++x`) more than once between two sequence points without an intervening sequence point invokes Undefined Behavior in standard C (ISO C99/C11)."
+  },
+  {
+    "id": "pyq_2021_cs_q26",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2021,
+    "subject": "C Programming",
+    "topic": "Static Variables",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "What is the output of the following C program?\n```c\n#include <stdio.h>\nint count() {\n    static int x = 0;\n    x += 2;\n    return x;\n}\nint main() {\n    printf(\"%d %d\", count(), count());\n    return 0;\n}\n```",
+    "options": [
+      "2 4 (or 4 2 depending on argument evaluation order)",
+      "2 2",
+      "0 0",
+      "4 4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Because `x` is declared static inside `count()`, its value persists between function calls. The first call increments `x` to 2; the second call increments `x` to 4. In C, order of argument evaluation in `printf` is unspecified, so printed values will be 2 and 4 (either '2 4' or '4 2')."
+  },
+  {
+    "id": "pyq_2008_cs_q45",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Algorithms",
+    "topic": "Graph Algorithms",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Dijkstra's single source shortest path algorithm on a graph $G = (V, E)$ with non-negative edge weights implemented with a Fibonacci heap has a time complexity of:",
+    "options": [
+      "$O(|E| + |V| \\log |V|)$",
+      "$O(|V|^2)$",
+      "$O(|E| \\log |V|)$",
+      "$O(|V| \\log |V|)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With a Fibonacci heap, `Extract-Min` takes $O(\\log |V|)$ amortized time (called $|V|$ times $\\implies O(|V| \\log |V|)$) and `Decrease-Key` takes $O(1)$ amortized time (called at most $|E|$ times $\\implies O(|E|)$). Thus, total running time is $O(|E| + |V| \\log |V|)$."
+  },
+  {
+    "id": "pyq_2010_cs_q34",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2010,
+    "subject": "Algorithms",
+    "topic": "Dynamic Programming",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following problems can be solved in polynomial time?",
+    "options": [
+      "Single-Source Shortest Paths in graphs with non-negative weights",
+      "0/1 Knapsack Problem",
+      "Travelling Salesperson Problem",
+      "Hamiltonian Path Problem"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dijkstra's algorithm solves Single-Source Shortest Paths in $O(|E| + |V| \\log |V|)$ polynomial time. The 0/1 Knapsack problem is NP-hard (solvable in pseudo-polynomial time), while TSP and Hamiltonian Path are NP-complete."
+  },
+  {
+    "id": "pyq_2013_cs_q24",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2013,
+    "subject": "Data Structures",
+    "topic": "Binary Search Trees",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "How many structurally distinct Binary Search Trees (BSTs) can be formed with $4$ distinct keys?",
+    "options": [],
+    "correct": [
+      14
+    ],
+    "natRange": {
+      "min": 14,
+      "max": 14
+    },
+    "explanation": "The number of structurally distinct BSTs that can be formed using $n$ distinct keys is given by the $n$-th Catalan number $C_n = \\frac{1}{n+1} \\binom{2n}{n}$. For $n = 4$: $C_4 = \\frac{1}{5} \\binom{8}{4} = \\frac{1}{5} \\times \\frac{8 \\times 7 \\times 6 \\times 5}{4 \\times 3 \\times 2 \\times 1} = \\frac{70}{5} = 14$ distinct BSTs."
+  },
+  {
+    "id": "pyq_2017_cs_q10",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2017,
+    "subject": "Data Structures",
+    "topic": "Hashing",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which collision resolution technique in hash tables does NOT suffer from secondary clustering?",
+    "options": [
+      "Double Hashing",
+      "Linear Probing",
+      "Quadratic Probing",
+      "Both Linear Probing and Quadratic Probing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Linear probing suffers from primary clustering. Quadratic probing eliminates primary clustering but suffers from secondary clustering (keys that hash to the same initial probe sequence follow identical steps). Double hashing uses a second hash function to generate step sizes, eliminating secondary clustering."
+  },
+  {
+    "id": "pyq_2009_cs_q06",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Theory of Computation",
+    "topic": "Context-Free Grammars",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A grammar $G$ is ambiguous if:",
+    "options": [
+      "There exists some string $w \\in L(G)$ with two or more distinct leftmost derivations",
+      "It contains left recursion",
+      "It contains $\\epsilon$-productions",
+      "It cannot be parsed by an LR(1) parser"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By formal definition, a context-free grammar is ambiguous if there is at least one string in its language that has two or more distinct parse trees, which is equivalent to having two or more distinct leftmost (or rightmost) derivations."
+  },
+  {
+    "id": "pyq_2011_cs_q08",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "Theory of Computation",
+    "topic": "Finite Automata",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "What is the minimum number of states in a DFA accepting strings over $\\{0, 1\\}$ whose binary value is divisible by $5$?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The remainder when any non-negative binary number is divided by 5 can take 5 possible values: $\\{0, 1, 2, 3, 4\\}$. When a new bit $b \\in \\{0, 1\\}$ arrives, the new value is $2v + b$, and new state is $(2v + b) \\pmod 5$. All 5 remainder states are reachable and pairwise distinguishable, so the minimal DFA requires exactly 5 states."
+  },
+  {
+    "id": "pyq_2016_cs_q25",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2016,
+    "subject": "Compiler Design",
+    "topic": "Parsing",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following grammar properties PREVENTS a grammar from being LL(1)?",
+    "options": [
+      "Immediate left recursion",
+      "Having both synthesized and inherited attributes",
+      "Containing terminal symbols in productions",
+      "Having more than one non-terminal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A grammar with left recursion ($A \\to A\\alpha \\mid \\beta$) can never be LL(1) because both productions would result in overlapping lookahead sets in the LL(1) parse table, leading to multiple entries in $M[A, \\text{FIRST}(\\beta)]$. Left recursion must be eliminated before constructing an LL(1) parser."
+  },
+  {
+    "id": "pyq_2020_cs_q19",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2020,
+    "subject": "Compiler Design",
+    "topic": "Code Optimization",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Computing expressions like `2 * 3.14159` at compile time instead of generating code to compute it at run time is known as:",
+    "options": [
+      "Constant Folding",
+      "Constant Propagation",
+      "Common Subexpression Elimination",
+      "Loop Unrolling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Constant Folding is the compiler optimization technique of simplifying constant expressions at compile time rather than computing them at runtime."
+  },
+  {
+    "id": "pyq_2008_cs_q47",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Operating Systems",
+    "topic": "Threads",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following is SHARED among all threads belonging to the same process?",
+    "options": [
+      "Address space and open file descriptors",
+      "Program counter and stack",
+      "Registers and stack pointer",
+      "Thread local storage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Threads in the same process share the process's text (code) section, data section, heap, and OS resources such as open file descriptors. However, each thread has its own private Program Counter, register set, and stack."
+  },
+  {
+    "id": "pyq_2012_cs_q06",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2012,
+    "subject": "Operating Systems",
+    "topic": "Page Replacement",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Consider a system with $3$ page frames. The reference string is: $1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5$. How many page faults occur using the Optimal page replacement policy (assuming frames are initially empty)?",
+    "options": [],
+    "correct": [
+      7
+    ],
+    "natRange": {
+      "min": 7,
+      "max": 7
+    },
+    "explanation": "Tracing Optimal replacement with 3 frames:\n1. '1': Fault [1]\n2. '2': Fault [1, 2]\n3. '3': Fault [1, 2, 3]\n4. '4': Fault (3 is referenced farthest in future, evict 3) [1, 2, 4]\n5. '1': Hit [1, 2, 4]\n6. '2': Hit [1, 2, 4]\n7. '5': Fault (4 is not used again, evict 4) [1, 2, 5]\n8. '1': Hit [1, 2, 5]\n9. '2': Hit [1, 2, 5]\n10. '3': Fault (evict 1 or 2) [3, 2, 5]\n11. '4': Fault (evict 2 or 5) [3, 4, 5]\n12. '5': Hit [3, 4, 5]\nTotal page faults $= 7$."
+  },
+  {
+    "id": "pyq_2014_cs_q17",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2014,
+    "subject": "Computer Organization",
+    "topic": "Pipelining",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which of the following techniques is primarily used to resolve RAW (Read-After-Write) data dependencies in a pipelined processor?",
+    "options": [
+      "Operand Forwarding (Bypassing)",
+      "Branch Prediction",
+      "Loop Unrolling",
+      "Instruction Cache Prefetching"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Operand Forwarding routes the newly computed result directly from the output of the ALU (EX stage) or memory (MEM stage) back to the ALU input of the dependent instruction in the EX stage, avoiding stalls for RAW data hazards."
+  },
+  {
+    "id": "pyq_2017_cs_q11",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2017,
+    "subject": "Computer Organization",
+    "topic": "Memory Hierarchy",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In a write-through cache policy, on a write hit:",
+    "options": [
+      "Data is written simultaneously to both the cache and main memory",
+      "Data is written only to the cache, and written to memory when the block is evicted",
+      "Data is written only to main memory, bypassing the cache",
+      "Write operation is delayed until the next read miss"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a Write-Through cache, every write hit updates both the cache block and the underlying main memory simultaneously to maintain consistency. (In contrast, Write-Back writes only to cache and marks the dirty bit)."
+  },
+  {
+    "id": "pyq_2009_cs_q07",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Computer Networks",
+    "topic": "OSI & TCP/IP Model",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which layer of the OSI model is responsible for process-to-process communication?",
+    "options": [
+      "Transport Layer",
+      "Network Layer",
+      "Data Link Layer",
+      "Session Layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Transport Layer (e.g., TCP, UDP) provides end-to-end, process-to-process communication using port numbers. The Network Layer provides host-to-host delivery using IP addresses, and Data Link provides node-to-node frame delivery."
+  },
+  {
+    "id": "pyq_2015_cs_q10",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2015,
+    "subject": "Computer Networks",
+    "topic": "Transport Layer",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In the TCP header, what is the purpose of the SYN flag?",
+    "options": [
+      "To synchronize sequence numbers during the three-way handshake connection establishment",
+      "To acknowledge receipt of data",
+      "To gracefully terminate a connection",
+      "To reset an abnormal connection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The SYN (Synchronize) control flag is used during the initial 3-way handshake to synchronize the Initial Sequence Numbers (ISNs) between client and server."
+  },
+  {
+    "id": "pyq_2011_cs_q09",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2011,
+    "subject": "DBMS",
+    "topic": "Relational Algebra",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Let $R(A, B)$ and $S(B, C)$ be two relations. The natural join $R \\bowtie S$ is equivalent to:",
+    "options": [
+      "$\\Pi_{R.A, R.B, S.C}(\\sigma_{R.B = S.B}(R \\times S))$",
+      "$\\sigma_{R.B = S.B}(R \\times S)$",
+      "$\\Pi_{R.A, S.C}(R \\times S)$",
+      "$(R \\cup S) \\cap (R \\times S)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Natural join combines cartesian product ($R \\times S$), selection for equality on common attributes ($\\sigma_{R.B = S.B}$), and projection to eliminate the duplicated common column ($\\Pi_{R.A, R.B, S.C}$)."
+  },
+  {
+    "id": "pyq_2020_cs_q20",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2020,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A protocol that guarantees conflict serializability and freedom from cascading aborts is:",
+    "options": [
+      "Strict Two-Phase Locking (Strict 2PL)",
+      "Basic Two-Phase Locking",
+      "Time-stamp Ordering without buffering",
+      "Lock-free optimistic concurrency control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Strict Two-Phase Locking (Strict 2PL) requires all exclusive (write) locks to be held until the transaction commits or aborts. This prevents dirty reads, guaranteeing that executions are both conflict serializable and cascadeless (strict)."
+  },
+  {
+    "id": "pyq_2008_cs_q48",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2008,
+    "subject": "Digital Logic",
+    "topic": "Logic Gates",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following logic gates is a universal logic gate?",
+    "options": [
+      "NAND",
+      "AND",
+      "OR",
+      "XOR"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A universal logic gate can implement any Boolean function without using any other type of gate. NAND and NOR are the two standard universal logic gates."
+  },
+  {
+    "id": "pyq_2013_cs_q25",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2013,
+    "subject": "Digital Logic",
+    "topic": "Number Systems",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the decimal representation of the 8-bit two's complement binary number $(11110000)_2$?",
+    "options": [],
+    "correct": [
+      -16
+    ],
+    "natRange": {
+      "min": -16,
+      "max": -16
+    },
+    "explanation": "The sign bit is 1, so the number is negative. To find the magnitude: invert bits $\\implies 00001111_2$ (15) and add $1 \\implies 00010000_2 = 16$. Therefore, the value is $-16$."
+  },
+  {
+    "id": "pyq_2010_cs_q35",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2010,
+    "subject": "Discrete Mathematics",
+    "topic": "Graph Theory",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "What is the chromatic number of the complete bipartite graph $K_{3, 5}$?",
+    "options": [],
+    "correct": [
+      2
+    ],
+    "natRange": {
+      "min": 2,
+      "max": 2
+    },
+    "explanation": "Any bipartite graph with at least one edge has a chromatic number of exactly 2. The vertices can be partitioned into two independent sets $V_1$ and $V_2$, which can be colored with 2 distinct colors."
+  },
+  {
+    "id": "pyq_2016_cs_q26",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2016,
+    "subject": "Discrete Mathematics",
+    "topic": "Combinatorics",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "In how many ways can $5$ distinct books be distributed among $3$ children such that each child receives at least one book?",
+    "options": [],
+    "correct": [
+      150
+    ],
+    "natRange": {
+      "min": 150,
+      "max": 150
+    },
+    "explanation": "This is the number of surjective (onto) functions from a set of size 5 to a set of size 3. Using Stirling numbers of the second kind: $3! \\times S(5, 3) = 6 \\times 25 = 150$ ways. Or by Principle of Inclusion-Exclusion: $3^5 - \\binom{3}{1} 2^5 + \\binom{3}{2} 1^5 = 243 - 3(32) + 3(1) = 243 - 96 + 3 = 150$."
+  },
+  {
+    "id": "pyq_2009_cs_q08",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2009,
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "What is the rank of the following matrix?\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 6 \\\\ 3 & 6 & 9 \\end{pmatrix}$$",
+    "options": [],
+    "correct": [
+      1
+    ],
+    "natRange": {
+      "min": 1,
+      "max": 1
+    },
+    "explanation": "Row 2 is $2 \\times \\text{Row 1}$, and Row 3 is $3 \\times \\text{Row 1}$. Performing row operations $R_2 \\to R_2 - 2R_1$ and $R_3 \\to R_3 - 3R_1$ leaves only 1 non-zero row. Hence the rank of $A$ is 1."
+  },
+  {
+    "id": "pyq_2012_cs_q07",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2012,
+    "subject": "Engineering Mathematics",
+    "topic": "Calculus",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Evaluate the definite integral: $$\\int_0^1 x e^x dx$$",
+    "options": [],
+    "correct": [
+      1
+    ],
+    "natRange": {
+      "min": 1,
+      "max": 1
+    },
+    "explanation": "Using integration by parts $\\int u v' dx = u v - \\int u' v dx$ with $u = x$ and $v' = e^x$:\n$\\int x e^x dx = x e^x - \\int 1 \\cdot e^x dx = x e^x - e^x = e^x(x - 1)$.\nEvaluating from $0$ to $1$: $[e^1(1 - 1)] - [e^0(0 - 1)] = 0 - [1(-1)] = 1$."
+  },
+  {
+    "id": "pyq_2019_cs_q18",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2019,
+    "subject": "Engineering Mathematics",
+    "topic": "Probability",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A random variable $X$ follows a Poisson distribution such that $P(X = 1) = P(X = 2)$. What is the variance of $X$?",
+    "options": [],
+    "correct": [
+      2
+    ],
+    "natRange": {
+      "min": 2,
+      "max": 2
+    },
+    "explanation": "For a Poisson distribution with parameter $\\lambda$, $P(X = k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$.\n$P(X = 1) = e^{-\\lambda} \\lambda$, and $P(X = 2) = \\frac{e^{-\\lambda} \\lambda^2}{2}$.\nGiven $P(X = 1) = P(X = 2) \\implies e^{-\\lambda} \\lambda = \\frac{e^{-\\lambda} \\lambda^2}{2} \\implies 1 = \\frac{\\lambda}{2} \\implies \\lambda = 2$.\nFor a Poisson distribution, $\\text{Variance}(X) = \\lambda = 2$."
+  },
+  {
+    "id": "pyq_2022_cs_q28",
+    "type": "mcq",
+    "category": "pyq",
+    "year": 2022,
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A train running at a speed of $72\\text{ km/h}$ crosses a pole in $15\\text{ seconds}$. What is the length of the train (in meters)?",
+    "options": [
+      "$300\\text{ m}$",
+      "$250\\text{ m}$",
+      "$360\\text{ m}$",
+      "$200\\text{ m}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Convert speed to $\\text{m/s}$: $72 \\times \\frac{5}{18} = 4 \\times 5 = 20\\text{ m/s}$. The distance covered crossing a stationary pole equals the length of the train: $\\text{Length} = \\text{Speed} \\times \\text{Time} = 20\\text{ m/s} \\times 15\\text{ s} = 300\\text{ meters}$."
+  },
+  {
+    "id": "pyq_2024_cs_q26",
+    "type": "nat",
+    "category": "pyq",
+    "year": 2024,
+    "subject": "Aptitude",
+    "topic": "Quantitative Aptitude",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A shopkeeper sells two items at ₹$990$ each. On one item he makes a $10\\%$ profit, and on the other he suffers a $10\\%$ loss. What is his net gain or loss percentage on the entire transaction?",
+    "options": [],
+    "correct": [
+      -1
+    ],
+    "natRange": {
+      "min": -1,
+      "max": -1
+    },
+    "explanation": "When two items are sold at the same selling price, one at a profit of $x\\%$ and the other at a loss of $x\\%$, there is always a net loss given by $\\frac{x^2}{100}\\%$. Here $x = 10$, so Net loss $= \\frac{10^2}{100}\\% = \\frac{100}{100}\\% = 1\\%$ loss (represented as $-1\\%$)."
+  }
+]

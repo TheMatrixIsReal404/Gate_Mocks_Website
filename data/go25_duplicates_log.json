@@ -1,0 +1,1437 @@
+[
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0020",
+    "test": "ALGORITHMS - TEST 1",
+    "num": 2,
+    "text_snippet": "Which of the following statements is/are TRUE? (Mark all the appropriate choices"
+  },
+  {
+    "reason": "Fuzzy match (86.67%)",
+    "original_id": "go25_ts_0030",
+    "test": "ALGORITHMS - TEST 1",
+    "num": 7,
+    "text_snippet": "Consider the following C function:\n\nint findme(int n)\n{\n    if(n <= 0 ) return 1"
+  },
+  {
+    "reason": "Fuzzy match (88.24%)",
+    "original_id": "go25_ts_0023",
+    "test": "ALGORITHMS - TEST 1",
+    "num": 8,
+    "text_snippet": "Consider the following C function and an input array to it as [1, 4, 10, 12] and"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0039",
+    "test": "ALGORITHMS - TEST 1",
+    "num": 16,
+    "text_snippet": "Which of the following statements is/are TRUE? (Mark all CORRECT choices)"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0011",
+    "test": "ALGORITHMS - TEST 1",
+    "num": 20,
+    "text_snippet": "Consider the following functions\n\n                                           log"
+  },
+  {
+    "reason": "Fuzzy match (88.57%)",
+    "original_id": "go25_ts_0017",
+    "test": "ALGORITHMS - TEST 1",
+    "num": 26,
+    "text_snippet": "Suppose you are given the following set of keys to insert into a hash table that"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2016_S5_cs11",
+    "test": "ALGORITHMS - TEST 2",
+    "num": 3,
+    "text_snippet": "Consider the following directed graph.\n\n\n\n\n\nThe number of different topological "
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0109",
+    "test": "CALCULUS - TEST 1",
+    "num": 27,
+    "text_snippet": "Let f(x) be the function defined as\n\n                                           "
+  },
+  {
+    "reason": "Fuzzy match (88.89%)",
+    "original_id": "pyq_2016_S5_cs19",
+    "test": "COMPILER DESIGN - TEST 1",
+    "num": 8,
+    "text_snippet": "Consider the following code segment:\n\nx = u + t;\ny = u * v;\nx = y + w;\ny = x / z"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_operatingsystem_w01_q03",
+    "test": "COMPILER DESIGN - TEST 1",
+    "num": 15,
+    "text_snippet": "Which of the following is/are correct?"
+  },
+  {
+    "reason": "Fuzzy match (88.24%)",
+    "original_id": "pyq_2015_S1_cs47",
+    "test": "COMPILER DESIGN - TEST 1",
+    "num": 23,
+    "text_snippet": "The least number of total variables required to create a three-address code in s"
+  },
+  {
+    "reason": "Fuzzy match (86.21%)",
+    "original_id": "pyq_2016_S5_cs53",
+    "test": "COMPUTER NETWORKS - TEST 1",
+    "num": 22,
+    "text_snippet": "An IP datagram of size 1200 bytes arrives at a router. The router has to forward"
+  },
+  {
+    "reason": "Fuzzy match (91.30%)",
+    "original_id": "pyq_2019_S2_cs49",
+    "test": "COMPUTER NETWORKS - TEST 1",
+    "num": 28,
+    "text_snippet": "Consider that 24 machines need to be connected in a LAN using 5-port Ethernet sw"
+  },
+  {
+    "reason": "Fuzzy match (92.31%)",
+    "original_id": "go25_ts_0181",
+    "test": "COMPUTER NETWORKS - TEST 1",
+    "num": 29,
+    "text_snippet": "Which of the following is/are true about Ethernet networks? (Mark all the approp"
+  },
+  {
+    "reason": "Fuzzy match (92.59%)",
+    "original_id": "pyq_2016_S6_cs30",
+    "test": "COMPUTER ORGANIZATION AND",
+    "num": 1,
+    "text_snippet": "Suppose the functions A and B can be computed in 6 and 4 nanoseconds by function"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "pyq_2011_cs39",
+    "test": "COMPUTER ORGANIZATION AND",
+    "num": 27,
+    "text_snippet": "On a non-pipelined sequential processor, a program segment, which is the part of"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0273",
+    "test": "DATA STRUCTURES - TEST 1",
+    "num": 7,
+    "text_snippet": "The cut vertices in the given graph are"
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "pw_cprogramming_w01_q07",
+    "test": "DATA STRUCTURES - TEST 1",
+    "num": 30,
+    "text_snippet": "What will be the output of the C program?\n\n#include<stdio.h>\nint main()\n{\n    in"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0317",
+    "test": "DATABASES - TEST 1",
+    "num": 7,
+    "text_snippet": "Which of the following are correct? (Mark all the appropriate options)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0020",
+    "test": "DATABASES - TEST 1",
+    "num": 16,
+    "text_snippet": "Which of the following statements is/are TRUE?\n(Mark all the appropriate choices"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0323",
+    "test": "DATABASES - TEST 1",
+    "num": 20,
+    "text_snippet": "Consider a m : n relationship and an ER model using it. Which of the following i"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0323",
+    "test": "DATABASES - TEST 1",
+    "num": 27,
+    "text_snippet": "Consider a 1 : n relationship and an ER model using it. Which of the following i"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pw_dbms_w06_q04",
+    "test": "DIGITAL LOGIC - TEST 1",
+    "num": 5,
+    "text_snippet": "Which of the following statement(s) is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0345",
+    "test": "DIGITAL LOGIC - TEST 1",
+    "num": 6,
+    "text_snippet": "A boolean function F together with the don’t care condition d; are given below\nF"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0368",
+    "test": "DIGITAL LOGIC - TEST 1",
+    "num": 20,
+    "text_snippet": "The 16 bit 2′s complement representation and the hexadecimal representation afte"
+  },
+  {
+    "reason": "Fuzzy match (94.74%)",
+    "original_id": "go25_ts_0339",
+    "test": "DIGITAL LOGIC - TEST 1",
+    "num": 23,
+    "text_snippet": "The implicants being chosen for the circuit implementation are marked in the fol"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "DISCRETE MATHEMATICS - SHALLOW",
+    "num": 23,
+    "text_snippet": "Which of the following are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (85.00%)",
+    "original_id": "go25_ts_0422",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 3,
+    "text_snippet": "Define a relation P on the set of all functions from R to R as\nfPg if and only i"
+  },
+  {
+    "reason": "Fuzzy match (88.89%)",
+    "original_id": "go25_ts_0411",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 4,
+    "text_snippet": "Two finite sets X and Y have m and n elements each. The number of subsets of X i"
+  },
+  {
+    "reason": "Fuzzy match (89.47%)",
+    "original_id": "go25_ts_0401",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 5,
+    "text_snippet": "Let P(X) be the collection of all the subset of a set X with at least three elem"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0396",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 7,
+    "text_snippet": "Suppose that h : Z →Z is known to be one-one and onto (bijection). Let's define "
+  },
+  {
+    "reason": "Fuzzy match (91.30%)",
+    "original_id": "go25_ts_0395",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 8,
+    "text_snippet": "Let a(t), b(t) and c(t) be the lengths of three sides of a geometric figure t in"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0398",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 11,
+    "text_snippet": "Consider the following relations defined on set I :\n\n    R1 : {(x, y) ∣xy ≥1}\n  "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0400",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 14,
+    "text_snippet": "Consider three finite sets A, B and C. Let S1 = ((A ∩B) −(B ∩C)) −C and S2 = (A "
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0404",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 19,
+    "text_snippet": "Consider set A = {1, 2, 3, 4, 5}. From all the subsets of A, we define a new set"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0410",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 24,
+    "text_snippet": "Let A, B and C be three sets. Then (A −B) −C is _________."
+  },
+  {
+    "reason": "Fuzzy match (90.91%)",
+    "original_id": "go25_ts_0421",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 27,
+    "text_snippet": "Which of the following is/are bijection from R to R? (Mark all the appropriate c"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0424",
+    "test": "DISCRETE MATHEMATICS - TEST 1",
+    "num": 29,
+    "text_snippet": "Let f be a function from set A to set B. Let S and T be two subsets of A. Now, c"
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "go25_ts_0439",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 2,
+    "text_snippet": "The generating function corresponding to the sequence with closed formula for it"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0445",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 11,
+    "text_snippet": "How many bit strings of length 7 contain more 0’s than 1’s?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0449",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 12,
+    "text_snippet": "Which of the following is the generating function corresponding to the sequence "
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0428",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 17,
+    "text_snippet": "Number of positive integer solutions to the equation 4x + y + z = 21 is ____"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0448",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 20,
+    "text_snippet": "The number of ways in which we can choose 3 numbers from the set {1, 2, 3, 4, 5,"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0434",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 23,
+    "text_snippet": "Match the sequences on the left with their corresponding generating functions on"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0453",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 28,
+    "text_snippet": "What is the middle term in the expansion of\n\n                                   "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0426",
+    "test": "DISCRETE MATHEMATICS - TEST 2",
+    "num": 30,
+    "text_snippet": "The number of non-empty partitions of a set of size 5 is _____"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0215",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 1,
+    "text_snippet": "Which of the following is NOT correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (92.86%)",
+    "original_id": "go25_ts_0469",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 2,
+    "text_snippet": "Suppose G is a group that has exactly 48 distinct elements of order 5. How many "
+  },
+  {
+    "reason": "Fuzzy match (93.75%)",
+    "original_id": "go25_ts_0480",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 3,
+    "text_snippet": "The following is the Hasse diagram of the poset [{1, 2, 3, 4, 6, 7, 12, 14, 21, "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0481",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 5,
+    "text_snippet": "The solution to the recurrence relation an = an−1 + 2n with a0 = 1 is ________"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0472",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 7,
+    "text_snippet": "The value of x5 for the recurrence relation defined by xn = 5xn−1 + 3 with initi"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0475",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 8,
+    "text_snippet": "The following Hasse diagram describes a"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "pyq_2007_cs21",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 10,
+    "text_snippet": "How many non-isomorphic abelian groups of order 32 are there?"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0467",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 11,
+    "text_snippet": "What is the solution to the recurrence relation an = an−1 + n with a0 = 0?\n\n    "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0476",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 12,
+    "text_snippet": "Consider the below lattice.\n\n\n\n\n\nThe number of complements of element ′g′ is ___"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0467",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 16,
+    "text_snippet": "What is the solution to the recurrence relation\n\n                               "
+  },
+  {
+    "reason": "Fuzzy match (90.91%)",
+    "original_id": "pyq_2018_cs19",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 17,
+    "text_snippet": "Let G be a finite group on 243 elements. The size of the largest possible proper"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0215",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 27,
+    "text_snippet": "Which of the following is NOT correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0464",
+    "test": "DISCRETE MATHEMATICS - TEST 3",
+    "num": 30,
+    "text_snippet": "Let G be a group with order 45, and H a non-abelian subgroup of G. Assuming H ≠G"
+  },
+  {
+    "reason": "Fuzzy match (87.50%)",
+    "original_id": "pyq_2014_S2_cs03",
+    "test": "DISCRETE MATHEMATICS - TEST 4",
+    "num": 1,
+    "text_snippet": "The maximum number of edges in a bipartite graph with 19 vertices is _________"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - SHALLOW TEST 1",
+    "num": 9,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - SHALLOW TEST 1",
+    "num": 20,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - SHALLOW TEST 1",
+    "num": 24,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - SHALLOW TEST 1",
+    "num": 26,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices.)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - TEST 1",
+    "num": 4,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - TEST 1",
+    "num": 7,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0593",
+    "test": "LINEAR ALGEBRA - TEST 1",
+    "num": 11,
+    "text_snippet": "Let A be a real 2 × 2 matrix. If 7 + 5i is an eigenvalue of A, det(A) = α, and t"
+  },
+  {
+    "reason": "Fuzzy match (93.75%)",
+    "original_id": "go25_ts_0571",
+    "test": "LINEAR ALGEBRA - TEST 1",
+    "num": 15,
+    "text_snippet": "3  2  2                                                  1The matrix A = ⎡ 2  3 "
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0591",
+    "test": "LINEAR ALGEBRA - TEST 1",
+    "num": 18,
+    "text_snippet": "The system of equations given below has _____\n\n    x + y + z + 3 = 0\n    3x + y "
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - TEST 1",
+    "num": 26,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "LINEAR ALGEBRA - TEST 1",
+    "num": 29,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0020",
+    "test": "MIX SUBJECTS - TEST 2",
+    "num": 7,
+    "text_snippet": "Which of the following statements is/are TRUE? (Mark all the appropriate choices"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0317",
+    "test": "MIX SUBJECTS - TEST 3",
+    "num": 3,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate options)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0324",
+    "test": "MIX SUBJECTS - TEST 3",
+    "num": 7,
+    "text_snippet": "Which of the following statements is/are correct? (Mark all the appropriate choi"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0324",
+    "test": "MIX SUBJECTS - TEST 3",
+    "num": 14,
+    "text_snippet": "Which of the following statements is/are correct? (Mark all the appropriate choi"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0317",
+    "test": "MIX SUBJECTS - TEST 3",
+    "num": 22,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate options)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0691",
+    "test": "MIX SUBJECTS - TEST 3",
+    "num": 23,
+    "text_snippet": "The numbers of relations required when the below ER diagram is converted to Rela"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2018_cs18",
+    "test": "MIX SUBJECTS - TEST 3",
+    "num": 25,
+    "text_snippet": "The Chromatic number of the following graph is _________"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2018_cs18",
+    "test": "MIX SUBJECTS - TEST 3",
+    "num": 26,
+    "text_snippet": "The chromatic number of the following graph is ________"
+  },
+  {
+    "reason": "Fuzzy match (88.10%)",
+    "original_id": "pyq_2015_S3_cs56",
+    "test": "MIX SUBJECTS - TEST 4",
+    "num": 6,
+    "text_snippet": "Two hosts are connected via a packet switch with 2 × 107 bits per second links. "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0702",
+    "test": "MIX SUBJECTS - TEST 4",
+    "num": 11,
+    "text_snippet": "Which of the following is correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (97.44%)",
+    "original_id": "pyq_2020_cs50",
+    "test": "MIX SUBJECTS - TEST 4",
+    "num": 13,
+    "text_snippet": "Consider the following set of processes, assumed to have arrived at time 0. Cons"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0702",
+    "test": "MIX SUBJECTS - TEST 4",
+    "num": 20,
+    "text_snippet": "Which of the following is correct?(Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MIX SUBJECTS - TEST 4",
+    "num": 27,
+    "text_snippet": "Which of the following is/are CORRECT? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0215",
+    "test": "MIXED SUBJECTS - SHALLOW TEST 1",
+    "num": 28,
+    "text_snippet": "Which of the following is/are not correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0731",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 9,
+    "text_snippet": "If the size (path length) of the longest chain in the following Hasse diagram is"
+  },
+  {
+    "reason": "Fuzzy match (94.44%)",
+    "original_id": "go25_ts_0746",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 10,
+    "text_snippet": "Which of the following posets is not a boolean algebra, where Dn is set of all d"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0744",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 13,
+    "text_snippet": "In what ratio must milk A at Rs. 21.50 per litre be mixed with milk B at Rs. 32."
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0728",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 16,
+    "text_snippet": "The number of topological orderings possible for the following hasse diagram is "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0745",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 18,
+    "text_snippet": "The following propositional statement simplifies to\n(¬P ↔¬Q) ∨(¬P ↔Q)"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0739",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 25,
+    "text_snippet": "Which of the following is/are correct? (P(S) denotes the power set of S)\n\n      "
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 27,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0736",
+    "test": "MIXED SUBJECTS - TEST 1",
+    "num": 29,
+    "text_snippet": "What is the solution to the following recurrence relation?\n\n     T(n) = 3T(n −1)"
+  },
+  {
+    "reason": "Fuzzy match (94.87%)",
+    "original_id": "go25_ts_0232",
+    "test": "MOCK GATE - TEST 1",
+    "num": 30,
+    "text_snippet": "Consider a 5-stage pipeline - IF (Instruction Fetch), ID (Instruction Decode and"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0215",
+    "test": "MOCK GATE - TEST 1",
+    "num": 35,
+    "text_snippet": "Which of the following is/are NOT correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (92.31%)",
+    "original_id": "pyq_2018_cs01",
+    "test": "MOCK GATE - TEST 1",
+    "num": 36,
+    "text_snippet": "Which one of the following is a closed form expression for the generating functi"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2012_cs42",
+    "test": "MOCK GATE - TEST 1",
+    "num": 45,
+    "text_snippet": "Consider the virtual page reference string\n\n                                    "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2013_A_cs43",
+    "test": "MOCK GATE - TEST 1",
+    "num": 52,
+    "text_snippet": "The preorder traversal sequence of a binary search tree is\n\n                    "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2016_S5_cs47",
+    "test": "MOCK GATE - TEST 2",
+    "num": 16,
+    "text_snippet": "Consider a computer system with 32-bit virtual addressing and page size of sixte"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2018_cs46",
+    "test": "MOCK GATE - TEST 2",
+    "num": 22,
+    "text_snippet": "The number of possible min-heaps containing each value from {1, 2, 3, 4, 5, 6, 7"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0160",
+    "test": "MOCK GATE - TEST 2",
+    "num": 30,
+    "text_snippet": "Which of the following sentences regarding Viable prefixes is/are CORRECT? (Mark"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0812",
+    "test": "MOCK GATE - TEST 2",
+    "num": 44,
+    "text_snippet": "Which of the following is/are the regular grammar for the given finite automata?"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MOCK GATE - TEST 2",
+    "num": 52,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0702",
+    "test": "MOCK GATE - TEST 3",
+    "num": 8,
+    "text_snippet": "Which of the following is correct?(Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "go25_ts_0714",
+    "test": "MOCK GATE - TEST 3",
+    "num": 11,
+    "text_snippet": "Consider a network with 6 routers R1 to R6 connected with links having weights a"
+  },
+  {
+    "reason": "Fuzzy match (90.91%)",
+    "original_id": "go25_ts_0701",
+    "test": "MOCK GATE - TEST 3",
+    "num": 13,
+    "text_snippet": "Which of the following languages is/are NOT regular? (Mark all the appropriate c"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0154",
+    "test": "MOCK GATE - TEST 3",
+    "num": 17,
+    "text_snippet": "Consider the following Syntax Directed Translation Scheme, with non-terminals {S"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MOCK GATE - TEST 3",
+    "num": 21,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (92.31%)",
+    "original_id": "pyq_2015_S1_cs57",
+    "test": "MOCK GATE - TEST 3",
+    "num": 26,
+    "text_snippet": "Consider a main memory with four-page frames and the following sequence of page "
+  },
+  {
+    "reason": "Fuzzy match (97.50%)",
+    "original_id": "go25_ts_0231",
+    "test": "MOCK GATE - TEST 3",
+    "num": 37,
+    "text_snippet": "Assume a main memory access time of 112 ns and a memory system capable of a sust"
+  },
+  {
+    "reason": "Fuzzy match (86.96%)",
+    "original_id": "go25_ts_0788",
+    "test": "MOCK GATE - TEST 3",
+    "num": 52,
+    "text_snippet": "Which of the following is the correct first order logic representation for the s"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0812",
+    "test": "MOCK GATE - TEST 4",
+    "num": 6,
+    "text_snippet": "Which of the following is/are regular grammar for the given finite automata? (Ma"
+  },
+  {
+    "reason": "Fuzzy match (93.88%)",
+    "original_id": "pyq_2013_A_cs45",
+    "test": "MOCK GATE - TEST 4",
+    "num": 9,
+    "text_snippet": "Consider an instruction pipeline with five stages without any branch prediction:"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0115",
+    "test": "MOCK GATE - TEST 4",
+    "num": 15,
+    "text_snippet": "The minimum value of the function\n\n                                             "
+  },
+  {
+    "reason": "Fuzzy match (89.58%)",
+    "original_id": "go25_ts_0945",
+    "test": "MOCK GATE - TEST 4",
+    "num": 17,
+    "text_snippet": "A disk has 6 equidistant tracks. The diameters of the innermost and outermost tr"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0144",
+    "test": "MOCK GATE - TEST 4",
+    "num": 26,
+    "text_snippet": "A shift reduce parser carries out the actions specified within braces immediatel"
+  },
+  {
+    "reason": "Fuzzy match (88.89%)",
+    "original_id": "go25_ts_0325",
+    "test": "MOCK GATE - TEST 4",
+    "num": 40,
+    "text_snippet": "Consider a B -tree in which the search key is 16 bytes long, block size is 4096 "
+  },
+  {
+    "reason": "Fuzzy match (92.86%)",
+    "original_id": "go25_ts_0805",
+    "test": "MOCK GATE - TEST 4",
+    "num": 41,
+    "text_snippet": "Consider the following C function.\n\nint func(int n)\n{\n    int i, j, k, p, q=1;\n "
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0662",
+    "test": "MOCK GATE - TEST 4",
+    "num": 43,
+    "text_snippet": "The following circuit implements a two-input NAND gate using two 2 × 1 multiplex"
+  },
+  {
+    "reason": "Fuzzy match (89.47%)",
+    "original_id": "pyq_2014_S3_cs34",
+    "test": "MOCK GATE - TEST 4",
+    "num": 49,
+    "text_snippet": "Consider the basic block given below:\n\np = a + b\nq = p - c\np = q * d\np = e - p\nq"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "mock_c1_s1_q19",
+    "test": "MOCK GATE - TEST 4",
+    "num": 50,
+    "text_snippet": "What is the output of the following program?\n\n#include<stdio.h>\nvoid fun1(int *x"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MOCK GATE - TEST 4",
+    "num": 51,
+    "text_snippet": "Which of the following is/are correct?(Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.91%)",
+    "original_id": "go25_ts_0318",
+    "test": "MOCK GATE - TEST 4",
+    "num": 53,
+    "text_snippet": "Let R(A, B, C, D, E, G) be a relational schema with the following functional dep"
+  },
+  {
+    "reason": "Fuzzy match (95.83%)",
+    "original_id": "go25_ts_0254",
+    "test": "MOCK GATE - TEST 4",
+    "num": 54,
+    "text_snippet": "A computer system has a 16K word cache organized in block-set-associative manner"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "pyq_2018_cs01",
+    "test": "MOCK GATE - TEST 5",
+    "num": 8,
+    "text_snippet": "Which one of the following is a closed form expression for the generating functi"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MOCK GATE - TEST 5",
+    "num": 22,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0160",
+    "test": "MOCK GATE - TEST 5",
+    "num": 24,
+    "text_snippet": "Which of the following sentences regarding Viable prefixes is/are CORRECT? (Mark"
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "go25_ts_0371",
+    "test": "MOCK GATE - TEST 5",
+    "num": 26,
+    "text_snippet": "A logic circuit implements the following Boolean function:\nF = ABC + AC ′D′\nIt i"
+  },
+  {
+    "reason": "Fuzzy match (89.66%)",
+    "original_id": "go25_ts_0213",
+    "test": "MOCK GATE - TEST 5",
+    "num": 27,
+    "text_snippet": "A channel has a bit rate of 72 kbps and one-way propagation delay of 36 millisec"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0338",
+    "test": "MOCK GATE - TEST 5",
+    "num": 28,
+    "text_snippet": "From the following instance of a relation schema R(A, B, C), we can conclude tha"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0378",
+    "test": "MOCK GATE - TEST 5",
+    "num": 37,
+    "text_snippet": "Which of the following is the correct way to represent a signed decimal number i"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0324",
+    "test": "MOCK GATE - TEST 5",
+    "num": 40,
+    "text_snippet": "Which of the following statements is/are correct? (Mark all the appropriate choi"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0155",
+    "test": "MOCK GATE - TEST 5",
+    "num": 41,
+    "text_snippet": "When we merge states in an LR(1) parser to form an LALR(1) parser, we may introd"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MOCK GATE - TEST 5",
+    "num": 44,
+    "text_snippet": "Which of the following is/are CORRECT? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0322",
+    "test": "MOCK GATE - TEST 5",
+    "num": 47,
+    "text_snippet": "Which of the following statements concerning database normalization is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (86.96%)",
+    "original_id": "go25_ts_0243",
+    "test": "MOCK GATE - TEST 5",
+    "num": 48,
+    "text_snippet": "Consider a CPU where all the instructions require 4 clock cycles to complete exe"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0781",
+    "test": "MOCK GATE - TEST 6",
+    "num": 10,
+    "text_snippet": "It is a standard practice ______ a civil servant to sign checks issued by the Tr"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0064",
+    "test": "MOCK GATE - TEST 6",
+    "num": 1,
+    "text_snippet": "Which of the following statements is/are TRUE?(Mark all the correct options)"
+  },
+  {
+    "reason": "Fuzzy match (88.10%)",
+    "original_id": "go25_ts_0232",
+    "test": "MOCK GATE - TEST 6",
+    "num": 2,
+    "text_snippet": "Consider a 5-stage pipeline - IF (Instruction Fetch), ID (Instruction Decode and"
+  },
+  {
+    "reason": "Fuzzy match (86.67%)",
+    "original_id": "go25_ts_0514",
+    "test": "MOCK GATE - TEST 6",
+    "num": 3,
+    "text_snippet": "A decimal number is called “increasing” if each digit is greater than the previo"
+  },
+  {
+    "reason": "Fuzzy match (85.94%)",
+    "original_id": "pyq_2021_CS1_cs49",
+    "test": "MOCK GATE - TEST 6",
+    "num": 12,
+    "text_snippet": "Consider the sliding window flow-control protocol operating between a sender and"
+  },
+  {
+    "reason": "Fuzzy match (91.30%)",
+    "original_id": "pyq_2019_S2_cs49",
+    "test": "MOCK GATE - TEST 6",
+    "num": 13,
+    "text_snippet": "Consider that 30 machines need to be connected in a LAN using 4-port Ethernet sw"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0322",
+    "test": "MOCK GATE - TEST 6",
+    "num": 17,
+    "text_snippet": "Which of the following statements concerning database normalization is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "MOCK GATE - TEST 6",
+    "num": 18,
+    "text_snippet": "Which of the following is/are CORRECT? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0307",
+    "test": "MOCK GATE - TEST 6",
+    "num": 25,
+    "text_snippet": "In a binary search tree, the following key values (not necessarily in the order "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0159",
+    "test": "MOCK GATE - TEST 6",
+    "num": 26,
+    "text_snippet": "Consider the following program.\n\nint x = 10;\nint main() {\n    x = 1;\n    f();\n  "
+  },
+  {
+    "reason": "Fuzzy match (85.00%)",
+    "original_id": "go25_ts_0987",
+    "test": "MOCK GATE - TEST 6",
+    "num": 33,
+    "text_snippet": "A fair die is thrown as long as necessary for 6 to turn up. If the number of thr"
+  },
+  {
+    "reason": "Fuzzy match (96.15%)",
+    "original_id": "go25_ts_0724",
+    "test": "MOCK GATE - TEST 6",
+    "num": 36,
+    "text_snippet": "In a packet switched network, packets are routed from source to destination alon"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0404",
+    "test": "MOCK GATE - TEST 6",
+    "num": 40,
+    "text_snippet": "Consider set A = {1, 2, 3, 4}. From all the subsets of A, we define a new set X "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2015_S1_cs47",
+    "test": "MOCK GATE - TEST 6",
+    "num": 42,
+    "text_snippet": "The least number of temporary variables required to create a three-address code "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0153",
+    "test": "MOCK GATE - TEST 6",
+    "num": 45,
+    "text_snippet": "Consider the following grammar:\n\n    S →aT\n    T →aT ∣ϵ\n\nThe above grammar is __"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0338",
+    "test": "MOCK GATE - TEST 6",
+    "num": 48,
+    "text_snippet": "From the following instance of a relation schema R(A, B, C), we can conclude tha"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - SHALLOW",
+    "num": 25,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - SHALLOW",
+    "num": 29,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - SHALLOW",
+    "num": 2,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - SHALLOW",
+    "num": 20,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (87.50%)",
+    "original_id": "go25_ts_1102",
+    "test": "OPERATING SYSTEMS - SHALLOW",
+    "num": 22,
+    "text_snippet": "A typical program has 15% memory instructions. Assume there are 3% data TLB miss"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - SHALLOW",
+    "num": 28,
+    "text_snippet": "Which of the following is/are correct?.(Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_1134",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 3,
+    "text_snippet": "5 processes P0 through P4; 3 resource types A (10 instances), B (5 instances), a"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 5,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (95.00%)",
+    "original_id": "go25_ts_1087",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 7,
+    "text_snippet": "Consider the following code segment:\n\npid_t pid;\npid = fork();\nif (pid == 0) {\nt"
+  },
+  {
+    "reason": "Fuzzy match (85.00%)",
+    "original_id": "go25_ts_1127",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 10,
+    "text_snippet": "Consider the following two-process synchronization solution.\n\nP0:\nwhile(TRUE) {\n"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_1128",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 12,
+    "text_snippet": "Which of the following statements about CPU scheduling algorithms is/are TRUE? ("
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 13,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_1115",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 19,
+    "text_snippet": "A process executes the following segment of code :\n\nint foo(int n)\n{\n    int i;\n"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_1112",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 20,
+    "text_snippet": "A process executes the following segment of code :\n\nif(fork() && fork() || fork("
+  },
+  {
+    "reason": "Fuzzy match (95.45%)",
+    "original_id": "pyq_2010_cs45",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 21,
+    "text_snippet": "The following program consists of 3 concurrent processes and 3 binary semaphores"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_1124",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 23,
+    "text_snippet": "A system has four processes and five allocatable resources. The current allocati"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 24,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 27,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (92.59%)",
+    "original_id": "go25_ts_1130",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 28,
+    "text_snippet": "Consider the following two process synchronization solution. Assume all assignme"
+  },
+  {
+    "reason": "Fuzzy match (95.65%)",
+    "original_id": "go25_ts_1125",
+    "test": "OPERATING SYSTEMS - TEST 1",
+    "num": 30,
+    "text_snippet": "Consider the following process synchronization program involving N processes.\n\ns"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - TEST 2",
+    "num": 1,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - TEST 2",
+    "num": 15,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "OPERATING SYSTEMS - TEST 2",
+    "num": 19,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2015_S1_cs29",
+    "test": "OPERATING SYSTEMS - TEST 2",
+    "num": 24,
+    "text_snippet": "Consider a system with byte-addressable memory, 31-bit logical addresses, 4 kilo"
+  },
+  {
+    "reason": "Fuzzy match (97.37%)",
+    "original_id": "go25_ts_1102",
+    "test": "OPERATING SYSTEMS - TEST 2",
+    "num": 27,
+    "text_snippet": "A typical program has 10% memory instructions. Assume there are 2% data TLB miss"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0020",
+    "test": "PROBABILITY - SHALLOW TEST 1",
+    "num": 22,
+    "text_snippet": "Which of the following statements is/are TRUE? (Mark all the appropriate choices"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "PROBABILITY - TEST 1",
+    "num": 5,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0949",
+    "test": "PROBABILITY - TEST 1",
+    "num": 6,
+    "text_snippet": "Two coins are in a box. The coins look alike, but one coin is fair (with equal p"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0020",
+    "test": "PROBABILITY - TEST 1",
+    "num": 18,
+    "text_snippet": "Which of the following statements is/are TRUE? (Mark all the appropriate choices"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0980",
+    "test": "PROBABILITY - TEST 1",
+    "num": 20,
+    "text_snippet": "A certain family has 8 children, consisting of 3 boys and 5 girls. Assuming that"
+  },
+  {
+    "reason": "Fuzzy match (92.86%)",
+    "original_id": "go25_ts_0817",
+    "test": "PROGRAMMING IN C - TEST 1",
+    "num": 13,
+    "text_snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nvoid foo("
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "go25_ts_1259",
+    "test": "PROGRAMMING IN C - TEST 1",
+    "num": 14,
+    "text_snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nint main("
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "go25_ts_1259",
+    "test": "PROGRAMMING IN C - TEST 1",
+    "num": 16,
+    "text_snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nint main("
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "mock_c1_s2_q17",
+    "test": "PROGRAMMING IN C - TEST 1",
+    "num": 23,
+    "text_snippet": "What will be the output of the following C program?\n\n#include <stdio.h>\nint main"
+  },
+  {
+    "reason": "Fuzzy match (90.91%)",
+    "original_id": "go25_ts_1088",
+    "test": "PROGRAMMING IN C - TEST 1",
+    "num": 26,
+    "text_snippet": "What will be the output of the following C program?\n\n#include<stdlib.h>\n\nstruct "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_1259",
+    "test": "PROGRAMMING IN C - TEST 1",
+    "num": 29,
+    "text_snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nint main("
+  },
+  {
+    "reason": "Fuzzy match (88.24%)",
+    "original_id": "go25_ts_1064",
+    "test": "QUANTITATIVE APTITUDE 1",
+    "num": 28,
+    "text_snippet": "The probability that it is Monday and a student is absent is 0.05. Since there a"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_1316",
+    "test": "SPACIAL AND ANALYTICAL APTITUDE - TEST 1",
+    "num": 21,
+    "text_snippet": "A piece of paper is folded and cut as shown in the below figures.\n\n\n\n\n\nWhich of "
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "SPACIAL AND ANALYTICAL APTITUDE - TEST 1",
+    "num": 22,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_1329",
+    "test": "SPACIAL AND ANALYTICAL APTITUDE - TEST 1",
+    "num": 24,
+    "text_snippet": "Which of the following would appear when the transparent sheet is folded at the "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0792",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 4,
+    "text_snippet": "Which of the following languages is/are recursively enumerable but not recursive"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0701",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 5,
+    "text_snippet": "Which of the following languages is/are regular? (Mark all the appropriate choic"
+  },
+  {
+    "reason": "Fuzzy match (86.11%)",
+    "original_id": "go25_ts_0926",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 7,
+    "text_snippet": "Consider the language L over Σ = {0, 1} consisting of strings with equal number "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0020",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 12,
+    "text_snippet": "Which of the following statements is/are TRUE? (Mark all the appropriate choices"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_0935",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 17,
+    "text_snippet": "The minimum number of states in the deterministic finite automata required to ch"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 19,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_1342",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 23,
+    "text_snippet": "The following deterministic finite automata recognizes"
+  },
+  {
+    "reason": "Fuzzy match (89.47%)",
+    "original_id": "go25_ts_0792",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 24,
+    "text_snippet": "Which of the following languages is/are not recursively enumerable? Here, ⟨M⟩ de"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go25_ts_0149",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 26,
+    "text_snippet": "Which of the following is/are correct? (Mark all the appropriate choices)"
+  },
+  {
+    "reason": "Fuzzy match (95.65%)",
+    "original_id": "go25_ts_1079",
+    "test": "THEORY OF COMPUTATION - TEST 1",
+    "num": 27,
+    "text_snippet": "A language L has the prefix property if there are no two distinct strings in L, "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_1359",
+    "test": "VERBAL APTITUDE 1",
+    "num": 15,
+    "text_snippet": "From among the given sentences pick the grammatically correct one:"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_1370",
+    "test": "VERBAL APTITUDE 1",
+    "num": 25,
+    "text_snippet": "From among the given sentences pick the grammatically INCORRECT one:"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_1359",
+    "test": "VERBAL APTITUDE 1",
+    "num": 26,
+    "text_snippet": "From among the given sentences pick the grammatically correct one:"
+  }
+]

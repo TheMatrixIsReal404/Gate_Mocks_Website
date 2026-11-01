@@ -1,0 +1,2158 @@
+[
+  {
+    "reason": "Fuzzy match (88.89%)",
+    "original_id": "go_w_0009",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 1 - PROPOSITIONAL",
+    "snippet": "If p is true and q is false then the truth values of (p →q) ↔(∼q →∼p) and\n(∼p∨∼q"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2012_cs02",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 15 - LATTICE & POSET",
+    "snippet": "Which of the following is true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0045",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 15 - LATTICE & POSET",
+    "snippet": "Let (A, ≤) be a lattice. Which of the following properties necessarily hold true"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_discretemathematics_w06_q07",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 15 - LATTICE & POSET",
+    "snippet": "Which of the following is false?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0063",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 17 - DIGITAL LOGIC",
+    "snippet": "Which of the following boolean equations is/are correct?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "mock_c1_s2_q27",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 2 - PROPOSITIONAL",
+    "snippet": "Which of the following statements is true?"
+  },
+  {
+    "reason": "Fuzzy match (89.47%)",
+    "original_id": "go_w_0100",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 2 - PROPOSITIONAL",
+    "snippet": "If F1, F2 and F3 are propositional formulae/expressions, over some set of propos"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 21 - CALCULUS",
+    "snippet": "Which of the following is/are TRUE?\n\n                                           "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2014_S2_cs21",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 25 - RELATIONAL",
+    "snippet": "The maximum number of superkeys for the relation schema R(E, F, G, H) with E as "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2024_CS1_cs44",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 26 - FUNCTIONAL",
+    "snippet": "The symbol → indicates functional dependency in the context of a relational data"
+  },
+  {
+    "reason": "Fuzzy match (96.00%)",
+    "original_id": "pyq_2024_CS2_cs56",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 26 - FUNCTIONAL",
+    "snippet": "A functional dependency F : X →Y is termed as a useful functional dependency if "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2012_cs02",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 28 - NORMAL FORMS |",
+    "snippet": "Which of the following is true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 3 - PROPOSITIONAL",
+    "snippet": "Which of the following statements is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2020_cs36",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 30 - NORMALIZATION |",
+    "snippet": "Consider a relational table R that is in 3NF , but not in BCNF. Which one of the"
+  },
+  {
+    "reason": "Fuzzy match (91.30%)",
+    "original_id": "go_w_0255",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 31 - C-PROGRAMMING",
+    "snippet": "Consider the following declaration of pointer variable p.\n\nint (*p)[10];\n\nIf the"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0817",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 31 - C-PROGRAMMING",
+    "snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nvoid main"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "mock_c1_s2_q46",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 31 - C-PROGRAMMING",
+    "snippet": "What will be the output of the following program ?\n\n#include<stdio.h>\nvoid fun(i"
+  },
+  {
+    "reason": "Fuzzy match (90.91%)",
+    "original_id": "go_w_0244",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 31 - C-PROGRAMMING",
+    "snippet": "What will be the output of the following program?\n\nint main()\n{\n    int arr[3][3"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0244",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 31 - C-PROGRAMMING",
+    "snippet": "What will be the output of the following program?\n\nstruct s{\n    int i;\n    stru"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 32 - SQL | DBMS",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2011_cs43",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 32 - SQL | DBMS",
+    "snippet": "Consider a database table T containing two columns X and Y each of type integer."
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_operatingsystem_w01_q03",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 32 - SQL | DBMS",
+    "snippet": "Which of the following is/are correct?"
+  },
+  {
+    "reason": "Fuzzy match (88.10%)",
+    "original_id": "pyq_2009_cs55",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 33 - SQL | DBMS",
+    "snippet": "Consider the following relational schema:\n\n                                     "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2023_cs61",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 33 - SQL | DBMS",
+    "snippet": "Consider the following table named Student in a relational database. The primary"
+  },
+  {
+    "reason": "Fuzzy match (86.21%)",
+    "original_id": "pyq_2015_S1_cs61",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 33 - SQL | DBMS",
+    "snippet": "Consider the following relation:\n\n                                              "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0317",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 35 - NORMALIZATION |",
+    "snippet": "Suppose R is a relation with attributes A1, A2, ... , A6.\nHow many superkeys R h"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0317",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 35 - NORMALIZATION |",
+    "snippet": "Suppose R is a relation with attributes A1, A2, ... , A6.\nHow many superkeys R h"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2012_cs12",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 38 - FINITE AUTOMATA",
+    "snippet": "What is the complement of the language accepted by the NFA shown below?\n\nAssume "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0346",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 38 - FINITE AUTOMATA",
+    "snippet": "Assume L is a language over the alphabet Σ.\n\nAssume λ denotes the empty string.\n"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 38 - FINITE AUTOMATA",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0357",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 39 - FINITE AUTOMATA",
+    "snippet": "Which of the following four languages is different from the other three?"
+  },
+  {
+    "reason": "Fuzzy match (89.47%)",
+    "original_id": "go_w_0361",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 39 - FINITE AUTOMATA",
+    "snippet": "Give a deterministic finite automaton with the least number of states for the la"
+  },
+  {
+    "reason": "Fuzzy match (88.89%)",
+    "original_id": "go_w_0358",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 39 - FINITE AUTOMATA",
+    "snippet": "If for a language L is given that LR = L, what does necessarily follow?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0360",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 39 - FINITE AUTOMATA",
+    "snippet": "Which of the following regular expressions describes a language different from t"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0365",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 39 - FINITE AUTOMATA",
+    "snippet": "Let M be a DFA. Say strings x and y in Σ∗ are indistinguishable, written x ≡y if"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 4 - SET THEORY",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 4 - SET THEORY",
+    "snippet": "Which of the following statements is /are False?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 4 - SET THEORY",
+    "snippet": "Which of the following statements is /are TRUE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 40 - FINITE AUTOMATA",
+    "snippet": "Which of the following statements is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 40 - FINITE AUTOMATA",
+    "snippet": "Which of the following statements is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0375",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 40 - FINITE AUTOMATA",
+    "snippet": "We transform the following NFA into an equivalent DFA using the subset construct"
+  },
+  {
+    "reason": "Fuzzy match (96.77%)",
+    "original_id": "pyq_2012_cs34",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 41 - SUBNETTING AND",
+    "snippet": "An Internet Service Provider (ISP) has the following chunk of CIDR-based IP addr"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 41 - SUBNETTING AND",
+    "snippet": "Which of the following is/are True?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_discretemathematics_w05_q07",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 42 - CONTEXT FREE",
+    "snippet": "Which of the following statements are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 43 - PROCESS",
+    "snippet": "Which of the following is/are TRUE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 44 - FA, CFL, DCFL |",
+    "snippet": "Which of the following statements is/are TRUE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 44 - FA, CFL, DCFL |",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 44 - FA, CFL, DCFL |",
+    "snippet": "Which of the following statements is/are true ?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 46 - FIRST ORDER LOGIC",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 46 - FIRST ORDER LOGIC",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "mock_c1_s2_q27",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 5 - SET THEORY",
+    "snippet": "Which of the following statements is TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (87.50%)",
+    "original_id": "pyq_2021_CS1_cs43",
+    "source": "GO_WQ25",
+    "title": "WEEKLY QUIZ 7 - RELATIONS",
+    "snippet": "A relation R is said to be circular if aRb and bRc together imply cRa.\n\nWhich of"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0162",
+    "source": "GO_TS25",
+    "title": "ALL INDIA MOCK TEST 2",
+    "snippet": "In C programming, constant integers are considered to be signed integers by defa"
+  },
+  {
+    "reason": "Fuzzy match (95.24%)",
+    "original_id": "pyq_2020_cs33",
+    "source": "GO_TS25",
+    "title": "ALL INDIA MOCK TEST 3",
+    "snippet": "Consider the productions A →PQ and A →XY. Each of the five non-terminals A, P, Q"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0291",
+    "source": "GO_TS25",
+    "title": "ALL INDIA MOCK TEST 4",
+    "snippet": "Assume that an int variable takes 4 bytes and a char variable takes 1 byte. What"
+  },
+  {
+    "reason": "Fuzzy match (87.50%)",
+    "original_id": "go_w_0212",
+    "source": "GO_TS25",
+    "title": "ALL INDIA MOCK TEST 4",
+    "snippet": "Consider the following functional dependencies in a database.\n\n                A"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0168",
+    "source": "GO_TS25",
+    "title": "ALL INDIA MOCK TEST 5",
+    "snippet": "For any Boolean function, a Non-Essential Prime Implicant is a Prime implicant t"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0125",
+    "source": "GO_TS25",
+    "title": "ALL INDIA MOCK TEST 5",
+    "snippet": "P, Q, and R are the decimal integers corresponding to the 4-bit binary number 11"
+  },
+  {
+    "reason": "Fuzzy match (86.67%)",
+    "original_id": "go_t_0081",
+    "source": "GO_TS25",
+    "title": "ALL INDIA MOCK TEST 5",
+    "snippet": "Consider the following C code. Where x and y are unknown integers and have been "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - SUBJECT WISE",
+    "snippet": "Which of the following statements is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - SUBJECT WISE",
+    "snippet": "Which of the following is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go_t_0295",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - TOPIC WISE",
+    "snippet": "Let T(n) = T(an) + T(bn) + n, where a + b < 1.\n\nWhat will be asymptotic bound on"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0296",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - TOPIC WISE",
+    "snippet": "Let T(n) be\n\n                        + 8T(n/4) + n2    if n ≥4\n                 "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0297",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - TOPIC WISE",
+    "snippet": "Let S(n) be\n\n                              S(n) = S(n/2) + log(n).\n\n\nWhat will b"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0296",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - TOPIC WISE",
+    "snippet": "Let T(n) be\n\n                          T(n) = n2 + T(n/2) + T(n/4)\n\n\nWhat will b"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go_t_0297",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - TOPIC WISE",
+    "snippet": "Let T(n) be\n\n                          T(n) = 16T(n/4) + n2(log n)3\n\n\nWhat will "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0297",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - TOPIC WISE",
+    "snippet": "Let T(n) be\n\n                            T(n) = T(√n) + log log n\n\n\nWhat will be"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0296",
+    "source": "GO_TS25",
+    "title": "ALGORITHMS - TOPIC WISE",
+    "snippet": "Let T(n) be\n\n                                   n     n\n                        "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go25_ts_1259",
+    "source": "GO_TS25",
+    "title": "C PROGRAMMING SUBJECT",
+    "snippet": "What will be the output of the following program?\n\n#include<stdio.h>\nmain()\n{\n  "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0384",
+    "source": "GO_TS25",
+    "title": "CO AND ARCHITECTURE - TOPIC WISE TEST 1",
+    "snippet": "When performing hardware integer arithmetic, we say that overflow has occurred w"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0016",
+    "source": "GO_TS25",
+    "title": "CO AND ARCHITECTURE - TOPIC WISE TEST 4",
+    "snippet": "Consider a disk with the following characteristics :\n\n     Average seek time = 8"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go25_ts_0354",
+    "source": "GO_TS25",
+    "title": "COMPILER DESIGN - SUBJECT",
+    "snippet": "Which of the following statement(s) is/are FALSE?"
+  },
+  {
+    "reason": "Fuzzy match (94.87%)",
+    "original_id": "go_t_0503",
+    "source": "GO_TS25",
+    "title": "COMPILER DESIGN - TOPIC",
+    "snippet": "A node p in a control flow graph(CFG) dominates a node q if every path from the "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0501",
+    "source": "GO_TS25",
+    "title": "COMPILER DESIGN - TOPIC",
+    "snippet": "Consider the following basic block, in which all variables are integers.\n\na := b"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go_t_0446",
+    "source": "GO_TS25",
+    "title": "COMPILER DESIGN - TOPIC",
+    "snippet": "Which of the following three-Address code satisfies the below expression?\n\n     "
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go_t_0509",
+    "source": "GO_TS25",
+    "title": "COMPILER DESIGN - TOPIC",
+    "snippet": "Consider the following Control flow graph (CFG) of a program :\n\n\n\n\n\nFor the abov"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pw_dbms_w06_q04",
+    "source": "GO_TS25",
+    "title": "COMPUTER NETWORKS - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following statement(s) is/are TRUE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0170",
+    "source": "GO_TS25",
+    "title": "COMPUTER NETWORKS - TOPIC WISE TEST 1",
+    "snippet": "The routing table below uses the longest prefix match in its routing decisions.\n"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0144",
+    "source": "GO_TS25",
+    "title": "COMPUTER NETWORKS - TOPIC WISE TEST 2",
+    "snippet": "Which of the following statements about datagrams sent by a node in a network us"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2012_cs02",
+    "source": "GO_TS25",
+    "title": "COMPUTER NETWORKS - TOPIC WISE TEST 4",
+    "snippet": "Which of the following is TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (93.33%)",
+    "original_id": "pyq_2015_S1_cs64",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURE AND",
+    "snippet": "Consider the following C function:\n\nint  fun1 (int  n)\n{\n    int  i, j, k, p, q "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURE AND",
+    "snippet": "Which of the following(s) is/are TRUE?\n\n       n"
+  },
+  {
+    "reason": "Fuzzy match (88.89%)",
+    "original_id": "go_t_0634",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURES - SUBJECT",
+    "snippet": "What is the time complexity of the code given?\n\nfor(i=1;i<=n;i++)\n    for(j=1;j<"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0602",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURES - SUBJECT",
+    "snippet": "Consider the following program. printlist() is a function that takes the head of"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0603",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURES - SUBJECT",
+    "snippet": "Consider the following function fun() that takes the head of a linked list.\n\nstr"
+  },
+  {
+    "reason": "Fuzzy match (94.74%)",
+    "original_id": "go_t_0151",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURES - TOPIC",
+    "snippet": "Consider the following binary heap.\n\n\n\n\n\nSuppose that the last insertion operati"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0078",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURES - TOPIC",
+    "snippet": "Suppose that a binary min-heap stores six elements with priorities 10, 20, 30, 4"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURES - TOPIC",
+    "snippet": "Which of the following is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "DATA STRUCTURES - TOPIC",
+    "snippet": "Which of the following is is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (93.10%)",
+    "original_id": "go_t_0034",
+    "source": "GO_TS25",
+    "title": "DATABASES - TEST 4",
+    "snippet": "A B-Tree of order m is an m-way search tree in which every node ,except root nod"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2007_cs63",
+    "source": "GO_TS25",
+    "title": "DATABASES - TEST 4",
+    "snippet": "The order of a leaf node in a B tree is the maximum number of (value, data recor"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0034",
+    "source": "GO_TS25",
+    "title": "DATABASES - TEST 4",
+    "snippet": "A B-Tree of order m is an m-way search tree in which every node ,except root nod"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0226",
+    "source": "GO_TS25",
+    "title": "DBMS SUBJECT WISE TEST",
+    "snippet": "Consider a relation R(A, B) that contains 100 tuples, and a relation S(B, C) tha"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0312",
+    "source": "GO_TS25",
+    "title": "DBMS SUBJECT WISE TEST",
+    "snippet": "Determine the result of:\nSELECT COUNT(*), COUNT(Runs)\nFROM Scores\nWHERE Team = '"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0034",
+    "source": "GO_TS25",
+    "title": "DBMS SUBJECT WISE TEST",
+    "snippet": "A B-Tree of order m is an m-way search tree in which every node, except root nod"
+  },
+  {
+    "reason": "Fuzzy match (93.94%)",
+    "original_id": "go_w_0320",
+    "source": "GO_TS25",
+    "title": "DBMS SUBJECT WISE TEST",
+    "snippet": "In a relational database relation, we say a non-empty set of attributes X is clo"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0344",
+    "source": "GO_TS25",
+    "title": "DBMS SUBJECT WISE TEST",
+    "snippet": "The join operation can be defined as"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0317",
+    "source": "GO_TS25",
+    "title": "DBMS SUBJECT WISE TEST",
+    "snippet": "Suppose R is a relation with attributes A1, A2, ... , A6. How many superkeys R h"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0124",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "Input bits X and Y are added by using the combinational logic as shown below. S "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0116",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "–\n                                                                              "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0179",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "The circuit below uses two 2-to- 4 decoders, and inverter, and an OR gate to imp"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0087",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "Consider the 2–bit multiplexer (MUX) shown in the figure. For OUTPUT to be the X"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0079",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "–––                                                                             "
+  },
+  {
+    "reason": "Fuzzy match (95.00%)",
+    "original_id": "go_w_0122",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "In the circuit shown below, Y is a 2-bit (Y1Y0) output of the combinational logi"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0072",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "If (1235)x = (3033)y , where x and y indicate the bases of the corresponding num"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0077",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "A function of Boolean variables X, Y and Z is expressed in terms of the min-term"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0125",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "P, Q, and R are the decimal integers corresponding to the 4-bit binary number 11"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0173",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "A decoder may be described as"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0090",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "The Boolean function realized by the logic circuit shown is"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0171",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "A demultiplexer can be implemented using a decoder circuit.\nFor example, the 2-t"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0082",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "Match the logic gates in Column A with their equivalents in Column B."
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0068",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - SUBJECT WISE",
+    "snippet": "The combinatorial circuit shown below takes three 1-bit inputs: A, B, and C, and"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2022_cs18",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - TEST 1",
+    "snippet": "Let R1 and R2 be two 4–bit registers that store numbers in 1’s complement form. "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0235",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - TEST 3",
+    "snippet": "The figure below shows a 4-bit, right shift register, and a NOR gate. If the reg"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0730",
+    "source": "GO_TS25",
+    "title": "DIGITAL LOGIC - TEST 3",
+    "snippet": "Two D Flip flops are connected as a synchronous counter that goes through the fo"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0783",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - SUBJECT WISE TEST 1",
+    "snippet": "Let G be a group.\n\nWhich of the following is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following statements is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Fuzzy match (96.30%)",
+    "original_id": "go_w_0013",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - TOPIC WISE TEST 1",
+    "snippet": "Let P be a compound proposition over 4 propositional variables : a, b, c, d. We "
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go_t_0805",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - TOPIC WISE TEST 1",
+    "snippet": "Consider the following predicates.\n\n     Rabbit(x) = x is a rabbit.\n     Cute(x)"
+  },
+  {
+    "reason": "Fuzzy match (87.50%)",
+    "original_id": "go_t_0087",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - TOPIC WISE TEST 2",
+    "snippet": "Given a set of values R = {1, 2, 3, 4, 5, 6, 7}. The number of relations on this"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0793",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - TOPIC WISE TEST 3",
+    "snippet": "Let G be a cyclic group with generator ‘a’. Order of ‘a’ is 29. The number of su"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0012",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - TOPIC WISE TEST 3",
+    "snippet": "In a group G, every element other than the identity element has order 2 then G i"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0871",
+    "source": "GO_TS25",
+    "title": "DISCRETE MATHEMATICS - TOPIC WISE TEST 5",
+    "snippet": "Consider the following graph G :\n\n\n\n\n\nWhich of the following is/are true for thi"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0240",
+    "source": "GO_TS25",
+    "title": "ENGINEERING MATHEMATICS - TOPIC WISE TEST 3",
+    "snippet": "Suppose g(x) is a polynomial function such that g(−1) = 4 and g(2) = 7. Then the"
+  },
+  {
+    "reason": "Fuzzy match (89.47%)",
+    "original_id": "go_w_0140",
+    "source": "GO_TS25",
+    "title": "ENGINEERING MATHEMATICS - TOPIC WISE TEST 3",
+    "snippet": "Let q(x) be a continuous function which is defined for all real numbers. A porti"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0308",
+    "source": "GO_TS25",
+    "title": "ENGINEERING MATHEMATICS - TOPIC WISE TEST 3",
+    "snippet": "Which of the following is/are FALSE?\n\n                                     1"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "LINEAR ALGEBRA - TOPIC WISE",
+    "snippet": "Which of the following is/are TRUE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_discretemathematics_w05_q07",
+    "source": "GO_TS25",
+    "title": "LINEAR ALGEBRA - TOPIC WISE",
+    "snippet": "Which of the following statements are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "LINEAR ALGEBRA - TOPIC WISE",
+    "snippet": "Which of the following is/are TRUE ?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "LINEAR ALGEBRA - TOPIC WISE",
+    "snippet": "Which of the following is/are TRUE ?\n\n                                          "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "LINEAR ALGEBRA - TOPIC WISE",
+    "snippet": "Which of the following is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "LINEAR ALGEBRA - TOPIC WISE",
+    "snippet": "Which of the following is/are TRUE ?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Which of the following is/are TRUE ?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0291",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Assume that an int variable takes 4 bytes and a char variable takes 1 byte. What"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0256",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Which of the following function declaration can be passed to the following array"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0308",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Which of the following is/are FALSE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0183",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Which of the following(s) will evaluate to true"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0147",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Assume that any N-bit positive integer x is stored as a linked list of bits so t"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0151",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Consider the following binary heap.\n\n\n\n\n\nSuppose that the last operation perform"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0255",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Consider the following declaration of pointer variable p.\n\nint (*p)[10][5];\n\nIf "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - C-",
+    "snippet": "Which of the following(s) is/are TRUE-"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0838",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "What is the order of smallest non-cyclic group?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "mock_c1_s2_q27",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is TRUE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is/are True?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0460",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Let f : X →Y and g : Y →Z. Let h = g ∘f : X →Z. Suppose g is one-to-one and onto"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0021",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "The power set P((A × B) ∪(B × A)) has the same number of elements as the power s"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0445",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Let P(A) denote the power set of A. If P(A) ⊆B then"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0575",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements regarding TCP are false?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0711",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Consider a relation R(A, B) that contains r tuples; assume r > 0. Make no assump"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0489",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Consider the following CFG, where the set of terminals is {a, b, #, %, !} :\n\n   "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0250",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Assume that a data file has an index consisting of N items, where N is large. If"
+  },
+  {
+    "reason": "Fuzzy match (95.83%)",
+    "original_id": "pyq_2007_cs63",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "The order of a leaf node in a B tree is the maximum number of (value, data recor"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2010_cs47",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Suppose computers A and B have IP addresses 10.105.1.113 and 10.105.1.91 respect"
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "go_t_1054",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is/are true in context of the Two-Phase Lockin"
+  },
+  {
+    "reason": "Fuzzy match (90.62%)",
+    "original_id": "go_t_1062",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Assume a link has a round-trip propagation delay of 100 msec . Also, assume an 8"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go_t_0721",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Let R1, R2, … , Rn be a decomposition of schema U. Let u(U) be a relation, and l"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is/are True?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is/are True?"
+  },
+  {
+    "reason": "Fuzzy match (94.44%)",
+    "original_id": "go_t_1103",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Three concurrent processes P1, P2 and P3 are concurrently updating a shared vari"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is/are False?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0738",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "The table in the figure above shows the binary-coded-decimal (BCD) representatio"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0409",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "In typical RISC ISA, delayed branch executes which instruction irrespective of w"
+  },
+  {
+    "reason": "Fuzzy match (90.70%)",
+    "original_id": "go_t_0430",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Assume a 1 KB size 4-way set-associative cache with 64 byte blocks. Assume that "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0235",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "The figure below shows a 4-bit, right shift register, and a NOR gate. If the reg"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0771",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Consider the following decimal numbers. Which of the following decimal numbers D"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0776",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Consider the circuit given below with initial state A1 = 1, A2 = A0 = 0. The sta"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0367",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "X(Ri) represents an Index addressing mode.\n\nThe Effective address of operand is "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0384",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "When performing hardware integer arithmetic, we say that overflow has occurred w"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0746",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Let A, B, C be three boolean variables. ⊕ and ⊙ are exclusive-or(ExOr) and exclu"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0774",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "A flip-flop can be constructed from two NAND gates connected as follows:\n\n\n\n\n\n  "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0749",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "The possible number of Boolean function of 3 variables X, Y and Z such that\nf(X,"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is/are True?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0374",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Instead of 2 memories, one to store instructions and another one to store data, "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Which of the following statements is/are False?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0777",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "The figure below shows a control circuit, consisting of 3-bit register(all the t"
+  },
+  {
+    "reason": "Fuzzy match (94.44%)",
+    "original_id": "go_t_0769",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Analyze the following asynchronous network. Starting in the total stable state f"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2020_cs44",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "A processor has 64 registers and uses 16− bit instruction format. It has two typ"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0365",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Consider 16-bit binary representation of decimal number “53\". It is stored in a "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0385",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Consider a processor with a four-stage pipeline (IF, ID, EX, and WB).\nThe functi"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1130",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "The karnaugh map shown above represents a switching function F(a, b, c, d).\nHow "
+  },
+  {
+    "reason": "Fuzzy match (95.00%)",
+    "original_id": "go_t_0369",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "A pipeline of 2 stages with a delay of x units each is split to n stages. In the"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0372",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "In a certain pipelined processor a branch instruction can cause 2 stalls if it i"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0377",
+    "source": "GO_TS25",
+    "title": "MIXED SUBJECTS - FULL",
+    "snippet": "Identify the write-read, write-write, and read-write dependencies in the instruc"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0118",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 1",
+    "snippet": "A MUX circuit shown in the figure below implements a logic function F1 .\n\n\n\n\n\n  "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_1099",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 1",
+    "snippet": "Consider the following relational database tables R, S and T:\n\n                 "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0392",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 1",
+    "snippet": "A CPU has an arithmetic unit that adds bytes and then sets its V , C, and Z flag"
+  },
+  {
+    "reason": "Fuzzy match (92.31%)",
+    "original_id": "go_t_1099",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 2",
+    "snippet": "Consider the following tables R, S and T :\n\n                        R           "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0699",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 2",
+    "snippet": "B+− trees have different structures for leaf and non-leaf nodes. In B+− tree lea"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0734",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 2",
+    "snippet": "––                                                                              "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0013",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 2",
+    "snippet": "S →aSb ∣bSa ∣SS ∣ϵ\n\n\nWhich of the following best characterizes the language gene"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0178",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 2",
+    "snippet": "The following circuit using a 3-to-8 binary decoder and an OR gate is an impleme"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0402",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 2",
+    "snippet": "Consider the following instruction sequence in a single-issue in-order 5-stage p"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0729",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 2",
+    "snippet": "In the following circuit, X is given by"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0463",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 3",
+    "snippet": "Let R and T be binary relations over the same set A. We'll say that R is \"no str"
+  },
+  {
+    "reason": "Fuzzy match (93.10%)",
+    "original_id": "go_t_0034",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 3",
+    "snippet": "A B-Tree of order m is an m-way search tree in which every node, except the root"
+  },
+  {
+    "reason": "Fuzzy match (98.15%)",
+    "original_id": "go_t_0762",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 3",
+    "snippet": "The 64 K address space of a certain microcomputer is accessed by address signals"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0078",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 4",
+    "snippet": "The output Y in the circuit below is always “1\" when"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0467",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 4",
+    "snippet": "A binary relation R over a set A is called surjective if the following statement"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0413",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 4",
+    "snippet": "In a pipelined RISC computer where all arithmetic instructions have the same CPI"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0320",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 4",
+    "snippet": "In a relational database relation, we say a non-empty set of attributes X is clo"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1095",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 5",
+    "snippet": "In relational algebra, the join operator (⋈) is logically redundant if we have a"
+  },
+  {
+    "reason": "Fuzzy match (88.89%)",
+    "original_id": "go_t_0634",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 5",
+    "snippet": "What is the time complexity of the code given?\n\nfor (i = n; i > 0; i--) {\n    fo"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0258",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 5",
+    "snippet": "The default storage class for global variables in the C language is –"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0178",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 5",
+    "snippet": "The following circuit using a 3-to-8 binary decoder and an OR gate is an impleme"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0320",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "In a relational database relation, we say a non-empty set of attributes X is clo"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs46",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "Which of the following is/are undecidable?"
+  },
+  {
+    "reason": "Fuzzy match (96.43%)",
+    "original_id": "go_w_0421",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "Consider three concurrently executing threads in the same process using two sema"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0465",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "A binary relation R over a set A is called a \"GO Relation\" if for all x, y, z ∈A"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0161",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "What will be the output on the execution of the following code segment?\n\nmain()\n"
+  },
+  {
+    "reason": "Fuzzy match (89.47%)",
+    "original_id": "go_t_0151",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "Consider the following binary heap –\n\n\n\n\n\nSuppose the last operation you perform"
+  },
+  {
+    "reason": "Fuzzy match (97.37%)",
+    "original_id": "go_t_0576",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 6",
+    "snippet": "Host A has to ‘inject’ 30 Mbits of data into a network via a token bucket regula"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0007",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Kathy owns more cats than Alice and more dogs than Bruce. Alice owns more dogs t"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0278",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nvoid main"
+  },
+  {
+    "reason": "Fuzzy match (86.21%)",
+    "original_id": "go_t_1131",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Assume the following code is compiled and run on a modern Linux machine.\n\nAssumi"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0217",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "An attribute A is called prime if A is in any of the candidate keys. Assume in t"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0417",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "A computer has a 32-bit address bus with a direct mapped cache, using 4 bits for"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_1072",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Consider the following partial schedule for several data items for transactions "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Which of the following is/are TRUE?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0250",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Assume that a data file has an index consisting of N items, where N is large. If"
+  },
+  {
+    "reason": "Fuzzy match (95.24%)",
+    "original_id": "go_t_1507",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "The number of ways that one can divide 10 distinguishable objects in 3 indisting"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1357",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Of the following, which gives the best upper bound for the value of f(N) where f"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1088",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Let R(a, b) be a schema and Q1 and Q2 are queries on R .\n\nQ1: SELECT * FROM R;\nQ"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0286",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "What will be the output of the following program?\n\nmain()\n{\n    int a[2][2] = { "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_1480",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "What is the output for the following circuit?"
+  },
+  {
+    "reason": "Fuzzy match (85.00%)",
+    "original_id": "go_t_1295",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 7",
+    "snippet": "Below is a drawing(graph representation) of a binary relation R over a set P of "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0412",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "Consider a processor with an in-order five-stage pipeline (IF, ID, EX, MEM, and "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pyq_2007_cs63",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "The order of a leaf node in a B tree is the maximum number of (value, data recor"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0409",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "In typical RISC ISA, delayed branch executes which instruction irrespective of w"
+  },
+  {
+    "reason": "Fuzzy match (91.67%)",
+    "original_id": "mock_c1_s2_q17",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "What will be the output of the following program?\n\n#include <stdio.h>\n\nint main("
+  },
+  {
+    "reason": "Fuzzy match (85.29%)",
+    "original_id": "go_t_1220",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "We want to use semaphores to implement a shared critical section (CS) among thre"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0835",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "Let S be the set of all functions f : R →R. Consider the two binary operations +"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0987",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "#include <stdio.h>\nint main()\n{\n    int i= 255;\n    short int *s= (short int *)&"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_1254",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "Consider the following two schedules consisting to two transaction T1 and T2  :\n"
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go_t_0721",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 8",
+    "snippet": "Let R1, R2, … , Rn be a decomposition of schema U. Let u(U) be a relation, and l"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_algorithms_w05_q05",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "Which of the following statements is/are false?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1033",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "1         −7Let x = ⎡ −2 ⎤ and v = ⎡ 4 ⎤ . Which of the following statements mus"
+  },
+  {
+    "reason": "Fuzzy match (95.56%)",
+    "original_id": "go_t_0404",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "Consider an unpipelined processor. Assume that it has 1-ns clock cycle and that "
+  },
+  {
+    "reason": "Fuzzy match (97.14%)",
+    "original_id": "go_t_0581",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "TCP connection termination using three-way handshaking is shown below.\n\n\n\n\n\nCons"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0817",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nvoid main"
+  },
+  {
+    "reason": "Fuzzy match (92.86%)",
+    "original_id": "go_t_0436",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "Consider the following program segment:\n\nif A > B then\n    V[i] := F(i)\nelse\n   "
+  },
+  {
+    "reason": "Fuzzy match (92.00%)",
+    "original_id": "go_t_0047",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "If the largest value in a max-heap is in the root node and the second-largest va"
+  },
+  {
+    "reason": "Fuzzy match (87.50%)",
+    "original_id": "go_t_1271",
+    "source": "GO_TS25",
+    "title": "MOCK GATE - TEST 9",
+    "snippet": "Which of the following languages is/are non-regular?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0967",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Suppose that stacks and queues are provided as opaque data types, offering only "
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go25_ts_0817",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "What will be the output of the following C program?\n\n#include<stdio.h>\nint main("
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0306",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Suppose we have a relation R(A, B) with one tuple, both of whose components are "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1053",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Which of the following strings match the regular expression a∗bb(ab ∣ba)∗"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0167",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "A bit counting machine reads a binary input vector (a, b, c, d) and produces a b"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0144",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Which of the following statements about datagrams sent by a node in a network us"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0343",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Suppose that two relations R(A, B) and S(A, B) have exactly the same schema. Con"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_1051",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "The below table is a routing table using CIDR. Address bytes are in hexadecimal."
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0441",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Consider a system which uses a hard disk for storage. The task of managing the h"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0789",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Which of the following statements are true?\n\n        I. Let G be a simple, undir"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1116",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Consider the JK Flip flop made using NAND gates given below\n\n\n\n\n\n               "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0118",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "A MUX circuit shown in the figure below implements a logic function F1 .\n\n\n\n\n\n  "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0306",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Suppose we have a relation R(A, B) with one tuple, both of whose components are "
+  },
+  {
+    "reason": "Fuzzy match (90.62%)",
+    "original_id": "go_t_1062",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Assume a link has a round-trip propagation delay of 100 msec . Also, assume an 8"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "pw_operatingsystem_w01_q03",
+    "source": "GO_TS25",
+    "title": "MOCK GATE 14",
+    "snippet": "Which of the following(s) is/are correct?"
+  },
+  {
+    "reason": "Fuzzy match (88.46%)",
+    "original_id": "go_t_1339",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - SUBJECT WISE TEST 1",
+    "snippet": "Consider the following different possible pseudo-code taken from two processes, "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_cn_w08_q07",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following option(s) is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1371",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Consider three processes P1, P2, and P3 with respective arrival times of 0 ms, 1"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_discretemathematics_w05_q07",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Which of the following statements are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_discretemathematics_w05_q07",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Which of the following statements are true?:"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0156",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Suppose two threads execute the following C code concurrently, accessing shared "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_0086",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Consider a system with a 6 bit virtual address space, and 16 byte pages/frames. "
+  },
+  {
+    "reason": "Fuzzy match (87.04%)",
+    "original_id": "go_t_1770",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Assume in a computer supporting paging, virtual addresses are 36 bits long. Page"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1123",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Assume that you have a page reference string for a process. Let the page referen"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Which of the following(s) is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "OPERATING SYSTEMS - TOPIC",
+    "snippet": "Which of the following(s) is/are TRUE?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "PROBABILITY - TOPIC WISE",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "PROBABILITY - TOPIC WISE",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "PROBABILITY - TOPIC WISE",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "PROBABILITY - TOPIC WISE",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "PROBABILITY - TOPIC WISE",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0180",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 1",
+    "snippet": "The statement\n\nwhile ( --counter >= 1 )\n    counter % 2 ? printf(\"A\") : printf(\""
+  },
+  {
+    "reason": "Fuzzy match (90.00%)",
+    "original_id": "go_w_0161",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 1",
+    "snippet": "What will be output on the execution of the following code segment?\n\n#include<st"
+  },
+  {
+    "reason": "Fuzzy match (90.91%)",
+    "original_id": "go_w_0156",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 1",
+    "snippet": "Consider the k bit binary pattern. Tmax and Tmin are maximum and minimum signed "
+  },
+  {
+    "reason": "Fuzzy match (93.55%)",
+    "original_id": "go_w_0159",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 1",
+    "snippet": "Consider Figure A and Figure B, which represent 4 bit signed and unsigned number"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0361",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 2",
+    "snippet": "Consider the following C-program.\n\n#include<stdio.h>\nint Count(int x, int y)\n{\n "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0240",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 2",
+    "snippet": "Which of the following(s) are true for following function?\n\nint mystery(int a) {"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1476",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 2",
+    "snippet": "Consider the following pair of mutually recursive functions. What does g(g(2)) e"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "mock_c1_s1_q17",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 2",
+    "snippet": "What will be the output of the following program?\n\n#include<stdio.h>\nint sum() {"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0181",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 2",
+    "snippet": "Consider the following variable and function definitions:\n\nint g=10;\nint q3() {\n"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_w_0191",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 2",
+    "snippet": "As shown below, the file f. c defines a function f whose code refers to the vari"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_0944",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 3",
+    "snippet": "In which of the following case(s) character array must end with null char?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0251",
+    "source": "GO_TS25",
+    "title": "PROGRAMMING - TEST 3",
+    "snippet": "Which of the following is/are valid assignment(s) of the pointer for the given d"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following statements is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following statements is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (86.96%)",
+    "original_id": "go_t_1845",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "Let N be some NFA (Non-Deterministic Finite Automata) with 9 states and let the "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1854",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "If x is an integer, let [x]2 denote its binary representation.\n\nConsider the fol"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_t_1317",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - SUBJECT WISE TEST 1",
+    "snippet": "A class of languages is closed under subsets if whenever L is in the class and L"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pyq_2022_cs23",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 1",
+    "snippet": "Which of the following statements is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1857",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 1",
+    "snippet": "Which of the following languages is/are regular?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1074",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 1",
+    "snippet": "Which of the following is the Language accepted by this automata?"
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 4",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "go_t_1083",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 4",
+    "snippet": "L1 = {wwR ∣w ∈{0, 1}∗}\n                             L2 = {wcwR ∣w ∈{0, 1}∗}\n    "
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_discretemathematics_w05_q07",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 5",
+    "snippet": "Which of the following statements are true?"
+  },
+  {
+    "reason": "Fuzzy match (85.00%)",
+    "original_id": "go_t_1219",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 5",
+    "snippet": "If A is a set, let |A| denotes the cardinality of set A. We say |B| ≤|A| if and "
+  },
+  {
+    "reason": "Fuzzy match (100.00%)",
+    "original_id": "go_w_0128",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 5",
+    "snippet": "Which of the following is/are true?"
+  },
+  {
+    "reason": "Fuzzy match (85.71%)",
+    "original_id": "go_t_0101",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 5",
+    "snippet": "For an automata M, let ⟨M⟩ denote some unary encoding of M, and L(M) denotes the"
+  },
+  {
+    "reason": "Exact hash match",
+    "original_id": "pw_discretemathematics_w05_q07",
+    "source": "GO_TS25",
+    "title": "THEORY OF COMPUTATION - TOPIC WISE TEST 5",
+    "snippet": "Which of the following statements are true?"
+  }
+]

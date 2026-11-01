@@ -1,0 +1,76 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        (request.auth.token.email != null && request.auth.token.email in [
+          'sahu1999ankit@gmail.com',
+          'admin_1@gateprep.com',
+          'admin_2@gateprep.com',
+          'admin_3@gateprep.com',
+          'admin_4@gateprep.com',
+          'admin_5@gateprep.com',
+          'admin_6@gateprep.com',
+          'admin_7@gateprep.com',
+          'admin_8@gateprep.com',
+          'admin_9@gateprep.com',
+          'admin_10@gateprep.com'
+        ])
+      );
+    }
+
+    function validQuestion(d, qid) {
+      return d.keys().hasAll(['id', 'question', 'type', 'subject', 'correct', 'uploadedBy'])
+        && d.keys().hasOnly([
+             'id', 'question', 'type', 'subject', 'topic', 'category', 'difficulty',
+             'marks', 'options', 'correct', 'natRange', 'explanation', 'year',
+             'mockId', 'uploadedBy', 'source', 'createdAt', 'canonicalId', 'needsReview'
+           ])
+        && d.id == qid
+        && d.uploadedBy == request.auth.uid
+        && d.type in ['mcq', 'msq', 'nat']
+        && d.question is string && d.question.size() >= 10 && d.question.size() <= 5000
+        && (d.type == 'nat' || (d.options is list && d.options.size() >= 2 && d.options.size() <= 6));
+    }
+
+    // ── Questions Collection ──────────────────────────────────
+    // Authenticated users can read the question bank.
+    // Verified users can contribute new validated questions (Create-Only).
+    // Updating and deleting questions is restricted strictly to administrators.
+    match /questions/{qid} {
+      allow read:   if signedIn();
+      allow create: if signedIn()
+                    && qid.matches('^[A-Za-z0-9_-]{1,64}$')
+                    && validQuestion(request.resource.data, qid);
+      allow update, delete: if isAdmin();
+    }
+
+    // ── Administrators Directory ──────────────────────────────
+    // Users can read only their own admin status; writes are forbidden from client SDK.
+    match /admins/{uid} {
+      allow get: if signedIn() && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+
+    // ── Per-user Attempts ─────────────────────────────────────
+    match /users/{userId}/attempts/{attemptId} {
+      allow read, write: if signedIn() && request.auth.uid == userId;
+    }
+
+    // ── Per-user Test Sessions ────────────────────────────────
+    match /users/{userId}/testSessions/{sessionId} {
+      allow read, write: if signedIn() && request.auth.uid == userId;
+    }
+
+    // ── User Profiles ─────────────────────────────────────────
+    match /users/{userId} {
+      allow read, write: if signedIn() && request.auth.uid == userId;
+    }
+  }
+}

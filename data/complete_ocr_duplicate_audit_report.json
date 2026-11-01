@@ -1,0 +1,186 @@
+{
+  "initial_master_count": 19874,
+  "upgraded_old_raw_zeal_questions": 924,
+  "new_high_fidelity_added": 1143,
+  "final_master_count": 20093,
+  "net_expansion": 219,
+  "total_aliases_registered": 2735,
+  "cross_paper_duplicates_count": 6,
+  "cross_paper_duplicates": [
+    {
+      "new_id": "zeal_dld_017",
+      "new_subject": "Digital Logic",
+      "canonical_primary_id": "zeal_dig_3060",
+      "primary_category": "test_series",
+      "primary_paper": "Zeal Practice Sheet 2023 - DLD - Advanced 2023.pdf",
+      "snippet": "If x = 1 in the logic equation {x + z[y' + (z + xy')]}{x' + [z(x + y)]} = 1 then"
+    },
+    {
+      "new_id": "zeal_dld_056",
+      "new_subject": "Digital Logic",
+      "canonical_primary_id": "pw_discretemathematics_w05_q07",
+      "primary_category": "test_series",
+      "primary_paper": "PW CS Weekly Test 05 - Engineering Mathematics",
+      "snippet": "Which of the following statements are true?"
+    },
+    {
+      "new_id": "zeal_dld_129",
+      "new_subject": "Digital Logic",
+      "canonical_primary_id": "go_w_0090",
+      "primary_category": "test_series",
+      "primary_paper": "GO_WQ25 - WEEKLY QUIZ 19 - MULTIPLEXER",
+      "snippet": "The Boolean function realized by the logic circuit shown is\n\n<figure class=\"q-diagram-container\">\n  "
+    },
+    {
+      "new_id": "zeal_dld_211",
+      "new_subject": "Digital Logic",
+      "canonical_primary_id": "pyq_2007_cs07",
+      "primary_category": "pyq",
+      "primary_paper": "",
+      "snippet": "Which of the following is true"
+    },
+    {
+      "new_id": "zeal_dld_218",
+      "new_subject": "Digital Logic",
+      "canonical_primary_id": "go_t_1273",
+      "primary_category": "test_series",
+      "primary_paper": "GO_TS25 - MOCK GATE - TEST 3",
+      "snippet": "For the circuit shown in the figure, the delays of NOR gates, multiplexers and inverters are 2 ns,\n\n"
+    },
+    {
+      "new_id": "zeal_dld_222",
+      "new_subject": "Digital Logic",
+      "canonical_primary_id": "go_t_0722",
+      "primary_category": "test_series",
+      "primary_paper": "GO_TS25 - DIGITAL LOGIC - SUBJECT WISE",
+      "snippet": "A bulb in a staircase has two switches, one switch being at the ground floor and the other one at\n\n "
+    }
+  ],
+  "internal_duplicates_count": 11,
+  "internal_duplicates": [
+    {
+      "primary_id": "zeal_cp_026",
+      "duplicate_ids": [
+        "zeal_cp_043"
+      ],
+      "subject": "C Programming",
+      "snippet": "What will be output when you will execute following c code? ______\n\n```c\n#include<stdio.h>\nint main("
+    },
+    {
+      "primary_id": "zeal_dld_123",
+      "duplicate_ids": [
+        "zeal_dld_127"
+      ],
+      "subject": "Digital Logic",
+      "snippet": "Given the Boolean function S(P,Q,R) as implemented below, what is the function S?"
+    },
+    {
+      "primary_id": "zeal_dld_131",
+      "duplicate_ids": [
+        "zeal_dld_132"
+      ],
+      "subject": "Digital Logic",
+      "snippet": "Identify which logic gate is implemented by following Full adder circuit.\n\n<figure class=\"q-diagram-"
+    },
+    {
+      "primary_id": "zeal_em_016",
+      "duplicate_ids": [
+        "zeal_em_017"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "[MSQ]\n\n      Which of the following statement is/are true about square matrix A of order n?"
+    },
+    {
+      "primary_id": "zeal_em_034",
+      "duplicate_ids": [
+        "zeal_em_094",
+        "zeal_em_096",
+        "zeal_em_109",
+        "zeal_em_166",
+        "zeal_em_167",
+        "zeal_em_168",
+        "zeal_em_206",
+        "zeal_em_212",
+        "zeal_em_214",
+        "zeal_em_286",
+        "zeal_em_382",
+        "zeal_em_439",
+        "zeal_em_440",
+        "zeal_em_572",
+        "zeal_em_713"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "[MSQ]\n\n      Which of the following statement is/are true?"
+    },
+    {
+      "primary_id": "zeal_em_105",
+      "duplicate_ids": [
+        "zeal_em_106"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "4\n           If the matrix A = [3  2  3] [ 6 ] then rank of A is ________\n                          "
+    },
+    {
+      "primary_id": "zeal_em_138",
+      "duplicate_ids": [
+        "zeal_em_139",
+        "zeal_em_140"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "Consider the systems, each consisting of m linear equations in n variables.\n\n      Which of the foll"
+    },
+    {
+      "primary_id": "zeal_em_307",
+      "duplicate_ids": [
+        "zeal_em_309"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "Consider the following function:\n\n                        1\n          −x+ 1; x<\n                    "
+    },
+    {
+      "primary_id": "zeal_em_607",
+      "duplicate_ids": [
+        "zeal_em_609"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "What is the probability that the selected item is defective? ________"
+    },
+    {
+      "primary_id": "zeal_em_629",
+      "duplicate_ids": [
+        "zeal_em_643"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "What is the value of k? ________"
+    },
+    {
+      "primary_id": "zeal_em_690",
+      "duplicate_ids": [
+        "zeal_em_693"
+      ],
+      "subject": "Engineering Mathematics",
+      "snippet": "What is the value of E (12X + 4)? ____________"
+    }
+  ],
+  "subject_breakdown": {
+    "C Programming": 805,
+    "Data Structures": 1785,
+    "Algorithms": 1038,
+    "Operating Systems": 1592,
+    "Computer Networks": 1610,
+    "DBMS": 1447,
+    "Theory of Computation": 1582,
+    "Compiler Design": 751,
+    "Digital Logic": 1038,
+    "Computer Organization": 1483,
+    "Discrete Mathematics": 1721,
+    "Engineering Mathematics": 2972,
+    "Aptitude": 2269
+  },
+  "category_breakdown": {
+    "subject": 85,
+    "pyq": 2185,
+    "mock": 5859,
+    "test_series": 11964
+  }
+}
