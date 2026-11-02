@@ -27,7 +27,7 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 * [📚 Official GATE CSE Syllabus Specification (IIT Madras Standards)](#️-official-gate-cse-syllabus-specification-iit-madras-standards)
 * [🚀 Key Features & Innovations](#-key-features--innovations)
 * [📂 Project Structure](#-project-structure)
-* [📝 Changelog & Release Milestones](#-changelog)
+* [📝 Release Highlights & Architecture](#-release-highlights--architecture)
 * [🛠️ How to Run Locally](#️-how-to-run-locally)
 * [🔑 Authentication, Admin Accounts & Access](#-authentication-admin-accounts--access)
 
@@ -82,7 +82,7 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
   * Master JSON datastore comprising **21,502 total verified questions** (17,942 unique canonical questions, 7,494 with full step-by-step explanations, 1,198 with archive answer key verification pending).
   * Enriched with 11,745 curated practice questions across Weekly Topic Tests, National Test Series, Advanced Quizzes, and Subject Practice Workbooks.
   * Tagged with `canonicalId` and supported by `data/id_aliases.json` for airtight cross-mock deduplication during practice drills while preserving authentic 65-question papers in full-length mock exams.
-  * Pre-cached via Service Worker `gate-cse-v8.0` for immediate instant retrieval offline.
+  * Pre-cached via Service Worker `gate-cse-v8.x` for immediate instant retrieval offline.
 * **Client-Side Blob Synthesis**:
   * Dynamically synthesizes downloadable JSON files directly from client memory (`new Blob(...)`), allowing offline sample downloads even under `file:///` protocol.
 
@@ -104,7 +104,7 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 
 ### 4. Progressive Web App (PWA) & Offline Layer
 * **Service Worker (`sw.js`)**:
-  * Pre-caches core application assets (`index.html`, `style.css`, `app.js`, `firebase.js`, `manifest.json`, `sample_questions.json`) under cache version `gate-cse-v8.0`.
+  * Pre-caches core application assets (`index.html`, `style.css`, `app.js`, `firebase.js`, `manifest.json`, `sample_questions.json`) under cache version `gate-cse-v8.x`.
   * Implements Cache-First fetch strategies with network fallback for static assets.
   * Ignores Google API / Firestore endpoints to let the Firebase SDK manage its native offline persistence.
 * **W3C Web App Manifest (`manifest.json`)**:
@@ -339,252 +339,28 @@ Gate_Mocks_Website/
 
 ---
 
-## 📝 Changelog
+## 📝 Release Highlights & Architecture
 
-### Version 7.1 (Current Release — 21,502 Verified Questions, 48 New Full-Length Mock Exams: 27 All-India & 21 Comprehensive Full Syllabus Tests)
-* **🏛️ 21,502 Master Question Bank Milestone**:
-  * Ingested and integrated **1,409 high-resolution visual question cards** across 21 Comprehensive Full Syllabus Tests (`assets/diagrams/`).
-  * Master question database expanded from 20,093 to **21,502 authentic GATE questions**.
-* **🎯 48 New Full-Length Mock Examinations Activated (85 Full-Length Mocks Total)**:
-  * **27 All-India Full-Length & Mock GATE Exams (1,568 Questions)**: Fully wired up in MOCK_TESTS and getMockQuestions(), covering 2025 All-India Mocks 2–5, 2026 All-India Mocks 1–6, and Mock GATE Tests 1–9 & 14.
-  * **21 Comprehensive Full Syllabus & National Mock Exams (1,409 Questions)**:
-    * **Comprehensive 2024 Series (10 Full Mocks)**: 4 Advance Level Full Syllabus Tests, 4 Basic Level Full Syllabus Tests, and 2 National All-India Mock Tests (Tests 3 & 4).
-    * **Comprehensive 2023 Series (11 Full Mocks)**: 4 Advance Level Full Syllabus Tests, 4 Basic Level Full Syllabus Tests, and 3 National All-India Mock Tests (Tests 2, 3 & 4).
-* **📊 Updated Syllabus Guide (IIT Madras Specification)**:
-  * Re-calibrated the complete 13-subject syllabus breakdown in documentation to strictly reflect the updated 21,502 question distribution.
-* **⚡ Service Worker Cache Bump**: Upgraded PWA cache version to gate-cse-v7.6 for immediate asset invalidation and offline sync.
-
-### Version 7.0 (Current Release — 21,502 Verified Questions, OCR Question Integration, LaTeX Math & Prism.js C Blocks, High-Res Diagram Assets, Complete Deduplication & Canonical Mapping)
-* **🏛️ 21,502 Master Question Bank Milestone (OCR High-Fidelity Hybrid Integration)**:
-  * Ingested and integrated **1,143 high-fidelity OCR questions** with authentic mathematical KaTeX formatting, syntax-highlighted Prism.js C programs, and high-resolution cropped diagrams:
-    * **Core C Programming (112 Questions)**: 100% complete with 111 multi-line syntax-highlighted C code blocks (Prism.js `c`), memory pointer representations, and 100% official answer keys.
-    * **Digital Logic Fundamentals (251 Questions)**: Comprehensive Boolean algebra expressions with KaTeX overbars ($\bar{A}$, $\bar{B}$), $\oplus$ XOR operators, minterm summations, and **56 crisp vector-cropped K-map and logic circuit diagrams** (`assets/diagrams/`).
-    * **Engineering Mathematics Mastery (745 Questions)**: Complete Linear Algebra & Matrices, Calculus & Limits, Permutations & Combinations, and Probability & Distributions with 100% KaTeX matrices and integrals.
-    * **Subject-Wise Comprehensive Tests (35 Questions)**: High-resolution question cards and schematic diagrams (`assets/diagrams/`) with official step-by-step explanations from solution reports.
-  * Replaced 924 legacy low-fidelity unformatted OCR questions from `sample_questions.json` with the superior high-fidelity versions while registering all 771 legacy question IDs in `data/id_aliases.json` for 100% backward compatibility.
-* **🎯 Comprehensive Deduplication & Canonical Mapping Architecture**:
-  * Cross-Paper Duplication: Evaluated all 1,143 new questions against the entire master datastore. Detected and mapped 6 exact cross-paper duplicates (e.g., questions mirroring official GATE PYQs or National Test Series) to their primary `canonicalId`.
-  * Internal Duplication: Identified and linked 11 internal duplicate pairs within the practice sheets.
-  * Aliases Synchronization: Registered 2,735 total ID aliases in `data/id_aliases.json` so deduplication in Practice Mode (`q.canonicalId || q.id`) ensures students never encounter duplicate questions.
-  * 100% Datastore Integrity: Zero duplicate IDs, all subjects mapped to official 13 CANONICAL_SUBJECTS, and all 91 embedded diagram image assets verified present on disk.
-
-### Version 6.9 — 21,502 Verified Questions, Zero-Defect CDP Browser Audit, Deduplication Engine, Math Rendering Hardening & Login Privacy)
-* **🏛️ 21,502 Master Question Bank Milestone (High-Yield Practice Expansion Full Integration)**:
-  * Ingested and integrated **11,745 curated practice questions** from comprehensive practice series into the production question bank:
-    * **Weekly Topic Tests**: 518 questions with complete solutions across all core disciplines.
-    * **Comprehensive 2025 Test Series**: 3,279 questions across subject tests, multi-subject tests, and full mock exams.
-    * **Weekly Advanced Quizzes**: 467 questions covering advanced conceptual GATE problems.
-    * **Advanced 2026 Test Series**: 1,174 questions representing the latest 2026 test series syllabus.
-    * **Subject Practice Workbooks**: 6,307 questions across all 12 GATE CSE subjects and General Aptitude.
-  * Verified datastore now contains **21,502 total questions** (17,942 unique canonical problems, 7,494 with step-by-step mathematical explanations).
-* **🎯 Airtight Deduplication & Canonical Mapping Architecture**:
-  * Executed comprehensive duplicate analysis across all 21,502 questions using normalized deterministic SHA-256 hashing and Jaccard token comparison.
-  * **Zero duplicates** within the newly ingested 11,745 practice questions.
-  * Exactly 1,932 cross-mock duplicate instances (from mock exams intentionally sharing questions across Easy, Medium, and Full-Length papers) identified, linked via `canonicalId`, and indexed in `data/id_aliases.json`.
-  * Practice Mode deduplicates in real-time using `seenCanonical` filtering on `q.canonicalId || q.id`, guaranteeing **0 duplicate questions** during practice drills.
-  * Preserved full-length mock exam completeness across all 80 mock exams (80 tests $\times$ 65 questions = 5,200 questions).
-* **🔍 In-Browser Headless Edge CDP Verification (Zero Defects)**:
-  * Evaluated all 21,502 questions loaded into memory via Microsoft Edge Headless CDP (`aiohttp` WebSocket on port 9233) with strict error-throwing mode (`throwOnError: true`).
-  * Achieved a flawless **zero-defect scorecard** across the entire database:
-    * **0 HTML Corruptions** (no unescaped tags or broken blocks).
-    * **0 KaTeX LaTeX Parse Errors** across all questions, options, and explanations.
-    * **0 Unclosed Code Fences** (balanced monospaced syntax blocks).
-    * **0 Unbalanced Math Delimiters** (reduced from 28 to 0).
-    * **0 Empty or Invalid Options** (reduced from 112 to 0).
-    * **0 Out-of-Bounds Key Indices** (reduced from 13 to 0).
-* **📐 KaTeX & Math Delimiter Hardening (Step 3.5)**:
-  * Resolved 28 unbalanced math delimiters caused by literal dollar signs in non-math contexts:
-    * MIPS assembly registers (`$s1`, `$s2`, `$s6`, `$zero`) in Computer Organization and OS questions.
-    * Currency tokens (`$2`, `$1`, `$3`) in Probability & Engineering Mathematics questions.
-    * Compiler Design end-of-input terminals and follow sets (`Follow(A) = {$, x}`).
-    * LaTeX syntax typo in `go_t_0621` where closing dollar was missing on `$\textsf{NULL}$`.
-  * Added defensive **Step 3.5** to `formatQuestionContent()` in `app.js` to automatically sanitize currency, registers, and standalone tokens before math parsing.
-* **Option Sanity & Key Correction**:
-  * Repaired 6 practice test questions with incomplete option sets with complete 4-option sets, verified keys, and detailed solutions.
-  * Standardized options for 94 legacy diagram-based PYQs from 2007–2010.
-  * Added elegant fallback warning banners in `buildPracticeQHTML` and `renderTestQuestion` in `app.js` for figure-based questions.
-  * Fixed 13 out-of-bounds answer keys from legacy OCR option mergers.
-* **Phantom Record Purge**:
-  * Safely eliminated 39 blank/empty legacy OCR stubs (`question: ""` or `< 15` characters with no options or explanations).
-* **🛡️ Login Screen Privacy & Security**:
-  * Removed hardcoded administrative credentials and default passwords from the candidate login modal, keeping admin accounts secure and presenting a clean, modern authentication dialog for students.
-* **🚀 Service Worker & Offline Cache Upgrade**:
-  * Upgraded cache version to `gate-cse-v7.6` in `sw.js` for instant asset invalidation and smooth offline availability.
-* **🧪 112/112 Automated Verification Checks Passing (100%)**:
-  * Fully passed all verification suites: `scripts/verify_all_v6_features.py` (112/112), `scripts/audit_bank.py`, and `scripts/verify_app_syntax.py`.
-
-### Version 6.8 (Dataset Expansion Milestone — Subject Practice Workbooks & 2026 Series Ingestion)
-* **Practice Dataset Expansion Phase 3**:
-  * Ingested and integrated **7,481 additional unique questions** from Subject Practice Workbooks across all 12 subjects (+6,307 Qs) and 2026 Test Series (+1,174 Qs).
-  * Evaluated 3,421 questions from 2026 test series papers; filtered **2,247 duplicates** against existing banks.
-  * Evaluated questions from 24 question and answer booklets across all 12 subjects in practice workbooks; filtered **861 duplicates**.
-* **Subject Practice Workbooks Full Ingestion**:
-  * Ingested 6,307 unique questions with 6,263 verified answer keys (99.3% key coverage) spanning Aptitude (1,013 Qs), Data Structures (708 Qs), Computer Organization (652 Qs), Engineering Mathematics (614 Qs), Discrete Mathematics (606 Qs), Theory of Computation (591 Qs), Computer Networks (579 Qs), DBMS (466 Qs), Operating Systems (433 Qs), Digital Logic (316 Qs), Compiler Design (244 Qs), and C Programming (85 Qs).
-
-### Version 6.6 (Comprehensive Test Series Ingestion & Multi-Stage Deduplication Engine)
-* **Practice Dataset Expansion Phase 2**:
-  * Ingested and integrated **2,372 additional unique test series questions** from weekly quiz compilations (231 pages, 39 quizzes) and test series papers (911 pages, 61 test papers).
-  * Evaluated 2,680 candidate questions; filtered **308 duplicates** (165 exact SHA-256 hash matches + 143 fuzzy Jaccard >85% matches) against the PYQ, Mock, and practice databases.
-* **Weekly Subject Tests Ingestion**:
-  * Parsed and structured all **57 Weekly Test Papers** across 10 GATE subjects from Weekly Subject Test Papers.
-  * Evaluated 589 questions; filtered 12 exact/fuzzy duplicates against the official PYQ bank; ingested **518 clean, unique questions** with verified answer keys and hints/solutions.
-* **National 2025 Test Series Ingestion**:
-  * Parsed all **43 tests (437 pages)** from test series solution papers using geometric text sorting (`sort=True`).
-  * Evaluated 1,589 questions; detected and filtered **205 duplicates**; ingested **1,374 clean, unique questions** across all 13 GATE CS subjects.
-* **Advanced Multi-Stage Deduplication Pipeline**:
-  * Developed `scripts/parse_and_dedup_go25.py` and `scripts/merge_all_testseries_questions.py` executing deterministic SHA-256 normalized hash matching and Jaccard token-set fuzzy comparison (>85% similarity).
-* **Category & UI Filter Enhancements**:
-  * Introduced new `"test_series"` category filter in `app.js` (`updateFilter('category', 'test_series')`) allowing aspirants to focus specifically on test series practice papers.
-  * Added "Test Series" category support to Admin Question Upload modal.
-
-### Version 6.5 — In-Browser Question Render Architecture, Multi-Admin Governance, SVG/Vector Reconstructions & Zero-Defect CDP Audit)
-* **💻 Tokenized Code Block Architecture & Prism.js Syntax Highlighting**:
-  * Completely resolved the critical rendering defect in C programming and data structures questions where code blocks printed raw HTML `<pre class="code-block">` and escaped entities (`&quot;`, `&lt;`, `&gt;`).
-  * Replaced the defective container regex splitter in `formatQuestionContent()` with a **Tokenized Placeholder Architecture** (`@@@QB_BLOCK_X@@@`), eliminating premature truncation at inner header tags (`<div class="code-block-header">`).
-  * Implemented smart language detection: automatically recognizes programming keywords (`int`, `printf`, `static`, `main`) when markdown fences lack explicit language flags and defaults gracefully to C syntax.
-  * Integrated Prism.js syntax highlighting across practice cards, question palettes, and review interfaces.
-* **📐 Multi-Line KaTeX LaTeX Protection Pipeline**:
-  * Fixed math rendering failure on multiline display math (`$$S \to Aa \mid bAc...$$`) and grammar equations caused by `\n` to `<br/>` substitutions fragmenting KaTeX DOM `Text` nodes.
-  * Added upfront token-level isolation for display math (`$$...$$`, `\[...\]`) and inline math (`$...$`, `\(...\)`), ensuring full KaTeX formatting without text node fragmentation.
-* **🔐 Multi-Admin Role System & Question Bank Security**:
-  * Configured multi-tier administrative access governance with automated credential verification.
-  * Auto-mapping in `handleEmailAuth` translating designated administrative identifiers into authenticated session credentials.
-  * Restricted question bank management actions (`Upload Questions`, `Delete`, `Clear All`) strictly to verified administrator accounts.
-  * Hardened `firestore.rules` whitelist enforcing that only authorized admin identities can perform writes to `/questions/{qid}`.
-* **🔍 8,130-Question Headless Edge CDP Verification (Zero Defects)**:
-  * Executed comprehensive automated audit via Chrome DevTools Protocol (CDP) in Headless Microsoft Edge across all questions in active browser memory under strict error-throwing mode (`strict: 'warn'`, `throwOnError: true`).
-  * Achieved a flawless **zero-defect scorecard**:
-    * **0** HTML corruptions / unescaped entities
-    * **0** unbalanced math delimiters
-    * **0** KaTeX parse errors
-    * **0** unclosed code blocks
-    * **0** missing diagrams or tables
-    * **0** truncated or dangling question endings
-  * Filtered 38 legacy blank OCR stubs (`pyq_2007_cs01..05`, `pyq_2008_cs09..47`) in `loadMasterStaticQuestions()`, ensuring clean presentation in practice modes.
-* **🎨 High-Fidelity Diagram Embeds & Visual Reconstructions**:
-  * **Dijkstra Directed Graph (`pyq_2012_cs40`)**: Extracted high-resolution official vector graph from Page 156 of `CS_All_Old_Papers.pdf`, embedded clean base64 image inside `<figure class="q-diagram-container">`, restored verified options, correct answer `(D) SACET`, and step-by-step strict-inequality proof.
-  * **Aptitude Student Share Pie Chart (`pyq_2015_S1_ga08`)**: Embedded interactive theme-matched SVG donut chart (Civil 30%, Electrical 20%, Mechanical 10%, Others 40%) with breakdown legend, fixed truncated question text ending at "Mechanical 9", and added step-by-step verification for answer `32`.
-  * **Router Distance Vector Network (`pyq_2022_cs57`)**: Embedded responsive SVG schematic `[P] — [Q] — [R]`, cleaned OCR noise, restored NAT answer `0.5` and routing-loop probability proof.
-  * **Dangerous Microbes Toxicity vs. Potency (`pyq_2011_ga61`)**: Embedded responsive SVG coordinate graph with sized microbe bubbles for P, Q, R, S, verified answer `(D) S`.
-  * **Synchronous 3-Bit Counter (`pyq_2021_CS1_cs28`)**: Replaced OCR noise with clean toggle equations ($T_P = R$, $T_Q = \overline{P}$, $T_R = \overline{Q}$) and embedded SVG schematic, verified answer `011, 101, 000` (Option A).
-  * **Logic Hazard Circuit (`pyq_2024_CS1_cs28`)**: Embedded responsive SVG gate schematic (AND gate with direct and inverted inputs), separated collapsed options, verified MSQ answers `(A)` and `(C)`.
-  * **Probability MSQ (`pyq_2024_CS1_cs27`)**: Separated merged options, restored clean LaTeX notation, verified MSQ answers `(B)` and `(C)`.
-* **🧹 Navbar Streamlining & UX Optimization**:
-  * Cleaned up navigation sidebar by removing obsolete legacy items (`#nav-papers`), focusing navigation on high-yield sections: *Dashboard, Subjects, Practice Questions, Mock Tests, Full-Length PYQ Exams, Topic-Wise PYQs, Mistake Vault, Smart Playlists, Performance, and Admin Upload*.
-* **📑 Metadata Alignment & Mathematical Question Restoration**:
-  * **GATE 2025 Metadata Shift**: Corrected shifted topic/subject classifications across all 130 questions in Set 1 and Set 2 (e.g., corrected Q40 from DBMS to Compiler Design - Parsing).
-  * **Trapezoidal Rule Error Bound (`pyq_2008_cs21`)**: Reconstructed question $\int_1^2 x e^x dx$ with error $\le \frac{1}{3} \times 10^{-6}$, verified answer `(A) 1000e`.
-  * **Definite Calculus Integral (`pyq_2014_S3_cs47`)**: Formatted as $\int_0^\pi x^2 \cos x\,dx$, verified NAT answer `-6.28` ($-2\pi$).
-  * **Calculus Limit (`pyq_2015_S3_cs24`)**: Formatted as $\lim_{x \to \infty} (1+x^2)e^{-x}$, reclassified under Calculus, verified NAT answer `0`.
-  * **Basic Blocks Analysis (`pyq_2025_CS1_cs52`)**: Formatted 3-address code block, reclassified under Compiler Design, verified NAT answer `6`.
-  * **Product Automaton Transition Tables (`pyq_2008_cs49`)**: Converted OCR transition tables to semantic `<table class="q-data-table">` for automata Y, Z, and product automaton options, verified answer `(A)`.
-  * **Semantic Data Tables**: Converted 15+ questions containing unaligned OCR text into responsive `<table class="q-data-table">` elements.
-  * **Spatial Aptitude Options**: Restored clear option labels for paper folding (`pyq_2025_s1_q09`) and cube folding (`pyq_2025_s2_q04`).
-* **🧪 112/112 Automated Verification Checks Passing (100%)**:
-  * Expanded `scripts/verify_all_v6_features.py` from 97 to 112 automated checks covering all v6.0 features, Elite Tier engines, Cherry on Top improvements, P0/P1 security rules, deduplication hashing, and multi-admin privilege systems.
-
-### Version 6.0 — Daily Study Planner, Mock Score History & AIR Benchmarks, Weak Topic Focus Zone, Per-Question Time Heatmap, Spaced Repetition SRS, 3-State Theme Engine, Elite Tier Engines & Mobile Sticky UX
-* **📅 Daily Study Planner & Daily Target Tracker**:
-  * "Today’s Study Plan" dashboard widget with customizable question goal (default: 20 Q/day), animated progress tracker, accuracy stats, and interactive daily topic checklists with quick GATE high-yield topic recommendations.
-  * 7-day neglected subjects detector highlighting subjects without recent practice.
-  * 30-day practice streak heatmap with tooltip telemetry.
-* **🏆 Mock Test Leaderboard, Trajectory Line Chart & AIR Benchmark Percentiles**:
-  * Multi-test score trend line tracking performance evolution across tests.
-  * Personal Bests (PB) tracked per tier: Overall, Foundational Easy, Standard Medium, Rank Booster Hard, and Full-Length PYQs.
-  * Official GATE CSE Percentile & AIR Cutoff benchmark matrix (AIR 1–100, AIR 100–500, AIR 500–2,500, AIR 2,500–10,000).
-* **🧠 Weak Topic Auto-Diagnosis ("Focus Zone")**:
-  * Proactive attempt analysis identifying lowest accuracy topics (≥ 2 attempts) with direct 1-click drill launchers.
-* **⏱️ Per-Question Time Distribution Heatmap & Black Hole Inspector**:
-  * Interactive 65-question pacing bar chart in test results color-coded by status (Correct, Incorrect, Skipped).
-  * Automated Time Black Hole detection flagging questions > 180s (> 3m) with warning borders and direct navigation to solution derivations.
-* **🔁 Spaced Repetition Queue (SM-2 SRS for Practice Questions)**:
-  * SuperMemo SM-2 spaced repetition scheduler dynamically calculating optimal review intervals based on answer correctness.
-  * Live "🔁 Due for Review" sidebar/topbar badge and 1-click Review Session launcher.
-* **🌗 3-State Theme Engine (Dark / Light / High-Contrast WCAG AAA)**:
-  * Seamless cycle between Dark Theme, Light Theme, and Ultra High-Contrast Accessibility Mode via topbar button or keyboard shortcut <kbd>T</kbd>.
-* **📱 Touch-Optimized Mobile Test-Taking UX**:
-  * Native touch swipe gestures: swipe left for Next / Save, swipe right for Previous question.
-  * Sticky bottom action bar on mobile viewports for effortless 1-thumb test submission and navigation.
-  * Enlarged touch targets for options (48px minimum height).
-* **⭐ Instant "Unattempted" Practice Filter**:
-  * Dedicated quick-chips on Practice Questions page: `All`, `⭐ Unattempted`, `❌ Mistakes`, `🔁 Due Review`, `🔖 Starred`.
-* **🗂️ Collapsible Sidebar Subject Progress Overview**:
-  * Live accuracy percentages and status indicators for all 13 GATE CS subjects directly in the navigation sidebar.
-* **📊 Section-Wise Mock Analytics**:
-  * Detailed subject-by-subject score breakdown with net marks (accounting for negative marking) and targeted drill suggestions.
-* **💾 Dual-Layer IndexedDB Persistence (v2)**:
-  * Client-side attempt and test session storage upgraded to IndexedDB `userdata_store`, overcoming browser 5MB `localStorage` limits.
-* **🥋 Elite Tier Real-Exam Simulation Engines**:
-  * 📝 **Virtual Scribble Pad**: High-performance HTML5 canvas simulating official GATE scratchpad pads with Pen, Highlighter, Eraser, and Grid Paper modes (<kbd>Alt</kbd>+<kbd>S</kbd>).
-  * 🛡️ **TCS iON Exam Strict Mode**: Enforces strict fullscreen lock, disables keyboard text entry for NATs (enforcing on-screen virtual keypad), and detects tab switches.
-  * 💸 **Negative Marks Audit & Lost Rank Recovery Simulator**: Quantifies marks lost to negative penalties and projects rank recovery if unforced errors were skipped.
-  * 📈 **10,000-Candidate Synthetic Cohort Gaussian Bell Curve SVG**: Generates an authentic normal distribution curve showing exact candidate percentile positioning across GATE cohorts.
-  * 🗺️ **IIT Madras 87-Chapter Syllabus Coverage Audit**: Deep syllabus tracker across all 87 subtopics showing audited mastery vs unexplored chapters with 1-click drill generation.
-  * ⚡ **1-Click Convert Mistakes to Formula Flashcards**: Instantly bridges the Mistake Vault with Leitner SRS flashcards for active recall.
-  * ⏱️ **Timed Section Sprint Generator**: Generates customized rapid-fire sprint drills (5 to 30 min) by subject or difficulty.
-  * ⚖️ **Mock vs Mock Side-by-Side Comparison Engine**: Compare accuracy, time efficiency, and subject breakdowns across any two mock attempts side-by-side.
-  * 🧘 **Zen Distraction-Free Mode**: Hides sidebars, topbars, and distractions for 100% focused problem-solving (<kbd>Z</kbd>).
-  * 💾 **Profile Backup & Restore (.gatebackup)**: 1-click encrypted export and restore of all user attempts, bookmarks, notes, and custom flashcards.
-* **⚡ Quick Wins Suite**:
-  * 📋 1-Click "Copy Question Text" button for notes and problem-solving journals.
-  * 🎲 "Random Question" generator (<kbd>R</kbd>) on Practice page.
-  * 🎨 Syntax highlighting for code snippets via Prism.js.
-  * 🚨 Interactive "Report Question" modal with error taxonomy tags.
-  * 🔖 "Continue Where I Left Off" auto-restoring last filters, page, and search parameters.
-  * 🖨️ Clean print CSS stylesheets for 2-column problem worksheets and exam result cards.
-  * ⌨️ Updated keyboard shortcut cheat sheet (<kbd>?</kbd>).
-* **💎 Cherry on Top Micro-Improvements & Optimizations**:
-  * 🏷️ **Multi-Colored Bookmark Tags**: Categorize starred questions into 🔴 *Conceptual Traps*, 🟡 *Calculation Heavy*, and 🟢 *Pre-Exam Must Revise* with sub-filter chips on Practice page.
-  * 🖨️ **1-Page Printable 87-Chapter Wall Cheat Sheet**: Physical study desk tracker with question solved counts, mastery percentages, and wall checklist layout.
-  * ⏰ **Exam Countdown Milestone Invigilator Notices**: Authentic timed slide-down notice banners at 60m, 30m, 10m, and 2m intervals.
-  * 💡 **Formula Hint Peek in Practice Mode**: Non-spoiler formula guidance directly inside practice cards without revealing final answers.
-  * 🔊 **Tactile Haptic & Audio FX Engine**: Zero-dependency Web Audio API synthesized mechanical clicks and completion fanfare chimes with topbar toggle (<kbd>🔊</kbd>/<kbd>🔇</kbd>).
-  * 📊 **Solve Speed vs Accuracy Quadrant Scatter Map**: Interactive SVG chart mapping candidate pacing ($s/\text{Q}$) against accuracy ($\%$) across all 13 subjects.
-  * ⚡ **Performance Optimizations**: Debounced IndexedDB synchronization, hardware-accelerated modals, and safe AudioContext autoplay lifecycle.
-* **🏆 Pro Exam Hall Simulation & Performance Engine**:
-  * 🧮 **TCS iON Virtual Numeric Keypad for NAT Questions**: Authentic on-screen numeric keypad (`[0-9, ., -, ⌫, ✕]`). When Exam Strict Mode is active, physical typing is automatically locked, training aspirants directly in official mouse-only keypad entry.
-  * ⏩ **Exam Pacing Jump Shortcuts**: Quick navigation buttons and instant hotkeys <kbd>U</kbd> ("Jump to Next Unanswered") and <kbd>M</kbd> ("Jump to Next Marked for Review"), eliminating manual searching through 65-question palettes.
-  * 🎯 **GATE 2026 Comprehensive Readiness Benchmark**: Dashboard AI evaluation index (0–100%) synthesizing Syllabus Depth (87 chapters), Accuracy Rate, Solving Pacing, and Streak Consistency into a single target rank tier.
-  * ⚡ **Sub-5ms Global Question Search**: Pre-indexed search haystacks across all 8,168 questions eliminating runtime string concatenation and lowercase operations.
-  * 🏎️ **Batch KaTeX RequestAnimationFrame Pipeline**: Coalesces simultaneous math rendering requests into a single animation frame pass, eliminating micro-stutters.
-  * 📶 **Full Service Worker v6 Offline Pre-cache**: Upgraded `gate-cse-v6` service worker caching all 30 Easy and 30 Medium mocks for 100% offline flight/subway study.
-* **🧪 97/97 Verification Checks Passing 100%**:
-  * Verified end-to-end via automated verification suite (`scripts/verify_all_v6_features.py`).
-
-### Version 5.8 — Universal Global Question Search, 10-Spoke Mastery Radar, Expected Value Risk Analyzer, Formula Blitz, Exam Countdown & Study Streak
-* **🔍 Universal Global Question Search (Now 21,502 Questions)**:
-  * Fast tokenized search across all 8,168 questions by topic, algorithm, theorem, or code snippet with topbar shortcut <kbd>/</kbd>.
-* **🕸️ 10-Spoke Subject Mastery Radar Chart**:
-  * Pure SVG spider chart on the **Performance** page evaluating 360° syllabus depth across the 10 core GATE CS areas.
-* **⏳ Exam Countdown & Daily Study Streak Engine**:
-  * Live topbar countdown to the first Saturday of February and daily attempt tracker (goal: 20 Q/day) with persistent streak badges.
-* **⚖️ Option Elimination & Expected Value ($\mathbb{E}$) Risk Analyzer**:
-  * Statistical return on risk analyzer for MCQs, MSQs, and NATs with confidence tagging (🟢 Sure, 🟡 50:50, 🔴 Blind).
-* **⚡ 60-Second Formula Blitz Mode**:
-  * Timed rapid-fire formula recall challenge with streak scoring and solution peeking.
-* **🎯 NAT Precision & Rounding Trap Inspector**:
-  * Numerical tolerance boundaries $[min, max]$ display with intermediate truncation advisories.
-* **📄 2-Column Printable Practice Worksheet Generator**:
-  * 1-Click formatted PDF worksheet generator with detachable answer key and solution tables.
-* **🧪 37/37 Full-Site Verification Suite Passing 100%**:
-  * Verified end-to-end via automated Chrome DevTools Protocol test suite (`scripts/verify_all_twenty_nine_features.py`).
-
-### Version 5.7 (Official IIT Madras Syllabus Standards, 5 Elite Intelligence Modules & Topic-Wise PYQs Hub)
-* **🏛️ Official IIT Madras Verbatim Syllabus Alignment & Interactive Guide**:
-  * Embedded complete 10-section syllabus guide directly into the "Subjects" page with 1-click "▶ Practice" and "📑 PYQ Chapters" shortcuts.
-* **📑 Topic-Wise GATE CSE PYQs Hub (87 Chapters & 2,224 PYQs)**:
-  * Multi-decade PYQs (1990–2025) organized into 87 high-yield chapters with custom filters and drills.
-* **🧠 5 Elite GATE Intelligence Modules**:
-  * Loss Diagnosis & Error Tagging, Multi-Decade Weightage Heatmap, Speed vs. Accuracy 4-Quadrant Matrix, Smart Playlists & Revision Buckets, Dual-Method Explanations & Shortcut Notes.
-
-### Version 5.6 (Formula Flashcards & Spaced Repetition, Exam Crash Protection, 5-State TCS iON Palette)
-* **📇 Formula Flashcards & Practice Hint System (Spaced Repetition)**: 3D Flip-Card deck for high-frequency formulas with Leitner SRS ratings.
-* **🛡️ Exam Crash Protection & Auto-Save Recovery**: Saves candidate state every 5 seconds to `localStorage`.
-* **🎨 Authentic 5-State TCS iON Question Palette & Live Counter Legend**.
-
-### Version 5.5 (Mistake Vault, GATE Score & AIR Predictor, Pacing Analytics & PWA v5)
-* **📖 Diagnostic Mistake Vault**: Unresolved, Mastered, Starred classification with 1-click re-test.
-* **🎯 Official GATE Score & AIR Predictor**: Normalization simulation with IIT/PSU cutoff brackets.
+### Master Platform Release (v8.x) — Authentic TCS iON GATE Simulation
+* **🏛️ 21,500+ Verified Question Bank**:
+  * Comprehensive datastore spanning official GATE PYQs (1990–2025, 35 years), 85 full-length mock examinations (Foundational Easy, Standard Medium, Rank Booster Hard, All-India & Comprehensive), and topic-wise practice workbooks.
+  * Zero-duplicate canonical mapping with high-resolution visual question cards and cropped schematics (`assets/diagrams/`).
+  * Prism.js syntax highlighting for C programs and multi-line KaTeX LaTeX math protection.
+* **🎯 Authentic TCS iON Exam Simulation**:
+  * Strict exam mode with fullscreen lock, mouse-only virtual numeric keypad for NAT questions, and authentic 5-state TCS iON palette.
+  * Rapid pacing shortcuts (<kbd>U</kbd> for Next Unanswered, <kbd>M</kbd> for Next Marked for Review).
+  * Auto-save recovery preserving candidate exam sessions during connectivity blips.
+* **🧠 Diagnostic Intelligence & Study Tools**:
+  * **IIT Madras 87-Chapter Syllabus Coverage**: Interactive audit tracker across all 87 subtopics with 1-click **1-Page Printable Wall Cheat Sheet** (accessible globally via topbar Tools menu and Topic-Wise PYQs).
+  * **Mistake Vault & Spaced Repetition (SRS)**: Active recall revision with SuperMemo SM-2 interval scheduler.
+  * **Comprehensive Readiness Index**: Performance trajectory, 10-spoke mastery radar chart, and percentile cohort bell curve.
+* **🔐 Multi-Admin Role Security & Student Crowdsourcing**:
+  * Role-based access control protecting master question operations (`Manage All`, `Ingest Mocks`, `Clear Bank`).
+  * Student question-contribution workflow (`Upload JSON`, `Add Manually`, and personal `My Contributions` tracking with self-service deletion).
+  * Practice mode `👥 Community Contributed` category filter and visual origin chips.
+* **📱 100% Offline PWA & Data Portability**:
+  * Complete offline PWA capability with dual-layer IndexedDB persistence.
+  * One-click encrypted `.gatebackup` profile export and restore.
 
 ---
 
