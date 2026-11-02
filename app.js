@@ -5969,9 +5969,11 @@ function renderLoginPage() {
 
         } catch(loginErr) {
 
-          // Auto-provision designated admin account on first login if it doesn't exist in Firebase Auth yet
+          // Security Hardening: Auto-provisioning is strictly restricted to localhost development.
+          // In production (thematrixisreal404.github.io), admin accounts must be created in Firebase Console.
+          const isLocalDev = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
-          if (ADMIN_EMAILS.has(email) && password === 'admin@1234' &&
+          if (isLocalDev && ADMIN_EMAILS.has(email) && password === 'admin@1234' &&
 
               (loginErr.code === 'auth/user-not-found' || loginErr.code === 'auth/invalid-credential')) {
 
@@ -5995,6 +5997,11 @@ function renderLoginPage() {
 
       } else {
 
+        // Block public registration using reserved admin email addresses
+        if (ADMIN_EMAILS.has(email)) {
+          throw new Error('Registration for administrative accounts is disabled. Please sign in directly.');
+        }
+
         const cred = await createUserWithEmailAndPassword(auth, email, password);
 
         if (name) await updateProfile(cred.user, { displayName: name });
@@ -6007,9 +6014,10 @@ function renderLoginPage() {
 
     } catch(e) {
 
-      // Offline fallback for admin login
+      // Security Hardening: Offline fallback for admin login is strictly restricted to localhost development
+      const isLocalDev = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
-      if (ADMIN_EMAILS.has(email) && password === 'admin@1234' && (e.code === 'auth/network-request-failed' || !USE_FB)) {
+      if (isLocalDev && ADMIN_EMAILS.has(email) && password === 'admin@1234' && (e.code === 'auth/network-request-failed' || !USE_FB)) {
 
         removeLoginPage();
 

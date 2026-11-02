@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Security Hardening: Anti-Clickjacking & Referrer Policy -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <style id="antiClickjack">body{display:none !important;}</style>
+  <script>
+    /* Frame-busting protection against clickjacking */
+    if (self === top) {
+      var antiClickjack = document.getElementById('antiClickjack');
+      if (antiClickjack && antiClickjack.parentNode) antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+      top.location = self.location;
+    }
+  </script>
+  <noscript><style>body{display:block !important;}</style></noscript>
   <title>GATE CSE Practice Platform — Prepare Smart</title>
   <meta name="description" content="A comprehensive GATE CSE practice platform with 21,502 verified questions, 85 full-length mocks, 35 years of PYQs (1990–2025), subject drills, performance analytics, and full offline PWA support." />
   
