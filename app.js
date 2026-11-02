@@ -3618,20 +3618,501 @@ const MOCK_TESTS = [
     desc: "Direct formula application, fundamental definitions, and standard scoring problems across all 13 subjects (65 Questions \u2022 180 Mins \u2022 100 Marks). Type: Full Syllabus Mock | Difficulty: Easy (Rating: 3.5/10)."
 
   },
+    // ─── 30 EXTREME-HARD FULL-LENGTH MOCK EXAMINATIONS (hard_mocks.docx) ───
+  {
+    id: 'mock-hard-01',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.6,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 144",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #01. Difficulty: Hard (Rating: 9.6/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-02',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.7,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 145",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #02. Difficulty: Hard (Rating: 9.7/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-03',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.8,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 146",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #03. Difficulty: Hard (Rating: 9.8/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-04',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.9,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 147",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #04. Difficulty: Hard (Rating: 9.9/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-05',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.5,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 148",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #05. Difficulty: Hard (Rating: 9.5/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-06',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.6,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 149",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #06. Difficulty: Hard (Rating: 9.6/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-07',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.7,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 150",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #07. Difficulty: Hard (Rating: 9.7/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-08',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.8,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 151",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #08. Difficulty: Hard (Rating: 9.8/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-09',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.9,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 152",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #09. Difficulty: Hard (Rating: 9.9/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-10',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.5,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 153",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #10. Difficulty: Hard (Rating: 9.5/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-11',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.6,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 154",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #11. Difficulty: Hard (Rating: 9.6/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-12',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.7,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 155",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #12. Difficulty: Hard (Rating: 9.7/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-13',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.8,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 156",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #13. Difficulty: Hard (Rating: 9.8/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-14',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.9,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 157",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #14. Difficulty: Hard (Rating: 9.9/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-15',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.5,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 158",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #15. Difficulty: Hard (Rating: 9.5/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-16',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.6,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 159",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #16. Difficulty: Hard (Rating: 9.6/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-17',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.7,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 160",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #17. Difficulty: Hard (Rating: 9.7/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-18',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.8,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 161",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #18. Difficulty: Hard (Rating: 9.8/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-19',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.9,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 162",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #19. Difficulty: Hard (Rating: 9.9/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-20',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.5,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 163",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #20. Difficulty: Hard (Rating: 9.5/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-21',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.6,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 164",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #21. Difficulty: Hard (Rating: 9.6/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-22',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.7,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 165",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #22. Difficulty: Hard (Rating: 9.7/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-23',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.8,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 166",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #23. Difficulty: Hard (Rating: 9.8/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-24',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.9,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 167",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #24. Difficulty: Hard (Rating: 9.9/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-25',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.5,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 168",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #25. Difficulty: Hard (Rating: 9.5/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-26',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.6,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 169",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #26. Difficulty: Hard (Rating: 9.6/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-27',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.7,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 170",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #27. Difficulty: Hard (Rating: 9.7/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-28',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.8,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 171",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #28. Difficulty: Hard (Rating: 9.8/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-29',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.9,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 172",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #29. Difficulty: Hard (Rating: 9.9/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-hard-30',
+    provider: "Extreme Hard Series",
+    type: 'full',
+    difficulty: 'hard',
+    rating: 9.5,
+    cutoff: '22-26',
+    air100: '58-64',
+    tier: 'Extreme Hard Mock (GO-Classes Caliber)',
+    name: "Mock 173",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #30. Difficulty: Hard (Rating: 9.5/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
   { id:'paper-full-1',
-    provider: "Practice Paper", mockId:'paper-full-1', name: "Mock 144", type:'practice-set', difficulty:'easy', rating:3.5, cutoff:'34-36', air100:'78-82', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #144. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Easy (Rating: 3.5/10)." },
+    provider: "Practice Paper", mockId:'paper-full-1', name: "Mock 174", type:'practice-set', difficulty:'easy', rating:3.5, cutoff:'34-36', air100:'78-82', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #144. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Easy (Rating: 3.5/10)." },
   { id:'paper-full-2',
-    provider: "Practice Paper", mockId:'paper-full-2', name: "Mock 145", type:'practice-set', difficulty:'medium', rating:4.5, cutoff:'31-33', air100:'74-78', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #145. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
+    provider: "Practice Paper", mockId:'paper-full-2', name: "Mock 175", type:'practice-set', difficulty:'medium', rating:4.5, cutoff:'31-33', air100:'74-78', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #145. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
   { id:'paper-dsa',
-    provider: "Practice Paper", mockId:'paper-dsa', name: "Mock 146", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Data Structures','Algorithms','C Programming'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #146. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
+    provider: "Practice Paper", mockId:'paper-dsa', name: "Mock 176", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Data Structures','Algorithms','C Programming'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #146. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
   { id:'paper-systems',
-    provider: "Practice Paper", mockId:'paper-systems', name: "Mock 147", type:'practice-set', difficulty:'hard', rating:6.0, subjects:['Operating Systems','Computer Networks','Computer Organization'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #147. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Hard (Rating: 6.0/10)." },
+    provider: "Practice Paper", mockId:'paper-systems', name: "Mock 177", type:'practice-set', difficulty:'hard', rating:6.0, subjects:['Operating Systems','Computer Networks','Computer Organization'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #147. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Hard (Rating: 6.0/10)." },
   { id:'paper-theory',
-    provider: "Practice Paper", mockId:'paper-theory', name: "Mock 148", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Theory of Computation','Compiler Design'], questions:35, duration:90, marks:60, desc: "[Provider: Curated Practice Paper] Curated Practice Set #148. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
+    provider: "Practice Paper", mockId:'paper-theory', name: "Mock 178", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Theory of Computation','Compiler Design'], questions:35, duration:90, marks:60, desc: "[Provider: Curated Practice Paper] Curated Practice Set #148. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
   { id:'paper-maths',
-    provider: "Practice Paper", mockId:'paper-maths', name: "Mock 149", type:'practice-set', difficulty:'medium', rating:4.5, subjects:['Discrete Mathematics','Engineering Mathematics','Aptitude'], questions:45, duration:110, marks:70, desc: "[Provider: Curated Practice Paper] Curated Practice Set #149. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
+    provider: "Practice Paper", mockId:'paper-maths', name: "Mock 179", type:'practice-set', difficulty:'medium', rating:4.5, subjects:['Discrete Mathematics','Engineering Mathematics','Aptitude'], questions:45, duration:110, marks:70, desc: "[Provider: Curated Practice Paper] Curated Practice Set #149. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
   { id:'paper-decade-pyq',
-    provider: "Practice Paper", mockId:'paper-decade-pyq', name: "Mock 150", type:'practice-set', difficulty:'medium', rating:5.5, cutoff:'28-30', air100:'72-76', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #150. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.5/10)." },
+    provider: "Practice Paper", mockId:'paper-decade-pyq', name: "Mock 180", type:'practice-set', difficulty:'medium', rating:5.5, cutoff:'28-30', air100:'72-76', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #150. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.5/10)." },
   { id:'mock-subwise-ds',   type:'subwise', difficulty:'medium', name:'Data Structures Full Mock',           subject:'Data Structures',         questions:30, duration:60, marks:45, desc:'Arrays, linked lists, trees, BSTs, heaps, and hashing.' },
   { id:'mock-subwise-algo', type:'subwise', difficulty:'hard',   name:'Algorithms Deep Dive',                subject:'Algorithms',              questions:30, duration:60, marks:45, desc:'Sorting, divide & conquer, greedy, dynamic programming, and graphs.' },
   { id:'mock-subwise-os',   type:'subwise', difficulty:'medium', name:'Operating Systems Mock',              subject:'Operating Systems',       questions:30, duration:60, marks:45, desc:'Processes, CPU scheduling, virtual memory, synchronization, and deadlocks.' },
@@ -5531,6 +6012,22 @@ async function loadMasterStaticQuestions() {
 
 
 // ─── CLOUD SYNC UTILITY ──────────────────────────────────────────────────────
+
+window.ingestHardMocks = async function() {
+  if (!state.isAdmin) {
+    showToast('⚠️ Admin privileges required to ingest mock tests', 'error');
+    return;
+  }
+  showToast('Loading 30 Extreme Hard Mock Tests (1,950 questions)...', 'info', 2500);
+  try {
+    const res = await fetch('./data/gate_30_hard_mocks.json');
+    if (!res.ok) throw new Error('File not found: ./data/gate_30_hard_mocks.json');
+    const data = await res.json();
+    await bulkImportQuestions(data);
+  } catch(err) {
+    showToast('Failed to load hard mocks: ' + err.message, 'error');
+  }
+};
 
 window.ingestMediumMocks = async function() {
 
@@ -8419,7 +8916,7 @@ function getMockQuestions(mockId) {
 
   // 1. Direct mock questions tagged with mockId (or matching paper mockId)
 
-  const targetMockId = (mockId.startsWith('paper-cat') || mockId.startsWith('paper-flm') || mockId.startsWith('paper-easy') || mockId.startsWith('paper-med'))
+  const targetMockId = (mockId.startsWith('paper-cat') || mockId.startsWith('paper-flm') || mockId.startsWith('paper-easy') || mockId.startsWith('paper-med') || mockId.startsWith('paper-hard'))
 
     ? mockId.replace('paper-', 'mock-') : mockId;
 
@@ -8954,6 +9451,8 @@ function getFilteredAndSortedMocks(mockList) {
   // 1. Sub-series filter
   if (subSeries === 'pinned') {
     list = list.filter(m => state.pinnedMocks && state.pinnedMocks.has(m.id));
+  } else if (subSeries === 'hard-30') {
+    list = list.filter(m => m.id.startsWith('mock-hard-'));
   } else if (subSeries === 'med-30') {
     list = list.filter(m => m.id.startsWith('mock-med-'));
   } else if (subSeries === 'easy-30') {
@@ -9464,6 +9963,7 @@ function buildMockSortBar(list, sectionName) {
       <div class="mock-subseries-pills">
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
         <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Hard (${list.length})</button>
+        <button class="mock-subseries-pill ${subSeries==='hard-30'?'active':''}" onclick="setMockSubSeries('hard-30')">🔥 30 Extreme Hard Series (30)</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
         <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Advance (9)</button>
         <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 All-India Series (10)</button>
@@ -13358,6 +13858,7 @@ function buildJSONUploadUI(){
               <button class="btn btn-secondary" onclick="ingestEasyMocks()" style="background:rgba(99,102,241,0.15);color:var(--primary);border-color:var(--primary)">⚡ Ingest 30 Easy Mocks (1,950 Q)</button>
 
               <button class="btn btn-secondary" onclick="ingestMediumMocks()" style="background:rgba(234,179,8,0.15);color:var(--yellow);border-color:var(--yellow)">⚡ Ingest 30 Medium Mocks (1,950 Q)</button>
+              <button class="btn btn-secondary" onclick="ingestHardMocks()" style="background:rgba(239,68,68,0.15);color:var(--danger);border-color:var(--danger)">⚡ Ingest 30 Hard Mocks (1,950 Q)</button>
 
               ${USE_FB ? `<button class="btn btn-secondary" onclick="pushAllQuestionsToCloud()" style="background:rgba(20,184,166,0.15);color:var(--teal);border-color:var(--teal)">☁️ Push Questions to Cloud (${state.questions.length})</button>` : ''}
 

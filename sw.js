@@ -2,7 +2,7 @@
 // GATE CSE PRACTICE PLATFORM — Service Worker (PWA Offline Support v6.0)
 // ─────────────────────────────────────────────────────────────────────────────
 
-const CACHE_NAME = 'gate-cse-v8.1';
+const CACHE_NAME = 'gate-cse-v8.2';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -10,7 +10,8 @@ const STATIC_ASSETS = [
   './app.js',
   './firebase.js',
   './manifest.json',
-  './data/sample_questions.json'
+  './data/sample_questions.json',
+  './data/gate_30_hard_mocks.json'
 ];
 
 self.addEventListener('install', event => {
