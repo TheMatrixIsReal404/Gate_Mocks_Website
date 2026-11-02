@@ -36,7 +36,8 @@ import {
 
   createUserWithEmailAndPassword, signOut,
 
-  GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, updateProfile
+  GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, updateProfile,
+  sendPasswordResetEmail
 
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
@@ -5715,201 +5716,221 @@ function renderLoginPage() {
 
 
 
-  let mode = 'login'; // or 'signup'
-
-
+  let mode = 'login'; // 'login', 'signup', or 'forgot'
 
   const overlay = document.createElement('div');
-
   overlay.className  = 'auth-overlay';
-
   overlay.id         = 'auth-overlay';
-
   overlay.innerHTML  = buildAuthCard('login');
-
   document.body.appendChild(overlay);
-
-
 
   bindAuthEvents();
 
-
-
   function buildAuthCard(m) {
-
-    const isLogin = m==='login';
-
+    const isLogin  = m === 'login';
+    const isForgot = m === 'forgot';
+    const isSignup = m === 'signup';
     const savedEmail = localStorage.getItem('gate_last_email') || '';
 
+    let heading = 'Welcome back 👋';
+    let subheading = 'Sign in to continue your GATE preparation.';
+    if (isSignup) {
+      heading = 'Create account 🎯';
+      subheading = 'Join thousands of GATE aspirants.';
+    } else if (isForgot) {
+      heading = 'Reset Password 🔑';
+      subheading = 'Enter your email address to receive a secure password reset link.';
+    }
+
     return `
-
       <div class="auth-card">
-
         <div class="auth-logo">
-
           <div class="auth-logo-icon">G</div>
-
           <div class="auth-logo-text">
-
             <div class="auth-logo-title">GATE CSE</div>
-
             <div class="auth-logo-sub">Practice Platform</div>
-
           </div>
-
         </div>
-
-        <h1 class="auth-heading">${isLogin ? 'Welcome back 👋' : 'Create account 🎯'}</h1>
-
-        <p class="auth-subheading">${isLogin ? 'Sign in to continue your GATE preparation.' : 'Join thousands of GATE aspirants.'}</p>
-
-
+        <h1 class="auth-heading">${heading}</h1>
+        <p class="auth-subheading">${subheading}</p>
 
         <div class="auth-error" id="auth-error"></div>
-
         <div class="auth-success" id="auth-success"></div>
 
-
-
         <div class="auth-form">
-
-          ${!isLogin ? `<div class="auth-input-group">
-
+          ${isSignup ? `<div class="auth-input-group">
             <label class="auth-label">Full Name</label>
-
             <input type="text" class="auth-input" id="auth-name" placeholder="Your Full Name" autocomplete="name"/>
-
           </div>` : ''}
 
-
-
           <div class="auth-input-group">
-
             <label class="auth-label">Email</label>
-
-            <input type="text" class="auth-input" id="auth-email" value="${savedEmail}" placeholder="you@gmail.com" autocomplete="username email"/>
-
+            <input type="email" class="auth-input" id="auth-email" value="${savedEmail}" placeholder="you@gmail.com" autocomplete="username email"/>
           </div>
 
+          ${!isForgot ? `<div class="auth-input-group">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <label class="auth-label" style="margin:0;">Password</label>
+              ${isLogin ? `<a href="javascript:void(0)" class="auth-forgot-link" onclick="switchAuthMode('forgot')" title="Forgot your password?">Forgot Password?</a>` : ''}
+            </div>
+            <input type="password" class="auth-input" id="auth-password" placeholder="Min. 6 characters" autocomplete="${isLogin ? 'current-password' : 'new-password'}"/>
+          </div>` : ''}
 
-
-          <div class="auth-input-group">
-
-            <label class="auth-label">Password</label>
-
-            <input type="password" class="auth-input" id="auth-password" placeholder="Min. 6 characters" autocomplete="${isLogin?'current-password':'new-password'}"/>
-
-          </div>
-
-
-
-          <button class="auth-btn-primary" id="auth-submit-btn" onclick="handleEmailAuth()">
-
-            ${isLogin ? 'Sign In' : 'Create Account'}
-
+          <button class="auth-btn-primary" id="auth-submit-btn" onclick="${isForgot ? 'handleForgotPassword()' : 'handleEmailAuth()'}">
+            ${isForgot ? 'Send Password Reset Link' : (isLogin ? 'Sign In' : 'Create Account')}
           </button>
 
-
-
+          ${!isForgot ? `
           <div class="auth-divider">OR</div>
 
-
-
           <button class="auth-btn-google" onclick="handleGoogleAuth()">
-
             <svg class="google-icon" viewBox="0 0 48 48">
-
               <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-
               <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-
               <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-
               <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.34-8.16 2.34-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-
             </svg>
-
             Continue with Google
-
-          </button>
-
-
+          </button>` : ''}
 
           <div class="auth-switch">
-
-            ${isLogin
-
-              ? `Don't have an account? <span class="auth-switch-link" onclick="switchAuthMode('signup')">Sign Up</span>`
-
-              : `Already have an account? <span class="auth-switch-link" onclick="switchAuthMode('login')">Sign In</span>`}
-
+            ${isForgot
+              ? `Remember your password? <span class="auth-switch-link" onclick="switchAuthMode('login')">Back to Sign In</span>`
+              : (isLogin
+                ? `Don't have an account? <span class="auth-switch-link" onclick="switchAuthMode('signup')">Sign Up</span>`
+                : `Already have an account? <span class="auth-switch-link" onclick="switchAuthMode('login')">Sign In</span>`)}
           </div>
-
-
 
           <div class="auth-offline-box">
-
             <div class="auth-offline-title">📴 No Internet / Offline Practice?</div>
-
             <div class="auth-offline-desc">Practice all 3,090+ authentic questions, official mocks, practice papers, and PYQs completely offline with local storage saving.</div>
-
             <button class="btn btn-secondary btn-sm" onclick="continueAsGuest()" style="width:100%;font-weight:700" type="button">
-
               ⚡ Start Instant Offline Practice (Guest)
-
             </button>
-
           </div>
-
         </div>
-
       </div>`;
-
   }
-
-
 
   function bindAuthEvents() {
-
     // Allow Enter key to submit
-
     overlay.addEventListener('keydown', e => {
-
-      if (e.key==='Enter') handleEmailAuth();
-
+      if (e.key === 'Enter') {
+        if (mode === 'forgot') handleForgotPassword();
+        else handleEmailAuth();
+      }
     });
-
   }
 
-
-
   window.switchAuthMode = (m) => {
-
+    const curEmail = document.getElementById('auth-email')?.value?.trim();
+    if (curEmail) {
+      try { localStorage.setItem('gate_last_email', curEmail); } catch(e){}
+    }
     mode = m;
-
     overlay.innerHTML = buildAuthCard(m);
-
     overlay.scrollTop = 0;
-
     bindAuthEvents();
-
+    setTimeout(() => {
+      if (m === 'forgot') {
+        const em = document.getElementById('auth-email');
+        if (em && !em.value) em.focus();
+        else document.getElementById('auth-submit-btn')?.focus();
+      } else if (m === 'signup') {
+        document.getElementById('auth-name')?.focus();
+      } else {
+        const em = document.getElementById('auth-email');
+        if (em && !em.value) em.focus();
+        else document.getElementById('auth-password')?.focus();
+      }
+    }, 50);
   };
-
-
 
   window.continueAsGuest = async () => {
-
     removeLoginPage();
-
     await bootApp(null);
-
   };
 
+  window.handleForgotPassword = async () => {
+    let rawInput = document.getElementById('auth-email')?.value?.trim() || '';
+    const btn    = document.getElementById('auth-submit-btn');
+    const errEl  = document.getElementById('auth-error');
+    const sucEl  = document.getElementById('auth-success');
 
+    if (errEl) { errEl.className = 'auth-error'; errEl.textContent = ''; }
+    if (sucEl) { sucEl.className = 'auth-success'; sucEl.textContent = ''; }
 
+    if (!rawInput) {
+      if (errEl) {
+        errEl.textContent = 'Please enter your registered email address.';
+        errEl.className = 'auth-error show';
+      }
+      document.getElementById('auth-email')?.focus();
+      return;
+    }
 
+    let email = rawInput.toLowerCase();
+    const adminMatch = email.match(/^admin_?([1-9]|10)$/);
+    if (adminMatch) {
+      email = `admin_${adminMatch[1]}@gateprep.com`;
+    }
 
+    if (!email.includes('@') || !email.includes('.')) {
+      if (errEl) {
+        errEl.textContent = 'Please enter a valid email address.';
+        errEl.className = 'auth-error show';
+      }
+      return;
+    }
 
+    if (!auth) {
+      if (errEl) {
+        errEl.textContent = '⚠️ Firebase Auth is not active. Password reset requires an active cloud connection.';
+        errEl.className = 'auth-error show';
+      }
+      return;
+    }
+
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = `<span class="auth-spinner"></span> Sending reset link…`;
+    }
+
+    try {
+      await sendPasswordResetEmail(auth, email);
+      try { localStorage.setItem('gate_last_email', rawInput); } catch(e){}
+
+      if (sucEl) {
+        sucEl.innerHTML = `✅ Password reset email sent to <strong>${escapeHtml(email)}</strong>.<br><span style="font-size:12px;opacity:0.9">Please check your inbox (including Spam/Junk folder) and follow the link to reset your password.</span><div style="margin-top:12px"><button class="btn btn-secondary btn-sm" onclick="switchAuthMode('login')" style="width:100%" type="button">← Back to Sign In</button></div>`;
+        sucEl.className = 'auth-success show';
+      }
+
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = 'Resend Reset Link';
+      }
+    } catch(e) {
+      console.warn('[Forgot Password] Error:', e.code, e.message);
+
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = 'Send Password Reset Link';
+      }
+
+      const msgs = {
+        'auth/user-not-found': 'No account found with this email address.',
+        'auth/invalid-email': 'Please enter a valid email address.',
+        'auth/missing-email': 'Please enter your email address.',
+        'auth/too-many-requests': 'Too many requests. Please wait a few moments before trying again.',
+        'auth/network-request-failed': 'No internet connection. Please check your network and try again.',
+      };
+
+      if (errEl) {
+        errEl.textContent = msgs[e.code] || e.message || 'Failed to send password reset email. Please try again.';
+        errEl.className = 'auth-error show';
+      }
+    }
+  };
 
   window.handleEmailAuth = async () => {
 
@@ -6253,6 +6274,27 @@ async function handleSignOut() {
   await signOut(auth);
 
   // onAuthStateChanged fires → shows login
+}
+
+window.promptPasswordReset = async () => {
+  if (!currentUser || !currentUser.email) {
+    showToast('⚠️ You are currently using Guest/Offline mode. Please sign in with an email account to manage your password.', 'warning', 4500);
+    return;
+  }
+  const isGoogle = currentUser.providerData && currentUser.providerData.some(p => p.providerId === 'google.com');
+  if (isGoogle) {
+    showToast('ℹ️ Your account is signed in via Google. Manage your password in your Google Account settings.', 'info', 4500);
+    return;
+  }
+  if (!confirm(`Send a password reset email to ${currentUser.email}?`)) {
+    return;
+  }
+  try {
+    await sendPasswordResetEmail(auth, currentUser.email);
+    showToast(`✅ Password reset email sent to ${currentUser.email}! Please check your inbox.`, 'success', 5000);
+  } catch(e) {
+    showToast(`⚠️ Failed to send reset email: ${e.message}`, 'error', 4500);
+  }
 
 }
 
