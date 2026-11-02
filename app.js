@@ -5399,6 +5399,8 @@ async function bulkImportQuestions(newQs) {
 
     existingIds.add(q.id);
 
+    if (!q.uploadedBy && currentUser) q.uploadedBy = uid();
+
     toAdd.push(q); added++;
 
   }
@@ -5523,6 +5525,14 @@ async function loadMasterStaticQuestions() {
 
 window.ingestMediumMocks = async function() {
 
+  if (!state.isAdmin) {
+
+    showToast('⚠️ Admin privileges required to ingest mock tests', 'error');
+
+    return;
+
+  }
+
   showToast('Loading 30 Medium Mock Tests (1,950 questions)...', 'info', 2500);
 
   try {
@@ -5547,6 +5557,14 @@ window.ingestMediumMocks = async function() {
 
 window.ingestEasyMocks = async function() {
 
+  if (!state.isAdmin) {
+
+    showToast('⚠️ Admin privileges required to ingest mock tests', 'error');
+
+    return;
+
+  }
+
   showToast('Loading 30 Easy Mock Tests (1,950 questions)...', 'info', 2500);
 
   try {
@@ -5570,6 +5588,14 @@ window.ingestEasyMocks = async function() {
 
 
 window.pushAllQuestionsToCloud = async function() {
+
+  if (!state.isAdmin) {
+
+    showToast('⚠️ Admin privileges required to push question bank to Cloud', 'error');
+
+    return;
+
+  }
 
   if (!USE_FB || !db) {
 
@@ -13057,7 +13083,7 @@ function renderUpload(c){
 
       <button class="tab-btn" onclick="switchUploadTab('manual',this)">✏️ Add Manually</button>
 
-      <button class="tab-btn" onclick="switchUploadTab('manage',this)">🗂️ Manage (${state.questions.length})</button>
+      ${state.isAdmin ? `<button class="tab-btn" onclick="switchUploadTab('manage',this)">🗂️ Manage (${state.questions.length})</button>` : ''}
 
     </div>
 
@@ -13068,6 +13094,14 @@ function renderUpload(c){
 
 
 function switchUploadTab(tab,btn){
+
+  if (tab === 'manage' && !state.isAdmin) {
+
+    showToast('⚠️ Admin privileges required to manage questions', 'error');
+
+    return;
+
+  }
 
   document.querySelectorAll('#upload-tabs .tab-btn').forEach(b=>b.classList.remove('active'));
 
@@ -13127,11 +13161,15 @@ function buildJSONUploadUI(){
 
             <button class="btn btn-secondary" onclick="downloadSampleJSON()">⬇ Sample JSON</button>
 
-            <button class="btn btn-secondary" onclick="ingestEasyMocks()" style="background:rgba(99,102,241,0.15);color:var(--primary);border-color:var(--primary)">⚡ Ingest 30 Easy Mocks (1,950 Q)</button>
+            ${state.isAdmin ? `
 
-            <button class="btn btn-secondary" onclick="ingestMediumMocks()" style="background:rgba(234,179,8,0.15);color:var(--yellow);border-color:var(--yellow)">⚡ Ingest 30 Medium Mocks (1,950 Q)</button>
+              <button class="btn btn-secondary" onclick="ingestEasyMocks()" style="background:rgba(99,102,241,0.15);color:var(--primary);border-color:var(--primary)">⚡ Ingest 30 Easy Mocks (1,950 Q)</button>
 
-            ${USE_FB ? `<button class="btn btn-secondary" onclick="pushAllQuestionsToCloud()" style="background:rgba(20,184,166,0.15);color:var(--teal);border-color:var(--teal)">☁️ Push Questions to Cloud (${state.questions.length})</button>` : ''}
+              <button class="btn btn-secondary" onclick="ingestMediumMocks()" style="background:rgba(234,179,8,0.15);color:var(--yellow);border-color:var(--yellow)">⚡ Ingest 30 Medium Mocks (1,950 Q)</button>
+
+              ${USE_FB ? `<button class="btn btn-secondary" onclick="pushAllQuestionsToCloud()" style="background:rgba(20,184,166,0.15);color:var(--teal);border-color:var(--teal)">☁️ Push Questions to Cloud (${state.questions.length})</button>` : ''}
+
+            ` : ''}
 
           </div>
 
@@ -13338,6 +13376,12 @@ function buildManualForm(){
 
 
 function buildManageUI(){
+
+  if (!state.isAdmin) {
+
+    return `<div class="empty-state"><div class="empty-state-icon">🔒</div><div class="empty-state-title">Admin Privileges Required</div><div class="empty-state-sub">Only verified administrators can manage the question bank.</div></div>`;
+
+  }
 
   if (!state.questions.length) return `<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-title">No questions yet</div></div>`;
 
@@ -13578,6 +13622,14 @@ function handleDrop(e){
 
 
 async function handleDeleteQ(id){
+
+  if (!state.isAdmin) {
+
+    showToast('⚠️ Admin privileges required to delete questions', 'error');
+
+    return;
+
+  }
 
   await removeQuestion(id);
 
