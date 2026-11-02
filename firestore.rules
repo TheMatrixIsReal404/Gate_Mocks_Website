@@ -48,7 +48,8 @@ service cloud.firestore {
       allow create: if signedIn()
                     && qid.matches('^[A-Za-z0-9_-]{1,64}$')
                     && validQuestion(request.resource.data, qid);
-      allow update, delete: if isAdmin();
+      allow delete: if isAdmin() || (signedIn() && resource.data.uploadedBy == request.auth.uid);
+      allow update: if isAdmin();
     }
 
     // ── Administrators Directory ──────────────────────────────
