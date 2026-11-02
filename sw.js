@@ -2,7 +2,7 @@
 // GATE CSE PRACTICE PLATFORM — Service Worker (PWA Offline Support v6.0)
 // ─────────────────────────────────────────────────────────────────────────────
 
-const CACHE_NAME = 'gate-cse-v8.0';
+const CACHE_NAME = 'gate-cse-v8.1';
 const STATIC_ASSETS = [
   './',
   './index.html',

@@ -5269,7 +5269,11 @@ async function removeQuestion(id) {
 
   }
 
-  if (!state.isAdmin) {
+  const qTarget = state.questions.find(x => x.id === id);
+
+  const isOwner = qTarget && qTarget.uploadedBy && qTarget.uploadedBy === uid();
+
+  if (!state.isAdmin && !isOwner) {
 
     showToast('⚠️ Admin privileges required to delete questions', 'error');
 
@@ -5400,6 +5404,10 @@ async function bulkImportQuestions(newQs) {
     existingIds.add(q.id);
 
     if (!q.uploadedBy && currentUser) q.uploadedBy = uid();
+
+    if (!q.source) q.source = state.isAdmin ? 'official' : 'community';
+
+    if (q.type === 'tf') q.type = 'mcq';
 
     toAdd.push(q); added++;
 
@@ -7313,7 +7321,19 @@ function renderPractice(c, params={}) {
 
   let filtered = [...state.questions];
 
-  if (f.category !== 'all') filtered = filtered.filter(q => (q.category || 'subject') === f.category);
+  if (f.category !== 'all') {
+
+    if (f.category === 'community') {
+
+      filtered = filtered.filter(q => q.source === 'community' || q.category === 'community' || (q.uploadedBy && !STATIC_BUNDLED_IDS.has(q.id)));
+
+    } else {
+
+      filtered = filtered.filter(q => (q.category || 'subject') === f.category);
+
+    }
+
+  }
 
   if (f.subject !== 'all')    filtered = filtered.filter(q => q.subject === f.subject);
 
@@ -7543,6 +7563,8 @@ function renderPractice(c, params={}) {
 
         <option value="test_series" ${f.category === 'test_series' ? 'selected' : ''}>Test Series Questions</option>
 
+        <option value="community" ${f.category === 'community' ? 'selected' : ''}>👥 Community Contributed</option>
+
       </select>
 
       <select class="filter-select" onchange="updateFilter('subject',this.value)">
@@ -7660,6 +7682,8 @@ function buildQListItem(q, overallIdx) {
           <span class="q-badge ${q.difficulty}">${q.difficulty}</span>
 
           <span class="chip">${q.marks}m</span>
+
+          ${(q.source === 'community' || (q.uploadedBy && !STATIC_BUNDLED_IDS.has(q.id))) ? `<span class="chip" style="background:rgba(168,85,247,0.15);color:#a855f7;font-weight:600">👥 Community</span>` : ''}
 
         </div>
 
@@ -13081,6 +13105,10 @@ function renderPerformance(c){
 
 function renderUpload(c){
 
+  const currentUid = uid();
+
+  const myQuestions = currentUid ? state.questions.filter(q => q.uploadedBy === currentUid) : [];
+
   c.innerHTML=`
 
     <div class="tabs" id="upload-tabs">
@@ -13089,7 +13117,11 @@ function renderUpload(c){
 
       <button class="tab-btn" onclick="switchUploadTab('manual',this)">✏️ Add Manually</button>
 
-      ${state.isAdmin ? `<button class="tab-btn" onclick="switchUploadTab('manage',this)">🗂️ Manage (${state.questions.length})</button>` : ''}
+      ${state.isAdmin
+
+        ? `<button class="tab-btn" onclick="switchUploadTab('manage',this)">🗂️ Manage All (${state.questions.length})</button>`
+
+        : `<button class="tab-btn" onclick="switchUploadTab('my-uploads',this)">📝 My Contributions (${myQuestions.length})</button>`}
 
     </div>
 
@@ -13115,11 +13147,115 @@ function switchUploadTab(tab,btn){
 
   const c=document.getElementById('upload-content');
 
-  if(tab==='json')   c.innerHTML=buildJSONUploadUI();
+  if(tab==='json')       c.innerHTML=buildJSONUploadUI();
 
-  if(tab==='manual') c.innerHTML=buildManualForm();
+  if(tab==='manual')     c.innerHTML=buildManualForm();
 
-  if(tab==='manage') c.innerHTML=buildManageUI();
+  if(tab==='manage')     c.innerHTML=buildManageUI();
+
+  if(tab==='my-uploads') c.innerHTML=buildMyContributionsUI();
+
+}
+
+function buildMyContributionsUI(){
+
+  const currentUid = uid();
+
+  const myQuestions = currentUid ? state.questions.filter(q => q.uploadedBy === currentUid) : [];
+
+  if (!myQuestions.length) {
+
+    return `
+
+      <div class="empty-state">
+
+        <div class="empty-state-icon">✍️</div>
+
+        <div class="empty-state-title">No contributed questions yet</div>
+
+        <div class="empty-state-sub">Have unique practice problems or verified GATE PYQs? Add them via <strong>Add Manually</strong> or <strong>Upload JSON</strong>. Your personal submissions will appear here!</div>
+
+        <button class="btn btn-primary btn-sm mt-3" onclick="switchUploadTab('manual', document.querySelectorAll('#upload-tabs .tab-btn')[1])">+ Add Question Now</button>
+
+      </div>`;
+
+  }
+
+  return `
+
+    <div class="card">
+
+      <div class="card-header">
+
+        <div class="card-title">📝 My Contributed Questions (${myQuestions.length})</div>
+
+        <span class="chip" style="background:var(--green-soft);color:var(--green)">✓ Available in Practice Mode</span>
+
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;max-height:60vh;overflow-y:auto">
+
+        ${myQuestions.map(q => `
+
+          <div style="display:flex;align-items:flex-start;gap:12px;padding:12px;background:var(--bg-input);border-radius:var(--radius-sm)">
+
+            <div style="flex:1">
+
+              <div class="text-sm fw-700">${escapeHtml(q.subject || 'General')} — ${escapeHtml(q.topic||'General')} <span class="q-badge ${q.type}" style="margin-left:6px">${(q.type||'').toUpperCase()}</span></div>
+
+              <div class="text-sm text-muted" style="margin-top:3px;line-height:1.5">${escapeHtml((q.question||'').substring(0,90))}${(q.question||'').length>90?'...':''}</div>
+
+            </div>
+
+            <div style="display:flex;gap:6px;flex-shrink:0;align-items:center">
+
+              <span class="chip">${escapeHtml(q.category||'subject')}</span>
+
+              <button class="btn btn-danger btn-sm" onclick="handleDeleteMyQ('${escapeHtml(q.id)}')" title="Delete this contribution">🗑</button>
+
+            </div>
+
+          </div>
+
+        `).join('')}
+
+      </div>
+
+    </div>`;
+
+}
+
+async function handleDeleteMyQ(id){
+
+  const currentUid = uid();
+
+  const q = state.questions.find(x => x.id === id);
+
+  if (!q) return;
+
+  if (!state.isAdmin && q.uploadedBy !== currentUid) {
+
+    showToast('⚠️ You can only delete your own contributed questions', 'error');
+
+    return;
+
+  }
+
+  if (!confirm('Remove this question from your contributions?')) return;
+
+  await removeQuestion(id);
+
+  showToast('Question removed from contributions', 'info');
+
+  const c = document.getElementById('upload-content');
+
+  if (c) c.innerHTML = buildMyContributionsUI();
+
+  const myTab = document.querySelectorAll('#upload-tabs .tab-btn')[2];
+
+  const myQs = currentUid ? state.questions.filter(x => x.uploadedBy === currentUid) : [];
+
+  if (myTab && !state.isAdmin) myTab.textContent = `📝 My Contributions (${myQs.length})`;
 
 }
 
@@ -13521,11 +13657,15 @@ async function submitManualQuestion(){
 
 
 
+  const finalType = type === 'tf' ? 'mcq' : type;
+
   const q={
 
     id:'q'+Date.now()+Math.random().toString(36).slice(2,6),
 
-    type,category:cat,subject,topic,difficulty:diff,marks,question,explanation:expl,
+    type: finalType,
+
+    category:cat,subject,topic,difficulty:diff,marks,question,explanation:expl,
 
     options,correct,natRange,
 
@@ -13534,6 +13674,10 @@ async function submitManualQuestion(){
     mockId:cat==='mock'?document.getElementById('f-mockid')?.value:null,
 
     uploadedBy: uid(),
+
+    source: state.isAdmin ? 'official' : 'community',
+
+    createdAt: new Date().toISOString(),
 
   };
 
@@ -25873,6 +26017,8 @@ Object.assign(window, {
   clearManualForm,
 
   clearAllQuestions,
+
+  handleDeleteMyQ,
 
 
 
