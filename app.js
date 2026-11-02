@@ -10009,6 +10009,7 @@ function buildMockSortBar(list, sectionName) {
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
         <button class="mock-subseries-pill ${subSeries==='go-mocks'?'active':''}" onclick="setMockSubSeries('go-mocks')">🌐 All-India National Mocks (27)</button>
         <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Mocks (21)</button>
+        <button class="mock-subseries-pill ${subSeries==='hard-30'?'active':''}" onclick="setMockSubSeries('hard-30')">🔥 30 Extreme Hard Series</button>
         <button class="mock-subseries-pill ${subSeries==='med-30'?'active':''}" onclick="setMockSubSeries('med-30')">⚡ 30 Medium Series</button>
         <button class="mock-subseries-pill ${subSeries==='easy-30'?'active':''}" onclick="setMockSubSeries('easy-30')">🌟 30 Easy Series</button>
         <button class="mock-subseries-pill ${subSeries==='flm-20'?'active':''}" onclick="setMockSubSeries('flm-20')">🏆 20 Compendium Mocks</button>
