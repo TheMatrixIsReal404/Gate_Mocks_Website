@@ -12213,6 +12213,12 @@ function buildTopicWiseChaptersHTML(pyqs) {
 
       </button>
 
+      <button class="btn btn-secondary btn-sm" onclick="printSyllabusWallSheet()" type="button" title="Print 1-Page Physical Wall Cheat Sheet">
+
+        🖨️ 87-Chapter Wall Sheet
+
+      </button>
+
     </div>
 
 
