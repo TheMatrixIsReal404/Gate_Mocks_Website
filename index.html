@@ -537,7 +537,8 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js?v=8.2').then(reg => {
+      navigator.serviceWorker.register('./sw.js?v=8.3').then(reg => {
+        reg.update();
         console.log('[PWA] ServiceWorker registered with scope:', reg.scope);
       }).catch(err => {
         console.log('[PWA] ServiceWorker registration failed:', err);
