@@ -4099,20 +4099,501 @@ const MOCK_TESTS = [
     marks: 100,
     desc: "[Provider: Extreme Hard Series (GO-Classes Caliber)] Extreme Hard Full Mock Exam #30. Difficulty: Hard (Rating: 9.5/10). Capstone extreme-difficulty examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
   },
+    // ─── 30 EASY-LEVEL FULL-LENGTH MOCK EXAMINATIONS (SET 2) (easy1_mocks.docx) ───
+  {
+    id: 'mock-easy1-01',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.6,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 174",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #01. Difficulty: Easy (Rating: 3.6/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-02',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.7,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 175",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #02. Difficulty: Easy (Rating: 3.7/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-03',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.8,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 176",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #03. Difficulty: Easy (Rating: 3.8/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-04',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.9,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 177",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #04. Difficulty: Easy (Rating: 3.9/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-05',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.5,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 178",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #05. Difficulty: Easy (Rating: 3.5/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-06',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.6,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 179",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #06. Difficulty: Easy (Rating: 3.6/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-07',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.7,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 180",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #07. Difficulty: Easy (Rating: 3.7/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-08',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.8,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 181",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #08. Difficulty: Easy (Rating: 3.8/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-09',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.9,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 182",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #09. Difficulty: Easy (Rating: 3.9/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-10',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.5,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 183",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #10. Difficulty: Easy (Rating: 3.5/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-11',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.6,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 184",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #11. Difficulty: Easy (Rating: 3.6/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-12',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.7,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 185",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #12. Difficulty: Easy (Rating: 3.7/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-13',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.8,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 186",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #13. Difficulty: Easy (Rating: 3.8/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-14',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.9,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 187",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #14. Difficulty: Easy (Rating: 3.9/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-15',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.5,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 188",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #15. Difficulty: Easy (Rating: 3.5/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-16',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.6,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 189",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #16. Difficulty: Easy (Rating: 3.6/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-17',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.7,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 190",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #17. Difficulty: Easy (Rating: 3.7/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-18',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.8,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 191",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #18. Difficulty: Easy (Rating: 3.8/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-19',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.9,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 192",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #19. Difficulty: Easy (Rating: 3.9/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-20',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.5,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 193",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #20. Difficulty: Easy (Rating: 3.5/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-21',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.6,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 194",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #21. Difficulty: Easy (Rating: 3.6/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-22',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.7,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 195",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #22. Difficulty: Easy (Rating: 3.7/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-23',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.8,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 196",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #23. Difficulty: Easy (Rating: 3.8/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-24',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.9,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 197",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #24. Difficulty: Easy (Rating: 3.9/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-25',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.5,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 198",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #25. Difficulty: Easy (Rating: 3.5/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-26',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.6,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 199",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #26. Difficulty: Easy (Rating: 3.6/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-27',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.7,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 200",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #27. Difficulty: Easy (Rating: 3.7/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-28',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.8,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 201",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #28. Difficulty: Easy (Rating: 3.8/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-29',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.9,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 202",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #29. Difficulty: Easy (Rating: 3.9/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
+  {
+    id: 'mock-easy1-30',
+    provider: "Easy Series (Set 2)",
+    type: 'full',
+    difficulty: 'easy',
+    rating: 3.5,
+    cutoff: '34-36',
+    air100: '78-82',
+    tier: 'Foundational Easy Mock (Set 2)',
+    name: "Mock 203",
+    subject: null,
+    questions: 65,
+    duration: 180,
+    marks: 100,
+    desc: "[Provider: Easy Series (Set 2)] Easy Full Mock Exam #30. Difficulty: Easy (Rating: 3.5/10). Fundamental scoring examination strictly aligned with the latest IISc / IIT GATE CS syllabus & exam pattern (65 Questions • 180 Mins • 100 Marks)."
+  },
   { id:'paper-full-1',
-    provider: "Practice Paper", mockId:'paper-full-1', name: "Mock 174", type:'practice-set', difficulty:'easy', rating:3.5, cutoff:'34-36', air100:'78-82', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #144. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Easy (Rating: 3.5/10)." },
+    provider: "Practice Paper", mockId:'paper-full-1', name: "Mock 204", type:'practice-set', difficulty:'easy', rating:3.5, cutoff:'34-36', air100:'78-82', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #144. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Easy (Rating: 3.5/10)." },
   { id:'paper-full-2',
-    provider: "Practice Paper", mockId:'paper-full-2', name: "Mock 175", type:'practice-set', difficulty:'medium', rating:4.5, cutoff:'31-33', air100:'74-78', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #145. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
+    provider: "Practice Paper", mockId:'paper-full-2', name: "Mock 205", type:'practice-set', difficulty:'medium', rating:4.5, cutoff:'31-33', air100:'74-78', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #145. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
   { id:'paper-dsa',
-    provider: "Practice Paper", mockId:'paper-dsa', name: "Mock 176", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Data Structures','Algorithms','C Programming'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #146. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
+    provider: "Practice Paper", mockId:'paper-dsa', name: "Mock 206", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Data Structures','Algorithms','C Programming'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #146. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
   { id:'paper-systems',
-    provider: "Practice Paper", mockId:'paper-systems', name: "Mock 177", type:'practice-set', difficulty:'hard', rating:6.0, subjects:['Operating Systems','Computer Networks','Computer Organization'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #147. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Hard (Rating: 6.0/10)." },
+    provider: "Practice Paper", mockId:'paper-systems', name: "Mock 207", type:'practice-set', difficulty:'hard', rating:6.0, subjects:['Operating Systems','Computer Networks','Computer Organization'], questions:50, duration:120, marks:80, desc: "[Provider: Curated Practice Paper] Curated Practice Set #147. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Hard (Rating: 6.0/10)." },
   { id:'paper-theory',
-    provider: "Practice Paper", mockId:'paper-theory', name: "Mock 178", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Theory of Computation','Compiler Design'], questions:35, duration:90, marks:60, desc: "[Provider: Curated Practice Paper] Curated Practice Set #148. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
+    provider: "Practice Paper", mockId:'paper-theory', name: "Mock 208", type:'practice-set', difficulty:'medium', rating:5.0, subjects:['Theory of Computation','Compiler Design'], questions:35, duration:90, marks:60, desc: "[Provider: Curated Practice Paper] Curated Practice Set #148. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.0/10)." },
   { id:'paper-maths',
-    provider: "Practice Paper", mockId:'paper-maths', name: "Mock 179", type:'practice-set', difficulty:'medium', rating:4.5, subjects:['Discrete Mathematics','Engineering Mathematics','Aptitude'], questions:45, duration:110, marks:70, desc: "[Provider: Curated Practice Paper] Curated Practice Set #149. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
+    provider: "Practice Paper", mockId:'paper-maths', name: "Mock 209", type:'practice-set', difficulty:'medium', rating:4.5, subjects:['Discrete Mathematics','Engineering Mathematics','Aptitude'], questions:45, duration:110, marks:70, desc: "[Provider: Curated Practice Paper] Curated Practice Set #149. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 4.5/10)." },
   { id:'paper-decade-pyq',
-    provider: "Practice Paper", mockId:'paper-decade-pyq', name: "Mock 180", type:'practice-set', difficulty:'medium', rating:5.5, cutoff:'28-30', air100:'72-76', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #150. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.5/10)." },
+    provider: "Practice Paper", mockId:'paper-decade-pyq', name: "Mock 210", type:'practice-set', difficulty:'medium', rating:5.5, cutoff:'28-30', air100:'72-76', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #150. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.5/10)." },
   { id:'mock-subwise-ds',   type:'subwise', difficulty:'medium', name:'Data Structures Full Mock',           subject:'Data Structures',         questions:30, duration:60, marks:45, desc:'Arrays, linked lists, trees, BSTs, heaps, and hashing.' },
   { id:'mock-subwise-algo', type:'subwise', difficulty:'hard',   name:'Algorithms Deep Dive',                subject:'Algorithms',              questions:30, duration:60, marks:45, desc:'Sorting, divide & conquer, greedy, dynamic programming, and graphs.' },
   { id:'mock-subwise-os',   type:'subwise', difficulty:'medium', name:'Operating Systems Mock',              subject:'Operating Systems',       questions:30, duration:60, marks:45, desc:'Processes, CPU scheduling, virtual memory, synchronization, and deadlocks.' },
@@ -6060,6 +6541,22 @@ window.ingestMediumMocks = async function() {
 };
 
 
+
+window.ingestEasy1Mocks = async function() {
+  if (!state.isAdmin) {
+    showToast('⚠️ Admin privileges required to ingest mock tests', 'error');
+    return;
+  }
+  showToast('Loading 30 Easy Mock Tests Set 2 (1,950 questions)...', 'info', 2500);
+  try {
+    const res = await fetch('./data/gate_30_easy1_mocks.json');
+    if (!res.ok) throw new Error('File not found: ./data/gate_30_easy1_mocks.json');
+    const data = await res.json();
+    await bulkImportQuestions(data);
+  } catch(err) {
+    showToast('Failed to load easy mocks set 2: ' + err.message, 'error');
+  }
+};
 
 window.ingestEasyMocks = async function() {
 
@@ -9457,6 +9954,9 @@ function getFilteredAndSortedMocks(mockList) {
     list = list.filter(m => m.id.startsWith('mock-med-'));
   } else if (subSeries === 'easy-30') {
     list = list.filter(m => m.id.startsWith('mock-easy-'));
+  } else if (subSeries === 'easy1-30') {
+    list = list.filter(m => m.id.startsWith('mock-easy1-'));
+    list = list.filter(m => m.id.startsWith('mock-easy-'));
   } else if (subSeries === 'flm-20') {
     list = list.filter(m => m.id.startsWith('mock-flm-'));
   } else if (subSeries === 'cat-10') {
@@ -9976,7 +10476,8 @@ function buildMockSortBar(list, sectionName) {
         <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Easy (${list.length})</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
         <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Basic (1)</button>
-        <button class="mock-subseries-pill ${subSeries==='easy-30'?'active':''}" onclick="setMockSubSeries('easy-30')">🌟 30 Easy Series (30)</button>
+        <button class="mock-subseries-pill ${subSeries==='easy-30'?'active':''}" onclick="setMockSubSeries('easy-30')">🌟 30 Easy Series (Set 1) (30)</button>
+        <button class="mock-subseries-pill ${subSeries==='easy1-30'?'active':''}" onclick="setMockSubSeries('easy1-30')">✨ 30 Easy Series (Set 2) (30)</button>
         <button class="mock-subseries-pill ${subSeries==='cat-10'?'active':''}" onclick="setMockSubSeries('cat-10')">📚 Category Topic Sets (5)</button>
       </div>`;
   } else if (currentTab === 'go') {
@@ -10011,7 +10512,8 @@ function buildMockSortBar(list, sectionName) {
         <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Mocks (21)</button>
         <button class="mock-subseries-pill ${subSeries==='hard-30'?'active':''}" onclick="setMockSubSeries('hard-30')">🔥 30 Extreme Hard Series</button>
         <button class="mock-subseries-pill ${subSeries==='med-30'?'active':''}" onclick="setMockSubSeries('med-30')">⚡ 30 Medium Series</button>
-        <button class="mock-subseries-pill ${subSeries==='easy-30'?'active':''}" onclick="setMockSubSeries('easy-30')">🌟 30 Easy Series</button>
+        <button class="mock-subseries-pill ${subSeries==='easy-30'?'active':''}" onclick="setMockSubSeries('easy-30')">🌟 30 Easy Series (Set 1)</button>
+        <button class="mock-subseries-pill ${subSeries==='easy1-30'?'active':''}" onclick="setMockSubSeries('easy1-30')">✨ 30 Easy Series (Set 2)</button>
         <button class="mock-subseries-pill ${subSeries==='flm-20'?'active':''}" onclick="setMockSubSeries('flm-20')">🏆 20 Compendium Mocks</button>
         <button class="mock-subseries-pill ${subSeries==='cat-10'?'active':''}" onclick="setMockSubSeries('cat-10')">📚 Category Mocks</button>
       </div>`;
@@ -13856,7 +14358,8 @@ function buildJSONUploadUI(){
 
             ${state.isAdmin ? `
 
-              <button class="btn btn-secondary" onclick="ingestEasyMocks()" style="background:rgba(99,102,241,0.15);color:var(--primary);border-color:var(--primary)">⚡ Ingest 30 Easy Mocks (1,950 Q)</button>
+              <button class="btn btn-secondary" onclick="ingestEasyMocks()" style="background:rgba(99,102,241,0.15);color:var(--primary);border-color:var(--primary)">⚡ Ingest 30 Easy Mocks (Set 1) (1,950 Q)</button>
+              <button class="btn btn-secondary" onclick="ingestEasy1Mocks()" style="background:rgba(16,185,129,0.15);color:var(--success);border-color:var(--success)">⚡ Ingest 30 Easy Mocks (Set 2) (1,950 Q)</button>
 
               <button class="btn btn-secondary" onclick="ingestMediumMocks()" style="background:rgba(234,179,8,0.15);color:var(--yellow);border-color:var(--yellow)">⚡ Ingest 30 Medium Mocks (1,950 Q)</button>
               <button class="btn btn-secondary" onclick="ingestHardMocks()" style="background:rgba(239,68,68,0.15);color:var(--danger);border-color:var(--danger)">⚡ Ingest 30 Hard Mocks (1,950 Q)</button>
