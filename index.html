@@ -18,16 +18,16 @@
   </script>
   <noscript><style>body{display:block !important;}</style></noscript>
   <title>GATE CSE Practice Platform — Prepare Smart</title>
-  <meta name="description" content="A comprehensive GATE CSE practice platform with 25,402 verified questions, 223 full-length mocks, 35 years of PYQs (1990–2025), subject drills, performance analytics, and full offline PWA support." />
+  <meta name="description" content="A comprehensive GATE CSE practice platform with 32,383 verified questions, 231 full-length mock exams (65 Easy, 83 Medium, 32 Hard, 30 Extreme Hard), 35 years of PYQs (1990–2025), subject drills, performance analytics, and full offline PWA support." />
   
   <!-- Open Graph & Social Sharing Metadata -->
   <meta property="og:title" content="GATE CSE Practice Platform — Prepare Smart" />
-  <meta property="og:description" content="25,402 verified GATE questions, 223 full-length mock exams, 35 years of PYQs, TCS iON simulator, and offline study." />
+  <meta property="og:description" content="32,383 verified GATE questions, 231 full-length mock exams (65 Easy, 83 Medium, 32 Hard, 30 Extreme Hard), 35 years of PYQs, TCS iON simulator, and offline study." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thematrixisreal404.github.io/Gate_Mocks_Website/" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="GATE CSE Practice Platform — Prepare Smart" />
-  <meta name="twitter:description" content="25,402 verified GATE questions, 223 full mocks, TCS iON simulator & offline study." />
+  <meta name="twitter:description" content="32,383 verified GATE questions, 231 full mocks (65 Easy, 83 Medium, 62 Hard), TCS iON simulator & offline study." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#6c63ff" />
@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=8.6" />
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
   <!-- KaTeX Math Formula Rendering -->
@@ -173,7 +173,7 @@
       <div class="topbar-streak-badge hide-xs" id="topbar-streak" title="Daily Study Streak">
         🔥 <span id="streak-text">1d (0/20 Q)</span>
       </div>
-      <button class="topbar-quick-btn" onclick="openGlobalSearch()" title="Global Search 25,402 Questions (/)" type="button">
+      <button class="topbar-quick-btn" onclick="openGlobalSearch()" title="Global Search 32,383 Questions (/)" type="button">
         <span class="btn-icon">🔍</span><span class="btn-label hide-xs">Search</span>
       </button>
       <button class="topbar-quick-btn" onclick="toggleGateCalc()" title="GATE Virtual Calculator (C)" type="button">
@@ -377,7 +377,7 @@
     <div class="shortcut-group">
       <div class="shortcut-group-title">🧮 Tools & Navigation</div>
       <div class="shortcut-row"><span class="shortcut-desc">Toggle Theme (Dark / Light / High-Contrast)</span><span class="kbd-tags"><kbd>T</kbd></span></div>
-      <div class="shortcut-row"><span class="shortcut-desc">Global Search (25,402 Questions)</span><span class="kbd-tags"><kbd>/</kbd></span></div>
+      <div class="shortcut-row"><span class="shortcut-desc">Global Search (32,383 Questions)</span><span class="kbd-tags"><kbd>/</kbd></span></div>
       <div class="shortcut-row"><span class="shortcut-desc">Fullscreen Exam Mode</span><span class="kbd-tags"><kbd>F</kbd></span></div>
       <div class="shortcut-row"><span class="shortcut-desc">Random Practice Question</span><span class="kbd-tags"><kbd>R</kbd></span></div>
       <div class="shortcut-row"><span class="shortcut-desc">Virtual Scribble Pad (Rough Work)</span><span class="kbd-tags"><kbd>W</kbd></span></div>
@@ -456,11 +456,11 @@
 <div class="global-search-modal" id="global-search-modal" role="dialog" aria-modal="true">
   <div class="global-search-header">
     <span class="search-input-icon">🔍</span>
-    <input type="text" id="global-search-input" placeholder="Search 25,402 questions by topic, algorithm, theorem, keyword (Press /)..." oninput="handleGlobalSearchInput(this.value)" autocomplete="off" />
+    <input type="text" id="global-search-input" placeholder="Search 32,383 questions by topic, algorithm, theorem, keyword (Press /)..." oninput="handleGlobalSearchInput(this.value)" autocomplete="off" />
     <button class="shortcuts-close-btn" onclick="closeGlobalSearch()" type="button">✕</button>
   </div>
   <div class="global-search-subbar">
-    <span id="global-search-count">25,402 questions indexed</span>
+    <span id="global-search-count">32,383 questions indexed</span>
     <div class="global-search-filters">
       <select id="global-search-subject" onchange="setGlobalSearchSubject(this.value)" class="filter-select" style="font-size:12px;padding:3px 8px;margin-right:6px;background:var(--bg-secondary);color:var(--text-primary);border:1px solid var(--border);border-radius:12px">
         <option value="all">All Subjects</option>
@@ -486,7 +486,7 @@
   </div>
   <div class="global-search-results" id="global-search-results">
     <div style="padding:32px 16px;text-align:center;color:var(--text-muted);font-size:13px">
-      Search 25,402 questions by theorem, concept, formula, or code snippet (e.g. <em>Dijkstra, LRU, B+ Tree, Pipelining, Master Theorem</em>)
+      Search 32,383 questions by theorem, concept, formula, or code snippet (e.g. <em>Dijkstra, LRU, B+ Tree, Pipelining, Master Theorem</em>)
     </div>
   </div>
 </div>
@@ -663,12 +663,26 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js?v=8.5').then(reg => {
+      navigator.serviceWorker.register('./sw.js?v=8.6').then(reg => {
         reg.update();
-        console.log('[PWA] ServiceWorker registered with scope:', reg.scope);
+        console.log('[PWA] ServiceWorker v8.6 registered with scope:', reg.scope);
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (newWorker) {
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'activated' && navigator.serviceWorker.controller) {
+                console.log('[PWA] New version activated, reloading...');
+                window.location.reload();
+              }
+            });
+          }
+        });
       }).catch(err => {
         console.log('[PWA] ServiceWorker registration failed:', err);
       });
+    });
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      console.log('[PWA] Controller changed, updating view...');
     });
   }
 </script>
@@ -677,7 +691,7 @@
 <input type="file" id="restore-progress-file-input" style="display:none" accept=".json" onchange="handleRestoreProgressFile(event)" />
 
 <!-- ─── APP ENTRY (ES module so it can import firebase.js) ─── -->
-<script type="module" src="app.js?v=8.5"></script>
+<script type="module" src="app.js?v=8.6"></script>
 
   <!-- 87-Chapter Wall Sheet Print Container -->
   <div id="printable-syllabus-sheet"></div>

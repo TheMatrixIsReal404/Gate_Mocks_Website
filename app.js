@@ -24290,6 +24290,16 @@ function openGlobalSearch() {
 
   const input = document.getElementById('global-search-input');
 
+  const countBadge = document.getElementById('global-search-count');
+
+  const totalQs = (state.questions && state.questions.length) ? state.questions.length.toLocaleString() : '32,383';
+
+  if (countBadge && (!state.globalSearchQuery || !state.globalSearchQuery.trim())) {
+
+    countBadge.textContent = `${totalQs} questions indexed`;
+
+  }
+
   if (modal && backdrop) {
 
     modal.classList.add('active');
@@ -24297,6 +24307,8 @@ function openGlobalSearch() {
     backdrop.classList.add('active');
 
     if (input) {
+
+      input.placeholder = `Search ${totalQs} questions by topic, algorithm, theorem, keyword (Press /)...`;
 
       input.value = state.globalSearchQuery || '';
 
@@ -27134,7 +27146,7 @@ function copyScorecardToClipboard() {
                `✅ Correct: ${session.correctCount} | ❌ Wrong: ${session.incorrectCount} | ⚪ Skipped: ${session.unattemptedCount}\n` +
                `⚡ Accuracy: ${acc}%\n` +
                `⏱️ Duration: ${fmtH(session.timeSpentSeconds || 0)}\n` +
-               `🔗 Practiced on GATE CSE Platform (25,402 Questions & TCS iON Simulator)`;
+               `🔗 Practiced on GATE CSE Platform (${(state.questions && state.questions.length ? state.questions.length.toLocaleString() : "32,383")} Questions & TCS iON Simulator)`;
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text).then(() => {
