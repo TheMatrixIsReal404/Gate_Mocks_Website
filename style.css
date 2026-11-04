@@ -1694,6 +1694,8 @@ img { max-width: 100%; display: block; }
   filter: blur(80px);
   opacity: 0.25;
   animation: orbFloat 8s ease-in-out infinite alternate;
+  pointer-events: none !important;
+  z-index: 0;
 }
 .auth-overlay::before {
   width: 500px; height: 500px;
@@ -1713,6 +1715,7 @@ img { max-width: 100%; display: block; }
 
 .auth-card {
   position: relative;
+  z-index: 10;
   width: 100%;
   max-width: 440px;
   margin: auto;
@@ -1945,12 +1948,23 @@ img { max-width: 100%; display: block; }
 
 /* Offline Guest Box */
 .auth-offline-box {
+  position: relative;
+  z-index: 15;
   margin-top: 14px;
   padding: 14px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px dashed var(--border);
   border-radius: 14px;
   text-align: center;
+}
+.auth-offline-box button,
+#auth-guest-btn {
+  position: relative;
+  z-index: 20;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 42px;
 }
 .auth-offline-box:hover {
   border-color: var(--accent);

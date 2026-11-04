@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="style.css?v=8.6" />
+  <link rel="stylesheet" href="style.css?v=8.7" />
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
   <!-- KaTeX Math Formula Rendering -->
@@ -68,6 +68,23 @@
   <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
+  <script>
+    // Early safety handler for guest practice on mobile
+    window.continueAsGuest = function(btn) {
+      try { sessionStorage.setItem('gate_is_guest', '1'); } catch(e){}
+      document.querySelectorAll('.auth-overlay').forEach(function(el){ el.remove(); });
+      var sb = document.getElementById('sidebar'); if (sb) sb.style.display = '';
+      var mn = document.getElementById('main'); if (mn) mn.style.display = '';
+      var pc = document.getElementById('page-content'); if (pc) pc.classList.remove('hidden');
+      var ls = document.getElementById('loading-screen'); if (ls) ls.style.display = 'none';
+      if (btn) { btn.disabled = true; btn.innerHTML = '⚡ Launching Offline Practice…'; }
+      if (typeof window.bootApp === 'function') {
+        window.bootApp(null);
+      } else if (typeof window.navigate === 'function') {
+        window.navigate('dashboard');
+      }
+    };
+  </script>
 </head>
 <body>
 
@@ -663,9 +680,9 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js?v=8.6').then(reg => {
+      navigator.serviceWorker.register('./sw.js?v=8.7').then(reg => {
         reg.update();
-        console.log('[PWA] ServiceWorker v8.6 registered with scope:', reg.scope);
+        console.log('[PWA] ServiceWorker v8.7 registered with scope:', reg.scope);
         reg.addEventListener('updatefound', () => {
           const newWorker = reg.installing;
           if (newWorker) {
@@ -691,7 +708,7 @@
 <input type="file" id="restore-progress-file-input" style="display:none" accept=".json" onchange="handleRestoreProgressFile(event)" />
 
 <!-- ─── APP ENTRY (ES module so it can import firebase.js) ─── -->
-<script type="module" src="app.js?v=8.6"></script>
+<script type="module" src="app.js?v=8.7"></script>
 
   <!-- 87-Chapter Wall Sheet Print Container -->
   <div id="printable-syllabus-sheet"></div>

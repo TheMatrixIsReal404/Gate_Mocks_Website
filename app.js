@@ -6714,16 +6714,18 @@ async function seedSampleQuestions() {
 // ─── LOGIN UI ─────────────────────────────────────────────────────────────────
 
 function renderLoginPage() {
+  if (state.isGuest || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1')) {
+    return;
+  }
+  document.querySelectorAll('.auth-overlay').forEach(el => el.remove());
 
   // Hide main app
-
-  document.getElementById('sidebar').style.display      = 'none';
-
-  document.getElementById('main').style.display         = 'none';
-
-  document.getElementById('toast-container').style.display = 'flex';
-
-
+  const sb = document.getElementById('sidebar');
+  if (sb) sb.style.display = 'none';
+  const mn = document.getElementById('main');
+  if (mn) mn.style.display = 'none';
+  const tc = document.getElementById('toast-container');
+  if (tc) tc.style.display = 'flex';
 
   let mode = 'login'; // 'login', 'signup', or 'forgot'
 
@@ -6812,8 +6814,8 @@ function renderLoginPage() {
 
           <div class="auth-offline-box">
             <div class="auth-offline-title">📴 No Internet / Offline Practice?</div>
-            <div class="auth-offline-desc">Practice all 3,090+ authentic questions, official mocks, practice papers, and PYQs completely offline with local storage saving.</div>
-            <button class="btn btn-secondary btn-sm" onclick="continueAsGuest()" style="width:100%;font-weight:700" type="button">
+            <div class="auth-offline-desc">Practice all 32,383 verified questions, 231 full-length mocks, and 35 years of PYQs completely offline with local storage saving.</div>
+            <button class="btn btn-secondary btn-sm" id="auth-guest-btn" onclick="continueAsGuest(this)" style="width:100%;font-weight:700;touch-action:manipulation" type="button">
               ⚡ Start Instant Offline Practice (Guest)
             </button>
           </div>
@@ -6829,6 +6831,16 @@ function renderLoginPage() {
         else handleEmailAuth();
       }
     });
+
+    const gBtn = document.getElementById('auth-guest-btn');
+    if (gBtn) {
+      const triggerGuest = (e) => {
+        if (e) { e.preventDefault(); e.stopPropagation(); }
+        continueAsGuest(gBtn);
+      };
+      gBtn.addEventListener('click', triggerGuest);
+      gBtn.addEventListener('touchend', triggerGuest);
+    }
   }
 
   window.switchAuthMode = (m) => {
@@ -6855,7 +6867,14 @@ function renderLoginPage() {
     }, 50);
   };
 
-  window.continueAsGuest = async () => {
+  window.continueAsGuest = async (btn) => {
+    state.isGuest = true;
+    try { sessionStorage.setItem('gate_is_guest', '1'); } catch(e){}
+    const activeBtn = btn || document.getElementById('auth-guest-btn') || document.querySelector('.auth-offline-box button');
+    if (activeBtn) {
+      activeBtn.disabled = true;
+      activeBtn.innerHTML = '⚡ Launching Offline Practice…';
+    }
     removeLoginPage();
     await bootApp(null);
   };
@@ -7199,24 +7218,30 @@ function renderLoginPage() {
 
 
 function removeLoginPage() {
-
-  document.getElementById('auth-overlay')?.remove();
-
-  document.getElementById('sidebar').style.display = '';
-
-  document.getElementById('main').style.display    = '';
-
+  document.querySelectorAll('.auth-overlay').forEach(el => el.remove());
+  const sb = document.getElementById('sidebar');
+  if (sb) sb.style.display = '';
+  const mn = document.getElementById('main');
+  if (mn) mn.style.display = '';
+  const pc = document.getElementById('page-content');
+  if (pc) pc.classList.remove('hidden');
+  const ls = document.getElementById('loading-screen');
+  if (ls) ls.style.display = 'none';
 }
 
-
-
-async function continueAsGuest() {
-
+async function continueAsGuest(btn) {
+  state.isGuest = true;
+  try { sessionStorage.setItem('gate_is_guest', '1'); } catch(e){}
+  const activeBtn = btn || document.getElementById('auth-guest-btn') || document.querySelector('.auth-offline-box button');
+  if (activeBtn) {
+    activeBtn.disabled = true;
+    activeBtn.innerHTML = '⚡ Launching Offline Practice…';
+  }
   removeLoginPage();
-
   await bootApp(null);
-
 }
+
+window.continueAsGuest = continueAsGuest;
 
 
 
@@ -7273,6 +7298,8 @@ function updateTopbarUser() {
 async function handleSignOut() {
 
   if (!confirm('Sign out?')) return;
+  state.isGuest = false;
+  try { sessionStorage.removeItem('gate_is_guest'); } catch(e){}
 
   teardownListeners();
 
@@ -17601,30 +17628,29 @@ async function bootApp(user) {
 
 
 
-  // 3. If Firebase is active, fetch cloud questions from Firestore and merge
-
-  if (USE_FB) {
-
-    document.getElementById('loading-msg').textContent = 'Syncing questions with cloud…';
-
+  // 3. If Firebase is active and user is signed in, fetch cloud questions & user data from Firestore
+  if (user && USE_FB) {
+    const lMsg = document.getElementById('loading-msg');
+    if (lMsg) lMsg.textContent = 'Syncing questions with cloud…';
     const ok = await loadFromFirestore();
-
     if (ok) {
-
       setupListeners();
-
     } else {
-
       setSyncStatus('offline');
-
-      document.getElementById('loading-msg').textContent = 'Using local question bank…';
-
+      if (lMsg) lMsg.textContent = 'Using local question bank…';
     }
-
   } else {
-
+    state.isGuest = !user;
     setSyncStatus('offline');
-
+    if (USE_FB && !user) {
+      // Non-blocking background fetch of public community questions for guest
+      fsAll(qCol()).then(cloudQs => {
+        if (cloudQs && cloudQs.length) {
+          state.questions = mergeQuestionArrays(state.questions, cloudQs);
+          saveCache();
+        }
+      }).catch(() => {});
+    }
   }
 
 
@@ -22499,12 +22525,16 @@ async function init() {
       clearTimeout(authTimeoutTimer);
 
       if (user) {
-
+        state.isGuest = false;
+        try { sessionStorage.removeItem('gate_is_guest'); } catch(e){}
         removeLoginPage();
 
         await bootApp(user);
 
       } else {
+        if (state.isGuest || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1')) {
+          return;
+        }
 
         // Logged out — show login page
 
