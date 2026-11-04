@@ -71,6 +71,19 @@ const ADMIN_EMAILS = new Set([
 
 ]);
 
+// 32 Curated Hard Mocks (Mocks 1-4, 10, 11-14, 25, 29-32, 38-41, 59-68, 71, 73, 83 + paper-systems)
+const CURATED_HARD_MOCK_IDS = new Set([
+  'mock-me24-f-adv1', 'mock-me24-f-adv2', 'mock-me24-f-adv3', 'mock-me24-f-adv4',
+  'mock-me24-mock-4',
+  'mock-me23-f-adv1', 'mock-me23-f-adv2', 'mock-me23-f-adv3', 'mock-me23-f-adv4',
+  'mock-go-ts25-aim-05',
+  'mock-go-ts26-aim-04', 'mock-go-ts26-aim-05-s1', 'mock-go-ts26-aim-05-s2', 'mock-go-ts26-aim-06',
+  'mock-go-ts25-mg-06', 'mock-go-ts25-mg-07', 'mock-go-ts25-mg-08', 'mock-go-ts25-mg-09',
+  'mock-flm-03', 'mock-flm-11', 'mock-flm-12', 'mock-flm-13', 'mock-flm-14', 'mock-flm-15',
+  'mock-flm-16', 'mock-flm-17', 'mock-flm-18', 'mock-flm-19', 'mock-flm-20',
+  'mock-full-hard', 'mock-full-002', 'mock-cat2-set5', 'paper-systems'
+]);
+
 
 
 function checkIsAdminUser(user) {
@@ -5330,6 +5343,8 @@ const state = {
 
   practiceSearch:   '',
 
+  practiceSort:     'default',
+
   pyqFilters:       { year:'all', subject:'all' },
 
   pyqPage:          1,
@@ -7530,80 +7545,68 @@ function renderDashboard(c) {
 
     <div class="section-header" style="margin-top:28px">
 
-      <div class="section-title">Curated GATE Exam Series <span>6 Flagship Compendiums (85 Full Mocks)</span></div>
+      <div class="section-title">Curated GATE Exam Series <span>Flagship Compendiums (210 Full Mocks • 21 PYQ Exams)</span></div>
 
       <button class="btn btn-secondary btn-sm" onclick="navigate('mocks')">View All Mocks →</button>
 
     </div>
 
     <div class="dashboard-series-grid">
-
       <div class="series-card" style="--series-color:#22c55e" onclick="navigate('mocks',{tab:'easy'})">
-
         <div>
-
           <div class="series-badge" style="background:rgba(34,197,94,0.15);color:#22c55e">🌟 FOUNDATIONAL EASY</div>
-
-          <div class="series-title">30 Easy Mock Tests</div>
-
-          <div class="series-sub">Direct formulas, canonical definitions, and core scoring fundamentals strictly aligned with the IISc/IIT syllabus.</div>
-
+          <div class="series-title">65 Easy Mock Tests</div>
+          <div class="series-sub">Direct formulas, canonical definitions, and core scoring fundamentals strictly aligned with the IISc/IIT syllabus (Includes 30 Set 1, 30 Set 2, and 5 Foundational Tests).</div>
         </div>
-
         <div class="series-footer">
-
-          <span>1,950 Qs • 30 Full Tests • 3.5/10</span>
-
+          <span>4,225 Qs • 65 Full Tests • 3.5/10</span>
           <span class="series-footer-action">Explore →</span>
-
         </div>
-
       </div>
-
       <div class="series-card" style="--series-color:#eab308" onclick="navigate('mocks',{tab:'medium'})">
-
         <div>
-
           <div class="series-badge" style="background:rgba(234,179,8,0.15);color:#eab308">⚡ STANDARD GATE CS</div>
-
-          <div class="series-title">30 Medium Mock Tests</div>
-
-          <div class="series-sub">Standard GATE difficulty with multi-step NAT numericals, cache/pipeline timing, logic, and comprehensive algorithms.</div>
-
+          <div class="series-title">83 Medium Mock Tests</div>
+          <div class="series-sub">Standard GATE difficulty with multi-step NAT numericals, cache/pipeline timing, logic, and comprehensive algorithms across 83 calibrated exams.</div>
         </div>
-
         <div class="series-footer">
-
-          <span>1,950 Qs • 30 Full Tests • 5.0/10</span>
-
+          <span>5,395 Qs • 83 Full Tests • 5.0/10</span>
           <span class="series-footer-action">Explore →</span>
-
         </div>
-
       </div>
-
-      <div class="series-card" style="--series-color:#ef4444" onclick="navigate('mocks',{tab:'hard'})">
-
+      <div class="series-card" style="--series-color:#ef4444" onclick="navigate('mocks',{tab:'hard',subSeries:'hard-curated'})">
         <div>
-
-          <div class="series-badge" style="background:rgba(239,68,68,0.15);color:#ef4444">🔥 RANK BOOSTERS</div>
-
-          <div class="series-title">20 Full Mocks Compendium</div>
-
-          <div class="series-sub">Deep conceptual mastery, edge-case analysis, advanced mathematics, and challenging gate-level problem solving.</div>
-
+          <div class="series-badge" style="background:rgba(239,68,68,0.15);color:#ef4444">🔴 RANK BOOSTERS</div>
+          <div class="series-title">32 Hard Mock Tests</div>
+          <div class="series-sub">Curated Rank Booster Series: 32 advanced mock exams (Mocks 1–4, 10–14, 25, 29–32, 38–41, 59–68, 71, 73, 83 + Advanced Papers) testing deep conceptual mastery and multi-step derivations.</div>
         </div>
-
         <div class="series-footer">
-
-          <span>1,300 Qs • 20 Full Tests • 7.0/10</span>
-
+          <span>2,080 Qs • 32 Full Tests • 7.5/10</span>
           <span class="series-footer-action">Explore →</span>
-
         </div>
-
       </div>
-
+      <div class="series-card" style="--series-color:#f43f5e" onclick="navigate('mocks',{tab:'hard',subSeries:'hard-30'})">
+        <div>
+          <div class="series-badge" style="background:rgba(244,63,94,0.15);color:#f43f5e">🔥 EXTREME HARD SERIES</div>
+          <div class="series-title">30 Extreme Hard Mock Tests</div>
+          <div class="series-sub">Capstone extreme-difficulty examinations (GO-Classes caliber, mock-hard-01 to 30) testing multi-concept proofs, subtle edge cases, and high-pressure rigor.</div>
+        </div>
+        <div class="series-footer">
+          <span>1,950 Qs • 30 Full Tests • 8.5/10</span>
+          <span class="series-footer-action">Explore →</span>
+        </div>
+      </div>
+      <div class="series-card" style="--series-color:#a855f7" onclick="navigate('mocks',{tab:'hard',subSeries:'flm-20'})">
+        <div>
+          <div class="series-badge" style="background:rgba(168,85,247,0.15);color:#c084fc">🏆 FULL MOCKS COMPENDIUM</div>
+          <div class="series-title">20 Full Mocks Compendium</div>
+          <div class="series-sub">Deep conceptual mastery, edge-case analysis, advanced mathematics, and challenging gate-level problem solving.</div>
+        </div>
+        <div class="series-footer">
+          <span>1,300 Qs • 20 Full Tests • 7.0/10</span>
+          <span class="series-footer-action">Explore →</span>
+        </div>
+      </div>
       <div class="series-card" style="--series-color:#06b6d4" onclick="navigate('mocks',{tab:'go'})">
         <div>
           <div class="series-badge" style="background:rgba(6,182,212,0.15);color:#06b6d4">🌐 ALL-INDIA MOCKS</div>
@@ -7615,7 +7618,6 @@ function renderDashboard(c) {
           <span class="series-footer-action">Explore →</span>
         </div>
       </div>
-
       <div class="series-card" style="--series-color:#8b5cf6" onclick="navigate('mocks',{tab:'comprehensive-mocks'})">
         <div>
           <div class="series-badge" style="background:rgba(139,92,246,0.15);color:#a78bfa">📘 ELITE COACHING</div>
@@ -7627,7 +7629,6 @@ function renderDashboard(c) {
           <span class="series-footer-action">Explore →</span>
         </div>
       </div>
-
       <div class="series-card" style="--series-color:#38bdf8" onclick="navigate('pyq-exams')">
         <div>
           <div class="series-badge" style="background:rgba(56,189,248,0.15);color:#38bdf8">🏛️ OFFICIAL PAPERS</div>
@@ -7639,10 +7640,7 @@ function renderDashboard(c) {
           <span class="series-footer-action">Practice →</span>
         </div>
       </div>
-
     </div>
-
-
 
     <!-- ── QUESTION BANK DISTRIBUTION ── -->
 
@@ -7745,38 +7743,60 @@ function buildSubjectCards() {
 // ─── SUBJECTS ────────────────────────────────────────────────────────────────
 
 function toggleSyllabusGuide() {
-
   const body = document.getElementById('syllabus-guide-body');
-
   const icon = document.getElementById('syllabus-toggle-icon');
-
+  const strip = document.getElementById('syllabus-blueprint-strip');
   if (body) {
-
     const isHidden = body.style.display === 'none';
-
     body.style.display = isHidden ? 'grid' : 'none';
-
+    if (strip) strip.style.display = isHidden ? 'flex' : 'none';
     if (icon) icon.textContent = isHidden ? '▲ Hide Guide' : '▼ View Full Syllabus';
-
   }
-
 }
 
+function filterSyllabusCategory(category, btn) {
+  const cards = document.querySelectorAll('.syllabus-sec-card');
+  const btns = document.querySelectorAll('.syllabus-filter-pill');
+  const searchInput = document.querySelector('.syllabus-search-input');
+  if (searchInput) searchInput.value = '';
+  btns.forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
 
+  cards.forEach(card => {
+    card.classList.remove('syllabus-card-highlight');
+    const cat = card.dataset.category || '';
+    const weight = parseInt(card.dataset.weight || '0', 10);
+    let show = true;
+    if (category === 'core') show = (cat === 'core-cs');
+    else if (category === 'high') show = (weight >= 10);
+    else if (category === 'math-ga') show = (cat === 'math' || cat === 'ga');
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+function filterSyllabusSearch(query) {
+  const q = (query || '').trim().toLowerCase();
+  const cards = document.querySelectorAll('.syllabus-sec-card');
+  cards.forEach(card => {
+    if (!q) {
+      card.style.display = '';
+      card.classList.remove('syllabus-card-highlight');
+      return;
+    }
+    const text = card.textContent.toLowerCase();
+    const match = text.includes(q);
+    card.style.display = match ? '' : 'none';
+    if (match) card.classList.add('syllabus-card-highlight');
+    else card.classList.remove('syllabus-card-highlight');
+  });
+}
 
 function jumpToSubjectPYQs(subName) {
-
   state.selectedTopicPyqSubject = subName;
-
   state.topicPyqTab = 'chapters';
-
   state.topicPyqExpandedTopic = null;
-
   navigate('topic-pyqs');
-
 }
-
-
 
 function buildOfficialSyllabusGuideHTML() {
   const sections = [
@@ -7785,15 +7805,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 01',
       title: 'Engineering Mathematics',
       subject: 'Engineering Mathematics',
+      subtitle: 'Discrete Math, Linear Algebra, Calculus & Probability',
+      category: 'math',
       icon: '📐',
       color: '#8b5cf6',
       weightage: '~15% Weightage',
+      weightNum: 15,
       tags: ['Discrete Math', 'Linear Algebra', 'Calculus', 'Probability & Stats'],
       topics: [
-        { label: 'Discrete Mathematics', text: 'Propositional & first order logic, sets, relations, partial orders, lattices, monoids, groups, graphs, combinatorics, recurrence relations.' },
-        { label: 'Linear Algebra', text: 'Matrices, determinants, systems of linear equations, eigenvalues & eigenvectors, LU decomposition.' },
-        { label: 'Calculus', text: 'Limits, continuity, differentiability, maxima & minima, mean value theorem, integration.' },
-        { label: 'Probability & Statistics', text: 'Random variables, distributions (uniform, normal, exponential, Poisson, binomial), mean/median/mode, Bayes theorem.' }
+        { label: 'Discrete Mathematics', text: 'Propositional & 1st-order logic, sets, relations, partial orders, lattices, monoids, groups, graphs, combinatorics, recurrences.' },
+        { label: 'Linear Algebra', text: 'Matrices, determinants, systems of linear equations, eigenvalues, eigenvectors & LU decomposition.' },
+        { label: 'Calculus & Probability', text: 'Limits, continuity, maxima/minima, mean value theorem, random variables, Bayes theorem & distributions.' }
       ]
     },
     {
@@ -7801,12 +7823,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 02',
       title: 'Digital Logic',
       subject: 'Digital Logic',
+      subtitle: 'Boolean Algebra, Combinational & Sequential Circuits',
+      category: 'core-cs',
       icon: '🔌',
       color: '#06b6d4',
       weightage: '~5-6% Weightage',
+      weightNum: 6,
       tags: ['Boolean Algebra', 'K-Maps', 'Combinational', 'Sequential Circuits', 'Number Systems'],
       topics: [
-        { label: 'Core Topics', text: 'Boolean algebra, combinational & sequential circuits, minimization (K-maps, tabular method), number representations, fixed and floating point arithmetic.' }
+        { label: 'Boolean Logic & Minimization', text: 'Boolean algebra, canonical forms, logic gates, K-maps (up to 5 variables), Quine-McCluskey tabular method.' },
+        { label: 'Combinational Circuits', text: 'Multiplexers, decoders, encoders, ripple-carry & carry-lookahead adders, magnitude comparators.' },
+        { label: 'Sequential Circuits', text: 'Latches, flip-flops (SR, JK, D, T), registers, counters, state machines, fixed & floating point arithmetic.' }
       ]
     },
     {
@@ -7814,12 +7841,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 03',
       title: 'Computer Organization & Architecture',
       subject: 'Computer Organization',
+      subtitle: 'ALU, Pipelining, Cache & Memory Hierarchy',
+      category: 'core-cs',
       icon: '🖩',
       color: '#84cc16',
       weightage: '~8-10% Weightage',
+      weightNum: 9,
       tags: ['Addressing Modes', 'ALU & Control Unit', 'Pipelining Hazards', 'Memory Hierarchy', 'DMA & I/O'],
       topics: [
-        { label: 'Core Topics', text: 'Machine instructions & addressing modes, ALU, data-path & control unit, instruction pipelining & hazards, cache & main memory hierarchy, I/O interface (DMA).' }
+        { label: 'CPU & Instruction Architecture', text: 'Addressing modes, instruction formats (RISC/CISC), ALU, data-path, hardwired vs microprogrammed control.' },
+        { label: 'Pipelining & Hazards', text: 'Pipeline stages, throughput, structural/data/control hazards, branch prediction & operand forwarding.' },
+        { label: 'Memory Systems & I/O', text: 'Cache mapping (direct/set-associative), miss penalties, virtual memory, TLB, DMA & interrupt handling.' }
       ]
     },
     {
@@ -7827,12 +7859,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 04',
       title: 'Programming & Data Structures',
       subject: 'Data Structures',
+      subtitle: 'C Language, Stacks, Queues, Trees & Heaps',
+      category: 'core-cs',
       icon: '🗂️',
       color: '#6366f1',
       weightage: '~10-12% Weightage',
+      weightNum: 11,
       tags: ['C Programming', 'Recursion & Pointers', 'Stacks & Queues', 'Trees & BST', 'Graphs & Heaps'],
       topics: [
-        { label: 'Core Topics', text: 'Programming in C, recursion, arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs.' }
+        { label: 'C Programming & Pointers', text: 'Pointers, pointer arithmetic, structs, parameter passing, recursion & runtime activation records.' },
+        { label: 'Linear Data Structures', text: 'Arrays, singly/doubly linked lists, stacks (expressions & evaluation), queues (circular & priority).' },
+        { label: 'Non-Linear Data Structures', text: 'Binary trees, BST properties & traversals, AVL trees, binary heaps (min/max heapify) & graph representations.' }
       ]
     },
     {
@@ -7840,12 +7877,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 05',
       title: 'Algorithms',
       subject: 'Algorithms',
+      subtitle: 'Complexity, Greedy, Dynamic Programming & Graphs',
+      category: 'core-cs',
       icon: '⚙️',
       color: '#f97316',
       weightage: '~8-10% Weightage',
+      weightNum: 9,
       tags: ['Asymptotic Complexity', 'Sorting & Hashing', 'Greedy & DP', 'Graph Traversals', 'Shortest Paths & MST'],
       topics: [
-        { label: 'Core Topics', text: 'Searching, sorting, hashing, asymptotic worst case complexity, greedy, dynamic programming, divide-and-conquer, graph traversals, MST, shortest paths.' }
+        { label: 'Asymptotic Analysis & Sorting', text: 'Big-O, Ω, Θ notation, recurrence solving (Master theorem), divide-and-conquer, sorting bounds & hash tables.' },
+        { label: 'Greedy & Dynamic Programming', text: 'Optimal substructure, greedy choice (Huffman, fractional knapsack), DP (0/1 knapsack, LCS, matrix chain).' },
+        { label: 'Graph Algorithms', text: 'BFS/DFS, topological sort, MST (Prim, Kruskal), single-source & all-pairs shortest paths (Dijkstra, Bellman-Ford).' }
       ]
     },
     {
@@ -7853,12 +7895,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 06',
       title: 'Theory of Computation',
       subject: 'Theory of Computation',
+      subtitle: 'Finite Automata, Grammars, PDA & Turing Machines',
+      category: 'core-cs',
       icon: '🔣',
       color: '#a855f7',
       weightage: '~8-9% Weightage',
+      weightNum: 8,
       tags: ['Regular Expressions', 'Finite Automata', 'CFG & PDA', 'Pumping Lemma', 'Turing Machines'],
       topics: [
-        { label: 'Core Topics', text: 'Regular expressions, DFA / NFA, context-free grammars, push-down automata, regular & CFL pumping lemma, Turing machines, undecidability.' }
+        { label: 'Regular Languages & Automata', text: 'DFA, NFA, regex, state minimization, closure properties & pumping lemma for regular languages.' },
+        { label: 'Context-Free Languages & PDA', text: 'Context-free grammars (CFG), parse trees, ambiguity removal, pushdown automata (PDA) & CFL closures.' },
+        { label: 'Turing Machines & Decidability', text: 'Turing machines, recursively enumerable languages, undecidability, halting problem & reductions.' }
       ]
     },
     {
@@ -7866,12 +7913,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 07',
       title: 'Compiler Design',
       subject: 'Compiler Design',
+      subtitle: 'Lexical Analysis, Parsing, SDT & Optimization',
+      category: 'core-cs',
       icon: '🔧',
       color: '#f59e0b',
       weightage: '~4-5% Weightage',
+      weightNum: 5,
       tags: ['Lexical Analysis', 'LL / LR Parsing', 'Syntax-Directed (SDT)', 'Intermediate Code', 'Optimization'],
       topics: [
-        { label: 'Core Topics', text: 'Lexical analysis, parsing, syntax-directed translation, runtime environments, intermediate code generation, local optimisation, data flow analyses.' }
+        { label: 'Lexical Analysis & Parsing', text: 'Tokenization, regular definitions, LL(1) parsers (FIRST/FOLLOW), LR(0), SLR, LALR, CLR shift-reduce parsing.' },
+        { label: 'Syntax-Directed Translation', text: 'Synthesized vs inherited attributes, S-attributed and L-attributed SDDs, parse tree evaluations.' },
+        { label: 'Intermediate Code & Optimization', text: '3-address code, quadruples/triples, control-flow graphs, basic blocks, loop optimization & data-flow.' }
       ]
     },
     {
@@ -7879,12 +7931,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 08',
       title: 'Operating Systems',
       subject: 'Operating Systems',
+      subtitle: 'Processes, Concurrency, Virtual Memory & File Systems',
+      category: 'core-cs',
       icon: '🖥️',
       color: '#22c55e',
       weightage: '~8-10% Weightage',
+      weightNum: 9,
       tags: ['Processes & Threads', 'CPU Scheduling', 'Deadlocks & Semaphores', 'Virtual Memory', 'File Systems'],
       topics: [
-        { label: 'Core Topics', text: 'System calls, processes, threads, IPC, concurrency & synchronization, deadlocks, CPU & I/O scheduling, memory management, virtual memory, file systems.' }
+        { label: 'Processes & CPU Scheduling', text: 'Threads, kernel vs user space, system calls, preemptive CPU scheduling algorithms (FCFS, SJF, RR, Priority).' },
+        { label: 'Concurrency & Deadlocks', text: 'Critical sections, Peterson’s solution, semaphores, mutex, deadlock prevention, detection & Banker’s algorithm.' },
+        { label: 'Memory & Storage Systems', text: 'Multi-level paging, TLB, page replacement (FIFO, LRU, Optimal), disk scheduling & file allocation.' }
       ]
     },
     {
@@ -7892,12 +7949,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 09',
       title: 'Databases (DBMS)',
       subject: 'DBMS',
+      subtitle: 'Relational Algebra, SQL, Normalization & Indexing',
+      category: 'core-cs',
       icon: '🗄️',
       color: '#ef4444',
       weightage: '~7-8% Weightage',
+      weightNum: 8,
       tags: ['ER-Model', 'Relational Algebra', 'SQL Queries', 'BCNF / 3NF Normalization', 'B & B+ Trees', 'ACID'],
       topics: [
-        { label: 'Core Topics', text: 'ER-model, relational algebra & calculus, SQL, integrity constraints, normal forms, file organization & indexing (B/B+ trees), transactions & concurrency.' }
+        { label: 'ER-Models & Relational Theory', text: 'Entity-relationship diagrams, mapping to tables, relational algebra operators (joins, selections), tuple calculus.' },
+        { label: 'SQL & Schema Normalization', text: 'Advanced SQL queries (GROUP BY, HAVING, subqueries), functional dependencies, canonical covers, 1NF to BCNF.' },
+        { label: 'Storage, Indexing & Transactions', text: 'B-trees & B+ trees search/insertion, ACID properties, serializability, conflict/view equivalence & 2PL.' }
       ]
     },
     {
@@ -7905,12 +7967,17 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'SEC 10',
       title: 'Computer Networks',
       subject: 'Computer Networks',
+      subtitle: 'OSI/TCP-IP, Routing, Sockets, TCP & DNS',
+      category: 'core-cs',
       icon: '🌐',
       color: '#14b8a6',
       weightage: '~8-10% Weightage',
+      weightNum: 9,
       tags: ['OSI & TCP/IP', 'Ethernet & Framing', 'IPv4, CIDR & NAT', 'Routing Protocols', 'Flow & Congestion', 'DNS / HTTP'],
       topics: [
-        { label: 'Core Topics', text: 'OSI/TCP-IP stacks, packet & circuit switching, framing, error detection, MAC, Ethernet, distance vector & link state routing, IPv4, CIDR, NAT, TCP/UDP sockets, DNS, HTTP.' }
+        { label: 'Physical & Data Link Layers', text: 'Packet vs circuit switching, framing, Hamming codes, CRC error detection, CSMA/CD, sliding window (GBN, SR).' },
+        { label: 'Network Layer & Routing', text: 'IPv4 addressing, CIDR subnetting, NAT, ARP, ICMP, distance-vector (Bellman-Ford) & link-state (OSPF).' },
+        { label: 'Transport & Application Layers', text: 'TCP 3-way handshake, congestion control (slow start, AIMD), UDP sockets, DNS resolution & HTTP/HTTPS.' }
       ]
     },
     {
@@ -7918,47 +7985,83 @@ function buildOfficialSyllabusGuideHTML() {
       badge: 'MANDATORY GA',
       title: 'General Aptitude (GA)',
       subject: 'Aptitude',
+      subtitle: 'Verbal Ability, Quantitative Aptitude & Spatial Deduction',
+      category: 'ga',
       icon: '🧮',
       color: '#38bdf8',
       weightage: '15 Marks (Fixed)',
+      weightNum: 15,
       isFeatured: true,
       tags: ['Verbal & Grammar', 'Reading Comprehension', 'Quantitative Aptitude', 'Logical Deduction', 'Spatial & Patterns'],
       topics: [
-        { label: 'Verbal & Quantitative', text: 'English grammar, vocabulary, reading comprehension, narrative sequencing. Data interpretation, numerical computation (ratios, percentages, powers, series, permutations).' },
-        { label: 'Analytical & Spatial', text: 'Logic, deduction, analogy, numerical relations & reasoning. Transformation of shapes: translation, rotation, scaling, mirroring, paper folding, 2D/3D patterns.' }
+        { label: 'Verbal Ability', text: 'English grammar, sentence completion, vocabulary in context, reading comprehension & narrative analysis.' },
+        { label: 'Quantitative Aptitude', text: 'Numerical computation, percentages, ratios, powers & exponents, permutations/combinations & elementary stats.' },
+        { label: 'Analytical & Spatial Reasoning', text: 'Deductive logic, analogies, numerical induction, 2D/3D shape transformations (translation, rotation, folding).' }
       ]
     }
   ];
 
   return `
     <div class="syllabus-guide-card">
-      <div class="syllabus-guide-header" onclick="toggleSyllabusGuide()">
-        <div class="syllabus-guide-title">
-          <div class="syllabus-guide-icon">🏛️</div>
-          <div>
-            <div class="syllabus-guide-title-text">Official GATE CSE Syllabus Guide</div>
-            <div style="display:flex;align-items:center;gap:8px;margin-top:3px">
-              <span class="syllabus-guide-badge">IIT Madras Calibrated</span>
-              <span style="font-size:11px;color:var(--text-muted)">10 Core Sections + General Aptitude</span>
+      <div class="syllabus-guide-topbar">
+        <div class="syllabus-guide-header" onclick="toggleSyllabusGuide()">
+          <div class="syllabus-guide-title">
+            <div class="syllabus-guide-icon">🏛️</div>
+            <div>
+              <div class="syllabus-guide-title-text">Official GATE CSE Syllabus Guide</div>
+              <div style="display:flex;align-items:center;gap:8px;margin-top:3px;flex-wrap:wrap">
+                <span class="syllabus-guide-badge">IIT Madras Calibrated</span>
+                <span style="font-size:11px;color:var(--text-muted)">10 Core Sections + General Aptitude &bull; 100 Marks Blueprint</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <button class="syllabus-guide-toggle-btn" id="syllabus-toggle-icon" type="button" onclick="event.stopPropagation(); toggleSyllabusGuide();">
+              ▲ Hide Guide
+            </button>
+          </div>
+        </div>
+
+        <div class="syllabus-blueprint-strip" id="syllabus-blueprint-strip">
+          <div class="syllabus-blueprint-bar" title="GATE CS Official Marks Distribution (100 Marks Total)">
+            <div class="blueprint-seg blueprint-seg-math" style="width:15%" title="Engineering Mathematics: 15 Marks (15%)">
+              <span class="blueprint-seg-label">📐 Math 15M (15%)</span>
+            </div>
+            <div class="blueprint-seg blueprint-seg-cs" style="width:70%" title="Core Computer Science (9 Sections): 70 Marks (70%)">
+              <span class="blueprint-seg-label">💻 Core CS 70M (70%)</span>
+            </div>
+            <div class="blueprint-seg blueprint-seg-ga" style="width:15%" title="General Aptitude: 15 Marks (15%)">
+              <span class="blueprint-seg-label">🧮 GA 15M (15%)</span>
+            </div>
+          </div>
+          <div class="syllabus-controls-row">
+            <div class="syllabus-filter-group">
+              <button class="syllabus-filter-pill active" onclick="event.stopPropagation(); filterSyllabusCategory('all', this)" type="button">All Sections (11)</button>
+              <button class="syllabus-filter-pill" onclick="event.stopPropagation(); filterSyllabusCategory('core', this)" type="button">Core CS (9)</button>
+              <button class="syllabus-filter-pill" onclick="event.stopPropagation(); filterSyllabusCategory('high', this)" type="button">High Weightage (≥10%)</button>
+              <button class="syllabus-filter-pill" onclick="event.stopPropagation(); filterSyllabusCategory('math-ga', this)" type="button">Math &amp; GA</button>
+            </div>
+            <div class="syllabus-search-wrap" onclick="event.stopPropagation()">
+              <svg class="syllabus-search-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" class="syllabus-search-input" placeholder="Search syllabus topics (e.g. Pipelining, K-Maps, SQL)..." oninput="filterSyllabusSearch(this.value)">
             </div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <button class="syllabus-guide-toggle-btn" id="syllabus-toggle-icon" type="button">
-            <span>▲</span> <span>Hide Guide</span>
-          </button>
-        </div>
       </div>
+
       <div class="syllabus-sections-grid" id="syllabus-guide-body">
         ${sections.map(s => {
           const stats = getSubjectStats(s.subject);
           return `
-          <div class="syllabus-sec-card ${s.isFeatured ? 'syllabus-sec-card-featured' : ''}" style="--sec-color:${s.color};">
-            <div>
+          <div class="syllabus-sec-card ${s.isFeatured ? 'syllabus-sec-card-featured' : ''}" style="--sec-color:${s.color};" data-category="${s.category}" data-weight="${s.weightNum}">
+            <div class="syllabus-card-inner">
               <div class="syllabus-card-topbar">
                 <div class="syllabus-badges-left">
-                  <span class="syllabus-badge-num" style="background:${s.color}20;color:${s.color};border:1px solid ${s.color}40">${escapeHtml(s.badge)}</span>
-                  <span class="syllabus-badge-weight">${escapeHtml(s.weightage)}</span>
+                  <span class="syllabus-badge-num" style="background:${s.color}18;color:${s.color};border:1px solid ${s.color}35">${escapeHtml(s.badge)}</span>
+                  <span class="syllabus-badge-weight" title="Marks Weightage">
+                    <span class="syllabus-weight-dot" style="background:${s.color}"></span>
+                    ${escapeHtml(s.weightage)}
+                  </span>
                 </div>
                 ${stats.total > 0 ? `<span class="syllabus-qcount">📚 ${stats.total.toLocaleString()} Qs</span>` : ''}
               </div>
@@ -7967,12 +8070,12 @@ function buildOfficialSyllabusGuideHTML() {
                   <span class="syllabus-card-icon">${s.icon}</span>
                 </div>
                 <div class="syllabus-card-title-wrap">
-                  <h3 class="syllabus-card-title">${escapeHtml(s.title)}</h3>
-                  <span class="syllabus-card-canonical">${escapeHtml(s.subject)}</span>
+                  <h3 class="syllabus-card-title" title="${escapeHtml(s.title)}">${escapeHtml(s.title)}</h3>
+                  <span class="syllabus-card-canonical" title="${escapeHtml(s.subtitle)}">${escapeHtml(s.subtitle)}</span>
                 </div>
               </div>
               <div class="syllabus-card-tags">
-                ${s.tags.map(t => `<span class="syllabus-tag-chip">${escapeHtml(t)}</span>`).join('')}
+                ${s.tags.slice(0, 4).map(t => `<span class="syllabus-tag-chip">${escapeHtml(t)}</span>`).join('')}
               </div>
               <div class="syllabus-card-topics">
                 ${s.topics.map(t => `
@@ -7987,12 +8090,12 @@ function buildOfficialSyllabusGuideHTML() {
               </div>
             </div>
             <div class="syllabus-card-actions">
-              <button class="syllabus-action-btn syllabus-action-practice" onclick="navigate('practice', { subject: '${escapeHtml(s.subject)}' })" type="button">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <button class="syllabus-action-btn syllabus-action-practice" onclick="navigate('practice', { subject: '${escapeHtml(s.subject)}' })" type="button" title="Practice ${escapeHtml(s.title)}">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 <span>Practice</span>
               </button>
-              <button class="syllabus-action-btn syllabus-action-pyqs" onclick="jumpToSubjectPYQs('${escapeHtml(s.subject)}')" type="button">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <button class="syllabus-action-btn syllabus-action-pyqs" onclick="jumpToSubjectPYQs('${escapeHtml(s.subject)}')" type="button" title="Chapter-Wise PYQs">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                 <span>PYQ Chapters</span>
               </button>
             </div>
@@ -8351,6 +8454,22 @@ function renderPractice(c, params={}) {
 
   }
 
+  if (params.category) {
+
+    state.practiceFilters.category = params.category;
+
+    state.practicePage = 1;
+
+  }
+
+  if (params.onlyPyq) {
+
+    state.practiceFilters.category = 'pyq';
+
+    state.practicePage = 1;
+
+  }
+
   if (params.subject) {
 
     state.practiceFilters.subject = params.subject;
@@ -8359,35 +8478,98 @@ function renderPractice(c, params={}) {
 
   }
 
+  if (params.topic) {
+
+    state.practiceFilters.topic = params.topic;
+
+    state.practicePage = 1;
+
+  }
+
+  if (params.sort) {
+
+    state.practiceSort = params.sort;
+
+  }
+
   const f = state.practiceFilters;
 
-  const allSubs = ['all', ...new Set(state.questions.map(q => q.subject).filter(Boolean))];
+  const isPyqActive = (f.category === 'pyq');
 
-  let filtered = [...state.questions];
+  const pyqTotalCount = state.questions.filter(q => isQuestionPyq(q)).length;
+
+  // Base pool for category & subject calculation
+  let baseCategoryQuestions = [...state.questions];
 
   if (f.category !== 'all') {
 
-    if (f.category === 'community') {
+    if (f.category === 'pyq') {
 
-      filtered = filtered.filter(q => q.source === 'community' || q.category === 'community' || (q.uploadedBy && !STATIC_BUNDLED_IDS.has(q.id)));
+      baseCategoryQuestions = baseCategoryQuestions.filter(q => isQuestionPyq(q));
+
+    } else if (f.category === 'community') {
+
+      baseCategoryQuestions = baseCategoryQuestions.filter(q => q.source === 'community' || q.category === 'community' || (q.uploadedBy && !STATIC_BUNDLED_IDS.has(q.id)));
 
     } else {
 
-      filtered = filtered.filter(q => (q.category || 'subject') === f.category);
+      baseCategoryQuestions = baseCategoryQuestions.filter(q => (q.category || 'subject') === f.category);
 
     }
 
   }
 
+  // Calculate subject counts under current category filter
+  const subjectCounts = {};
+
+  baseCategoryQuestions.forEach(q => {
+
+    if (q.subject) {
+
+      subjectCounts[q.subject] = (subjectCounts[q.subject] || 0) + 1;
+
+    }
+
+  });
+
+  const availableSubjects = Object.keys(subjectCounts).sort();
+
+  if (f.subject !== 'all' && !subjectCounts[f.subject]) {
+
+    f.subject = 'all';
+
+  }
+
+  let filtered = [...baseCategoryQuestions];
+
   if (f.subject !== 'all')    filtered = filtered.filter(q => q.subject === f.subject);
+
+  // Calculate topic counts under current category + subject filter
+  const topicCounts = {};
+
+  filtered.forEach(q => {
+
+    if (q.topic) {
+
+      topicCounts[q.topic] = (topicCounts[q.topic] || 0) + 1;
+
+    }
+
+  });
+
+  const availableTopics = Object.keys(topicCounts).sort();
+
+  if (f.topic !== 'all' && !topicCounts[f.topic]) {
+
+    f.topic = 'all';
+
+  }
+
+  if (f.topic !== 'all')      filtered = filtered.filter(q => q.topic === f.topic);
 
   if (f.difficulty !== 'all') filtered = filtered.filter(q => q.difficulty === f.difficulty);
 
   if (f.type !== 'all')       filtered = filtered.filter(q => q.type === f.type);
-
-  const topics = ['all', ...new Set(filtered.map(q => q.topic).filter(Boolean))];
-
-  if (f.topic !== 'all')      filtered = filtered.filter(q => q.topic === f.topic);
 
 
 
@@ -8441,7 +8623,7 @@ function renderPractice(c, params={}) {
 
     filtered = filtered.filter(q => {
 
-      const hay = ((q.question || '') + ' ' + (q.subject || '') + ' ' + (q.topic || '') + ' ' + (q.explanation || '')).toLowerCase();
+      const hay = ((q.question || '') + ' ' + (q.subject || '') + ' ' + (q.topic || '') + ' ' + (q.year || '') + ' ' + (q.explanation || '')).toLowerCase();
 
       return pTerms.every(t => hay.includes(t));
 
@@ -8466,6 +8648,58 @@ function renderPractice(c, params={}) {
     return true;
 
   });
+
+
+
+  // Sort order applied to practice questions & queue
+
+  const sortMode = state.practiceSort || 'default';
+
+  if (sortMode === 'year-desc') {
+
+    filtered.sort((a, b) => {
+
+      const ya = a.year ? parseInt(a.year, 10) : 0;
+
+      const yb = b.year ? parseInt(b.year, 10) : 0;
+
+      if (ya !== yb) return yb - ya;
+
+      return (b.marks || 1) - (a.marks || 1);
+
+    });
+
+  } else if (sortMode === 'year-asc') {
+
+    filtered.sort((a, b) => {
+
+      const ya = a.year ? parseInt(a.year, 10) : 9999;
+
+      const yb = b.year ? parseInt(b.year, 10) : 9999;
+
+      if (ya !== yb) return ya - yb;
+
+      return (b.marks || 1) - (a.marks || 1);
+
+    });
+
+  } else if (sortMode === 'diff-hard') {
+
+    const rank = { hard: 3, medium: 2, easy: 1 };
+
+    filtered.sort((a, b) => (rank[b.difficulty] || 2) - (rank[a.difficulty] || 2));
+
+  } else if (sortMode === 'diff-easy') {
+
+    const rank = { hard: 3, medium: 2, easy: 1 };
+
+    filtered.sort((a, b) => (rank[a.difficulty] || 2) - (rank[b.difficulty] || 2));
+
+  } else if (sortMode === 'marks-desc') {
+
+    filtered.sort((a, b) => (b.marks || 1) - (a.marks || 1));
+
+  }
 
 
 
@@ -8549,7 +8783,9 @@ function renderPractice(c, params={}) {
 
     <div class="practice-quick-chips" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
 
-      <button class="chip ${f.status === 'all' ? 'active' : ''}" onclick="updateFilter('status','all')" type="button">All (${state.questions.length})</button>
+      <button class="chip ${f.category === 'all' && f.status === 'all' ? 'active' : ''}" onclick="resetPracticeQuickFilters()" type="button">All (${state.questions.length})</button>
+
+      <button class="chip ${isPyqActive ? 'active' : ''}" onclick="togglePracticePyqFilter()" type="button" style="border-color:#38bdf8;color:#38bdf8;font-weight:700">🏛️ Only Official PYQs (${pyqTotalCount})</button>
 
       <button class="chip ${f.status === 'unattempted' ? 'active' : ''}" onclick="updateFilter('status','unattempted')" type="button" style="border-color:var(--accent);color:var(--accent);font-weight:700">⭐ Unattempted</button>
 
@@ -8560,6 +8796,26 @@ function renderPractice(c, params={}) {
       <button class="chip ${f.status === 'bookmarked' ? 'active' : ''}" onclick="updateFilter('status','bookmarked')" type="button">🔖 Starred (${state.bookmarks.size})</button>
 
     </div>
+
+    ${isPyqActive ? `
+
+      <div style="background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.3);border-radius:8px;padding:8px 14px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12.5px">
+
+        <div style="display:flex;align-items:center;gap:8px">
+
+          <span style="font-size:16px">🏛️</span>
+
+          <div>
+
+            <strong style="color:#38bdf8">Official GATE PYQs Filter Active</strong> — Showing authentic past GATE examination questions. Filter by Subject &amp; Topic below, or sort by Exam Year.
+
+          </div>
+
+        </div>
+
+        <button class="btn btn-secondary btn-sm" onclick="togglePracticePyqFilter()" style="font-size:11px;padding:2px 8px;white-space:nowrap" type="button">Clear PYQ Filter ✕</button>
+
+      </div>` : ''}
 
     ${f.status === 'bookmarked' ? `
 
@@ -8579,9 +8835,9 @@ function renderPractice(c, params={}) {
 
 
 
-    <div class="filter-bar">
+    <div class="filter-bar" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
 
-      <select class="filter-select" onchange="updateFilter('status',this.value)">
+      <select class="filter-select" onchange="updateFilter('status',this.value)" title="Attempt Status">
 
         <option value="all" ${f.status === 'all' ? 'selected' : ''}>All Status</option>
 
@@ -8595,13 +8851,13 @@ function renderPractice(c, params={}) {
 
       </select>
 
-      <select class="filter-select" onchange="updateFilter('category',this.value)">
+      <select class="filter-select" onchange="updateFilter('category',this.value)" id="practice-category-select" title="Question Category" style="${isPyqActive ? 'border-color:#38bdf8;color:#38bdf8;font-weight:700' : ''}">
 
         <option value="all" ${f.category === 'all' ? 'selected' : ''}>All Categories (${state.questions.length})</option>
 
-        <option value="subject" ${f.category === 'subject' ? 'selected' : ''}>Subject Questions</option>
+        <option value="pyq" ${f.category === 'pyq' ? 'selected' : ''}>🏛️ Official GATE PYQs (${pyqTotalCount})</option>
 
-        <option value="pyq" ${f.category === 'pyq' ? 'selected' : ''}>PYQs</option>
+        <option value="subject" ${f.category === 'subject' ? 'selected' : ''}>Subject Questions</option>
 
         <option value="mock" ${f.category === 'mock' ? 'selected' : ''}>Mock Questions</option>
 
@@ -8611,19 +8867,39 @@ function renderPractice(c, params={}) {
 
       </select>
 
-      <select class="filter-select" onchange="updateFilter('subject',this.value)">
+      <select class="filter-select" onchange="updateFilter('subject',this.value)" id="practice-subject-select" title="GATE Subject">
 
-        ${allSubs.map(s => `<option value="${s}" ${f.subject === s ? 'selected' : ''}>${s === 'all' ? 'All Subjects' : s}</option>`).join('')}
+        <option value="all" ${f.subject === 'all' ? 'selected' : ''}>All Subjects (${baseCategoryQuestions.length})</option>
 
-      </select>
-
-      <select class="filter-select" onchange="updateFilter('topic',this.value)">
-
-        ${topics.map(t => `<option value="${t}" ${f.topic === t ? 'selected' : ''}>${t === 'all' ? 'All Topics' : t}</option>`).join('')}
+        ${availableSubjects.map(s => `<option value="${s}" ${f.subject === s ? 'selected' : ''}>${s} (${subjectCounts[s] || 0})</option>`).join('')}
 
       </select>
 
-      <select class="filter-select" onchange="updateFilter('difficulty',this.value)">
+      <select class="filter-select" onchange="updateFilter('topic',this.value)" id="practice-topic-select" title="Subject Topic">
+
+        <option value="all" ${f.topic === 'all' ? 'selected' : ''}>All Topics (${f.subject === 'all' ? 'All' : availableTopics.length})</option>
+
+        ${availableTopics.map(t => `<option value="${t}" ${f.topic === t ? 'selected' : ''}>${t} (${topicCounts[t] || 0})</option>`).join('')}
+
+      </select>
+
+      <select class="filter-select" onchange="updatePracticeSort(this.value)" id="practice-sort-select" title="Sort Order" style="min-width:170px">
+
+        <option value="default" ${state.practiceSort === 'default' ? 'selected' : ''}>🔀 Sort: Default</option>
+
+        <option value="year-desc" ${state.practiceSort === 'year-desc' ? 'selected' : ''}>📅 GATE Year: 2025 → 1990</option>
+
+        <option value="year-asc" ${state.practiceSort === 'year-asc' ? 'selected' : ''}>📅 GATE Year: 1990 → 2025</option>
+
+        <option value="diff-hard" ${state.practiceSort === 'diff-hard' ? 'selected' : ''}>🔥 Hard to Easy</option>
+
+        <option value="diff-easy" ${state.practiceSort === 'diff-easy' ? 'selected' : ''}>🌱 Easy to Hard</option>
+
+        <option value="marks-desc" ${state.practiceSort === 'marks-desc' ? 'selected' : ''}>🎯 2 Marks First</option>
+
+      </select>
+
+      <select class="filter-select" onchange="updateFilter('difficulty',this.value)" title="Difficulty">
 
         <option value="all" ${f.difficulty === 'all' ? 'selected' : ''}>All Difficulty</option>
 
@@ -8635,7 +8911,7 @@ function renderPractice(c, params={}) {
 
       </select>
 
-      <select class="filter-select" onchange="updateFilter('type',this.value)">
+      <select class="filter-select" onchange="updateFilter('type',this.value)" title="Question Format">
 
         <option value="all" ${f.type === 'all' ? 'selected' : ''}>All Types</option>
 
@@ -8651,7 +8927,7 @@ function renderPractice(c, params={}) {
 
         value="${escapeHtml(state.practiceSearch || '')}"
 
-        oninput="updatePracticeSearch(this.value)" />
+        oninput="updatePracticeSearch(this.value)" style="min-width:180px;flex:1" />
 
     </div>
 
@@ -8719,6 +8995,8 @@ function buildQListItem(q, overallIdx) {
 
         <div class="pyq-item-meta">
 
+          ${isQuestionPyq(q) ? `<span class="chip" style="background:rgba(56,189,248,0.15);color:#38bdf8;font-weight:700">🏛️ GATE ${q.year || ''} PYQ</span>` : ''}
+
           <span class="chip">${q.subject}</span>
 
           ${q.topic ? `<span class="chip">${q.topic}</span>` : ''}
@@ -8759,9 +9037,87 @@ function updateFilter(k, v) {
 
   state.practiceFilters[k] = v;
 
+  if (k === 'category' || k === 'subject') {
+
+    state.practiceFilters.topic = 'all';
+
+  }
+
   state.practicePage = 1;
 
   renderPractice(document.getElementById('page-content'));
+
+}
+
+function togglePracticePyqFilter() {
+
+  if (state.practiceFilters.category === 'pyq') {
+
+    state.practiceFilters.category = 'all';
+
+  } else {
+
+    state.practiceFilters.category = 'pyq';
+
+  }
+
+  state.practiceFilters.topic = 'all';
+
+  state.practicePage = 1;
+
+  renderPractice(document.getElementById('page-content'));
+
+}
+
+function updatePracticeSort(val) {
+
+  state.practiceSort = val;
+
+  state.practicePage = 1;
+
+  renderPractice(document.getElementById('page-content'));
+
+}
+
+function resetPracticeQuickFilters() {
+
+  state.practiceFilters = {
+
+    status: 'all',
+
+    category: 'all',
+
+    subject: 'all',
+
+    topic: 'all',
+
+    difficulty: 'all',
+
+    type: 'all'
+
+  };
+
+  state.practiceSearch = '';
+
+  state.practiceSort = 'default';
+
+  state.practicePage = 1;
+
+  renderPractice(document.getElementById('page-content'));
+
+}
+
+function isQuestionPyq(q) {
+
+  if (!q) return false;
+
+  if (q.category === 'pyq' || q.isPyq === true) return true;
+
+  if (typeof q.source === 'string' && q.source.toLowerCase().includes('pyq')) return true;
+
+  if (typeof q.id === 'string' && q.id.startsWith('pyq-')) return true;
+
+  return false;
 
 }
 
@@ -8887,18 +9243,6 @@ function renderPracticeQuestion() {
 
     </div>
 
-    ${questions.length >= 65 ? `
-    <div class="test-section-bar" id="test-section-bar">
-      <div class="test-section-tab ${state.activeTest.currentQ < 10 ? 'active' : ''}" id="sec-tab-ga" onclick="switchTestSection('ga')">
-        <span class="sec-name">Section 1: General Aptitude (GA)</span>
-        <span class="sec-meta">Q1–Q10 • 15 Marks</span>
-      </div>
-      <div class="test-section-tab ${state.activeTest.currentQ >= 10 ? 'active' : ''}" id="sec-tab-cs" onclick="switchTestSection('cs')">
-        <span class="sec-name">Section 2: Computer Science & IT (CS)</span>
-        <span class="sec-meta">Q11–Q65 • 85 Marks</span>
-      </div>
-    </div>` : ''}
-
     <div class="test-content">
 
       <div class="palette-backdrop" id="palette-backdrop" onclick="toggleTestPalette()"></div>
@@ -8988,6 +9332,10 @@ function buildPracticeQHTML(q) {
           <span class="q-badge ${q.type}">${q.type?.toUpperCase()}</span>
 
           <span class="q-badge ${q.difficulty}">${q.difficulty}</span>
+
+          ${isQuestionPyq(q) ? `<span class="chip" style="background:rgba(56,189,248,0.15);color:#38bdf8;font-weight:700">🏛️ GATE ${q.year || ''} PYQ</span>` : ''}
+
+          ${q.subject ? `<span class="chip">${q.subject}</span>` : ''}
 
           ${q.topic ? `<span class="chip">${q.topic}</span>` : ''}
 
@@ -9960,15 +10308,16 @@ function getFilteredAndSortedMocks(mockList) {
   // 1. Sub-series filter
   if (subSeries === 'pinned') {
     list = list.filter(m => state.pinnedMocks && state.pinnedMocks.has(m.id));
+  } else if (subSeries === 'hard-curated') {
+    list = list.filter(m => CURATED_HARD_MOCK_IDS.has(m.id) || (!m.id.startsWith('mock-hard-') && m.difficulty === 'hard' && !m.id.startsWith('mock-subwise-')));
   } else if (subSeries === 'hard-30') {
     list = list.filter(m => m.id.startsWith('mock-hard-'));
   } else if (subSeries === 'med-30') {
     list = list.filter(m => m.id.startsWith('mock-med-'));
   } else if (subSeries === 'easy-30') {
-    list = list.filter(m => m.id.startsWith('mock-easy-'));
+    list = list.filter(m => m.id.startsWith('mock-easy-') && !m.id.startsWith('mock-easy1-'));
   } else if (subSeries === 'easy1-30') {
     list = list.filter(m => m.id.startsWith('mock-easy1-'));
-    list = list.filter(m => m.id.startsWith('mock-easy-'));
   } else if (subSeries === 'flm-20') {
     list = list.filter(m => m.id.startsWith('mock-flm-'));
   } else if (subSeries === 'cat-10') {
@@ -10297,7 +10646,9 @@ function renderMocks(c, params={}){
   }
 
   const activeTab = params.tab || state.mockTab || 'all';
-  if (params.tab && params.tab !== state.mockTab) {
+  if (params.subSeries) {
+    state.mockSubSeries = params.subSeries;
+  } else if (params.tab && params.tab !== state.mockTab) {
     state.mockSubSeries = 'all';
   }
   state.mockTab = activeTab;
@@ -10475,6 +10826,7 @@ function buildMockSortBar(list, sectionName) {
       <div class="mock-subseries-pills">
         <span style="font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase">Series:</span>
         <button class="mock-subseries-pill ${subSeries==='all'?'active':''}" onclick="setMockSubSeries('all')">All Hard (${list.length})</button>
+        <button class="mock-subseries-pill ${subSeries==='hard-curated'?'active':''}" onclick="setMockSubSeries('hard-curated')">🔴 32 Hard Mocks Series (32)</button>
         <button class="mock-subseries-pill ${subSeries==='hard-30'?'active':''}" onclick="setMockSubSeries('hard-30')">🔥 30 Extreme Hard Series (30)</button>
         <button class="mock-subseries-pill ${subSeries==='pinned'?'active':''}" onclick="setMockSubSeries('pinned')">⭐ Target Mocks (${(state.pinnedMocks||new Set()).size})</button>
         <button class="mock-subseries-pill ${subSeries==='me-mocks'?'active':''}" onclick="setMockSubSeries('me-mocks')">📘 Comprehensive Advance (9)</button>
@@ -18945,6 +19297,10 @@ function setupKeyboardShortcuts() {
       if (calcState.isOpen) { toggleGateCalc(false); return; }
 
       if (shortcutsModalOpen) { toggleShortcutsModal(false); return; }
+      if (document.getElementById('diagram-lightbox-card')?.classList.contains('active')) { closeDiagramLightbox(); return; }
+      if (document.getElementById('exam-qp-modal')?.classList.contains('active')) { closeExamQuestionPaper(); return; }
+      if (document.getElementById('exam-instructions-modal')?.classList.contains('active')) { closeExamInstructions(); return; }
+      if (document.getElementById('custom-test-modal')?.classList.contains('active')) { toggleCustomTestModal(false); return; }
 
       const palette = document.getElementById('test-sidebar');
 
@@ -19189,6 +19545,34 @@ function setupKeyboardShortcuts() {
         e.preventDefault();
 
         clearTestResponse();
+
+        return;
+
+      }
+
+      if ((e.key === 'q' || e.key === 'Q') && e.altKey) {
+
+        e.preventDefault();
+
+        const qpModal = document.getElementById('exam-qp-modal');
+
+        if (qpModal && qpModal.classList.contains('active')) closeExamQuestionPaper();
+
+        else openExamQuestionPaper();
+
+        return;
+
+      }
+
+      if ((e.key === 'i' || e.key === 'I') && e.altKey) {
+
+        e.preventDefault();
+
+        const instModal = document.getElementById('exam-instructions-modal');
+
+        if (instModal && instModal.classList.contains('active')) closeExamInstructions();
+
+        else openExamInstructions();
 
         return;
 
@@ -27001,6 +27385,14 @@ Object.assign(window, {
 
   updateFilter,
 
+  togglePracticePyqFilter,
+
+  updatePracticeSort,
+
+  resetPracticeQuickFilters,
+
+  isQuestionPyq,
+
   updatePracticeSearch,
 
   setPracticePage,
@@ -27194,6 +27586,10 @@ Object.assign(window, {
   setTopicPyqType,
 
   toggleSyllabusGuide,
+
+  filterSyllabusCategory,
+
+  filterSyllabusSearch,
 
   jumpToSubjectPYQs,
 

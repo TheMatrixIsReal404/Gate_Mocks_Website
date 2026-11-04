@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://thematrixisreal404.github.io/Gate_Mocks_Website/"><img src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo" /></a>
   <img src="https://img.shields.io/badge/Question%20Bank-25%2C402%20Verified-blue?style=for-the-badge&logo=googleforms&logoColor=white" alt="Question Bank" />
-  <img src="https://img.shields.io/badge/Full%20Mocks-223%20Tests-purple?style=for-the-badge" alt="Full Mocks" />
+  <img src="https://img.shields.io/badge/Full%20Mocks-231%20Tests-purple?style=for-the-badge" alt="Full Mocks" />
   <img src="https://img.shields.io/badge/PYQs-1990--2025%20(35%20Years)-orange?style=for-the-badge" alt="PYQs" />
   <img src="https://img.shields.io/badge/Offline%20PWA-100%25%20Available-brightgreen?style=for-the-badge&logo=pwa" alt="PWA Ready" />
   <img src="https://img.shields.io/badge/Verification%20Suite-112%2F112%20Passing-brightgreen?style=for-the-badge" alt="Tests Passing" />
@@ -17,7 +17,7 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 ### 🌐 Quick Access & Deployment
 * **⚡ Live Web Application (GitHub Pages)**: [https://thematrixisreal404.github.io/Gate_Mocks_Website/](https://thematrixisreal404.github.io/Gate_Mocks_Website/)
 * **📱 Progressive Web App (PWA)**: Installable directly on Windows, macOS, Android, and iOS as a standalone native desktop/mobile app with offline cache.
-* **📴 Zero-Friction Guest Mode**: Click *"Continue as Guest (Offline Mode)"* for instantaneous access to all 25,402 questions and 223 mock tests without requiring credentials.
+* **📴 Zero-Friction Guest Mode**: Click *"Continue as Guest (Offline Mode)"* for instantaneous access to all 25,402 questions, 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), and 244 total mock papers without requiring credentials.
 
 ---
 
@@ -79,7 +79,7 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 
 ### 2. Database & Data Storage Layer
 * **Master Question Bank (`data/sample_questions.json`)**:
-  * Master JSON datastore comprising **25,402 total verified questions** (17,942 unique canonical questions, 7,494 with full step-by-step explanations, 1,198 with archive answer key verification pending).
+  * Master JSON datastore comprising **25,402 total verified questions** (23,438 unique canonical questions, 13,891 with full step-by-step explanations, 12,117 MCQs, 3,011 MSQs, 10,274 NATs, and 2,185 official GATE PYQs).
   * Enriched with 11,745 curated practice questions across Weekly Topic Tests, National Test Series, Advanced Quizzes, and Subject Practice Workbooks.
   * Tagged with `canonicalId` and supported by `data/id_aliases.json` for airtight cross-mock deduplication during practice drills while preserving authentic 65-question papers in full-length mock exams.
   * Pre-cached via Service Worker `gate-cse-v8.x` for immediate instant retrieval offline.
@@ -211,17 +211,17 @@ The entire platform's **25,402 questions**, topic tags, and practice modules are
 
 | Section | Title | Topics & Sub-Domains (Official Specification Alignment) | Questions in Bank |
 | :--- | :--- | :--- | :--- |
-| **Section 1** | **Engineering Mathematics & Discrete Math** | **Discrete Mathematics**: Propositional and first order logic. Sets, relations, functions, partial orders and lattices. Monoids, Groups. Graphs: connectivity, matching, coloring. Combinatorics: counting, recurrence relations, generating functions.<br>**Linear Algebra**: Matrices, determinants, system of linear equations, eigenvalues and eigenvectors, LU decomposition.<br>**Calculus**: Limits, continuity and differentiability. Maxima and minima. Mean value theorem. Integration.<br>**Probability and Statistics**: Random variables. Uniform, normal, exponential, poisson and binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem. | **5,049 Q** (3,144 EM + 1,905 DM) |
-| **Section 2** | **Digital Logic** | Boolean algebra. Combinational and sequential circuits. Minimization (algebraic technique, K-maps, tabular method). Number representations and computer arithmetic (fixed and floating point). | **1,125 Q** |
-| **Section 3** | **Computer Organization and Architecture** | Machine instructions and addressing modes. ALU, data-path and control unit (hardwired and microprogrammed). Instruction pipelining, pipeline hazards. Memory hierarchy: cache, main memory and secondary storage; I/O interface (interrupt and DMA mode). | **1,567 Q** |
-| **Section 4** | **Programming and Data Structures** | Programming in C. Recursion. Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs. | **2,758 Q** (889 C + 1,869 DS) |
-| **Section 5** | **Algorithms** | Searching, sorting, hashing. Asymptotic worst case time and space complexity. Algorithm design techniques: greedy, dynamic programming and divide-and-conquer. Graph traversals, minimum spanning trees, shortest paths. | **1,122 Q** |
-| **Section 6** | **Theory of Computation** | Regular expressions and finite automata. Context-free grammars and push-down automata. Regular and context-free languages, pumping lemma. Turing machines and undecidability. | **1,666 Q** |
-| **Section 7** | **Compiler Design** | Lexical analysis, parsing, syntax-directed translation. Runtime environments. Intermediate code generation. Local optimisation, Data flow analyses: constant propagation, liveness analysis, common subexpression elimination. | **835 Q** |
-| **Section 8** | **Operating Systems** | System calls, processes, threads, inter-process communication, concurrency and synchronization, deadlocks. CPU and I/O scheduling. Memory management and virtual memory. File systems. | **1,676 Q** |
-| **Section 9** | **Databases (DBMS)** | ER-model. Relational model: relational algebra, tuple calculus, SQL. Integrity constraints, normal forms. File organization, indexing (e.g., B and B+ trees). Transactions and concurrency control. | **1,531 Q** |
-| **Section 10** | **Computer Networks** | Concept of layering: OSI and TCP/IP protocol stacks; Basics of packet, circuit and virtual circuit switching; Data link layer: framing, error detection, Medium Access Control, Ethernet bridging; Routing protocols: shortest path, flooding, distance vector and link state routing; Fragmentation and IP addressing (IPv4, CIDR, NAT); Transport layer: flow control and congestion control, UDP, TCP, sockets; Application layer protocols: DNS, SMTP, HTTP, FTP, Email. | **1,694 Q** |
-| **GA** | **General Aptitude** | **Verbal Aptitude**: Basic English grammar, vocabulary, reading comprehension, narrative sequencing.<br>**Quantitative Aptitude**: Data interpretation, numerical computation and estimation (ratios, percentages, powers, exponents, series, permutations, combinations).<br>**Analytical Aptitude**: Logic, deduction, analogy, numerical relations and reasoning.<br>**Spatial Aptitude**: Transformation of shapes (translation, rotation, scaling, mirroring, paper folding), patterns in 2 and 3 dimensions. | **2,479 Q** |
+| **Section 1** | **Engineering Mathematics & Discrete Math** | **Discrete Mathematics**: Propositional and first order logic. Sets, relations, functions, partial orders and lattices. Monoids, Groups. Graphs: connectivity, matching, coloring. Combinatorics: counting, recurrence relations, generating functions.<br>**Linear Algebra**: Matrices, determinants, system of linear equations, eigenvalues and eigenvectors, LU decomposition.<br>**Calculus**: Limits, continuity and differentiability. Maxima and minima. Mean value theorem. Integration.<br>**Probability and Statistics**: Random variables. Uniform, normal, exponential, poisson and binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem. | **5,529 Q** (3,384 EM + 2,145 DM) |
+| **Section 2** | **Digital Logic** | Boolean algebra. Combinational and sequential circuits. Minimization (algebraic technique, K-maps, tabular method). Number representations and computer arithmetic (fixed and floating point). | **1,305 Q** |
+| **Section 3** | **Computer Organization and Architecture** | Machine instructions and addressing modes. ALU, data-path and control unit (hardwired and microprogrammed). Instruction pipelining, pipeline hazards. Memory hierarchy: cache, main memory and secondary storage; I/O interface (interrupt and DMA mode). | **1,867 Q** |
+| **Section 4** | **Programming and Data Structures** | Programming in C. Recursion. Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs. | **3,148 Q** (1,009 C + 2,139 DS) |
+| **Section 5** | **Algorithms** | Searching, sorting, hashing. Asymptotic worst case time and space complexity. Algorithm design techniques: greedy, dynamic programming and divide-and-conquer. Graph traversals, minimum spanning trees, shortest paths. | **1,512 Q** |
+| **Section 6** | **Theory of Computation** | Regular expressions and finite automata. Context-free grammars and push-down automata. Regular and context-free languages, pumping lemma. Turing machines and undecidability. | **1,966 Q** |
+| **Section 7** | **Compiler Design** | Lexical analysis, parsing, syntax-directed translation. Runtime environments. Intermediate code generation. Local optimisation, Data flow analyses: constant propagation, liveness analysis, common subexpression elimination. | **1,015 Q** |
+| **Section 8** | **Operating Systems** | System calls, processes, threads, inter-process communication, concurrency and synchronization, deadlocks. CPU and I/O scheduling. Memory management and virtual memory. File systems. | **2,066 Q** |
+| **Section 9** | **Databases (DBMS)** | ER-model. Relational model: relational algebra, tuple calculus, SQL. Integrity constraints, normal forms. File organization, indexing (e.g., B and B+ trees). Transactions and concurrency control. | **1,831 Q** |
+| **Section 10** | **Computer Networks** | Concept of layering: OSI and TCP/IP protocol stacks; Basics of packet, circuit and virtual circuit switching; Data link layer: framing, error detection, Medium Access Control, Ethernet bridging; Routing protocols: shortest path, flooding, distance vector and link state routing; Fragmentation and IP addressing (IPv4, CIDR, NAT); Transport layer: flow control and congestion control, UDP, TCP, sockets; Application layer protocols: DNS, SMTP, HTTP, FTP, Email. | **2,084 Q** |
+| **GA** | **General Aptitude** | **Verbal Aptitude**: Basic English grammar, vocabulary, reading comprehension, narrative sequencing.<br>**Quantitative Aptitude**: Data interpretation, numerical computation and estimation (ratios, percentages, powers, exponents, series, permutations, combinations).<br>**Analytical Aptitude**: Logic, deduction, analogy, numerical relations and reasoning.<br>**Spatial Aptitude**: Transformation of shapes (translation, rotation, scaling, mirroring, paper folding), patterns in 2 and 3 dimensions. | **3,079 Q** |
 | **Total** | **All 13 GATE CS Subjects** | **Complete authentic calibrated datastore across all 87 syllabus chapters** | **25,402 Q** |
 
 > [!NOTE]
@@ -283,6 +283,24 @@ The entire platform's **25,402 questions**, topic tags, and practice modules are
 * Synthesized Web Audio pacing chimes at 60m, 30m, and 5m milestones.
 * Fullscreen exam lockdown with proctored tab-switch alerts (<kbd>F</kbd>).
 
+### 11. 🏆 Curated GATE Exam Series & Flagship Compendiums (210 Mocks Hub • 231 Full Exams)
+The dashboard and mock examination hub feature **8 distinct Flagship Compendiums** comprising **210 full-length & practice mock exams** in the Mocks Hub plus **21 authentic Full-Length PYQ Exams** (**231 Full-Length Timed Exams total**), precisely graded and calibrated from foundational recall up to extreme-difficulty national rankers:
+
+| # | Flagship Series | Tests | Questions | Difficulty / Caliber | Source / Composition |
+| :-: | :--- | :-: | :-: | :-: | :--- |
+| **1** | **65 Easy Mock Tests** | 65 | 4,225 Q | **3.5 / 10** | Direct formulas, canonical definitions, and core scoring fundamentals strictly aligned with the IISc/IIT syllabus (Includes 30 Set 1, 30 Set 2, and 5 Foundational Tests). |
+| **2** | **83 Medium Mock Tests** | 83 | 5,395 Q | **5.0 / 10** | Standard GATE CS difficulty with multi-step NAT numericals, cache/pipeline timing, logic, and comprehensive algorithms across 83 calibrated exams (`mock-med-01` to `30`, 10 FLM, 18 All-India, 11 Comprehensive, 14 Practice/Core). |
+| **3** | **32 Hard Mock Tests** | 32 | 2,080 Q | **7.5 / 10** | Curated Rank Booster Series: 32 advanced mock exams (Mocks 1–4, 10–14, 25, 29–32, 38–41, 59–68, 71, 73, 83 + Advanced Papers) testing deep conceptual mastery and multi-step derivations. |
+| **4** | **30 Extreme Hard Mock Tests** | 30 | 1,950 Q | **8.5 / 10** | Capstone extreme-difficulty examinations (`mock-hard-01` to `30`, 1,950 Qs from `sources/hard_mocks.docx` / `data/gate_30_hard_mocks.json`) testing multi-concept proofs, subtle edge cases, and high-pressure rigor. |
+| **5** | **20 Full Mocks Compendium** | 20 | 1,300 Q | **7.0 / 10** | FLM full-length mocks compendium (`mock-flm-01` to `20`) testing comprehensive multi-subject integration and edge-case analysis. |
+| **6** | **27 All-India Mocks** | 27 | 1,568 Q | **7.2 / 10** | Rigorous full-length All-India Mock Tests (2025–2026 series) crafted for national percentile calibration and rank simulation. |
+| **7** | **21 Comprehensive Full Mocks** | 21 | 1,409 Q | **7.5 / 10** | Elite coaching compendium featuring Advance & Basic Level Full Syllabus Tests and National Mock Papers (2023–2024). |
+| **8** | **21 Full-Length PYQ Exams** | 21 | 2,224 Q | **Official** | Complete authentic year-wise examination papers from 2007 to 2025 in a realistic 180-minute timed environment. |
+| **Total** | **Hard Mocks Tier** | **62** | **4,030 Q** | **7.5 – 8.5 / 10** | **32 Hard Mocks + 30 Extreme Hard Mocks = 62 Hard Mocks** |
+| **Total** | **Mocks Hub Collection** | **210** | **13,650 Q** | **All Levels** | **65 Easy + 83 Medium + 62 Hard = 210 Exam Papers** |
+| **Total** | **Full 180-Min Timed Exams**| **231** | **15,874 Q** | **Comprehensive** | **210 Mocks Hub + 21 Full-Length PYQ Exams = 231 Full Exams** |
+| **Total** | **Complete Platform Papers**| **244** | **17,044 Q** | **Master Suite** | **231 Full Exams + 13 Subject-Wise Mocks = 244 Mock Tests** |
+
 ---
 
 ## 📂 Project Structure
@@ -307,8 +325,10 @@ Gate_Mocks_Website/
 │
 ├── data/                        # Active production databases
 │   ├── sample_questions.json    # Master database: 25,402 verified questions with solutions
+│   ├── gate_30_hard_mocks.json  # Standalone 30 Extreme Hard Mocks dataset (1,950 questions)
 │   ├── gate_30_medium_mocks.json# Standalone 30 Medium Mocks dataset (1,950 questions)
-│   ├── gate_30_easy_mocks.json  # Standalone 30 Easy Mocks dataset (1,950 questions)
+│   ├── gate_30_easy_mocks.json  # Standalone 30 Easy Mocks (Set 1) dataset (1,950 questions)
+│   ├── gate_30_easy1_mocks.json # Standalone 30 Easy Mocks (Set 2) dataset (1,950 questions)
 │   ├── gate_20_full_mocks.json  # 20 Full-Length Mocks Compendium (1,300 questions)
 │   ├── gate_easy_medium_mocks.json # Category 1 & 2 Mocks (650 questions)
 │   ├── gate_2025_pyqs.json      # GATE 2025 Set 1 & Set 2 complete papers (130 questions)
@@ -317,6 +337,7 @@ Gate_Mocks_Website/
 │
 ├── sources/                     # Raw offline source documents & historical reference papers
 │   ├── CS_All_Old_Papers.pdf    # Master 47MB scanned archive (1990-2024)
+│   ├── hard_mocks.docx          # Word source for 30 Extreme Hard-Level Full-Length Mock Exams
 │   ├── easy_mocks.docx          # Word source for 30 Easy-Level Full-Length Mock Exams
 │   ├── medium_mocks.docx        # Word source for 30 Medium-Level Full-Length Mock Exams
 │   ├── mocks.docx               # Word compendium of 20 Full-Length Mocks with calibration table
@@ -342,8 +363,8 @@ Gate_Mocks_Website/
 ## 📝 Release Highlights & Architecture
 
 ### Master Platform Release (v8.x) — Authentic TCS iON GATE Simulation
-* **🏛️ 21,500+ Verified Question Bank**:
-  * Comprehensive datastore spanning official GATE PYQs (1990–2025, 35 years), 223 full-length mock examinations (Foundational Easy, Standard Medium, Rank Booster Hard, All-India & Comprehensive), and topic-wise practice workbooks.
+* **🏛️ 25,402 Verified Question Bank**:
+  * Comprehensive datastore spanning official GATE PYQs (1990–2025, 35 years), 231 full-length timed mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard (32 Hard + 30 Extreme Hard)] + 21 Official PYQ Exams), 13 subject-wise tests, and 7 practice sets (244 total mock papers).
   * Zero-duplicate canonical mapping with high-resolution visual question cards and cropped schematics (`assets/diagrams/`).
   * Prism.js syntax highlighting for C programs and multi-line KaTeX LaTeX math protection.
 * **🎯 Authentic TCS iON Exam Simulation**:
@@ -386,7 +407,7 @@ npx serve .
 
 ## 🔑 Authentication, Admin Accounts & Access
 * **Guest Access (No Login Required)**:
-  * Click **"📴 Continue as Guest (Offline Mode)"** on the sign-in modal to immediately access all 25,402 practice questions, 80 full-length mocks, 21 PYQ papers, and the virtual calculator without internet or credentials.
+  * Click **"📴 Continue as Guest (Offline Mode)"** on the sign-in modal to immediately access all 25,402 practice questions, 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), 21 PYQ papers, and the virtual calculator without internet or credentials.
   * Automatic fallback transition activates if Firebase network handshakes experience latency.
 * **Student Sign In / Sign Up**:
   * Enter any valid email address and password to sync bookmarks, test history, notes, and custom flashcards across devices via Firebase Cloud Firestore.
