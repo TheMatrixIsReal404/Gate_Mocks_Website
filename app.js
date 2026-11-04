@@ -8887,6 +8887,18 @@ function renderPracticeQuestion() {
 
     </div>
 
+    ${questions.length >= 65 ? `
+    <div class="test-section-bar" id="test-section-bar">
+      <div class="test-section-tab ${state.activeTest.currentQ < 10 ? 'active' : ''}" id="sec-tab-ga" onclick="switchTestSection('ga')">
+        <span class="sec-name">Section 1: General Aptitude (GA)</span>
+        <span class="sec-meta">Q1–Q10 • 15 Marks</span>
+      </div>
+      <div class="test-section-tab ${state.activeTest.currentQ >= 10 ? 'active' : ''}" id="sec-tab-cs" onclick="switchTestSection('cs')">
+        <span class="sec-name">Section 2: Computer Science & IT (CS)</span>
+        <span class="sec-meta">Q11–Q65 • 85 Marks</span>
+      </div>
+    </div>` : ''}
+
     <div class="test-content">
 
       <div class="palette-backdrop" id="palette-backdrop" onclick="toggleTestPalette()"></div>
@@ -8997,7 +9009,7 @@ function buildPracticeQHTML(q) {
 
           </button>
 
-          <span class="chip">+${q.marks} marks</span>
+          <span class="chip ${q.type === 'mcq' ? 'penalty-chip' : 'zero-penalty-chip'}" title="${q.type === 'mcq' ? `Negative mark penalty: ${(q.marks/3).toFixed(2)} marks for wrong answer` : 'Zero negative marking for this question'}">+${q.marks} / ${q.type === 'mcq' ? `-${(q.marks/3).toFixed(2)}` : '0 penalty'}</span>
 
         </div>
 
@@ -11476,6 +11488,12 @@ function renderTestMode(){
 
       <div class="test-topbar-right">
 
+        <div class="test-autosave-badge" id="test-autosave-badge" title="Response auto-saved to device">☁️ <span id="test-autosave-time">Saved</span></div>
+
+        <button class="btn btn-secondary btn-sm" onclick="openExamQuestionPaper()" type="button" title="View Full Question Paper (Read-Only)">📄 <span class="hide-xs">Paper</span></button>
+
+        <button class="btn btn-secondary btn-sm" onclick="openExamInstructions()" type="button" title="Official GATE Exam Instructions">ℹ️ <span class="hide-xs">Inst</span></button>
+
         <button class="btn btn-secondary btn-sm" id="exam-fullscreen-btn" onclick="toggleExamFullscreen()" type="button" title="Toggle Fullscreen Exam Mode (F)">⛶ <span class="hide-xs">Fullscreen</span></button>
 
         <button class="btn btn-secondary btn-sm" onclick="toggleGateCalc()" type="button" title="GATE Virtual Calculator (C)">🧮 <span class="hide-xs">Calc</span></button>
@@ -11495,6 +11513,18 @@ function renderTestMode(){
       </div>
 
     </div>
+
+    ${questions.length >= 65 ? `
+    <div class="test-section-bar" id="test-section-bar">
+      <div class="test-section-tab ${state.activeTest.currentQ < 10 ? 'active' : ''}" id="sec-tab-ga" onclick="switchTestSection('ga')">
+        <span class="sec-name">Section 1: General Aptitude (GA)</span>
+        <span class="sec-meta">Q1–Q10 • 15 Marks</span>
+      </div>
+      <div class="test-section-tab ${state.activeTest.currentQ >= 10 ? 'active' : ''}" id="sec-tab-cs" onclick="switchTestSection('cs')">
+        <span class="sec-name">Section 2: Computer Science & IT (CS)</span>
+        <span class="sec-meta">Q11–Q65 • 85 Marks</span>
+      </div>
+    </div>` : ''}
 
     <div class="test-content">
 
@@ -11596,7 +11626,7 @@ function renderTestQuestion(){
 
           </button>
 
-          <span class="chip">+${q.marks} marks</span>
+          <span class="chip ${q.type === 'mcq' ? 'penalty-chip' : 'zero-penalty-chip'}" title="${q.type === 'mcq' ? `Negative mark penalty: ${(q.marks/3).toFixed(2)} marks for wrong answer` : 'Zero negative marking for this question'}">+${q.marks} / ${q.type === 'mcq' ? `-${(q.marks/3).toFixed(2)}` : '0 penalty'}</span>
 
         </div>
 
@@ -11823,6 +11853,13 @@ function jumpToTestQ(i){
   state.activeTest.currentQ=i;
 
   state.activeTest.visited.add(i);
+
+  const tabGa = document.getElementById('sec-tab-ga');
+  const tabCs = document.getElementById('sec-tab-cs');
+  if (tabGa && tabCs) {
+    tabGa.classList.toggle('active', i < 10);
+    tabCs.classList.toggle('active', i >= 10);
+  }
 
   renderTestQuestion();
 
@@ -12254,9 +12291,23 @@ function showTestResult(session,questions,answers){
 
         </button>
 
+        <button class="btn btn-secondary btn-sm copy-scorecard-btn" onclick="copyScorecardToClipboard()" type="button">
+
+          📋 Copy Scorecard
+
+        </button>
+
       </div>
 
       <div class="section-title mb-4" style="margin-top:14px">Detailed Question Review</div>
+
+      <div class="result-review-filters" style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+        <button class="chip active" id="rf-all" onclick="filterResultReview('all', this)" type="button">All (${questions.length})</button>
+        <button class="chip" id="rf-wrong" onclick="filterResultReview('wrong', this)" type="button" style="color:var(--red);border-color:rgba(239,68,68,0.4)">❌ Wrong (${session.incorrectCount})</button>
+        <button class="chip" id="rf-skip" onclick="filterResultReview('skip', this)" type="button" style="color:var(--text-muted)">⚪ Unattempted (${session.unattemptedCount})</button>
+        <button class="chip" id="rf-correct" onclick="filterResultReview('correct', this)" type="button" style="color:var(--green);border-color:rgba(34,197,94,0.4)">✅ Correct (${session.correctCount})</button>
+        <button class="chip" id="rf-overtime" onclick="filterResultReview('overtime', this)" type="button" style="color:var(--accent);border-color:rgba(108,99,255,0.4)">⏱️ Overtime >3.5m (${overtimeCount})</button>
+      </div>
 
       ${questions.map((q,i)=>{
 
@@ -12282,7 +12333,7 @@ function showTestResult(session,questions,answers){
 
 
 
-        return `<div class="card mb-4" id="result-q-${i}" style="border-left:3px solid ${clr}">
+        return `<div class="card mb-4 review-q-card" id="result-q-${i}" data-review-status="${skip ? 'skip' : ok ? 'correct' : 'wrong'}" data-overtime="${qSec > 210 ? '1' : '0'}" style="border-left:3px solid ${clr}">
 
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
 
@@ -15992,6 +16043,18 @@ function saveExamAutoSaveState() {
 
     localStorage.setItem(AUTOSAVE_TEST_KEY, JSON.stringify(copy));
 
+    const timeEl = document.getElementById('test-autosave-time');
+    const badgeEl = document.getElementById('test-autosave-badge');
+    if (timeEl) {
+      const d = new Date();
+      timeEl.textContent = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+    if (badgeEl) {
+      badgeEl.classList.remove('autosave-pulse');
+      void badgeEl.offsetWidth;
+      badgeEl.classList.add('autosave-pulse');
+    }
+
   } catch(e) {}
 
 }
@@ -16280,11 +16343,11 @@ function buildMasteryMatrixHTML() {
 
 
 
-  const gaStats = getPillarStats(q => q.subject === 'General Aptitude');
+  const gaStats = getPillarStats(q => q.subject === 'Aptitude' || q.subject === 'General Aptitude');
 
   const emStats = getPillarStats(q => ['Engineering Mathematics', 'Discrete Mathematics'].includes(q.subject));
 
-  const csStats = getPillarStats(q => q.subject !== 'General Aptitude' && !['Engineering Mathematics', 'Discrete Mathematics'].includes(q.subject));
+  const csStats = getPillarStats(q => q.subject !== 'Aptitude' && q.subject !== 'General Aptitude' && !['Engineering Mathematics', 'Discrete Mathematics'].includes(q.subject));
 
 
 
@@ -17415,6 +17478,7 @@ function updateCalcUI() {
 
 
 function calcInput(ch) {
+  playUiClickSound();
 
   if (ch === 'pi') {
 
@@ -17607,6 +17671,7 @@ function calcMem(op) {
 
 
 function calcFn(fn) {
+  playUiClickSound();
 
   const val = parseFloat(calcState.display) || 0;
 
@@ -17795,6 +17860,7 @@ function calcFn(fn) {
 
 
 function calcEval() {
+  playUiClickSound();
 
   try {
 
@@ -23927,6 +23993,7 @@ function executeGlobalSearch(rawQuery) {
   const qStr = (rawQuery || '').trim().toLowerCase();
 
   const filterType = state.globalSearchFilter || 'all';
+  const filterSubject = state.globalSearchSubject || 'all';
 
 
 
@@ -23953,6 +24020,7 @@ function executeGlobalSearch(rawQuery) {
   let matches = (state.questions || []).filter(q => {
 
     if (filterType !== 'all' && q.type !== filterType) return false;
+    if (filterSubject !== 'all' && q.subject !== filterSubject) return false;
 
     const hay = q._searchHaystack || ((q.question || '') + ' ' + (q.subject || '') + ' ' + (q.topic || '') + ' ' + (q.explanation || '')).toLowerCase();
 
@@ -26492,7 +26560,249 @@ function nearDuplicate(a, b) {
 
 
 
+
+// ─── TCS iON SECTION SWITCHING & REVIEW FILTERING ────────────────────────────
+function switchTestSection(sec) {
+  if (!state.activeTest || !state.activeTest.questions) return;
+  const targetQ = sec === 'ga' ? 0 : 10;
+  if (targetQ < state.activeTest.questions.length) {
+    jumpToTestQ(targetQ);
+  }
+}
+
+function filterResultReview(status, btnEl) {
+  document.querySelectorAll('.result-review-filters .chip').forEach(c => c.classList.remove('active'));
+  if (btnEl) btnEl.classList.add('active');
+  const cards = document.querySelectorAll('.review-q-card');
+  cards.forEach(card => {
+    if (status === 'all') {
+      card.style.display = 'block';
+    } else if (status === 'overtime') {
+      card.style.display = card.getAttribute('data-overtime') === '1' ? 'block' : 'none';
+    } else {
+      card.style.display = card.getAttribute('data-review-status') === status ? 'block' : 'none';
+    }
+  });
+}
+
+function openCustomTestModal() {
+  toggleCustomDrillModal(true);
+}
+
+function toggleCustomTestModal(open) {
+  toggleCustomDrillModal(open);
+}
+
+
+
+// ─── TCS iON QUESTION PAPER FULL OVERVIEW ────────────────────────────────────
+function openExamQuestionPaper() {
+  if (!state.activeTest || !state.activeTest.questions) {
+    showToast('No active exam paper to display', 'info');
+    return;
+  }
+  const modal = document.getElementById('exam-qp-modal');
+  const backdrop = document.getElementById('exam-qp-backdrop');
+  const title = document.getElementById('exam-qp-title');
+  if (title && state.activeTest.mock) {
+    title.textContent = `${state.activeTest.mock.name} — Full Question Paper`;
+  }
+  renderExamQuestionPaper('all');
+  if (modal && backdrop) {
+    modal.classList.add('active');
+    backdrop.classList.add('active');
+  }
+}
+
+function closeExamQuestionPaper() {
+  const modal = document.getElementById('exam-qp-modal');
+  const backdrop = document.getElementById('exam-qp-backdrop');
+  if (modal) modal.classList.remove('active');
+  if (backdrop) backdrop.classList.remove('active');
+}
+
+function filterExamQuestionPaper(sec, btnEl) {
+  const filters = document.getElementById('exam-qp-filters');
+  if (filters && btnEl) {
+    filters.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    btnEl.classList.add('active');
+  }
+  renderExamQuestionPaper(sec);
+}
+
+function renderExamQuestionPaper(filter = 'all') {
+  const body = document.getElementById('exam-qp-body');
+  if (!body || !state.activeTest || !state.activeTest.questions) return;
+  const questions = state.activeTest.questions;
+  const labels = ['A', 'B', 'C', 'D', 'E'];
+
+  let items = questions.map((q, idx) => ({ q, idx }));
+  if (filter === 'ga') {
+    items = items.filter(it => it.idx < 10);
+  } else if (filter === 'cs') {
+    items = items.filter(it => it.idx >= 10);
+  }
+
+  body.innerHTML = items.map(({ q, idx }) => `
+    <div class="exam-qp-item" id="qp-item-${idx}">
+      <div class="exam-qp-item-meta">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="chip" style="font-weight:700">Q${idx + 1}</span>
+          <span class="chip chip-info">${idx < 10 && questions.length >= 65 ? 'General Aptitude' : q.subject || 'CS'}</span>
+          <span class="q-badge ${q.type}">${q.type?.toUpperCase()}</span>
+          <span class="chip ${q.type === 'mcq' ? 'penalty-chip' : 'zero-penalty-chip'}">+${q.marks} / ${q.type === 'mcq' ? `-${(q.marks/3).toFixed(2)}` : '0 penalty'}</span>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="closeExamQuestionPaper(); jumpToTestQ(${idx});" type="button" style="padding:3px 10px;font-size:12px;font-weight:700">
+          ▶ Jump to Q${idx + 1}
+        </button>
+      </div>
+      <div class="exam-qp-qtext">${formatQuestionContent(q.question)}</div>
+      ${q.options && q.options.length ? `
+        <div class="exam-qp-options">
+          ${q.options.map((opt, optIdx) => `
+            <div style="font-size:13px;padding:6px 10px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px">
+              <strong>${labels[optIdx]}.</strong> ${formatQuestionContent(opt)}
+            </div>
+          `).join('')}
+        </div>` : ''}
+    </div>
+  `).join('');
+
+  if (window.renderMath) renderMath(body);
+}
+
+// ─── TCS iON EXAM INSTRUCTIONS ───────────────────────────────────────────────
+function openExamInstructions() {
+  const modal = document.getElementById('exam-inst-modal');
+  const backdrop = document.getElementById('exam-inst-backdrop');
+  if (modal && backdrop) {
+    modal.classList.add('active');
+    backdrop.classList.add('active');
+  }
+}
+
+function closeExamInstructions() {
+  const modal = document.getElementById('exam-inst-modal');
+  const backdrop = document.getElementById('exam-inst-backdrop');
+  if (modal) modal.classList.remove('active');
+  if (backdrop) backdrop.classList.remove('active');
+}
+
+// ─── DIAGRAM LIGHTBOX (CLICK-TO-ZOOM) ────────────────────────────────────────
+let currentLightboxScale = 1;
+
+function openDiagramLightbox(src, title) {
+  const modal = document.getElementById('diagram-lightbox-card');
+  const backdrop = document.getElementById('diagram-lightbox-backdrop');
+  const img = document.getElementById('diagram-lightbox-img');
+  const titleEl = document.getElementById('diagram-lightbox-title');
+  if (!modal || !backdrop || !img) return;
+
+  img.src = src;
+  currentLightboxScale = 1;
+  img.style.transform = `scale(1)`;
+  if (titleEl && title) titleEl.textContent = `🔍 ${title}`;
+
+  modal.classList.add('active');
+  backdrop.classList.add('active');
+}
+
+function closeDiagramLightbox() {
+  const modal = document.getElementById('diagram-lightbox-card');
+  const backdrop = document.getElementById('diagram-lightbox-backdrop');
+  if (modal) modal.classList.remove('active');
+  if (backdrop) backdrop.classList.remove('active');
+}
+
+function zoomDiagramLightbox(delta) {
+  const img = document.getElementById('diagram-lightbox-img');
+  if (!img) return;
+  currentLightboxScale = Math.max(0.4, Math.min(3.5, currentLightboxScale + delta));
+  img.style.transform = `scale(${currentLightboxScale})`;
+}
+
+function resetDiagramLightboxZoom() {
+  const img = document.getElementById('diagram-lightbox-img');
+  if (!img) return;
+  currentLightboxScale = 1;
+  img.style.transform = `scale(1)`;
+}
+
+// Global click delegate for diagram images
+document.addEventListener('click', (e) => {
+  const target = e.target;
+  if (target && target.tagName === 'IMG' && (target.closest('.q-diagram-container') || target.closest('.question-text') || target.closest('.option-text'))) {
+    e.preventDefault();
+    openDiagramLightbox(target.src, target.alt || 'GATE Diagram');
+  }
+});
+
+// ─── 1-CLICK SHAREABLE PERFORMANCE SCORECARD ────────────────────────────────
+function copyScorecardToClipboard() {
+  if (!state.activeTestResults) return;
+  const { session } = state.activeTestResults;
+  const pred = calculateGatePrediction(session.score);
+  const acc = session.attemptedCount > 0 ? Math.round((session.correctCount / session.attemptedCount) * 100) : 0;
+  
+  const text = `🎯 GATE Mock Exam Scorecard: ${session.mockName || 'GATE Full Mock'}\n` +
+               `📊 Marks: ${session.score} / ${session.totalMarks || 100} (${session.percentage}%)\n` +
+               `🏆 Estimated AIR: ${pred.air} (Score: ${pred.score}/1000)\n` +
+               `✅ Correct: ${session.correctCount} | ❌ Wrong: ${session.incorrectCount} | ⚪ Skipped: ${session.unattemptedCount}\n` +
+               `⚡ Accuracy: ${acc}%\n` +
+               `⏱️ Duration: ${fmtH(session.timeSpentSeconds || 0)}\n` +
+               `🔗 Practiced on GATE CSE Platform (25,402 Questions & TCS iON Simulator)`;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('📋 Scorecard copied to clipboard!', 'success');
+    }).catch(() => {
+      showToast('Failed to copy scorecard to clipboard', 'error');
+    });
+  } else {
+    showToast('Clipboard API unavailable in this browser', 'info');
+  }
+}
+
+// ─── GLOBAL SEARCH SUBJECT FILTER ───────────────────────────────────────────
+function setGlobalSearchSubject(sub) {
+  state.globalSearchSubject = sub;
+  const input = document.getElementById('global-search-input');
+  if (input) executeGlobalSearch(input.value);
+}
+
 Object.assign(window, {
+  openExamQuestionPaper,
+
+  closeExamQuestionPaper,
+
+  filterExamQuestionPaper,
+
+  renderExamQuestionPaper,
+
+  openExamInstructions,
+
+  closeExamInstructions,
+
+  openDiagramLightbox,
+
+  closeDiagramLightbox,
+
+  zoomDiagramLightbox,
+
+  resetDiagramLightboxZoom,
+
+  copyScorecardToClipboard,
+
+  setGlobalSearchSubject,
+
+  switchTestSection,
+
+  filterResultReview,
+
+  openCustomTestModal,
+
+  toggleCustomTestModal,
+
 
   ADMIN_EMAILS,
 

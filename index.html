@@ -18,16 +18,16 @@
   </script>
   <noscript><style>body{display:block !important;}</style></noscript>
   <title>GATE CSE Practice Platform — Prepare Smart</title>
-  <meta name="description" content="A comprehensive GATE CSE practice platform with 21,502 verified questions, 85 full-length mocks, 35 years of PYQs (1990–2025), subject drills, performance analytics, and full offline PWA support." />
+  <meta name="description" content="A comprehensive GATE CSE practice platform with 25,402 verified questions, 223 full-length mocks, 35 years of PYQs (1990–2025), subject drills, performance analytics, and full offline PWA support." />
   
   <!-- Open Graph & Social Sharing Metadata -->
   <meta property="og:title" content="GATE CSE Practice Platform — Prepare Smart" />
-  <meta property="og:description" content="21,502 verified GATE questions, 85 full-length mock exams, 35 years of PYQs, TCS iON simulator, and offline study." />
+  <meta property="og:description" content="25,402 verified GATE questions, 223 full-length mock exams, 35 years of PYQs, TCS iON simulator, and offline study." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thematrixisreal404.github.io/Gate_Mocks_Website/" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="GATE CSE Practice Platform — Prepare Smart" />
-  <meta name="twitter:description" content="21,502 verified GATE questions, 85 full mocks, TCS iON simulator & offline study." />
+  <meta name="twitter:description" content="25,402 verified GATE questions, 223 full mocks, TCS iON simulator & offline study." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#6c63ff" />
@@ -147,7 +147,7 @@
       <div class="user-avatar">G</div>
       <div class="user-info">
         <div class="user-name">GATE Aspirant</div>
-        <div class="user-role">CSE 2025</div>
+        <div class="user-role">CSE 2026 / 2027</div>
       </div>
     </div>
   </div>
@@ -173,7 +173,7 @@
       <div class="topbar-streak-badge hide-xs" id="topbar-streak" title="Daily Study Streak">
         🔥 <span id="streak-text">1d (0/20 Q)</span>
       </div>
-      <button class="topbar-quick-btn" onclick="openGlobalSearch()" title="Global Search 21,502 Questions (/)" type="button">
+      <button class="topbar-quick-btn" onclick="openGlobalSearch()" title="Global Search 25,402 Questions (/)" type="button">
         <span class="btn-icon">🔍</span><span class="btn-label hide-xs">Search</span>
       </button>
       <button class="topbar-quick-btn" onclick="toggleGateCalc()" title="GATE Virtual Calculator (C)" type="button">
@@ -191,6 +191,9 @@
           </button>
           <button class="topbar-dropdown-item" onclick="toggleScribblePad();closeTopbarToolsMenu()" id="scribble-pad-btn" title="Virtual Scribble Pad (W)" aria-label="Virtual Scribble Pad" type="button">
             <span>📝 Virtual Scratchpad</span><span class="kbd-hint">W</span>
+          </button>
+          <button class="topbar-dropdown-item" onclick="openCustomTestModal();closeTopbarToolsMenu()" id="custom-test-btn" title="Generate Custom Topic & Subject Practice Test" aria-label="Custom Test Generator" type="button">
+            <span>🎯 Custom Test Generator</span><span class="kbd-hint">Build</span>
           </button>
           <button class="topbar-dropdown-item" onclick="openSprintModal();closeTopbarToolsMenu()" id="sprint-btn" title="Timed Subject Sprint Generator" aria-label="Timed Subject Sprint" type="button">
             <span>⚡ Section Sprint</span><span class="kbd-hint">Sprint</span>
@@ -372,7 +375,7 @@
     <div class="shortcut-group">
       <div class="shortcut-group-title">🧮 Tools & Navigation</div>
       <div class="shortcut-row"><span class="shortcut-desc">Toggle Theme (Dark / Light / High-Contrast)</span><span class="kbd-tags"><kbd>T</kbd></span></div>
-      <div class="shortcut-row"><span class="shortcut-desc">Global Search (21,502 Questions)</span><span class="kbd-tags"><kbd>/</kbd></span></div>
+      <div class="shortcut-row"><span class="shortcut-desc">Global Search (25,402 Questions)</span><span class="kbd-tags"><kbd>/</kbd></span></div>
       <div class="shortcut-row"><span class="shortcut-desc">Fullscreen Exam Mode</span><span class="kbd-tags"><kbd>F</kbd></span></div>
       <div class="shortcut-row"><span class="shortcut-desc">Random Practice Question</span><span class="kbd-tags"><kbd>R</kbd></span></div>
       <div class="shortcut-row"><span class="shortcut-desc">Virtual Scribble Pad (Rough Work)</span><span class="kbd-tags"><kbd>W</kbd></span></div>
@@ -451,12 +454,28 @@
 <div class="global-search-modal" id="global-search-modal" role="dialog" aria-modal="true">
   <div class="global-search-header">
     <span class="search-input-icon">🔍</span>
-    <input type="text" id="global-search-input" placeholder="Search 21,502 questions by topic, algorithm, theorem, keyword (Press /)..." oninput="handleGlobalSearchInput(this.value)" autocomplete="off" />
+    <input type="text" id="global-search-input" placeholder="Search 25,402 questions by topic, algorithm, theorem, keyword (Press /)..." oninput="handleGlobalSearchInput(this.value)" autocomplete="off" />
     <button class="shortcuts-close-btn" onclick="closeGlobalSearch()" type="button">✕</button>
   </div>
   <div class="global-search-subbar">
-    <span id="global-search-count">21,502 questions indexed</span>
+    <span id="global-search-count">25,402 questions indexed</span>
     <div class="global-search-filters">
+      <select id="global-search-subject" onchange="setGlobalSearchSubject(this.value)" class="filter-select" style="font-size:12px;padding:3px 8px;margin-right:6px;background:var(--bg-secondary);color:var(--text-primary);border:1px solid var(--border);border-radius:12px">
+        <option value="all">All Subjects</option>
+        <option value="C Programming">C Programming</option>
+        <option value="Data Structures">Data Structures</option>
+        <option value="Algorithms">Algorithms</option>
+        <option value="Operating Systems">Operating Systems</option>
+        <option value="Computer Networks">Computer Networks</option>
+        <option value="DBMS">DBMS</option>
+        <option value="Theory of Computation">Theory of Computation</option>
+        <option value="Compiler Design">Compiler Design</option>
+        <option value="Digital Logic">Digital Logic</option>
+        <option value="Computer Organization">Computer Organization</option>
+        <option value="Discrete Mathematics">Discrete Mathematics</option>
+        <option value="Engineering Mathematics">Engineering Mathematics</option>
+        <option value="Aptitude">General Aptitude</option>
+      </select>
       <button class="chip active" onclick="setGlobalSearchFilter('all', this)" type="button">All</button>
       <button class="chip" onclick="setGlobalSearchFilter('mcq', this)" type="button">MCQ</button>
       <button class="chip" onclick="setGlobalSearchFilter('msq', this)" type="button">MSQ</button>
@@ -465,7 +484,7 @@
   </div>
   <div class="global-search-results" id="global-search-results">
     <div style="padding:32px 16px;text-align:center;color:var(--text-muted);font-size:13px">
-      Search 21,502 questions by theorem, concept, formula, or code snippet (e.g. <em>Dijkstra, LRU, B+ Tree, Pipelining, Master Theorem</em>)
+      Search 25,402 questions by theorem, concept, formula, or code snippet (e.g. <em>Dijkstra, LRU, B+ Tree, Pipelining, Master Theorem</em>)
     </div>
   </div>
 </div>
@@ -528,6 +547,111 @@
   <div class="compare-modal-body" id="compare-modal-body"></div>
 </div>
 
+<!-- ─── CUSTOM TEST GENERATOR MODAL ─── -->
+<div class="calc-modal-backdrop" id="custom-test-backdrop" onclick="toggleCustomTestModal(false)"></div>
+<div class="custom-test-modal" id="custom-test-modal" role="dialog" aria-modal="true" aria-label="Custom Test Generator">
+  <div class="custom-test-header">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:18px">🎯</span>
+      <span style="font-weight:700;font-size:15px">Custom Test Generator</span>
+      <span class="chip" style="font-size:10px;padding:2px 6px">TCS iON Simulator</span>
+    </div>
+    <button class="calc-close-btn" onclick="toggleCustomTestModal(false)" type="button">✕</button>
+  </div>
+  <div class="custom-test-body" id="custom-test-body"></div>
+</div>
+
+<!-- ─── TCS iON QUESTION PAPER FULL VIEW MODAL ─── -->
+<div class="calc-modal-backdrop" id="exam-qp-backdrop" onclick="closeExamQuestionPaper()"></div>
+<div class="exam-qp-modal" id="exam-qp-modal" role="dialog" aria-modal="true" aria-label="Question Paper">
+  <div class="exam-qp-header">
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="font-size:20px">📄</span>
+      <div>
+        <div style="font-weight:700;font-size:15px" id="exam-qp-title">Question Paper Overview</div>
+        <div style="font-size:11px;color:var(--text-muted)">TCS iON Full Paper View (Read-Only)</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div class="exam-qp-filters" id="exam-qp-filters">
+        <button class="chip active" onclick="filterExamQuestionPaper('all', this)" type="button">All</button>
+        <button class="chip" onclick="filterExamQuestionPaper('ga', this)" type="button">Section 1: GA</button>
+        <button class="chip" onclick="filterExamQuestionPaper('cs', this)" type="button">Section 2: CS</button>
+      </div>
+      <button class="calc-close-btn" onclick="closeExamQuestionPaper()" type="button">✕</button>
+    </div>
+  </div>
+  <div class="exam-qp-body" id="exam-qp-body"></div>
+</div>
+
+<!-- ─── TCS iON EXAM INSTRUCTIONS MODAL ─── -->
+<div class="calc-modal-backdrop" id="exam-inst-backdrop" onclick="closeExamInstructions()"></div>
+<div class="exam-inst-modal" id="exam-inst-modal" role="dialog" aria-modal="true" aria-label="Exam Instructions">
+  <div class="exam-inst-header">
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="font-size:20px">ℹ️</span>
+      <div>
+        <div style="font-weight:700;font-size:15px">GATE Examination Instructions</div>
+        <div style="font-size:11px;color:var(--text-muted)">Official TCS iON Candidate Guidelines</div>
+      </div>
+    </div>
+    <button class="calc-close-btn" onclick="closeExamInstructions()" type="button">✕</button>
+  </div>
+  <div class="exam-inst-body" id="exam-inst-body">
+    <div class="exam-inst-section">
+      <div class="exam-inst-sec-title">1. General Instructions</div>
+      <ul class="exam-inst-list">
+        <li>Total duration of examination is <strong>180 minutes (3 hours)</strong>.</li>
+        <li>The clock will be set at the server. A countdown timer in the top right corner displays remaining time.</li>
+        <li>When timer reaches zero, the examination ends automatically. You are not required to end or submit your exam manually unless finished early.</li>
+      </ul>
+    </div>
+    <div class="exam-inst-section">
+      <div class="exam-inst-sec-title">2. Question Palette Color Legend</div>
+      <div class="palette-legend-5" style="margin:8px 0 12px 0">
+        <div class="palette-legend-item-5"><div class="legend-shape" style="background:#22c55e"></div>Answered</div>
+        <div class="palette-legend-item-5"><div class="legend-shape" style="background:#ef4444"></div>Not Answered</div>
+        <div class="palette-legend-item-5"><div class="legend-shape" style="background:var(--bg-input);border:1px solid var(--border)"></div>Not Visited</div>
+        <div class="palette-legend-item-5"><div class="legend-shape" style="background:#8b5cf6"></div>Marked for Review</div>
+        <div class="palette-legend-item-5"><div class="legend-shape" style="background:#8b5cf6;border:2px solid #22c55e"></div>Ans & Marked for Review</div>
+      </div>
+    </div>
+    <div class="exam-inst-section">
+      <div class="exam-inst-sec-title">3. Marking Scheme & Negative Marks</div>
+      <ul class="exam-inst-list">
+        <li><strong>MCQ (1 Mark):</strong> +1 for correct answer, <strong>-0.33</strong> (⅓ mark) for incorrect answer.</li>
+        <li><strong>MCQ (2 Marks):</strong> +2 for correct answer, <strong>-0.66</strong> (⅔ mark) for incorrect answer.</li>
+        <li><strong>MSQ (1 or 2 Marks):</strong> Full marks for all correct choices, <strong>ZERO</strong> negative marks. Partial credit is NOT given.</li>
+        <li><strong>NAT (1 or 2 Marks):</strong> Numerical input. <strong>ZERO</strong> negative marks.</li>
+      </ul>
+    </div>
+    <div class="exam-inst-section">
+      <div class="exam-inst-sec-title">4. Virtual Calculator & NAT Rules</div>
+      <ul class="exam-inst-list">
+        <li>Physical scientific calculators are not allowed. Use the virtual calculator (<kbd>C</kbd> or topbar icon).</li>
+        <li>In strict mode, NAT responses must be entered via the on-screen numeric keypad using the mouse.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ─── DIAGRAM LIGHTBOX MODAL (CLICK-TO-ZOOM) ─── -->
+<div class="diagram-lightbox-backdrop" id="diagram-lightbox-backdrop" onclick="closeDiagramLightbox()"></div>
+<div class="diagram-lightbox-card" id="diagram-lightbox-card" role="dialog" aria-modal="true" aria-label="Diagram Viewer">
+  <div class="diagram-lightbox-header">
+    <span style="font-weight:700;font-size:14px" id="diagram-lightbox-title">🔍 High-Resolution Diagram Preview</span>
+    <div class="diagram-lightbox-actions">
+      <button class="btn btn-secondary btn-sm" onclick="zoomDiagramLightbox(0.2)" title="Zoom In" type="button">🔍 +</button>
+      <button class="btn btn-secondary btn-sm" onclick="zoomDiagramLightbox(-0.2)" title="Zoom Out" type="button">🔍 −</button>
+      <button class="btn btn-secondary btn-sm" onclick="resetDiagramLightboxZoom()" title="Reset Zoom" type="button">↺ Reset</button>
+      <button class="calc-close-btn" onclick="closeDiagramLightbox()" type="button">✕</button>
+    </div>
+  </div>
+  <div class="diagram-lightbox-body" id="diagram-lightbox-body">
+    <img id="diagram-lightbox-img" src="" alt="Enlarged Diagram" />
+  </div>
+</div>
+
 <!-- ─── PROFILE BACKUP RESTORE HIDDEN INPUT (.gatebackup) ─── -->
 <input type="file" id="restore-profile-backup-input" style="display:none" accept=".gatebackup,.json" onchange="handleRestoreProfileBackupFile(event)" />
 
@@ -537,7 +661,7 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js?v=8.3').then(reg => {
+      navigator.serviceWorker.register('./sw.js?v=8.5').then(reg => {
         reg.update();
         console.log('[PWA] ServiceWorker registered with scope:', reg.scope);
       }).catch(err => {
@@ -551,7 +675,7 @@
 <input type="file" id="restore-progress-file-input" style="display:none" accept=".json" onchange="handleRestoreProgressFile(event)" />
 
 <!-- ─── APP ENTRY (ES module so it can import firebase.js) ─── -->
-<script type="module" src="app.js?v=8.3"></script>
+<script type="module" src="app.js?v=8.5"></script>
 
   <!-- 87-Chapter Wall Sheet Print Container -->
   <div id="printable-syllabus-sheet"></div>

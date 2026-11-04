@@ -6724,3 +6724,369 @@ body.zen-mode .topbar {
   opacity: 1;
   color: #f59e0b;
 }
+
+
+/* ─── TCS iON SECTION TABS & EXAM ENHANCEMENTS ─── */
+.test-section-bar {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 0 16px;
+  gap: 8px;
+  overflow-x: auto;
+}
+.test-section-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+.test-section-tab:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.03);
+}
+.test-section-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 700;
+  background: rgba(108, 99, 255, 0.08);
+}
+.test-section-tab .sec-meta {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+}
+.test-section-tab.active .sec-meta {
+  background: rgba(108, 99, 255, 0.2);
+  color: var(--accent);
+}
+
+/* ─── PENALTY BADGES ─── */
+.penalty-chip {
+  background: rgba(239, 68, 68, 0.12) !important;
+  color: #ef4444 !important;
+  border: 1px solid rgba(239, 68, 68, 0.3) !important;
+  font-weight: 700 !important;
+}
+.zero-penalty-chip {
+  background: rgba(34, 197, 94, 0.12) !important;
+  color: #22c55e !important;
+  border: 1px solid rgba(34, 197, 94, 0.3) !important;
+  font-weight: 700 !important;
+}
+
+/* ─── REVIEW RESULT FILTER CHIPS ─── */
+.result-review-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.result-review-filters .chip {
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+  font-weight: 600;
+}
+.result-review-filters .chip:hover {
+  transform: translateY(-1px);
+}
+.result-review-filters .chip.active {
+  background: var(--accent);
+  color: #fff !important;
+  border-color: var(--accent);
+}
+
+/* ─── CUSTOM TEST GENERATOR MODAL ─── */
+.custom-test-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 680px;
+  max-height: 90vh;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  z-index: 250;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  animation: modalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.custom-test-modal.active { display: flex; }
+.custom-test-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.custom-test-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.custom-subject-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.custom-subject-chip {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+.custom-subject-chip.selected {
+  background: rgba(108, 99, 255, 0.2);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+/* ─── TCS iON QUESTION PAPER MODAL ─── */
+.exam-qp-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 92%;
+  max-width: 900px;
+  height: 88vh;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  z-index: 260;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  animation: modalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.exam-qp-modal.active { display: flex; }
+.exam-qp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  gap: 12px;
+}
+.exam-qp-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.exam-qp-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exam-qp-item-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.exam-qp-qtext {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.exam-qp-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+@media (max-width: 600px) {
+  .exam-qp-options { grid-template-columns: 1fr; }
+}
+
+/* ─── TCS iON INSTRUCTIONS MODAL ─── */
+.exam-inst-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 720px;
+  max-height: 85vh;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  z-index: 260;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  animation: modalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.exam-inst-modal.active { display: flex; }
+.exam-inst-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.exam-inst-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.exam-inst-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.exam-inst-sec-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.exam-inst-list {
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* ─── DIAGRAM LIGHTBOX MODAL ─── */
+.diagram-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 300;
+  display: none;
+}
+.diagram-lightbox-backdrop.active { display: block; }
+.diagram-lightbox-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 1000px;
+  max-height: 92vh;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  z-index: 310;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+  animation: modalIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.diagram-lightbox-card.active { display: flex; }
+.diagram-lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  gap: 12px;
+}
+.diagram-lightbox-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.diagram-lightbox-body {
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a14;
+  min-height: 350px;
+  max-height: 75vh;
+}
+#diagram-lightbox-img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  cursor: grab;
+  border-radius: 8px;
+}
+.q-diagram-container img {
+  cursor: zoom-in;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.q-diagram-container img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.25);
+}
+
+/* ─── LIVE AUTO-SAVE BADGE & PULSE ─── */
+.test-autosave-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg-input);
+  padding: 3px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  user-select: none;
+  white-space: nowrap;
+}
+.autosave-pulse {
+  animation: pulseGreen 1.2s ease;
+}
+@keyframes pulseGreen {
+  0% { color: #22c55e; border-color: #22c55e; }
+  100% { color: var(--text-muted); border-color: var(--border); }
+}
+
+/* ─── COPY SCORECARD BUTTON ─── */
+.copy-scorecard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  border-color: #10b981 !important;
+  color: #10b981 !important;
+}
+.copy-scorecard-btn:hover {
+  background: rgba(16, 185, 129, 0.15) !important;
+}
