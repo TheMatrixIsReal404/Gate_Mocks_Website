@@ -5949,13 +5949,35 @@ function setSyncStatus(s) {
 
   if (!dot||!label) return;
 
+  const isOnline = (typeof navigator !== 'undefined' && typeof navigator.onLine === 'boolean') ? navigator.onLine : true;
+
+  if (!isOnline) {
+    dot.style.background = '#9090b0';
+    label.textContent    = 'Offline Mode';
+    return;
+  }
+
   const m = {
     connecting:{ color:'#f59e0b', text:'Connecting…'     },
     syncing:   { color:'#3b82f6', text:'Syncing…'         },
-    online:    { color:'#22c55e', text:'Cloud Synced ✓'  },
+    online:    { color:'#22c55e', text: state.isGuest ? 'Online (Guest)' : 'Cloud Synced ✓' },
     offline:   { color:'#9090b0', text:'Offline Mode'     },
     error:     { color:'#ef4444', text:'Offline Available'},
   };
+
+  if (state.isGuest) {
+    if (s === 'connecting') {
+      dot.style.background = m.connecting.color;
+      label.textContent    = m.connecting.text;
+    } else if (s === 'syncing') {
+      dot.style.background = m.syncing.color;
+      label.textContent    = m.syncing.text;
+    } else {
+      dot.style.background = m.online.color;
+      label.textContent    = m.online.text;
+    }
+    return;
+  }
 
   dot.style.background  = (m[s]||m.offline).color;
 
@@ -6129,9 +6151,22 @@ function setupNetworkListeners() {
 
   window.addEventListener('online', async () => {
 
-    showToast('🌐 Back online! Syncing…','info',2500);
+    showToast('🌐 Back online!','info',2500);
 
-    setSyncStatus('syncing');
+    setSyncStatus(state.isGuest ? 'online' : 'syncing');
+
+    if (state.isGuest) {
+      if (USE_FB) {
+        try {
+          const cloudQs = await fsAll(qCol());
+          if (cloudQs && cloudQs.length) {
+            state.questions = mergeQuestionArrays(state.questions, cloudQs);
+            saveCache();
+          }
+        } catch(e){}
+      }
+      return;
+    }
 
     if (USE_FB && currentUser) {
 
@@ -6807,10 +6842,10 @@ function renderLoginPage() {
           </div>
 
           <div class="auth-offline-box">
-            <div class="auth-offline-title">📴 No Internet / Offline Practice?</div>
-            <div class="auth-offline-desc">Practice all 32,383 verified questions, 231 full-length mocks, and 35 years of PYQs completely offline with local storage saving.</div>
+            <div class="auth-offline-title">⚡ Instant Practice / Guest Mode</div>
+            <div class="auth-offline-desc">Practice without an account — 32,383 verified questions, 231 full-length mocks, and 35 years of PYQs available online & offline with local storage saving.</div>
             <button class="btn btn-secondary btn-sm" id="auth-guest-btn" onclick="continueAsGuest(this)" style="width:100%;font-weight:700;touch-action:manipulation" type="button">
-              ⚡ Start Instant Offline Practice (Guest)
+              ⚡ Start Instant Practice (Guest)
             </button>
           </div>
         </div>
@@ -7226,16 +7261,16 @@ function removeLoginPage() {
 async function continueAsGuest(btn) {
   state.isGuest = true;
   try { sessionStorage.setItem('gate_is_guest', '1'); } catch(e){}
-  setSyncStatus('offline');
+  setSyncStatus(navigator.onLine ? 'online' : 'offline');
 
   const activeBtn = btn || document.getElementById('auth-guest-btn') || document.getElementById('loading-guest-btn') || document.querySelector('.auth-offline-box button');
   if (activeBtn) {
     activeBtn.disabled = true;
-    activeBtn.innerHTML = '⚡ Launching Offline Practice…';
+    activeBtn.innerHTML = '⚡ Launching Practice…';
   }
 
   const lMsg = document.getElementById('loading-msg');
-  if (lMsg) lMsg.textContent = 'Preparing offline question bank…';
+  if (lMsg) lMsg.textContent = 'Preparing question bank…';
 
   removeLoginPage();
 
@@ -7272,11 +7307,11 @@ function updateTopbarUser() {
 
   if (nameEl)   nameEl.innerHTML   = `${escapeHtml(uName())}${state.isAdmin ? ' <span class="admin-badge-topbar" style="background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;vertical-align:middle;margin-left:4px;letter-spacing:0.5px">🛡️ ADMIN</span>' : ''}`;
 
-  if (roleEl)   roleEl.textContent   = state.isAdmin ? `Administrator • ${uEmail()}` : uEmail();
+  if (roleEl)   roleEl.textContent   = state.isAdmin ? `Administrator • ${uEmail()}` : (uEmail() || (state.isGuest ? 'Guest Session' : ''));
 
   if (avatarEl) avatarEl.textContent = state.isAdmin ? '👑' : uInitial();
 
-  if (badgeEl)  badgeEl.textContent  = uName();
+  if (badgeEl)  badgeEl.textContent  = state.isGuest ? 'Guest Mode' : uName();
 
 
 
@@ -17602,9 +17637,9 @@ async function bootApp(user) {
   } else {
     state.isAdmin = false;
     state.isGuest = true;
-    setSyncStatus('offline');
+    setSyncStatus(navigator.onLine ? 'online' : 'offline');
     const lMsg = document.getElementById('loading-msg');
-    if (lMsg) lMsg.textContent = 'Preparing offline question bank…';
+    if (lMsg) lMsg.textContent = 'Preparing question bank…';
   }
   updateTopbarUser();
 
@@ -17640,7 +17675,7 @@ async function bootApp(user) {
     }
   } else {
     state.isGuest = !user;
-    setSyncStatus('offline');
+    setSyncStatus(navigator.onLine ? 'online' : 'offline');
     if (USE_FB && !user) {
       // Non-blocking background fetch of public community questions for guest
       fsAll(qCol()).then(cloudQs => {
@@ -22435,7 +22470,7 @@ async function init() {
                       (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1');
   if (isGuestMode) {
     state.isGuest = true;
-    setSyncStatus('offline');
+    setSyncStatus(navigator.onLine ? 'online' : 'offline');
     const ls = document.getElementById('loading-screen');
     if (ls) ls.style.display = 'none';
     const pc = document.getElementById('page-content');
@@ -22587,8 +22622,9 @@ async function init() {
   } else {
 
     // No Firebase — boot directly as guest
+    state.isGuest = true;
 
-    setSyncStatus('offline');
+    setSyncStatus(navigator.onLine ? 'online' : 'offline');
 
     await bootApp(null);
 
