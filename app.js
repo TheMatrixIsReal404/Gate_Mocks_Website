@@ -5950,17 +5950,11 @@ function setSyncStatus(s) {
   if (!dot||!label) return;
 
   const m = {
-
-    connecting:{ color:'#f59e0b', text:'Connecting…'  },
-
-    syncing:   { color:'#3b82f6', text:'Syncing…'      },
-
-    online:    { color:'#22c55e', text:'Firebase ✓'    },
-
-    offline:   { color:'#9090b0', text:'Offline mode'  },
-
-    error:     { color:'#ef4444', text:'Sync error'    },
-
+    connecting:{ color:'#f59e0b', text:'Connecting…'     },
+    syncing:   { color:'#3b82f6', text:'Syncing…'         },
+    online:    { color:'#22c55e', text:'Cloud Synced ✓'  },
+    offline:   { color:'#9090b0', text:'Offline Mode'     },
+    error:     { color:'#ef4444', text:'Offline Available'},
   };
 
   dot.style.background  = (m[s]||m.offline).color;
@@ -7232,12 +7226,27 @@ function removeLoginPage() {
 async function continueAsGuest(btn) {
   state.isGuest = true;
   try { sessionStorage.setItem('gate_is_guest', '1'); } catch(e){}
-  const activeBtn = btn || document.getElementById('auth-guest-btn') || document.querySelector('.auth-offline-box button');
+  setSyncStatus('offline');
+
+  const activeBtn = btn || document.getElementById('auth-guest-btn') || document.getElementById('loading-guest-btn') || document.querySelector('.auth-offline-box button');
   if (activeBtn) {
     activeBtn.disabled = true;
     activeBtn.innerHTML = '⚡ Launching Offline Practice…';
   }
+
+  const lMsg = document.getElementById('loading-msg');
+  if (lMsg) lMsg.textContent = 'Preparing offline question bank…';
+
   removeLoginPage();
+
+  // If questions are already cached in state, dismiss loading screen right away
+  const ls = document.getElementById('loading-screen');
+  const pc = document.getElementById('page-content');
+  if (state.questions && state.questions.length > 500) {
+    if (ls) ls.style.display = 'none';
+    if (pc) pc.classList.remove('hidden');
+  }
+
   await bootApp(null);
 }
 
@@ -17573,52 +17582,42 @@ function triggerPacingChime(type) {
 
 
 async function bootApp(user) {
-
   initSoundFxState();
-
   currentUser = user;
 
   if (user) {
-
+    state.isGuest = false;
     if (checkIsAdminUser(user)) {
-
       state.isAdmin = true;
-
     } else if (USE_FB && typeof db !== 'undefined') {
-
       try {
-
         const d = await getDoc(doc(db, 'admins', user.uid));
-
         state.isAdmin = d.exists();
-
       } catch(e) {
-
         state.isAdmin = false;
-
       }
-
     } else {
-
       state.isAdmin = false;
-
     }
-
   } else {
-
     state.isAdmin = false;
-
+    state.isGuest = true;
+    setSyncStatus('offline');
+    const lMsg = document.getElementById('loading-msg');
+    if (lMsg) lMsg.textContent = 'Preparing offline question bank…';
   }
-
   updateTopbarUser();
 
-
-
   // 1. Instantly load cached user attempts/sessions and IndexedDB questions
-
   await loadCache();
 
-
+  // In guest mode, if questions are already present in memory/cache, release loading screen immediately
+  if (!user && state.questions && state.questions.length > 500) {
+    const ls = document.getElementById('loading-screen');
+    if (ls) ls.style.display = 'none';
+    const pc = document.getElementById('page-content');
+    if (pc) pc.classList.remove('hidden');
+  }
 
   // 2. Fetch master static questions from ./data/sample_questions.json (6,218+ questions,
 
@@ -22432,16 +22431,17 @@ async function init() {
 
 
 
-  if (new URLSearchParams(window.location.search).get('guest') === '1') {
-
+  const isGuestMode = new URLSearchParams(window.location.search).get('guest') === '1' ||
+                      (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1');
+  if (isGuestMode) {
+    state.isGuest = true;
+    setSyncStatus('offline');
     const ls = document.getElementById('loading-screen');
-
     if (ls) ls.style.display = 'none';
-
+    const pc = document.getElementById('page-content');
+    if (pc) pc.classList.remove('hidden');
     await continueAsGuest();
-
     return;
-
   }
 
 
@@ -22449,15 +22449,16 @@ async function init() {
   // If loading screen is still visible after 1.5s (due to slow network/offline), show guest button
 
   setTimeout(() => {
-
     const btn = document.getElementById('loading-guest-btn');
-
     if (btn && document.getElementById('loading-screen')?.style.display !== 'none') {
-
       btn.style.display = 'inline-flex';
-
+      const triggerLg = (e) => {
+        if (e) { e.preventDefault(); e.stopPropagation(); }
+        continueAsGuest(btn);
+      };
+      btn.addEventListener('click', triggerLg);
+      btn.addEventListener('touchend', triggerLg);
     }
-
   }, 1500);
 
 
@@ -22471,21 +22472,18 @@ async function init() {
     // Safety timeout: If Firebase auth hangs or takes > 3.5s, fall back to login page
 
     const authTimeoutTimer = setTimeout(() => {
-
       const ls = document.getElementById('loading-screen');
-
       if (ls && ls.style.display !== 'none') {
-
+        if (state.isGuest || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1')) {
+          ls.style.display = 'none';
+          document.getElementById('page-content')?.classList.remove('hidden');
+          return;
+        }
         console.warn('[Auth] Auth check timeout, displaying login screen');
-
         ls.style.display = 'none';
-
         document.getElementById('page-content')?.classList.remove('hidden');
-
         renderLoginPage();
-
       }
-
     }, 3500);
 
 
@@ -22533,6 +22531,10 @@ async function init() {
 
       } else {
         if (state.isGuest || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1')) {
+          const ls = document.getElementById('loading-screen');
+          if (ls) ls.style.display = 'none';
+          const pc = document.getElementById('page-content');
+          if (pc) pc.classList.remove('hidden');
           return;
         }
 

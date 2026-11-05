@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="style.css?v=8.7" />
+  <link rel="stylesheet" href="style.css?v=8.8" />
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
   <!-- KaTeX Math Formula Rendering -->
@@ -252,9 +252,9 @@
   <div id="loading-screen" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;gap:16px">
     <div style="font-size:48px;animation:pulse 1.5s infinite">🎯</div>
     <div style="font-size:16px;font-weight:600;color:var(--text-secondary)">Loading your practice platform…</div>
-    <div style="font-size:13px;color:var(--text-muted)" id="loading-msg">Connecting to Firebase…</div>
-    <button id="loading-guest-btn" class="btn btn-secondary btn-sm" onclick="continueAsGuest()" style="display:none;margin-top:8px" type="button">
-      📴 Slow connection? Start Offline Practice (Guest)
+    <div style="font-size:13px;color:var(--text-muted)" id="loading-msg">Preparing question bank & offline practice…</div>
+    <button id="loading-guest-btn" class="btn btn-secondary btn-sm" onclick="continueAsGuest(this)" style="display:none;margin-top:10px;touch-action:manipulation;cursor:pointer;position:relative;z-index:100;min-height:38px" type="button">
+      ⚡ Start Instant Offline Practice (Guest)
     </button>
   </div>
 
@@ -680,9 +680,9 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js?v=8.7').then(reg => {
+      navigator.serviceWorker.register('./sw.js?v=8.8').then(reg => {
         reg.update();
-        console.log('[PWA] ServiceWorker v8.7 registered with scope:', reg.scope);
+        console.log('[PWA] ServiceWorker v8.8 registered with scope:', reg.scope);
         reg.addEventListener('updatefound', () => {
           const newWorker = reg.installing;
           if (newWorker) {
@@ -708,7 +708,7 @@
 <input type="file" id="restore-progress-file-input" style="display:none" accept=".json" onchange="handleRestoreProgressFile(event)" />
 
 <!-- ─── APP ENTRY (ES module so it can import firebase.js) ─── -->
-<script type="module" src="app.js?v=8.7"></script>
+<script type="module" src="app.js?v=8.8"></script>
 
   <!-- 87-Chapter Wall Sheet Print Container -->
   <div id="printable-syllabus-sheet"></div>

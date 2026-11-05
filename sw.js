@@ -2,7 +2,7 @@
 // GATE CSE PRACTICE PLATFORM — Service Worker (PWA Offline Support v8.4)
 // ─────────────────────────────────────────────────────────────────────────────
 
-const CACHE_NAME = 'gate-cse-v8.7';
+const CACHE_NAME = 'gate-cse-v8.8';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -21,7 +21,7 @@ const STATIC_ASSETS = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      console.log('[SW] Pre-caching static assets (v8.7)');
+      console.log('[SW] Pre-caching static assets (v8.8)');
       return cache.addAll(STATIC_ASSETS).catch(err => {
         console.warn('[SW] Cache addAll warning:', err);
       });
