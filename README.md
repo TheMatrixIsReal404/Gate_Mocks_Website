@@ -4,13 +4,14 @@
   <a href="https://thematrixisreal404.github.io/Gate_Mocks_Website/"><img src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo" /></a>
   <img src="https://img.shields.io/badge/Question%20Bank-32%2C383%20Verified-blue?style=for-the-badge&logo=googleforms&logoColor=white" alt="Question Bank" />
   <img src="https://img.shields.io/badge/Full%20Mocks-231%20Tests-purple?style=for-the-badge" alt="Full Mocks" />
-  <img src="https://img.shields.io/badge/PYQs-1990--2025%20(35%20Years)-orange?style=for-the-badge" alt="PYQs" />
+  <img src="https://img.shields.io/badge/Subject%20Tests-26%20Calibrated-indigo?style=for-the-badge" alt="Subject Tests" />
+  <img src="https://img.shields.io/badge/Repeating%20Patterns-338%20(1983--2026)-amber?style=for-the-badge" alt="Repeating Patterns" />
+  <img src="https://img.shields.io/badge/PYQs-1984--2026%20(43%20Years)-orange?style=for-the-badge" alt="PYQs" />
   <img src="https://img.shields.io/badge/Offline%20PWA-100%25%20Available-brightgreen?style=for-the-badge&logo=pwa" alt="PWA Ready" />
-  <img src="https://img.shields.io/badge/Verification%20Suite-112%2F112%20Passing-brightgreen?style=for-the-badge" alt="Tests Passing" />
   <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" alt="License" />
 </p>
 
-A high-performance, responsive Single Page Application (SPA) designed for **GATE Computer Science & Information Technology (CS & IT)** aspirants. Modeled after the official **TCS iON GATE exam portal**, featuring authentic question patterns, subject-wise practice, complete full-length mock examinations, 35 years of previous year papers (PYQs), an 87-chapter topic-wise PYQs hub, 5 elite intelligence diagnostic modules, an interactive official IIT Madras syllabus guide, a virtual scientific calculator, mistake revision queue, calibrated difficulty levels (Easy, Medium, Hard), executive performance analytics, universal global question search (32,383 Qs), 10-spoke mastery radar chart, expected value risk analyzer, formula blitz speed recall, and 100% offline PWA capabilities.
+A high-performance, responsive Single Page Application (SPA) designed for **GATE Computer Science & Information Technology (CS & IT)** aspirants. Modeled after the official **TCS iON GATE exam portal**, featuring authentic question patterns, subject-wise practice, complete full-length mock examinations, 43 years of previous year papers (PYQs from 1984 to 2026), 26 calibrated subject tests, 338 empirical repeating patterns, an 87-chapter topic-wise PYQs hub, 5 elite intelligence diagnostic modules, an interactive official IIT Madras syllabus guide, a virtual scientific calculator, mistake revision queue, calibrated difficulty levels (Easy, Medium, Hard), executive performance analytics, universal global question search (32,383 Qs), 10-spoke mastery radar chart, expected value risk analyzer, formula blitz speed recall, and 100% offline PWA capabilities.
 
 ---
 
@@ -21,17 +22,23 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 
 ---
 
-### 🌟 New Archival & Sectional Features
-* **🔁 GATE CSE Repeating Patterns Hub (1983–2026)**:
-  * 338 empirically audited question patterns that appeared in $\ge 4$ distinct GATE examination years across 44 years of official testing (1983–2026).
-  * Direct 1-click download of the **466-page Solved Same-Pattern Questions Compendium PDF** (`assets/resources/GATE_CSE_Same_Pattern_Questions_1983_2026.pdf`, 8.7 MB) with 4,910 solved PYQs and step-by-step derivations.
-  * Direct download of the **Master Pattern Index CSV** (`assets/resources/GATE_CSE_Pattern_Master_Index_1983_2026.csv`, 115 KB) and instant interactive client search.
-* **🏛️ 44-Year Archival Master Question Bank (1983–2026 Consolidated Edition)**:
-  * Complete reference compendium synthesizing all 7 historical batches (1983–1990, 1991–2000, 2001–2005, 2006–2010, 2011–2015, 2016–2020, 2021–2026) across 55 official papers.
-  * Direct 1-click download of the **562-page Master Question Bank PDF** (`assets/resources/GATE_CSE_Question_Bank_1983_2026_Consolidated.pdf`, 2.4 MB) with clickable index, derivations, and disputed/MTA register.
-* **🧪 Calibrated Subject-Wise Practice Tests (26 Tests Across All 13 Subjects)**:
-  * Dedicated section placed directly below the Mocks section in the sidebar and Dashboard.
-  * 13 Foundational / Standard Tests (Set 1) + 13 Advanced Booster Tests (Set 2) covering OS, Algorithms, Networks, DBMS, TOC, COA, Data Structures, Digital Logic, Discrete Maths, Engineering Maths, Compiler Design, C Programming, and Aptitude in a timed 50–60 min TCS iON simulated test environment.
+### 🌟 Archival, Sectional & Pattern Intelligence Features
+* **🔁 GATE CSE Same Pattern Repeat Hub (1983–2026)**:
+  * 338 empirically audited question patterns that appeared across 43 years of official GATE testing (1983–2026).
+  * Direct 1-click download of the **466-page Solved Same-Pattern Questions Compendium PDF** (`assets/resources/GATE_CSE_Same_Pattern_Questions_1983_2026.pdf`, 8.7 MB) with detailed step-by-step mathematical derivations.
+  * Direct download of the **Master Pattern Index CSV** (`assets/resources/GATE_CSE_Pattern_Master_Index_1983_2026.csv`, 115 KB) with client-side interactive search, difficulty chips, and subject filtering.
+  * **Sidebar Placement**: Positioned directly **above Performance** in the navigation sidebar (`#nav-patterns`).
+  * **Performance Dashboard Integration**: Features a top-level **Same Pattern Recurrence Intelligence** card analyzing high-frequency recurring themes (Divide-and-Conquer Recurrences, Regular Languages, Cache Mapping, Conflict Serializability) with a 1-click direct explorer button.
+* **🏛️ 43-Year Archival Master Question Bank (1984–2026 Consolidated Edition)**:
+  * Comprehensive compendium synthesizing all historical questions across 43 years of official GATE CSE testing (1984–2026).
+  * Direct 1-click download of the **562-page Master Question Bank PDF** (`assets/resources/GATE_CSE_Question_Bank_1983_2026_Consolidated.pdf`, 2.4 MB) with subject-indexed problem collections and complete answer keys.
+* **🧪 26 Calibrated Subject-Wise Practice Tests (Positioned Below Mocks)**:
+  * Dedicated section placed directly below the Mocks section in the sidebar navigation (`#nav-subject-tests`) and Dashboard.
+  * 13 Foundational Set 1 + 13 Advanced Booster Set 2 tests covering OS, Algorithms, Networks, DBMS, TOC, COA, Data Structures, Digital Logic, Discrete Maths, Engineering Maths, Compiler Design, C Programming, and Aptitude in a standard 30-question, 90-minute TCS iON simulated test environment.
+* **🔍 Airtight PYQ Deduplication & Canonical Mapping**:
+  * Comprehensive signature audit checking question statements and sorted option choices across 25,000+ datastore entries.
+  * Purged 120 phantom duplicate entries (`pyq_2025_CS1_*` and `pyq_2025_CS2_*`) and 1 2018 GA duplicate, establishing **0 duplicates among all 2,064 authentic PYQs**.
+  * Enforced runtime canonical deduplication via `canonicalId` in Topic-Wise PYQs, practice queues, and random drills.
 
 ---
 
@@ -288,8 +295,8 @@ The entire platform's **32,383 verified questions** (25,402 static core + cloud-
 * **Multi-Method Explanations & KaTeX Student Shortcut Notes**: Method 1 (Standard Derivation) vs. Method 2 (GATE Shortcut / Elimination) with private persistent notes.
 
 ### 9. 📑 Topic-Wise GATE CSE PYQs Hub (87 Chapters across 13 Subjects)
-* Dedicated navigation item (`#nav-pyqs`) mapping all **2,224 authentic GATE PYQs (1990–2025)** into **87 curated syllabus chapters**.
-* Real-time search, subject filter buttons, and combined difficulty / type selectors.
+* Dedicated navigation item (`#nav-pyqs`) mapping all **2,064 authentic, 100% deduplicated GATE PYQs (1984–2026)** into **87 curated syllabus chapters**.
+* Real-time search, subject filter buttons, combined difficulty / type selectors, and canonical deduplication ensuring zero repeated questions during practice drills.
 
 ### 10. 📝 Authentic 5-State TCS iON Exam Simulator & Real-time Telemetry
 * Full-featured GATE exam interface with countdown timer (180 minutes), interactive question palette adhering to the official 5-state protocol (Not Visited, Not Answered, Answered, Marked for Review, Answered & Marked for Review).
@@ -335,10 +342,16 @@ Gate_Mocks_Website/
 │
 ├── assets/                      # Static assets & visual question cards
 │   ├── diagrams/                # 1,505+ verified mathematical diagrams, trees & circuits
-│   └── icons/                   # PWA & application icons
+│   ├── icons/                   # PWA & application icons
+│   └── resources/               # High-yield offline PDF archives & CSV registries
+│       ├── GATE_CSE_Same_Pattern_Questions_1983_2026.pdf   # 466-page Solved Repeating Patterns PDF
+│       ├── GATE_CSE_Question_Bank_1983_2026_Consolidated.pdf # 562-page 1984-2026 Master Question Bank PDF
+│       └── GATE_CSE_Pattern_Master_Index_1983_2026.csv      # 338 Master Pattern Index CSV
 │
 ├── data/                        # Active production databases
-│   ├── sample_questions.json    # Master database: 25,402 verified core questions (32,383 at runtime with cloud sync)
+│   ├── sample_questions.json    # Master database: 25,281 verified core questions (2,064 deduplicated PYQs)
+│   ├── gate_pattern_master_index.json # 338 Verified Repeating Patterns index (1983–2026)
+│   ├── patterns_data.js         # Precached synchronous offline pattern data for PWA
 │   ├── gate_30_hard_mocks.json  # Standalone 30 Extreme Hard Mocks dataset (1,950 questions)
 │   ├── gate_30_medium_mocks.json# Standalone 30 Medium Mocks dataset (1,950 questions)
 │   ├── gate_30_easy_mocks.json  # Standalone 30 Easy Mocks (Set 1) dataset (1,950 questions)
@@ -346,7 +359,7 @@ Gate_Mocks_Website/
 │   ├── gate_20_full_mocks.json  # 20 Full-Length Mocks Compendium (1,300 questions)
 │   ├── gate_easy_medium_mocks.json # Category 1 & 2 Mocks (650 questions)
 │   ├── gate_2025_pyqs.json      # GATE 2025 Set 1 & Set 2 complete papers (130 questions)
-│   ├── id_aliases.json          # Canonical question mapping & deduplication index
+│   ├── id_aliases.json          # Canonical question mapping & deduplication index (3,664 aliases)
 │   └── reports/                 # Quality assurance, OCR audits, and duplicate analysis logs
 │
 ├── sources/                     # Raw offline source documents & historical reference papers
@@ -396,6 +409,13 @@ Gate_Mocks_Website/
 * **📱 100% Offline PWA & Data Portability**:
   * Complete offline PWA capability with dual-layer IndexedDB persistence.
   * One-click encrypted `.gatebackup` profile export and restore.
+* **🔁 1983–2026 Same-Pattern Repeat Hub & 43-Year Old PYQ Archive**:
+  * Integrated 338 empirical patterns identified across 43 years of testing, placed directly above Performance in both the sidebar and Performance analytics dashboard.
+  * 1-click access to the 466-page Same-Pattern Compendium PDF and 562-page Consolidated 1984–2026 Question Bank PDF.
+* **🧪 26 Calibrated Subject Tests**:
+  * 13 Foundational Set 1 + 13 Advanced Booster Set 2 tests positioned immediately below the Mocks section.
+* **🔍 100% Deduplicated PYQ Datastore**:
+  * Purged 121 phantom/redundant entries; zero duplicate PYQs remaining across 2,064 authentic historical questions.
 
 ---
 
