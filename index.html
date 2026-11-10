@@ -128,6 +128,11 @@
       <span class="nav-icon">🎯</span>
       Mock Tests
     </div>
+    <div class="sidebar-nav-item" data-page="subject-tests" id="nav-subject-tests">
+      <span class="nav-icon">🧪</span>
+      Subject Tests
+      <span class="nav-badge-pill" style="margin-left:auto;font-size:10px;padding:2px 6px;border-radius:10px;background:#6c63ff;color:#fff;font-weight:700">26</span>
+    </div>
     <div class="sidebar-nav-item" data-page="pyq-exams" id="nav-pyq-exams">
       <span class="nav-icon">⏱️</span>
       Full-Length PYQ Exams
@@ -145,6 +150,11 @@
       <span class="nav-icon">🗂️</span>
       Smart Playlists
       <span class="nav-badge-pill" style="margin-left:auto;font-size:10px;padding:2px 6px;border-radius:10px;background:#10b981;color:#fff;font-weight:700">NEW</span>
+    </div>
+    <div class="sidebar-nav-item" data-page="patterns" id="nav-patterns">
+      <span class="nav-icon">🔁</span>
+      Same Pattern Repeat (1983–2026)
+      <span class="nav-badge-pill" style="margin-left:auto;font-size:10px;padding:2px 6px;border-radius:10px;background:#f59e0b;color:#fff;font-weight:700">338</span>
     </div>
     <div class="sidebar-nav-item" data-page="performance" id="nav-performance">
       <span class="nav-icon">📊</span>
@@ -210,6 +220,12 @@
           <span class="btn-icon">⚡</span><span class="btn-label hide-xs">Tools ▾</span>
         </button>
         <div class="topbar-tools-menu" id="topbar-tools-menu" style="display:none">
+          <button class="topbar-dropdown-item" onclick="navigate('patterns');closeTopbarToolsMenu()" id="patterns-tool-btn" title="GATE CSE Repeating Patterns Hub (338 Patterns, 1983-2026)" type="button">
+            <span>🔁 338 Repeating Patterns</span><span class="kbd-hint">Hub</span>
+          </button>
+          <button class="topbar-dropdown-item" onclick="navigate('subject-tests');closeTopbarToolsMenu()" id="subject-tests-tool-btn" title="26 Calibrated Subject-Wise Tests" type="button">
+            <span>🧪 Subject-Wise Tests</span><span class="kbd-hint">26 QPs</span>
+          </button>
           <button class="topbar-dropdown-item" onclick="printSyllabusWallSheet();closeTopbarToolsMenu()" id="wall-sheet-btn" title="1-Page Printable 87-Chapter Wall Cheat Sheet" aria-label="1-Page Printable 87-Chapter Wall Cheat Sheet" type="button">
             <span>🖨️ 87-Chapter Wall Sheet</span><span class="kbd-hint">Print</span>
           </button>
@@ -713,6 +729,9 @@
 
 <!-- ─── RESTORE PROGRESS HIDDEN FILE INPUT ─── -->
 <input type="file" id="restore-progress-file-input" style="display:none" accept=".json" onchange="handleRestoreProgressFile(event)" />
+
+<!-- ─── REPEATING PATTERNS DATA ─── -->
+<script src="data/patterns_data.js"></script>
 
 <!-- ─── APP ENTRY (ES module so it can import firebase.js) ─── -->
 <script type="module" src="app.js?v=8.9"></script>

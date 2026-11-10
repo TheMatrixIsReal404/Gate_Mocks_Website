@@ -17,7 +17,21 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 ### 🌐 Quick Access & Deployment
 * **⚡ Live Web Application (GitHub Pages)**: [https://thematrixisreal404.github.io/Gate_Mocks_Website/](https://thematrixisreal404.github.io/Gate_Mocks_Website/)
 * **📱 Progressive Web App (PWA)**: Installable directly on Windows, macOS, Android, and iOS as a standalone native desktop/mobile app with offline cache.
-* **📴 Zero-Friction Guest Mode**: Click *"Continue as Guest (Offline Mode)"* for instantaneous access to all 32,383 questions, 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), and 244 total mock papers without requiring credentials.
+* **📴 Zero-Friction Guest Mode**: Click *"Continue as Guest (Offline Mode)"* for instantaneous access to all 32,383 questions, 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), 26 Calibrated Subject Tests, 338 Verified Recurring Patterns, and 270 total mock papers without requiring credentials.
+
+---
+
+### 🌟 New Archival & Sectional Features
+* **🔁 GATE CSE Repeating Patterns Hub (1983–2026)**:
+  * 338 empirically audited question patterns that appeared in $\ge 4$ distinct GATE examination years across 44 years of official testing (1983–2026).
+  * Direct 1-click download of the **466-page Solved Same-Pattern Questions Compendium PDF** (`assets/resources/GATE_CSE_Same_Pattern_Questions_1983_2026.pdf`, 8.7 MB) with 4,910 solved PYQs and step-by-step derivations.
+  * Direct download of the **Master Pattern Index CSV** (`assets/resources/GATE_CSE_Pattern_Master_Index_1983_2026.csv`, 115 KB) and instant interactive client search.
+* **🏛️ 44-Year Archival Master Question Bank (1983–2026 Consolidated Edition)**:
+  * Complete reference compendium synthesizing all 7 historical batches (1983–1990, 1991–2000, 2001–2005, 2006–2010, 2011–2015, 2016–2020, 2021–2026) across 55 official papers.
+  * Direct 1-click download of the **562-page Master Question Bank PDF** (`assets/resources/GATE_CSE_Question_Bank_1983_2026_Consolidated.pdf`, 2.4 MB) with clickable index, derivations, and disputed/MTA register.
+* **🧪 Calibrated Subject-Wise Practice Tests (26 Tests Across All 13 Subjects)**:
+  * Dedicated section placed directly below the Mocks section in the sidebar and Dashboard.
+  * 13 Foundational / Standard Tests (Set 1) + 13 Advanced Booster Tests (Set 2) covering OS, Algorithms, Networks, DBMS, TOC, COA, Data Structures, Digital Logic, Discrete Maths, Engineering Maths, Compiler Design, C Programming, and Aptitude in a timed 50–60 min TCS iON simulated test environment.
 
 ---
 
