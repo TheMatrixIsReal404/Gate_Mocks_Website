@@ -91,6 +91,8 @@ sources/previous_questions.json
 *.docx
 !assets/resources/*.pdf
 !assets/resources/*.csv
+assets/resources/*-1.pdf
+assets/resources/GATE_CSE_Question_Bank_1983_2026_Consolidated-1.pdf
 
 # --- Database Snapshot Backups & Reports (Prevent Repository Bloat) ---
 # Note: Active master database data/sample_questions.json is tracked
