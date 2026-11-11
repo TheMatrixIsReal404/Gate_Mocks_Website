@@ -4635,8 +4635,59 @@ const MOCK_TESTS = [
   { id:'mock-subwise-dm-adv',   type:'subwise', difficulty:'hard', level:'Advanced Booster', name:'Discrete Mathematics Combinatorics & Logic (Set 2)', subject:'Discrete Mathematics',    questions:25, duration:50, marks:40, rating:8.3, desc:'Planar graphs, chromatic numbers, pigeonhole principle, generating functions, and first-order predicate logic.' },
   { id:'mock-subwise-em-adv',   type:'subwise', difficulty:'medium', level:'Advanced Booster', name:'Engineering Mathematics Matrices & Probability (Set 2)', subject:'Engineering Mathematics', questions:25, duration:50, marks:40, rating:7.4, desc:'Matrix diagonalization, Cayley-Hamilton theorem, conditional expectation, Bayes\' theorem, and calculus.' },
   { id:'mock-subwise-c-adv',    type:'subwise', difficulty:'medium', level:'Advanced Booster', name:'C Programming Pointers & Memory Drill (Set 2)', subject:'C Programming',           questions:25, duration:50, marks:35, rating:7.0, desc:'2D pointer arithmetic, function pointers, operator precedence, macros, and dynamic allocation.' },
-  { id:'mock-subwise-apt-adv',  type:'subwise', difficulty:'medium', level:'Advanced Booster', name:'Quantitative & Verbal Reasoning Sprint (Set 2)', subject:'Aptitude',                questions:25, duration:50, marks:35, rating:6.8, desc:'Complex syllogisms, reading comprehension inference, data interpretation charts, and spatial paper folding.' }
+  { id:'mock-subwise-apt-adv',  type:'subwise', difficulty:'medium', level:'Advanced Booster', name:'Quantitative & Verbal Reasoning Sprint (Set 2)', subject:'Aptitude',                questions:25, duration:50, marks:35, rating:6.8, desc:'Complex syllogisms, reading comprehension inference, data interpretation charts, and spatial paper folding.' },
 
+  // ─── Set 3: Discrete Mathematics 50-Test Intensive Practice Series (5,000 Questions) ───
+  { id: 'mock-sub-dm-01', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Discrete Mathematics — Test 01', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 01 (Stage 1: Foundation (Batch 01)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-02', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Discrete Mathematics — Test 02', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 02 (Stage 1: Foundation (Batch 01)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-03', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Discrete Mathematics — Test 03', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 03 (Stage 1: Foundation (Batch 01)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-04', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Discrete Mathematics — Test 04', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 04 (Stage 1: Foundation (Batch 01)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-05', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Discrete Mathematics — Test 05', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 05 (Stage 1: Foundation (Batch 01)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-06', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Discrete Mathematics — Test 06', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 06 (Stage 1: Foundation (Batch 02)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-07', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Discrete Mathematics — Test 07', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 07 (Stage 1: Foundation (Batch 02)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-08', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Discrete Mathematics — Test 08', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 08 (Stage 1: Foundation (Batch 02)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-09', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Discrete Mathematics — Test 09', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 09 (Stage 1: Foundation (Batch 02)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-10', type: 'subwise', difficulty: 'easy', level: 'Intensive Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Discrete Mathematics — Test 10', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 10 (Stage 1: Foundation (Batch 02)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-11', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Discrete Mathematics — Test 11', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 11 (Stage 2: Intermediate (Batch 03)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-12', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Discrete Mathematics — Test 12', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 12 (Stage 2: Intermediate (Batch 03)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-13', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Discrete Mathematics — Test 13', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 13 (Stage 2: Intermediate (Batch 03)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-14', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Discrete Mathematics — Test 14', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 14 (Stage 2: Intermediate (Batch 03)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-15', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Discrete Mathematics — Test 15', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 15 (Stage 2: Intermediate (Batch 03)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-16', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Discrete Mathematics — Test 16', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 16 (Stage 2: Intermediate (Batch 04)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-17', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Discrete Mathematics — Test 17', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 17 (Stage 2: Intermediate (Batch 04)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-18', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Discrete Mathematics — Test 18', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 18 (Stage 2: Intermediate (Batch 04)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-19', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Discrete Mathematics — Test 19', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 19 (Stage 2: Intermediate (Batch 04)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-20', type: 'subwise', difficulty: 'medium', level: 'Intensive Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Discrete Mathematics — Test 20', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 20 (Stage 2: Intermediate (Batch 04)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-21', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Discrete Mathematics — Test 21', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 21 (Stage 3: GATE Core / Advanced (Batch 05)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-22', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Discrete Mathematics — Test 22', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 22 (Stage 3: GATE Core / Advanced (Batch 05)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-23', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Discrete Mathematics — Test 23', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 23 (Stage 3: GATE Core / Advanced (Batch 05)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-24', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Discrete Mathematics — Test 24', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 24 (Stage 3: GATE Core / Advanced (Batch 05)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-25', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Discrete Mathematics — Test 25', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 25 (Stage 3: GATE Core / Advanced (Batch 05)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-26', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Discrete Mathematics — Test 26', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 26 (Stage 3: GATE Core / Advanced (Batch 06)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-27', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Discrete Mathematics — Test 27', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 27 (Stage 3: GATE Core / Advanced (Batch 06)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-28', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Discrete Mathematics — Test 28', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 28 (Stage 3: GATE Core / Advanced (Batch 06)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-29', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Discrete Mathematics — Test 29', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 29 (Stage 3: GATE Core / Advanced (Batch 06)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-30', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Discrete Mathematics — Test 30', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 30 (Stage 3: GATE Core / Advanced (Batch 06)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-31', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Discrete Mathematics — Test 31', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 31 (Stage 4: Multi-Concept Synthesis (Batch 07)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-32', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Discrete Mathematics — Test 32', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 32 (Stage 4: Multi-Concept Synthesis (Batch 07)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-33', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Discrete Mathematics — Test 33', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 33 (Stage 4: Multi-Concept Synthesis (Batch 07)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-34', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Discrete Mathematics — Test 34', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 34 (Stage 4: Multi-Concept Synthesis (Batch 07)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-35', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Discrete Mathematics — Test 35', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 35 (Stage 4: Multi-Concept Synthesis (Batch 07)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-36', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Discrete Mathematics — Test 36', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 36 (Stage 4: Multi-Concept Synthesis (Batch 08)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-37', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Discrete Mathematics — Test 37', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 37 (Stage 4: Multi-Concept Synthesis (Batch 08)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-38', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Discrete Mathematics — Test 38', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 38 (Stage 4: Multi-Concept Synthesis (Batch 08)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-39', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Discrete Mathematics — Test 39', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 39 (Stage 4: Multi-Concept Synthesis (Batch 08)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-40', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Discrete Mathematics — Test 40', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 40 (Stage 4: Multi-Concept Synthesis (Batch 08)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-41', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 09)', name: 'Discrete Mathematics — Test 41', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 41 (Stage 5: Full-Subject Mastery (Batch 09)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-42', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 09)', name: 'Discrete Mathematics — Test 42', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 42 (Stage 5: Full-Subject Mastery (Batch 09)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-43', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 09)', name: 'Discrete Mathematics — Test 43', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 43 (Stage 5: Full-Subject Mastery (Batch 09)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-44', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 09)', name: 'Discrete Mathematics — Test 44', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 44 (Stage 5: Full-Subject Mastery (Batch 09)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-45', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 09)', name: 'Discrete Mathematics — Test 45', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 45 (Stage 5: Full-Subject Mastery (Batch 09)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-46', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Discrete Mathematics — Test 46', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 46 (Stage 5: Full-Subject Mastery (Batch 10)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-47', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Discrete Mathematics — Test 47', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 47 (Stage 5: Full-Subject Mastery (Batch 10)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-48', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Discrete Mathematics — Test 48', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 48 (Stage 5: Full-Subject Mastery (Batch 10)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-49', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Discrete Mathematics — Test 49', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 49 (Stage 5: Full-Subject Mastery (Batch 10)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dm-50', type: 'subwise', difficulty: 'hard', level: 'Intensive Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Discrete Mathematics — Test 50', subject: 'Discrete Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Intensive Subject-Wise Practice Test 50 (Stage 5: Full-Subject Mastery (Batch 10)). Full syllabus coverage with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
 ];
 
 
@@ -11692,13 +11743,18 @@ function renderSubjectTests(c, params={}) {
     filtered = filtered.filter(m => m.difficulty === selectedDiff);
   }
   if (selectedLevel !== 'all') {
-    filtered = filtered.filter(m => (m.level || 'Foundational') === selectedLevel);
+    filtered = filtered.filter(m => {
+      if (selectedLevel === 'Intensive Series') return m.level === 'Intensive Series';
+      if (selectedLevel.startsWith('Stage')) return m.stage && m.stage.includes(selectedLevel);
+      return (m.level || 'Foundational') === selectedLevel;
+    });
   }
   if (search) {
     filtered = filtered.filter(m =>
       (m.name || '').toLowerCase().includes(search) ||
       (m.subject || '').toLowerCase().includes(search) ||
-      (m.desc || '').toLowerCase().includes(search)
+      (m.desc || '').toLowerCase().includes(search) ||
+      (m.stage || '').toLowerCase().includes(search)
     );
   }
 
@@ -11709,14 +11765,16 @@ function renderSubjectTests(c, params={}) {
     'Compiler Design', 'C Programming', 'Aptitude'
   ];
 
+  const totalSubQuestions = allSubTests.reduce((sum, m) => sum + (m.questions || 0), 0);
+
   c.innerHTML = `
     <div class="section-header">
-      <div class="section-title">🧪 Subject-Wise Tests <span>${allSubTests.length} Calibrated Tests • 13 Core Subjects</span></div>
+      <div class="section-title">🧪 Subject-Wise Tests <span>${allSubTests.length} Calibrated Tests • 13 Core Subjects (${totalSubQuestions.toLocaleString()} Questions)</span></div>
       <button class="btn btn-secondary btn-sm" onclick="navigate('mocks')">Full Mocks Hub →</button>
     </div>
 
     <p class="text-muted text-sm" style="margin-bottom:16px;line-height:1.5">
-      Topic-focused, timed subject examination papers modeled after official GATE sectional tests. Practice in a realistic 50–60 minute TCS iON timed test environment with virtual calculator, question palette, and instantaneous score telemetry.
+      Topic-focused, timed subject examination papers modeled after official GATE sectional tests. Practice in a realistic 50–180 minute TCS iON timed test environment with virtual calculator, question palette, and instantaneous score telemetry.
     </p>
 
     <!-- Quick Telemetry Box -->
@@ -11725,21 +11783,21 @@ function renderSubjectTests(c, params={}) {
         <div style="font-size:24px">🧪</div>
         <div>
           <div style="font-size:18px;font-weight:700">${allSubTests.length} Subject Tests</div>
-          <div style="font-size:11px;color:var(--text-muted)">13 Foundational + 13 Advanced Booster</div>
+          <div style="font-size:11px;color:var(--text-muted)">26 Core GATE + 50 Discrete Math</div>
         </div>
       </div>
       <div class="stat-card" style="padding:14px 18px">
         <div style="font-size:24px">📚</div>
         <div>
-          <div style="font-size:18px;font-weight:700">710+ Questions</div>
-          <div style="font-size:11px;color:var(--text-muted)">Subject-specific calibrated QPs</div>
+          <div style="font-size:18px;font-weight:700">${totalSubQuestions.toLocaleString()} Questions</div>
+          <div style="font-size:11px;color:var(--text-muted)">100% Verified with full derivations</div>
         </div>
       </div>
       <div class="stat-card" style="padding:14px 18px">
         <div style="font-size:24px">⏱️</div>
         <div>
-          <div style="font-size:18px;font-weight:700">50–60 Minutes</div>
-          <div style="font-size:11px;color:var(--text-muted)">High-pressure sectional drill</div>
+          <div style="font-size:18px;font-weight:700">50–180 Minutes</div>
+          <div style="font-size:11px;color:var(--text-muted)">High-pressure sectional drills</div>
         </div>
       </div>
       <div class="stat-card" style="padding:14px 18px">
@@ -11748,6 +11806,28 @@ function renderSubjectTests(c, params={}) {
           <div style="font-size:18px;font-weight:700">TCS iON Simulation</div>
           <div style="font-size:11px;color:var(--text-muted)">Auto-save & detailed derivations</div>
         </div>
+      </div>
+    </div>
+
+    <!-- Discrete Mathematics 50-Test Series Spotlight Banner -->
+    <div class="card mb-4" style="background:linear-gradient(135deg, rgba(245, 158, 11, 0.09) 0%, rgba(59, 130, 246, 0.05) 100%);border:1px solid rgba(245, 158, 11, 0.35);border-radius:12px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap">
+          <span style="font-size:22px">⚡</span>
+          <strong style="font-size:15.5px;color:var(--text-primary);letter-spacing:-0.01em">Discrete Mathematics 50-Test Intensive Series</strong>
+          <span style="font-size:10px;padding:2px 8px;border-radius:12px;background:#f59e0b;color:#fff;font-weight:700">50 Full Tests • 5,000 Questions</span>
+        </div>
+        <div style="font-size:12.5px;color:var(--text-secondary);line-height:1.45;max-width:780px">
+          Master every dimension of Discrete Mathematics through a 5-stage progressive curriculum: <strong>Stage 1 (Foundation)</strong>, <strong>Stage 2 (Intermediate)</strong>, <strong>Stage 3 (GATE Core)</strong>, <strong>Stage 4 (Multi-Concept Synthesis)</strong>, and <strong>Stage 5 (Full Mastery)</strong>. 100 Questions &amp; 160 Marks per test.
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-secondary btn-sm" onclick="setSubjectTestSubject('Discrete Mathematics');setSubjectTestLevel('all');" style="font-weight:600" type="button">
+          Show All 50 DM Tests
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="setSubjectTestSubject('Discrete Mathematics');setSubjectTestLevel('Stage 1: Foundation');" style="background:#f59e0b;border-color:#d97706;color:#fff;font-weight:600" type="button">
+          Start Stage 1 (Tests 01–10) ➔
+        </button>
       </div>
     </div>
 
@@ -11772,9 +11852,15 @@ function renderSubjectTests(c, params={}) {
           <option value="hard" ${selectedDiff === 'hard' ? 'selected' : ''}>🔴 Hard</option>
         </select>
         <select class="filter-select" onchange="setSubjectTestLevel(this.value)" style="padding:7px 12px;font-size:12px;background:var(--bg-input);color:var(--text-primary);border:1px solid var(--border);border-radius:var(--radius-sm)">
-          <option value="all" ${selectedLevel === 'all' ? 'selected' : ''}>All Test Levels</option>
+          <option value="all" ${selectedLevel === 'all' ? 'selected' : ''}>All Test Levels & Series</option>
           <option value="Foundational" ${selectedLevel === 'Foundational' ? 'selected' : ''}>🌟 Foundational (Set 1)</option>
           <option value="Advanced Booster" ${selectedLevel === 'Advanced Booster' ? 'selected' : ''}>🚀 Advanced Booster (Set 2)</option>
+          <option value="Intensive Series" ${selectedLevel === 'Intensive Series' ? 'selected' : ''}>⚡ Discrete Math Intensive (50 Tests)</option>
+          <option value="Stage 1: Foundation" ${selectedLevel === 'Stage 1: Foundation' ? 'selected' : ''}>🔹 DM Stage 1: Foundation (Tests 01–10)</option>
+          <option value="Stage 2: Intermediate" ${selectedLevel === 'Stage 2: Intermediate' ? 'selected' : ''}>🔹 DM Stage 2: Intermediate (Tests 11–20)</option>
+          <option value="Stage 3: GATE Core / Advanced" ${selectedLevel === 'Stage 3: GATE Core / Advanced' ? 'selected' : ''}>🔹 DM Stage 3: GATE Core / Advanced (Tests 21–30)</option>
+          <option value="Stage 4: Multi-Concept Synthesis" ${selectedLevel === 'Stage 4: Multi-Concept Synthesis' ? 'selected' : ''}>🔹 DM Stage 4: Multi-Concept Synthesis (Tests 31–40)</option>
+          <option value="Stage 5: Full-Subject Mastery" ${selectedLevel === 'Stage 5: Full-Subject Mastery' ? 'selected' : ''}>🔹 DM Stage 5: Full-Subject Mastery (Tests 41–50)</option>
         </select>
       </div>
       <div style="font-size:12px;color:var(--text-muted);white-space:nowrap">
@@ -11838,8 +11924,19 @@ function buildSubjectTestsGrid(mocks) {
     const questionsCount = getMockQuestions(m.id).length || m.questions;
     const diffLabel = (m.difficulty || 'medium').toUpperCase();
     const ratingBadge = m.rating ? `<span class="q-badge" style="background:rgba(245,158,11,0.14);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);font-weight:700">⭐ ${m.rating.toFixed(1)}/10</span>` : '';
-    const levelLabel = m.level === 'Advanced Booster' ? '🚀 Advanced Booster' : '🌟 Foundational';
-    const levelStyle = m.level === 'Advanced Booster' ? 'background:rgba(239,68,68,0.14);color:#ef4444;border:1px solid rgba(239,68,68,0.35)' : 'background:rgba(34,197,94,0.14);color:#22c55e;border:1px solid rgba(34,197,94,0.35)';
+    let levelLabel = '🌟 Foundational';
+    let levelStyle = 'background:rgba(34,197,94,0.14);color:#22c55e;border:1px solid rgba(34,197,94,0.35)';
+
+    if (m.level === 'Advanced Booster') {
+      levelLabel = '🚀 Advanced Booster';
+      levelStyle = 'background:rgba(239,68,68,0.14);color:#ef4444;border:1px solid rgba(239,68,68,0.35)';
+    } else if (m.stage) {
+      levelLabel = `⚡ ${m.stage.split('(')[0].trim()}`;
+      levelStyle = 'background:rgba(245,158,11,0.14);color:#f59e0b;border:1px solid rgba(245,158,11,0.35)';
+    } else if (m.level === 'Intensive Series') {
+      levelLabel = '⚡ DM Intensive';
+      levelStyle = 'background:rgba(245,158,11,0.14);color:#f59e0b;border:1px solid rgba(245,158,11,0.35)';
+    }
 
     return `<div class="mock-card">
       <div>
