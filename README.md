@@ -2,23 +2,23 @@
 
 <p align="center">
   <a href="https://thematrixisreal404.github.io/Gate_Mocks_Website/"><img src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo" /></a>
-  <img src="https://img.shields.io/badge/Question%20Bank-37%2C383%20Verified-blue?style=for-the-badge&logo=googleforms&logoColor=white" alt="Question Bank" />
+  <img src="https://img.shields.io/badge/Question%20Bank-42%2C383%20Verified-blue?style=for-the-badge&logo=googleforms&logoColor=white" alt="Question Bank" />
   <img src="https://img.shields.io/badge/Full%20Mocks-231%20Tests-purple?style=for-the-badge" alt="Full Mocks" />
-  <img src="https://img.shields.io/badge/Subject%20Tests-76%20Calibrated%20(50%20DM)-indigo?style=for-the-badge" alt="Subject Tests" />
+  <img src="https://img.shields.io/badge/Subject%20Tests-126%20Calibrated%20(100%20Series)-indigo?style=for-the-badge" alt="Subject Tests" />
   <img src="https://img.shields.io/badge/Repeating%20Patterns-338%20(1983--2026)-amber?style=for-the-badge" alt="Repeating Patterns" />
   <img src="https://img.shields.io/badge/PYQs-1984--2026%20(43%20Years)-orange?style=for-the-badge" alt="PYQs" />
   <img src="https://img.shields.io/badge/Offline%20PWA-100%25%20Available-brightgreen?style=for-the-badge&logo=pwa" alt="PWA Ready" />
   <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" alt="License" />
 </p>
 
-A high-performance, responsive Single Page Application (SPA) designed for **GATE Computer Science & Information Technology (CS & IT)** aspirants. Modeled after the official **TCS iON GATE exam portal**, featuring authentic question patterns, subject-wise practice, complete full-length mock examinations, 43 years of previous year papers (PYQs from 1984 to 2026), 76 calibrated subject tests (including the 50-Test Discrete Mathematics Intensive Series with 5,000 Qs), 338 empirical repeating patterns, an 87-chapter topic-wise PYQs hub, 5 elite intelligence diagnostic modules, an interactive official IIT Madras syllabus guide, a virtual scientific calculator, mistake revision queue, calibrated difficulty levels (Easy, Medium, Hard), executive performance analytics, universal global question search (30,281 core Qs), 10-spoke mastery radar chart, expected value risk analyzer, formula blitz speed recall, and 100% offline PWA capabilities.
+A high-performance, responsive Single Page Application (SPA) designed for **GATE Computer Science & Information Technology (CS & IT)** aspirants. Modeled after the official **TCS iON GATE exam portal**, featuring authentic question patterns, subject-wise practice, complete full-length mock examinations, 43 years of previous year papers (PYQs from 1984 to 2026), 126 calibrated subject tests (including 50 Discrete Mathematics and 50 Engineering Mathematics Subject Tests with 10,000 Qs total), 338 empirical repeating patterns, an 87-chapter topic-wise PYQs hub, 5 elite intelligence diagnostic modules, an interactive official IIT Madras syllabus guide, a virtual scientific calculator, mistake revision queue, calibrated difficulty levels (Easy, Medium, Hard), executive performance analytics, universal global question search (35,281 core Qs), 10-spoke mastery radar chart, expected value risk analyzer, formula blitz speed recall, and 100% offline PWA capabilities.
 
 ---
 
 ### 🌐 Quick Access & Deployment
 * **⚡ Live Web Application (GitHub Pages)**: [https://thematrixisreal404.github.io/Gate_Mocks_Website/](https://thematrixisreal404.github.io/Gate_Mocks_Website/)
 * **📱 Progressive Web App (PWA)**: Installable directly on Windows, macOS, Android, and iOS as a standalone native desktop/mobile app with offline cache.
-* **📴 Zero-Friction Guest Mode**: Click *"Continue as Guest (Offline Mode)"* for instantaneous access to all 32,383 questions, 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), 26 Calibrated Subject Tests, 338 Verified Recurring Patterns, and 270 total mock papers without requiring credentials.
+* **📴 Zero-Friction Guest Mode**: Click *"Continue as Guest (Offline Mode)"* for instantaneous access to all 42,383 questions (35,281 core questions in sample_questions.json), 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), 126 Calibrated Subject Tests, 338 Verified Recurring Patterns, and 357 total mock papers without requiring credentials.
 
 ---
 
@@ -32,17 +32,14 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 * **🏛️ 43-Year Archival Master Question Bank (1984–2026 Consolidated Edition)**:
   * Comprehensive compendium synthesizing all historical questions across 43 years of official GATE CSE testing (1984–2026).
   * Direct 1-click download of the **562-page Master Question Bank PDF** (`assets/resources/GATE_CSE_Question_Bank_1983_2026_Consolidated.pdf`, 2.4 MB) with subject-indexed problem collections and complete answer keys.
-* **🧪 76 Calibrated Subject-Wise Practice Tests (Positioned Below Mocks)**:
+* **🧪 126 Calibrated Subject-Wise Practice Tests (Positioned Below Mocks)**:
   * Dedicated section placed directly below the Mocks section in the sidebar navigation (`#nav-subject-tests`) and Dashboard.
   * **26 Core GATE CSE Subject Tests**: 13 Foundational Set 1 + 13 Advanced Booster Set 2 tests covering OS, Algorithms, Networks, DBMS, TOC, COA, Data Structures, Digital Logic, Discrete Maths, Engineering Maths, Compiler Design, C Programming, and Aptitude in a standard 30-question, 90-minute TCS iON simulated test environment.
-  * **⚡ Discrete Mathematics 50-Test Intensive Practice Series (5,000 Questions)**:
-    * Complete 5-stage progressive curriculum with 50 full-length sectional tests (100 Qs • 160 Marks • 180 Mins each):
-      * **Stage 1: Foundation (Tests 01–10)**: Propositional Logic, Canonical Normal Forms, Truth Assignments, Set Identities.
-      * **Stage 2: Intermediate (Tests 11–20)**: First-Order Predicate Logic Models, Equivalence Relations, Partial Orders, Lattices.
-      * **Stage 3: GATE Core / Advanced (Tests 21–30)**: Monoids, Groups, Homomorphisms, Degree Sequences, Havel-Hakimi, Graph Connectivity.
-      * **Stage 4: Multi-Concept Synthesis (Tests 31–40)**: Planar Graphs, Euler's Formula, Chromatic Numbers, Matching, Pigeonhole, Generating Functions.
-      * **Stage 5: Full-Subject Mastery (Tests 41–50)**: High-pressure capstone exams synthesizing all 19 syllabus subtopics.
-    * All 5,000 questions extracted with full derivations and appended to the master datastore (`data/sample_questions.json`, now **30,281 verified core questions**).
+  * **⚡ Discrete Mathematics Subject Test Series (50 Tests • 5,000 Questions)**:
+    * 50 full-length sectional tests (100 Qs • 160 Marks • 180 Mins each) covering Propositional Logic, Predicate Logic, Sets, Relations, Functions, Lattices, Groups, Graph Theory, Combinatorics, and Recurrences.
+  * **📐 Engineering Mathematics Subject Test Series (50 Tests • 5,000 Questions)**:
+    * 50 full-length sectional tests (100 Qs • 160 Marks • 180 Mins each) covering Linear Algebra, Calculus, and Probability & Statistics.
+  * All 10,000 questions extracted with full step-by-step mathematical derivations and appended to the master datastore (`data/sample_questions.json`, now **35,281 verified core questions**).
 * **🔍 Airtight PYQ Deduplication & Canonical Mapping**:
   * Comprehensive signature audit checking question statements and sorted option choices across 25,000+ datastore entries.
   * Purged 120 phantom duplicate entries (`pyq_2025_CS1_*` and `pyq_2025_CS2_*`) and 1 2018 GA duplicate, establishing **0 duplicates among all 2,064 authentic PYQs**.
@@ -69,7 +66,7 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 │                              CLIENT APPLICATION                              │
 │  HTML5 • CSS3 (Custom Properties & Dark Theme) • Vanilla JavaScript (ES6+)   │
 │  KaTeX Math Typesetting • TCS iON Scientific Calculator • 20/Page Pagination │
-│  Universal Global Search (32,383 Qs) • 10-Spoke SVG Radar • 60s Formula Blitz │
+│  Universal Global Search (35,281 Qs) • 10-Spoke SVG Radar • 60s Formula Blitz │
 └───────────────────────┬───────────────────────────────┬──────────────────────┘
                         │                               │
             ┌───────────▼────────────┐      ┌───────────▼────────────┐
@@ -108,7 +105,7 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 
 ### 2. Database & Data Storage Layer
 * **Master Question Bank (`data/sample_questions.json`)**:
-  * Master datastore comprising **32,383 verified questions** (including 25,402 core canonical questions with 13,891 full step-by-step explanations, 12,117 MCQs, 3,011 MSQs, 10,274 NATs, and 2,185 official GATE PYQs, supplemented by real-time cloud and extracted practice banks).
+  * Master datastore comprising **42,383 verified questions** (including 35,281 core canonical questions in `data/sample_questions.json` with 23,917 full step-by-step explanations, 15,477 MCQs, 4,370 MSQs, 15,434 NATs, and 2,064 official deduplicated GATE PYQs, supplemented by real-time cloud and extracted practice banks).
   * Enriched with 11,745 curated practice questions across Weekly Topic Tests, National Test Series, Advanced Quizzes, and Subject Practice Workbooks.
   * Tagged with `canonicalId` and supported by `data/id_aliases.json` for airtight cross-mock deduplication during practice drills while preserving authentic 65-question papers in full-length mock exams.
   * Pre-cached via Service Worker `gate-cse-v8.x` for immediate instant retrieval offline.
@@ -142,9 +139,9 @@ A high-performance, responsive Single Page Application (SPA) designed for **GATE
 
 ### 5. Data Engineering & Compilation Pipeline
 * **Python 3.14 Pipeline (`scripts/`)**:
-  * `comprehensive_question_audit.py`: Full in-browser Headless Microsoft Edge CDP audit evaluating all 32,383 questions for HTML corruptions, KaTeX math parsing, code blocks, tables, and question truncation.
+  * `comprehensive_question_audit.py`: Full in-browser Headless Microsoft Edge CDP audit evaluating all 35,281 core questions for HTML corruptions, KaTeX math parsing, code blocks, tables, and question truncation.
   * `verify_all_v6_features.py`: Master 112-point automated verification suite testing all v6.0, Elite Tier, Cherry on Top, Pro exam, P0/P1 security, deduplication, and multi-admin features.
-  * `audit_bank.py`: Datastore integrity auditor validating canonical IDs, options bounds, and explanation coverage across 32,383 questions.
+  * `audit_bank.py`: Datastore integrity auditor validating canonical IDs, options bounds, and explanation coverage across 35,281 questions.
   * `verify_app_syntax.py`: End-to-end regression test suite verifying question count, mark sums, answer keys, and symbol exports.
   * `ingest_30_medium_mocks.py`: Automated parser converting `medium_mocks.docx` (30 full tests, 1,950 questions) into normalized JSON structures.
   * `ingest_30_easy_mocks.py`: Parser converting `easy_mocks.docx` (30 full tests, 1,950 questions).
@@ -223,24 +220,24 @@ erDiagram
 
 | Scope | Storage Mechanism | Path / Key | Retention / Sync | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| **Questions Bank** | Cloud Firestore / Static JSON Fallback | `/questions/{qid}` | Global / Cloud Synced | **32,383 verified GATE questions** shared across all users. |
+| **Questions Bank** | Cloud Firestore / Static JSON Fallback | `/questions/{qid}` | Global / Cloud Synced | **42,383 verified GATE questions** shared across all users. |
 | **Practice Attempts** | Cloud Firestore & LocalStorage | `/users/{uid}/attempts/{id}` | User Private / Synced | Tracks every question attempted, options chosen, correctness, and time spent. |
 | **Test Sessions** | Cloud Firestore & LocalStorage | `/users/{uid}/testSessions/{id}` | User Private / Synced | Complete history of timed tests, mock exams, scores, accuracy, and subject breakdown. |
 | **Question Bookmarks** | Browser LocalStorage | `gate_bookmarks_{uid}` | Device Local | Set of starred question IDs (`⭐`) for rapid revision. |
 | **Confidence Tags** | Browser LocalStorage | `gate_cse_confidence_tags` | Device Local | Candidate confidence ratings (`high`, `educated`, `blind`) per question. |
 | **Daily Streak** | Browser LocalStorage | `gate_daily_streak_v1` | Device Local | Daily active attempt counter, target goal, and streak history. |
 | **Offline Cache** | Browser LocalStorage & IndexedDB | `gate_cse_v8_{uid}` / `GATE_CSE_QUESTION_BANK` | Device Local | Complete offline backup of question bank, attempts, and sessions. |
-| **Master Static JSON** | HTTP Static File | `data/sample_questions.json` | PWA Service Worker Cached | 32,383 verified questions client cache (25,402 static core + cloud sync) and offline instant fallback. |
+| **Master Static JSON** | HTTP Static File | `data/sample_questions.json` | PWA Service Worker Cached | 42,383 verified questions client cache (35,281 static core + cloud sync) and offline instant fallback. |
 
 ---
 
 ## 🏛️ Official GATE CSE Syllabus Specification (IIT Madras Standards)
 
-The entire platform's **32,383 verified questions** (25,402 static core + cloud-synced question bank), topic tags, and practice modules are strictly calibrated against the official **GATE Computer Science & Information Technology (CS)** curriculum established by the organizing institute (**IIT Madras**):
+The entire platform's **42,383 verified questions** (35,281 static core + cloud-synced question bank), topic tags, and practice modules are strictly calibrated against the official **GATE Computer Science & Information Technology (CS)** curriculum established by the organizing institute (**IIT Madras**):
 
 | Section | Title | Topics & Sub-Domains (Official Specification Alignment) | Questions in Bank |
 | :--- | :--- | :--- | :--- |
-| **Section 1** | **Engineering Mathematics & Discrete Math** | **Discrete Mathematics**: Propositional and first order logic. Sets, relations, functions, partial orders and lattices. Monoids, Groups. Graphs: connectivity, matching, coloring. Combinatorics: counting, recurrence relations, generating functions.<br>**Linear Algebra**: Matrices, determinants, system of linear equations, eigenvalues and eigenvectors, LU decomposition.<br>**Calculus**: Limits, continuity and differentiability. Maxima and minima. Mean value theorem. Integration.<br>**Probability and Statistics**: Random variables. Uniform, normal, exponential, poisson and binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem. | **5,529 Q** (3,384 EM + 2,145 DM) |
+| **Section 1** | **Engineering Mathematics & Discrete Math** | **Discrete Mathematics**: Propositional and first order logic. Sets, relations, functions, partial orders and lattices. Monoids, Groups. Graphs: connectivity, matching, coloring. Combinatorics: counting, recurrence relations, generating functions.<br>**Linear Algebra**: Matrices, determinants, system of linear equations, eigenvalues and eigenvectors, LU decomposition.<br>**Calculus**: Limits, continuity and differentiability. Maxima and minima. Mean value theorem. Integration.<br>**Probability and Statistics**: Random variables. Uniform, normal, exponential, poisson and binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem. | **15,507 Q** (8,378 EM + 7,129 DM) |
 | **Section 2** | **Digital Logic** | Boolean algebra. Combinational and sequential circuits. Minimization (algebraic technique, K-maps, tabular method). Number representations and computer arithmetic (fixed and floating point). | **1,305 Q** |
 | **Section 3** | **Computer Organization and Architecture** | Machine instructions and addressing modes. ALU, data-path and control unit (hardwired and microprogrammed). Instruction pipelining, pipeline hazards. Memory hierarchy: cache, main memory and secondary storage; I/O interface (interrupt and DMA mode). | **1,867 Q** |
 | **Section 4** | **Programming and Data Structures** | Programming in C. Recursion. Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs. | **3,148 Q** (1,009 C + 2,139 DS) |
@@ -251,7 +248,7 @@ The entire platform's **32,383 verified questions** (25,402 static core + cloud-
 | **Section 9** | **Databases (DBMS)** | ER-model. Relational model: relational algebra, tuple calculus, SQL. Integrity constraints, normal forms. File organization, indexing (e.g., B and B+ trees). Transactions and concurrency control. | **1,831 Q** |
 | **Section 10** | **Computer Networks** | Concept of layering: OSI and TCP/IP protocol stacks; Basics of packet, circuit and virtual circuit switching; Data link layer: framing, error detection, Medium Access Control, Ethernet bridging; Routing protocols: shortest path, flooding, distance vector and link state routing; Fragmentation and IP addressing (IPv4, CIDR, NAT); Transport layer: flow control and congestion control, UDP, TCP, sockets; Application layer protocols: DNS, SMTP, HTTP, FTP, Email. | **2,084 Q** |
 | **GA** | **General Aptitude** | **Verbal Aptitude**: Basic English grammar, vocabulary, reading comprehension, narrative sequencing.<br>**Quantitative Aptitude**: Data interpretation, numerical computation and estimation (ratios, percentages, powers, exponents, series, permutations, combinations).<br>**Analytical Aptitude**: Logic, deduction, analogy, numerical relations and reasoning.<br>**Spatial Aptitude**: Transformation of shapes (translation, rotation, scaling, mirroring, paper folding), patterns in 2 and 3 dimensions. | **3,079 Q** |
-| **Total** | **All 13 GATE CS Subjects** | **Complete authentic calibrated datastore across all 87 syllabus chapters** | **32,383 Q (25,402 core + cloud sync)** |
+| **Total** | **All 13 GATE CS Subjects** | **Complete authentic calibrated datastore across all 87 syllabus chapters** | **42,383 Q (35,281 core + cloud sync)** |
 
 > [!NOTE]
 > **Deprecated Topics Excluded**: Legacy topics discontinued in recent syllabus revisions (e.g., 8085 Microprocessor Assembly Programming, Web Technologies HTML/XML, and Information Systems) are omitted to prevent negative transfer.
@@ -260,9 +257,9 @@ The entire platform's **32,383 verified questions** (25,402 static core + cloud-
 
 ## 🚀 Key Features & Innovations
 
-### 1. 🔍 Universal Global Question Search (32,383 Questions)
+### 1. 🔍 Universal Global Question Search (35,281 Core Questions / 42,383 Total)
 * Instant global keyword search accessible via topbar button or keyboard shortcut <kbd>/</kbd>.
-* Searches across the entire master question bank (32,383 questions) with real-time tokenized matching on question statements, options, topics, algorithm names, and explanations.
+* Searches across the entire master question bank (35,281 core questions) with real-time tokenized matching on question statements, options, topics, algorithm names, and explanations.
 * Type-filtering chips: `All`, `MCQ`, `MSQ`, and `NAT`.
 * 1-Click direct actions: **"▶ Practice Now"** or **"🗂️ Playlist"** directly from search results.
 
@@ -312,8 +309,8 @@ The entire platform's **32,383 verified questions** (25,402 static core + cloud-
 * Synthesized Web Audio pacing chimes at 60m, 30m, and 5m milestones.
 * Fullscreen exam lockdown with proctored tab-switch alerts (<kbd>F</kbd>).
 
-### 11. 🏆 Curated GATE Exam Series & Flagship Compendiums (210 Mocks Hub • 231 Full Exams)
-The dashboard and mock examination hub feature **8 distinct Flagship Compendiums** comprising **210 full-length & practice mock exams** in the Mocks Hub plus **21 authentic Full-Length PYQ Exams** (**231 Full-Length Timed Exams total**), precisely graded and calibrated from foundational recall up to extreme-difficulty national rankers:
+### 11. 🏆 Curated GATE Exam Series & Flagship Compendiums (210 Mocks Hub • 231 Full Exams • 126 Subject Tests)
+The dashboard and mock examination hub feature **9 distinct Flagship Compendiums** comprising **210 full-length & practice mock exams** in the Mocks Hub plus **21 authentic Full-Length PYQ Exams** and **126 Calibrated Subject-Wise Practice Tests** (**357 Total Timed Examination Papers**), precisely graded and calibrated from foundational recall up to extreme-difficulty national rankers:
 
 | # | Flagship Series | Tests | Questions | Difficulty / Caliber | Source / Composition |
 | :-: | :--- | :-: | :-: | :-: | :--- |
@@ -325,10 +322,11 @@ The dashboard and mock examination hub feature **8 distinct Flagship Compendiums
 | **6** | **27 All-India Mocks** | 27 | 1,568 Q | **7.2 / 10** | Rigorous full-length All-India Mock Tests (2025–2026 series) crafted for national percentile calibration and rank simulation. |
 | **7** | **21 Comprehensive Full Mocks** | 21 | 1,409 Q | **7.5 / 10** | Elite coaching compendium featuring Advance & Basic Level Full Syllabus Tests and National Mock Papers (2023–2024). |
 | **8** | **21 Full-Length PYQ Exams** | 21 | 2,224 Q | **Official** | Complete authentic year-wise examination papers from 2007 to 2025 in a realistic 180-minute timed environment. |
+| **9** | **126 Subject-Wise Practice Tests** | 126 | 10,700 Q | **3.5 – 8.5 / 10** | 26 Core Sectional Tests (13 Foundational Set 1 + 13 Advanced Booster Set 2) + 50 Discrete Mathematics Subject Tests (5,000 Qs) + 50 Engineering Mathematics Subject Tests (5,000 Qs). |
 | **Total** | **Hard Mocks Tier** | **62** | **4,030 Q** | **7.5 – 8.5 / 10** | **32 Hard Mocks + 30 Extreme Hard Mocks = 62 Hard Mocks** |
 | **Total** | **Mocks Hub Collection** | **210** | **13,650 Q** | **All Levels** | **65 Easy + 83 Medium + 62 Hard = 210 Exam Papers** |
 | **Total** | **Full 180-Min Timed Exams**| **231** | **15,874 Q** | **Comprehensive** | **210 Mocks Hub + 21 Full-Length PYQ Exams = 231 Full Exams** |
-| **Total** | **Complete Platform Papers**| **244** | **17,044 Q** | **Master Suite** | **231 Full Exams + 13 Subject-Wise Mocks = 244 Mock Tests** |
+| **Total** | **Complete Platform Papers**| **357** | **26,574 Q** | **Master Suite** | **231 Full Exams + 126 Subject-Wise Tests = 357 Total Tests (26,574 Q)** |
 
 ---
 
@@ -357,9 +355,11 @@ Gate_Mocks_Website/
 │       └── GATE_CSE_Pattern_Master_Index_1983_2026.csv      # 338 Master Pattern Index CSV
 │
 ├── data/                        # Active production databases
-│   ├── sample_questions.json    # Master database: 30,281 verified core questions (with 5,000 new DM questions)
+│   ├── sample_questions.json    # Master database: 35,281 verified core questions (with 10,000 DM & EM test series questions)
 │   ├── gate_discrete_math_50_tests.json # Standalone 50-Test Discrete Mathematics dataset (5,000 questions)
 │   ├── discrete_math_data.js    # Precached offline 50-Test Discrete Mathematics metadata index
+│   ├── gate_engg_math_50_tests.json # Standalone 50-Test Engineering Mathematics dataset (5,000 questions)
+│   ├── engg_math_data.js        # Precached offline 50-Test Engineering Mathematics metadata index
 │   ├── gate_pattern_master_index.json # 338 Verified Repeating Patterns index (1983–2026)
 │   ├── patterns_data.js         # Precached synchronous offline pattern data for PWA
 │   ├── gate_30_hard_mocks.json  # Standalone 30 Extreme Hard Mocks dataset (1,950 questions)
@@ -400,8 +400,8 @@ Gate_Mocks_Website/
 ## 📝 Release Highlights & Architecture
 
 ### Master Platform Release (v8.x) — Authentic TCS iON GATE Simulation
-* **🏛️ 32,383 Verified Question Bank**:
-  * Comprehensive datastore spanning official GATE PYQs (1990–2025, 35 years), 231 full-length timed mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard (32 Hard + 30 Extreme Hard)] + 21 Official PYQ Exams), 13 subject-wise tests, and 7 practice sets (244 total mock papers).
+* **🏛️ 42,383 Verified Question Bank (35,281 Core Datastore)**:
+  * Comprehensive datastore spanning official GATE PYQs (1984–2026, 43 years), 231 full-length timed mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard (32 Hard + 30 Extreme Hard)] + 21 Official PYQ Exams), 126 calibrated subject-wise tests (including 50 Discrete Mathematics + 50 Engineering Mathematics tests with 10,000 Qs), and 7 practice sets (357 total mock papers).
   * Zero-duplicate canonical mapping with high-resolution visual question cards and cropped schematics (`assets/diagrams/`).
   * Prism.js syntax highlighting for C programs and multi-line KaTeX LaTeX math protection.
 * **🎯 Authentic TCS iON Exam Simulation**:
@@ -422,8 +422,8 @@ Gate_Mocks_Website/
 * **🔁 1983–2026 Same-Pattern Repeat Hub & 43-Year Old PYQ Archive**:
   * Integrated 338 empirical patterns identified across 43 years of testing, placed directly above Performance in both the sidebar and Performance analytics dashboard.
   * 1-click access to the 466-page Same-Pattern Compendium PDF and 562-page Consolidated 1984–2026 Question Bank PDF.
-* **🧪 26 Calibrated Subject Tests**:
-  * 13 Foundational Set 1 + 13 Advanced Booster Set 2 tests positioned immediately below the Mocks section.
+* **🧪 126 Calibrated Subject Tests**:
+  * 26 Core Sectional Tests (13 Foundational Set 1 + 13 Advanced Booster Set 2) + 50 Discrete Mathematics Subject Test Series + 50 Engineering Mathematics Subject Test Series (10,700 questions total) positioned immediately below the Mocks section.
 * **🔍 100% Deduplicated PYQ Datastore**:
   * Purged 121 phantom/redundant entries; zero duplicate PYQs remaining across 2,064 authentic historical questions.
 
@@ -451,7 +451,7 @@ npx serve .
 
 ## 🔑 Authentication, Admin Accounts & Access
 * **Guest Access (No Login Required)**:
-  * Click **"📴 Continue as Guest (Offline Mode)"** on the sign-in modal to immediately access all 32,383 practice questions, 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), 21 PYQ papers, and the virtual calculator without internet or credentials.
+  * Click **"📴 Continue as Guest (Offline Mode)"** on the sign-in modal to immediately access all 42,383 practice questions (35,281 core questions), 231 full-length mock examinations (210 in Mocks Hub [65 Easy, 83 Medium, 62 Hard] + 21 Full-Length PYQ Exams), 126 Subject-Wise Practice Tests, 21 PYQ papers, and the virtual calculator without internet or credentials.
   * Automatic fallback transition activates if Firebase network handshakes experience latency.
 * **Student Sign In / Sign Up**:
   * Enter any valid email address and password to sync bookmarks, test history, notes, and custom flashcards across devices via Firebase Cloud Firestore.
