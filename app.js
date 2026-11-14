@@ -6324,6 +6324,11 @@ function setupNetworkListeners() {
 // ─── WRITE HELPERS ────────────────────────────────────────────────────────────
 
 async function persistQuestion(q) {
+  if (!currentUser || state.isGuest) {
+    showToast('⚠️ Please create an account or sign in to contribute questions.', 'warning', 4500);
+    renderLoginPage(true, 'login');
+    return;
+  }
 
   if (USE_FB) {
 
@@ -6514,6 +6519,11 @@ function isDuplicate(q) {
 // ─── BULK IMPORT ─────────────────────────────────────────────────────────────
 
 async function bulkImportQuestions(newQs) {
+  if (!currentUser || state.isGuest) {
+    showToast('⚠️ Please create an account or sign in to upload questions.', 'warning', 4500);
+    renderLoginPage(true, 'login');
+    return;
+  }
 
   let added=0, dupes=0, invalid=0;
 
@@ -6861,8 +6871,8 @@ async function seedSampleQuestions() {
 
 // ─── LOGIN UI ─────────────────────────────────────────────────────────────────
 
-function renderLoginPage() {
-  if (state.isGuest || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1')) {
+function renderLoginPage(force = false, initialMode = 'login') {
+  if (!force && (state.isGuest || (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1'))) {
     return;
   }
   document.querySelectorAll('.auth-overlay').forEach(el => el.remove());
@@ -6875,12 +6885,12 @@ function renderLoginPage() {
   const tc = document.getElementById('toast-container');
   if (tc) tc.style.display = 'flex';
 
-  let mode = 'login'; // 'login', 'signup', or 'forgot'
+  let mode = initialMode || 'login'; // 'login', 'signup', or 'forgot'
 
   const overlay = document.createElement('div');
   overlay.className  = 'auth-overlay';
   overlay.id         = 'auth-overlay';
-  overlay.innerHTML  = buildAuthCard('login');
+  overlay.innerHTML  = buildAuthCard(mode);
   document.body.appendChild(overlay);
 
   bindAuthEvents();
@@ -6902,7 +6912,10 @@ function renderLoginPage() {
     }
 
     return `
-      <div class="auth-card">
+      <div class="auth-card" style="position:relative">
+        ${state.isGuest ? `
+          <button type="button" onclick="removeLoginPage()" class="btn btn-secondary btn-sm" style="position:absolute;top:16px;right:16px;padding:4px 10px;font-size:12px;border-radius:14px;cursor:pointer" title="Back to App">✕ Close</button>
+        ` : ''}
         <div class="auth-logo">
           <div class="auth-logo-icon">G</div>
           <div class="auth-logo-text">
@@ -15700,6 +15713,30 @@ function renderPerformance(c){
 // ─── UPLOAD ──────────────────────────────────────────────────────────────────
 
 function renderUpload(c){
+  if (!currentUser || state.isGuest) {
+    c.innerHTML = `
+      <div class="card" style="max-width:640px;margin:32px auto;text-align:center;padding:40px 24px;border:1px solid var(--border)">
+        <div style="font-size:48px;margin-bottom:14px">🔒</div>
+        <h2 style="font-size:22px;font-weight:700;margin-bottom:10px;color:var(--text)">Account Required to Add Questions</h2>
+        <p class="text-muted" style="max-width:480px;margin:0 auto 20px;line-height:1.6;font-size:14px">
+          You are currently in <strong>Guest / Offline mode</strong>. To ensure question quality, avoid spam, and preserve your contribution attribution across devices, you must sign in or register an account.
+        </p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px">
+          <button class="btn btn-primary" onclick="renderLoginPage(true, 'login')" style="padding:9px 20px;font-weight:600">
+            🔑 Sign In
+          </button>
+          <button class="btn btn-secondary" onclick="renderLoginPage(true, 'signup')" style="padding:9px 20px;font-weight:600">
+            ✨ Create Account
+          </button>
+        </div>
+        <div class="text-xs text-muted" style="border-top:1px solid var(--border);padding-top:16px">
+          💡 Want to practice existing questions without an account?
+          <a href="javascript:void(0)" onclick="navigate('practice')" style="color:var(--accent);font-weight:600;margin-left:4px">Go to Practice →</a>
+        </div>
+      </div>
+    `;
+    return;
+  }
 
   const currentUid = uid();
 
@@ -16202,6 +16239,11 @@ function addOptRow(){
 
 
 async function submitManualQuestion(){
+  if (!currentUser || state.isGuest) {
+    showToast('⚠️ Please create an account or sign in to add questions.', 'warning', 4500);
+    renderLoginPage(true, 'login');
+    return;
+  }
 
   const type=document.getElementById('f-type')?.value;
 
@@ -16310,6 +16352,12 @@ function clearManualForm(){
 
 
 function handleFileUpload(input){
+  if (!currentUser || state.isGuest) {
+    showToast('⚠️ Please create an account or sign in to upload questions.', 'warning', 4500);
+    renderLoginPage(true, 'login');
+    if (input) input.value = '';
+    return;
+  }
 
   const file=input.files[0]; if(!file) return;
 
@@ -16342,6 +16390,12 @@ function handleFileUpload(input){
 function handleDrop(e){
 
   e.preventDefault(); document.getElementById('upload-zone')?.classList.remove('dragover');
+
+  if (!currentUser || state.isGuest) {
+    showToast('⚠️ Please create an account or sign in to upload questions.', 'warning', 4500);
+    renderLoginPage(true, 'login');
+    return;
+  }
 
   const file=e.dataTransfer.files[0]; if(!file) return;
 
@@ -28949,6 +29003,8 @@ Object.assign(window, {
 
 
   // Auth & Init
+
+  renderLoginPage,
 
   handleSignOut,
 
