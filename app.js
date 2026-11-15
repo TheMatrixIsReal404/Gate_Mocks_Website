@@ -37,7 +37,7 @@ import {
   createUserWithEmailAndPassword, signOut,
 
   GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, updateProfile,
-  sendPasswordResetEmail
+  sendPasswordResetEmail, verifyPasswordResetCode, confirmPasswordReset
 
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
@@ -4740,6 +4740,58 @@ const MOCK_TESTS = [
   { id: 'mock-sub-em-48', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', name: 'Engineering Mathematics Test Series — Test 48', subject: 'Engineering Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Engineering Mathematics Subject Test Series — Test 48. Full syllabus coverage (Linear Algebra, Calculus, Probability & Statistics) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
   { id: 'mock-sub-em-49', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', name: 'Engineering Mathematics Test Series — Test 49', subject: 'Engineering Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Engineering Mathematics Subject Test Series — Test 49. Full syllabus coverage (Linear Algebra, Calculus, Probability & Statistics) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
   { id: 'mock-sub-em-50', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', name: 'Engineering Mathematics Test Series — Test 50', subject: 'Engineering Mathematics', questions: 100, duration: 180, marks: 160, desc: 'Engineering Mathematics Subject Test Series — Test 50. Full syllabus coverage (Linear Algebra, Calculus, Probability & Statistics) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+
+  // ─── Set 5: Digital Logic Subject Test Series (50 Tests • 5,000 Questions) ───
+  { id: 'mock-sub-dl-01', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Digital Logic Test Series — Test 01', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 01. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-02', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Digital Logic Test Series — Test 02', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 02. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-03', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Digital Logic Test Series — Test 03', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 03. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-04', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Digital Logic Test Series — Test 04', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 04. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-05', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 01)', name: 'Digital Logic Test Series — Test 05', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 05. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-06', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Digital Logic Test Series — Test 06', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 06. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-07', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Digital Logic Test Series — Test 07', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 07. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-08', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Digital Logic Test Series — Test 08', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 08. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-09', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Digital Logic Test Series — Test 09', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 09. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-10', type: 'subwise', difficulty: 'easy', level: 'Subject Test Series', stage: 'Stage 1: Foundation (Batch 02)', name: 'Digital Logic Test Series — Test 10', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 10. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-11', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Digital Logic Test Series — Test 11', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 11. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-12', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Digital Logic Test Series — Test 12', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 12. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-13', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Digital Logic Test Series — Test 13', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 13. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-14', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Digital Logic Test Series — Test 14', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 14. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-15', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 03)', name: 'Digital Logic Test Series — Test 15', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 15. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-16', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Digital Logic Test Series — Test 16', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 16. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-17', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Digital Logic Test Series — Test 17', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 17. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-18', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Digital Logic Test Series — Test 18', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 18. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-19', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Digital Logic Test Series — Test 19', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 19. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-20', type: 'subwise', difficulty: 'medium', level: 'Subject Test Series', stage: 'Stage 2: Intermediate (Batch 04)', name: 'Digital Logic Test Series — Test 20', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 20. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-21', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Digital Logic Test Series — Test 21', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 21. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-22', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Digital Logic Test Series — Test 22', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 22. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-23', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Digital Logic Test Series — Test 23', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 23. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-24', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Digital Logic Test Series — Test 24', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 24. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-25', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 05)', name: 'Digital Logic Test Series — Test 25', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 25. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-26', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Digital Logic Test Series — Test 26', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 26. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-27', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Digital Logic Test Series — Test 27', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 27. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-28', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Digital Logic Test Series — Test 28', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 28. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-29', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Digital Logic Test Series — Test 29', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 29. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-30', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 3: GATE Core / Advanced (Batch 06)', name: 'Digital Logic Test Series — Test 30', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 30. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-31', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Digital Logic Test Series — Test 31', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 31. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-32', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Digital Logic Test Series — Test 32', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 32. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-33', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Digital Logic Test Series — Test 33', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 33. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-34', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Digital Logic Test Series — Test 34', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 34. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-35', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 07)', name: 'Digital Logic Test Series — Test 35', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 35. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-36', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Digital Logic Test Series — Test 36', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 36. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-37', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Digital Logic Test Series — Test 37', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 37. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-38', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Digital Logic Test Series — Test 38', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 38. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-39', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Digital Logic Test Series — Test 39', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 39. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-40', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 08)', name: 'Digital Logic Test Series — Test 40', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 40. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-41', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 09)', name: 'Digital Logic Test Series — Test 41', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 41. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-42', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 09)', name: 'Digital Logic Test Series — Test 42', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 42. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-43', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 09)', name: 'Digital Logic Test Series — Test 43', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 43. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-44', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 09)', name: 'Digital Logic Test Series — Test 44', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 44. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-45', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 4: Multi-Concept Synthesis (Batch 09)', name: 'Digital Logic Test Series — Test 45', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 45. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-46', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Digital Logic Test Series — Test 46', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 46. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-47', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Digital Logic Test Series — Test 47', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 47. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-48', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Digital Logic Test Series — Test 48', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 48. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-49', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Digital Logic Test Series — Test 49', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 49. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
+  { id: 'mock-sub-dl-50', type: 'subwise', difficulty: 'hard', level: 'Subject Test Series', stage: 'Stage 5: Full-Subject Mastery (Batch 10)', name: 'Digital Logic Test Series — Test 50', subject: 'Digital Logic', questions: 100, duration: 180, marks: 160, desc: 'Digital Logic Subject Test Series — Test 50. Full syllabus coverage (Boolean Algebra, Combinational & Sequential Circuits, Number Representations & Computer Arithmetic) with 40 1-mark & 60 2-mark questions (160 Marks • 180 Mins) modeled after official GATE standards.' },
 ];
 
 
@@ -6885,7 +6937,8 @@ function renderLoginPage(force = false, initialMode = 'login') {
   const tc = document.getElementById('toast-container');
   if (tc) tc.style.display = 'flex';
 
-  let mode = initialMode || 'login'; // 'login', 'signup', or 'forgot'
+  let mode = initialMode || 'login'; // 'login', 'signup', 'forgot', or 'reset'
+  const resetOobCode = new URLSearchParams(window.location.search).get('oobCode') || '';
 
   const overlay = document.createElement('div');
   overlay.className  = 'auth-overlay';
@@ -6894,11 +6947,13 @@ function renderLoginPage(force = false, initialMode = 'login') {
   document.body.appendChild(overlay);
 
   bindAuthEvents();
+  checkResetCodeStatus();
 
   function buildAuthCard(m) {
     const isLogin  = m === 'login';
     const isForgot = m === 'forgot';
     const isSignup = m === 'signup';
+    const isReset  = m === 'reset';
     const savedEmail = localStorage.getItem('gate_last_email') || '';
 
     let heading = 'Welcome back 👋';
@@ -6909,6 +6964,9 @@ function renderLoginPage(force = false, initialMode = 'login') {
     } else if (isForgot) {
       heading = 'Reset Password 🔑';
       subheading = 'Enter your email address to receive a secure password reset link.';
+    } else if (isReset) {
+      heading = 'Set New Password 🔒';
+      subheading = 'Choose a new secure password for your account.';
     }
 
     return `
@@ -6930,58 +6988,111 @@ function renderLoginPage(force = false, initialMode = 'login') {
         <div class="auth-success" id="auth-success"></div>
 
         <div class="auth-form">
-          ${isSignup ? `<div class="auth-input-group">
-            <label class="auth-label">Full Name</label>
-            <input type="text" class="auth-input" id="auth-name" placeholder="Your Full Name" autocomplete="name"/>
-          </div>` : ''}
-
-          <div class="auth-input-group">
-            <label class="auth-label">Email</label>
-            <input type="email" class="auth-input" id="auth-email" value="${savedEmail}" placeholder="you@gmail.com" autocomplete="username email"/>
-          </div>
-
-          ${!isForgot ? `<div class="auth-input-group">
-            <div style="display:flex;justify-content:space-between;align-items:center;">
-              <label class="auth-label" style="margin:0;">Password</label>
-              ${isLogin ? `<a href="javascript:void(0)" class="auth-forgot-link" onclick="switchAuthMode('forgot')" title="Forgot your password?">Forgot Password?</a>` : ''}
+          ${isReset ? `
+            <div class="auth-input-group">
+              <label class="auth-label">New Password</label>
+              <input type="password" class="auth-input" id="auth-new-password" placeholder="Min. 6 characters" autocomplete="new-password"/>
             </div>
-            <input type="password" class="auth-input" id="auth-password" placeholder="Min. 6 characters" autocomplete="${isLogin ? 'current-password' : 'new-password'}"/>
-          </div>` : ''}
-
-          <button class="auth-btn-primary" id="auth-submit-btn" onclick="${isForgot ? 'handleForgotPassword()' : 'handleEmailAuth()'}">
-            ${isForgot ? 'Send Password Reset Link' : (isLogin ? 'Sign In' : 'Create Account')}
-          </button>
-
-          ${!isForgot ? `
-          <div class="auth-divider">OR</div>
-
-          <button class="auth-btn-google" onclick="handleGoogleAuth()">
-            <svg class="google-icon" viewBox="0 0 48 48">
-              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.34-8.16 2.34-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-            </svg>
-            Continue with Google
-          </button>` : ''}
-
-          <div class="auth-switch">
-            ${isForgot
-              ? `Remember your password? <span class="auth-switch-link" onclick="switchAuthMode('login')">Back to Sign In</span>`
-              : (isLogin
-                ? `Don't have an account? <span class="auth-switch-link" onclick="switchAuthMode('signup')">Sign Up</span>`
-                : `Already have an account? <span class="auth-switch-link" onclick="switchAuthMode('login')">Sign In</span>`)}
-          </div>
-
-          <div class="auth-offline-box">
-            <div class="auth-offline-title">⚡ Instant Practice / Guest Mode</div>
-            <div class="auth-offline-desc">Practice without an account — 32,383 verified questions, 231 full-length mocks, and 35 years of PYQs available online & offline with local storage saving.</div>
-            <button class="btn btn-secondary btn-sm" id="auth-guest-btn" onclick="continueAsGuest(this)" style="width:100%;font-weight:700;touch-action:manipulation" type="button">
-              ⚡ Start Instant Practice (Guest)
+            <div class="auth-input-group">
+              <label class="auth-label">Confirm New Password</label>
+              <input type="password" class="auth-input" id="auth-confirm-password" placeholder="Re-enter new password" autocomplete="new-password"/>
+            </div>
+            <button class="auth-btn-primary" id="auth-submit-btn" onclick="handleResetPasswordConfirm()">
+              Set New Password
             </button>
-          </div>
+            <div class="auth-switch" style="margin-top:14px">
+              <span class="auth-switch-link" onclick="switchAuthMode('login')">← Back to Sign In</span>
+            </div>
+          ` : `
+            ${isSignup ? `<div class="auth-input-group">
+              <label class="auth-label">Full Name</label>
+              <input type="text" class="auth-input" id="auth-name" placeholder="Your Full Name" autocomplete="name"/>
+            </div>` : ''}
+
+            <div class="auth-input-group">
+              <label class="auth-label">Email</label>
+              <input type="email" class="auth-input" id="auth-email" value="${savedEmail}" placeholder="you@gmail.com" autocomplete="username email"/>
+            </div>
+
+            ${!isForgot ? `<div class="auth-input-group">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <label class="auth-label" style="margin:0;">Password</label>
+                ${isLogin ? `<a href="javascript:void(0)" class="auth-forgot-link" onclick="switchAuthMode('forgot')" title="Forgot your password?">Forgot Password?</a>` : ''}
+              </div>
+              <input type="password" class="auth-input" id="auth-password" placeholder="Min. 6 characters" autocomplete="${isLogin ? 'current-password' : 'new-password'}"/>
+            </div>` : ''}
+
+            <button class="auth-btn-primary" id="auth-submit-btn" onclick="${isForgot ? 'handleForgotPassword()' : 'handleEmailAuth()'}">
+              ${isForgot ? 'Send Password Reset Link' : (isLogin ? 'Sign In' : 'Create Account')}
+            </button>
+
+            ${!isForgot ? `
+            <div class="auth-divider">OR</div>
+
+            <button class="auth-btn-google" onclick="handleGoogleAuth()">
+              <svg class="google-icon" viewBox="0 0 48 48">
+                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.34-8.16 2.34-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+              </svg>
+              Continue with Google
+            </button>` : ''}
+
+            <div class="auth-switch">
+              ${isForgot
+                ? `Remember your password? <span class="auth-switch-link" onclick="switchAuthMode('login')">Back to Sign In</span>`
+                : (isLogin
+                  ? `Don't have an account? <span class="auth-switch-link" onclick="switchAuthMode('signup')">Sign Up</span>`
+                  : `Already have an account? <span class="auth-switch-link" onclick="switchAuthMode('login')">Sign In</span>`)}
+            </div>
+
+            <div class="auth-offline-box">
+              <div class="auth-offline-title">⚡ Instant Practice / Guest Mode</div>
+              <div class="auth-offline-desc">Practice without an account — 32,383 verified questions, 231 full-length mocks, and 35 years of PYQs available online & offline with local storage saving.</div>
+              <button class="btn btn-secondary btn-sm" id="auth-guest-btn" onclick="continueAsGuest(this)" style="width:100%;font-weight:700;touch-action:manipulation" type="button">
+                ⚡ Start Instant Practice (Guest)
+              </button>
+            </div>
+          `}
         </div>
       </div>`;
+  }
+
+  function checkResetCodeStatus() {
+    if (mode !== 'reset') return;
+    const errEl = document.getElementById('auth-error');
+    const btn = document.getElementById('auth-submit-btn');
+    if (!resetOobCode) {
+      if (errEl) {
+        errEl.innerHTML = `⚠️ No reset token found in link.<div style="margin-top:8px"><button class="btn btn-secondary btn-sm" onclick="switchAuthMode('forgot')" style="width:100%" type="button">Request New Reset Link</button></div>`;
+        errEl.className = 'auth-error show';
+      }
+      if (btn) btn.disabled = true;
+      return;
+    }
+    if (auth) {
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = `<span class="auth-spinner"></span> Verifying reset link…`;
+      }
+      verifyPasswordResetCode(auth, resetOobCode).then(email => {
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = 'Set New Password';
+        }
+        const sub = overlay.querySelector('.auth-subheading');
+        if (sub && email) sub.textContent = `Choose a new secure password for ${escapeHtml(email)}.`;
+        document.getElementById('auth-new-password')?.focus();
+      }).catch(err => {
+        console.warn('[Verify Reset Code Error]:', err.code, err.message);
+        if (btn) btn.style.display = 'none';
+        if (errEl) {
+          errEl.innerHTML = `⚠️ This password reset link has expired or has already been used.<div style="margin-top:10px"><button class="btn btn-secondary btn-sm" onclick="switchAuthMode('forgot')" style="width:100%" type="button">Request New Reset Link</button></div>`;
+          errEl.className = 'auth-error show';
+        }
+      });
+    }
   }
 
   function bindAuthEvents() {
@@ -6989,6 +7100,7 @@ function renderLoginPage(force = false, initialMode = 'login') {
     overlay.addEventListener('keydown', e => {
       if (e.key === 'Enter') {
         if (mode === 'forgot') handleForgotPassword();
+        else if (mode === 'reset') handleResetPasswordConfirm();
         else handleEmailAuth();
       }
     });
@@ -7018,6 +7130,13 @@ function renderLoginPage(force = false, initialMode = 'login') {
         const em = document.getElementById('auth-email');
         if (em && !em.value) em.focus();
         else document.getElementById('auth-submit-btn')?.focus();
+        if (forgotRemainingCountdown > 0) {
+          const b = document.getElementById('auth-submit-btn');
+          if (b) {
+            b.disabled = true;
+            b.textContent = `Resend Link (${forgotRemainingCountdown}s)`;
+          }
+        }
       } else if (m === 'signup') {
         document.getElementById('auth-name')?.focus();
       } else {
@@ -7040,7 +7159,13 @@ function renderLoginPage(force = false, initialMode = 'login') {
     await bootApp(null);
   };
 
+  let forgotCooldownTimer = null;
+  let forgotRemainingCountdown = 0;
+  let forgotSubmitting = false;
+
   window.handleForgotPassword = async () => {
+    if (forgotSubmitting) return;
+
     let rawInput = document.getElementById('auth-email')?.value?.trim() || '';
     const btn    = document.getElementById('auth-submit-btn');
     const errEl  = document.getElementById('auth-error');
@@ -7084,20 +7209,52 @@ function renderLoginPage(force = false, initialMode = 'login') {
       btn.disabled = true;
       btn.innerHTML = `<span class="auth-spinner"></span> Sending reset link…`;
     }
+    forgotSubmitting = true;
 
     try {
       await sendPasswordResetEmail(auth, email);
       try { localStorage.setItem('gate_last_email', rawInput); } catch(e){}
 
       if (sucEl) {
-        sucEl.innerHTML = `✅ Password reset email sent to <strong>${escapeHtml(email)}</strong>.<br><span style="font-size:12px;opacity:0.9">Please check your inbox (including Spam/Junk folder) and follow the link to reset your password.</span><div style="margin-top:12px"><button class="btn btn-secondary btn-sm" onclick="switchAuthMode('login')" style="width:100%" type="button">← Back to Sign In</button></div>`;
+        sucEl.innerHTML = `
+          <div style="font-size:13.5px;font-weight:600;margin-bottom:6px">✅ Password reset email sent!</div>
+          <div style="font-size:12.5px;line-height:1.5;margin-bottom:8px">
+            We sent an email to <strong>${escapeHtml(email)}</strong>.<br>
+            Please check your inbox (including Spam/Junk folder) and follow the link to reset your password.
+          </div>
+          <div style="font-size:11.5px;line-height:1.45;background:rgba(234,179,8,0.12);border-left:3px solid #eab308;padding:7px 10px;border-radius:4px;color:var(--text-secondary,#cbd5e1);margin-top:6px;text-align:left">
+            ⚠️ <strong>Important:</strong> If you requested multiple links, open the <strong>most recent email</strong>. Requesting a new link automatically invalidates all previous ones.
+          </div>
+          <div style="margin-top:12px">
+            <button class="btn btn-secondary btn-sm" onclick="switchAuthMode('login')" style="width:100%" type="button">← Back to Sign In</button>
+          </div>`;
         sucEl.className = 'auth-success show';
       }
 
+      // 60-second cooldown on Resend button to prevent multiple invalidating requests
+      forgotRemainingCountdown = 60;
       if (btn) {
-        btn.disabled = false;
-        btn.textContent = 'Resend Reset Link';
+        btn.disabled = true;
+        btn.textContent = `Resend Link (${forgotRemainingCountdown}s)`;
       }
+      if (forgotCooldownTimer) clearInterval(forgotCooldownTimer);
+      forgotCooldownTimer = setInterval(() => {
+        forgotRemainingCountdown--;
+        const b = document.getElementById('auth-submit-btn');
+        if (forgotRemainingCountdown <= 0) {
+          clearInterval(forgotCooldownTimer);
+          forgotCooldownTimer = null;
+          forgotRemainingCountdown = 0;
+          if (b && mode === 'forgot') {
+            b.disabled = false;
+            b.textContent = 'Resend Reset Link';
+          }
+        } else {
+          if (b && mode === 'forgot') {
+            b.textContent = `Resend Link (${forgotRemainingCountdown}s)`;
+          }
+        }
+      }, 1000);
     } catch(e) {
       console.warn('[Forgot Password] Error:', e.code, e.message);
 
@@ -7116,6 +7273,95 @@ function renderLoginPage(force = false, initialMode = 'login') {
 
       if (errEl) {
         errEl.textContent = msgs[e.code] || e.message || 'Failed to send password reset email. Please try again.';
+        errEl.className = 'auth-error show';
+      }
+    } finally {
+      forgotSubmitting = false;
+    }
+  };
+
+  window.handleResetPasswordConfirm = async () => {
+    const pw1   = document.getElementById('auth-new-password')?.value;
+    const pw2   = document.getElementById('auth-confirm-password')?.value;
+    const btn   = document.getElementById('auth-submit-btn');
+    const errEl = document.getElementById('auth-error');
+    const sucEl = document.getElementById('auth-success');
+
+    if (errEl) { errEl.className = 'auth-error'; errEl.textContent = ''; }
+    if (sucEl) { sucEl.className = 'auth-success'; sucEl.textContent = ''; }
+
+    if (!resetOobCode) {
+      if (errEl) {
+        errEl.innerHTML = `⚠️ Reset link is missing or invalid.<div style="margin-top:8px"><button class="btn btn-secondary btn-sm" onclick="switchAuthMode('forgot')" style="width:100%" type="button">Request New Reset Link</button></div>`;
+        errEl.className = 'auth-error show';
+      }
+      return;
+    }
+
+    if (!pw1 || pw1.length < 6) {
+      if (errEl) {
+        errEl.textContent = 'Password must be at least 6 characters.';
+        errEl.className = 'auth-error show';
+      }
+      document.getElementById('auth-new-password')?.focus();
+      return;
+    }
+    if (pw1 !== pw2) {
+      if (errEl) {
+        errEl.textContent = 'Passwords do not match.';
+        errEl.className = 'auth-error show';
+      }
+      document.getElementById('auth-confirm-password')?.focus();
+      return;
+    }
+
+    if (!auth) {
+      if (errEl) {
+        errEl.textContent = '⚠️ Firebase Auth is not active.';
+        errEl.className = 'auth-error show';
+      }
+      return;
+    }
+
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = `<span class="auth-spinner"></span> Updating password…`;
+    }
+
+    try {
+      await confirmPasswordReset(auth, resetOobCode, pw1);
+      try {
+        const cleanUrl = window.location.origin + window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+      } catch(e){}
+
+      if (sucEl) {
+        sucEl.innerHTML = `
+          <div style="font-size:14px;font-weight:600;margin-bottom:6px">🎉 Password Reset Successful!</div>
+          <div style="font-size:12.5px;line-height:1.5;margin-bottom:12px">
+            Your password has been updated. You can now sign in with your new password.
+          </div>
+          <button class="auth-btn-primary" onclick="switchAuthMode('login')" style="width:100%" type="button">
+            Proceed to Sign In →
+          </button>`;
+        sucEl.className = 'auth-success show';
+      }
+      const inputs = overlay.querySelectorAll('.auth-input-group');
+      inputs.forEach(i => i.style.display = 'none');
+      if (btn) btn.style.display = 'none';
+    } catch(e) {
+      console.warn('[Reset Password Confirm] Error:', e.code, e.message);
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = 'Set New Password';
+      }
+      const msgs = {
+        'auth/expired-action-code': 'This password reset link has expired. Please request a new one.',
+        'auth/invalid-action-code': 'This password reset link is invalid or has already been used. Please request a new one.',
+        'auth/weak-password': 'Password should be at least 6 characters.',
+      };
+      if (errEl) {
+        errEl.innerHTML = `${msgs[e.code] || e.message || 'Failed to update password.'}<div style="margin-top:10px"><button class="btn btn-secondary btn-sm" onclick="switchAuthMode('forgot')" style="width:100%" type="button">Request New Reset Link</button></div>`;
         errEl.className = 'auth-error show';
       }
     }
@@ -10992,7 +11238,7 @@ function renderMocks(c, params={}){
       <button class="tab-btn ${activeTab==='go'?'active':''}" onclick="switchMockTab('go',this)" type="button">🌐 National All-India Mocks (${goCount})</button>
       <button class="tab-btn ${activeTab==='comprehensive-mocks'?'active':''}" onclick="switchMockTab('comprehensive-mocks',this)" type="button">📘 Comprehensive Mocks (${meCount})</button>
       <button class="tab-btn ${activeTab==='practice-sets'?'active':''}" onclick="switchMockTab('practice-sets',this)" type="button">📝 Practice Sets (${psetsCount})</button>
-      <button class="tab-btn ${activeTab==='subwise'?'active':''}" onclick="navigate('subject-tests')" type="button">🧪 Subject Tests (126)</button>
+      <button class="tab-btn ${activeTab==='subwise'?'active':''}" onclick="navigate('subject-tests')" type="button">🧪 Subject Tests (176)</button>
       <button class="tab-btn ${activeTab==='history'?'active':''}" onclick="switchMockTab('history',this)" type="button">📊 My History</button>
     </div>
     <div id="mock-tab-content">
@@ -11004,10 +11250,10 @@ function renderMocks(c, params={}){
       <div>
         <div style="font-weight:700;font-size:16px;color:var(--text-primary);display:flex;align-items:center;gap:8px">
           <span>🧪 Looking for Subject-Wise Tests?</span>
-          <span class="q-badge" style="background:rgba(108,99,255,0.2);color:var(--accent);font-weight:700">126 Full Tests</span>
+          <span class="q-badge" style="background:rgba(108,99,255,0.2);color:var(--accent);font-weight:700">176 Full Tests</span>
         </div>
         <div style="font-size:13px;color:var(--text-secondary);margin-top:4px">
-          Practice 126 calibrated tests covering all GATE CS subjects including 100 comprehensive tests across Discrete Mathematics and Engineering Mathematics under timed simulation.
+          Practice 176 calibrated tests covering all GATE CS subjects including 150 comprehensive tests across Discrete Mathematics, Engineering Mathematics, and Digital Logic under timed simulation.
         </div>
       </div>
       <button class="btn btn-primary" onclick="navigate('subject-tests')" type="button">Explore Subject Tests →</button>
@@ -11844,7 +12090,7 @@ function renderSubjectTests(c, params={}) {
         <div style="font-size:24px">🧪</div>
         <div>
           <div style="font-size:18px;font-weight:700">${allSubTests.length} Subject Tests</div>
-          <div style="font-size:11px;color:var(--text-muted)">26 Core GATE + 100 Subject Test Series</div>
+          <div style="font-size:11px;color:var(--text-muted)">26 Core GATE + 150 Subject Test Series</div>
         </div>
       </div>
       <div class="stat-card" style="padding:14px 18px">
@@ -11894,7 +12140,7 @@ function renderSubjectTests(c, params={}) {
           <option value="all" ${selectedLevel === 'all' ? 'selected' : ''}>All Test Types & Levels</option>
           <option value="Foundational" ${selectedLevel === 'Foundational' ? 'selected' : ''}>🌟 Foundational (Set 1)</option>
           <option value="Advanced Booster" ${selectedLevel === 'Advanced Booster' ? 'selected' : ''}>🚀 Advanced Booster (Set 2)</option>
-          <option value="Subject Test Series" ${selectedLevel === 'Subject Test Series' ? 'selected' : ''}>🧪 Subject Test Series (100 Tests)</option>
+          <option value="Subject Test Series" ${selectedLevel === 'Subject Test Series' ? 'selected' : ''}>🧪 Subject Test Series (150 Tests)</option>
         </select>
       </div>
       <div style="font-size:12px;color:var(--text-muted);white-space:nowrap">
@@ -23587,7 +23833,17 @@ async function init() {
 
   setupKeyboardShortcuts();
 
-
+  const urlParams = new URLSearchParams(window.location.search);
+  const authAction = urlParams.get('mode');
+  const actionOob  = urlParams.get('oobCode');
+  if (authAction === 'resetPassword' && actionOob) {
+    const ls = document.getElementById('loading-screen');
+    if (ls) ls.style.display = 'none';
+    const pc = document.getElementById('page-content');
+    if (pc) pc.classList.remove('hidden');
+    renderLoginPage(true, 'reset');
+    return;
+  }
 
   const isGuestMode = new URLSearchParams(window.location.search).get('guest') === '1' ||
                       (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('gate_is_guest') === '1');

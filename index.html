@@ -703,9 +703,9 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js?v=8.8').then(reg => {
+      navigator.serviceWorker.register('./sw.js?v=9.0').then(reg => {
         reg.update();
-        console.log('[PWA] ServiceWorker v8.8 registered with scope:', reg.scope);
+        console.log('[PWA] ServiceWorker v9.0 registered with scope:', reg.scope);
         reg.addEventListener('updatefound', () => {
           const newWorker = reg.installing;
           if (newWorker) {
@@ -737,9 +737,11 @@
 <script src="data/discrete_math_data.js"></script>
 <!-- ─── ENGINEERING MATHEMATICS 50-TEST SERIES DATA ─── -->
 <script src="data/engg_math_data.js"></script>
+<!-- ─── DIGITAL LOGIC 50-TEST SERIES DATA ─── -->
+<script src="data/digital_logic_data.js"></script>
 
 <!-- ─── APP ENTRY (ES module so it can import firebase.js) ─── -->
-<script type="module" src="app.js?v=8.9"></script>
+<script type="module" src="app.js?v=9.0"></script>
 
   <!-- 87-Chapter Wall Sheet Print Container -->
   <div id="printable-syllabus-sheet"></div>
