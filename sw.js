@@ -2,7 +2,7 @@
 // GATE CSE PRACTICE PLATFORM — Service Worker (PWA Offline Support v8.4)
 // ─────────────────────────────────────────────────────────────────────────────
 
-const CACHE_NAME = 'gate-cse-v8.13';
+const CACHE_NAME = 'gate-cse-v8.14';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -18,6 +18,8 @@ const STATIC_ASSETS = [
   './data/gate_engg_math_50_tests.json',
   './data/digital_logic_data.js',
   './data/gate_digital_logic_50_tests.json',
+  './data/coa_data.js',
+  './data/gate_coa_50_tests.json',
   './data/sample_questions.json',
   './data/gate_30_hard_mocks.json',
   './data/gate_30_easy_mocks.json',
