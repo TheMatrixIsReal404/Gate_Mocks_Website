@@ -104,9 +104,7 @@ const SUBJECTS = [
 
   { id:'c-programming',           name:'C Programming',           icon:'💻', color:'#3b82f6', desc:'Programming in C, recursion, memory layout, pointers, arrays and structures.' },
 
-  { id:'data-structures',         name:'Data Structures',         icon:'🗂️', color:'#6c63ff', desc:'Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs.' },
-
-  { id:'programming-and-data-structures', name:'Programming and Data Structures', icon:'💻🗂️', color:'#6366f1', desc:'Programming in C, recursion, arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, and graphs.' },
+  { id:'programming-and-data-structures', name:'Programming and Data Structures', icon:'🗂️', color:'#6366f1', desc:'Programming in C, recursion, memory layout, pointers, arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, and graphs.' },
 
   { id:'algorithms',              name:'Algorithms',              icon:'⚙️', color:'#f97316', desc:'Searching, sorting, hashing, asymptotic complexity, greedy, dynamic programming, divide & conquer, MST, shortest paths.' },
 
@@ -4610,7 +4608,7 @@ const MOCK_TESTS = [
   { id:'paper-decade-pyq',
     provider: "Practice Paper", mockId:'paper-decade-pyq', name: "Mock 210", type:'practice-set', difficulty:'medium', rating:5.5, cutoff:'28-30', air100:'72-76', questions:65, duration:180, marks:100, desc: "[Provider: Curated Practice Paper] Curated Practice Set #150. Topic-focused practice questions with detailed step-by-step solutions. Difficulty: Medium (Rating: 5.5/10)." },
   // ─── Set 1: Foundational / Standard Subject Tests (13 Subjects) ───
-  { id:'mock-subwise-ds',   type:'subwise', difficulty:'medium', level:'Foundational', name:'Data Structures Full Mock (Set 1)',           subject:'Data Structures',         questions:30, duration:60, marks:45, rating:6.5, desc:'Arrays, linked lists, binary trees, BSTs, heaps, and hash tables.' },
+  { id:'mock-subwise-ds',   type:'subwise', difficulty:'medium', level:'Foundational', name:'Data Structures Full Mock (Set 1)',           subject:'Programming and Data Structures',         questions:30, duration:60, marks:45, rating:6.5, desc:'Arrays, linked lists, binary trees, BSTs, heaps, and hash tables.' },
   { id:'mock-subwise-algo', type:'subwise', difficulty:'hard',   level:'Foundational', name:'Algorithms Deep Dive (Set 1)',                subject:'Algorithms',              questions:30, duration:60, marks:45, rating:7.2, desc:'Sorting, divide & conquer, greedy, dynamic programming, and graph algorithms.' },
   { id:'mock-subwise-os',   type:'subwise', difficulty:'medium', level:'Foundational', name:'Operating Systems Mock (Set 1)',              subject:'Operating Systems',       questions:30, duration:60, marks:45, rating:6.8, desc:'Processes, CPU scheduling, virtual memory, synchronization, and deadlocks.' },
   { id:'mock-subwise-cn',   type:'subwise', difficulty:'medium', level:'Foundational', name:'Computer Networks Mock (Set 1)',              subject:'Computer Networks',       questions:30, duration:60, marks:45, rating:6.6, desc:'OSI, IP addressing, subnetting, TCP congestion control, and routing protocols.' },
@@ -4625,7 +4623,7 @@ const MOCK_TESTS = [
   { id:'mock-subwise-apt',  type:'subwise', difficulty:'easy',   level:'Foundational', name:'General Aptitude Mock (Set 1)',               subject:'Aptitude',                questions:25, duration:50, marks:35, rating:5.5, desc:'Numerical ability, time & work, speed & distance, and verbal reasoning.' },
 
   // ─── Set 2: Advanced Booster Subject Tests (13 Subjects) ───
-  { id:'mock-subwise-ds-adv',   type:'subwise', difficulty:'hard', level:'Advanced Booster', name:'Data Structures Advanced Mastery (Set 2)',       subject:'Data Structures',         questions:30, duration:60, marks:45, rating:8.0, desc:'AVL trees, Red-Black properties, min/max heap heapify, collision probing, and disjoint sets.' },
+  { id:'mock-subwise-ds-adv',   type:'subwise', difficulty:'hard', level:'Advanced Booster', name:'Data Structures Advanced Mastery (Set 2)',       subject:'Programming and Data Structures',         questions:30, duration:60, marks:45, rating:8.0, desc:'AVL trees, Red-Black properties, min/max heap heapify, collision probing, and disjoint sets.' },
   { id:'mock-subwise-algo-adv', type:'subwise', difficulty:'hard', level:'Advanced Booster', name:'Algorithms & Complexity Booster (Set 2)',        subject:'Algorithms',              questions:30, duration:60, marks:45, rating:8.5, desc:'Asymptotic recurrences, dynamic programming proofs, Bellman-Ford, Kruskal/Prim, and NP-completeness.' },
   { id:'mock-subwise-os-adv',   type:'subwise', difficulty:'hard', level:'Advanced Booster', name:'Operating Systems Advanced Booster (Set 2)',      subject:'Operating Systems',       questions:30, duration:60, marks:45, rating:8.2, desc:'Multi-level page tables, inverted paging, disk scheduling, semaphore invariants, and deadlock avoidance.' },
   { id:'mock-subwise-cn-adv',   type:'subwise', difficulty:'hard', level:'Advanced Booster', name:'Computer Networks Advanced Drill (Set 2)',        subject:'Computer Networks',       questions:30, duration:60, marks:45, rating:8.1, desc:'CIDR subnets, TCP sliding window, slow start/AIMD, Go-Back-N/SR, DNS, HTTP, and CRC checksums.' },
@@ -8002,7 +8000,7 @@ function getStats() {
 
 function getSubjectStats(subjectName) {
 
-  const qs  = state.questions.filter(q=>q.subject===subjectName);
+  const qs  = state.questions.filter(q => q.subject === subjectName || (subjectName === 'Programming and Data Structures' && q.subject === 'Data Structures'));
 
   const map = new Map(state.attempts.map(a=>[a.questionId,a]));
 
@@ -8519,7 +8517,7 @@ function buildOfficialSyllabusGuideHTML() {
       num: 'Section 4',
       badge: 'SEC 04',
       title: 'Programming & Data Structures',
-      subject: 'Data Structures',
+      subject: 'Programming and Data Structures',
       subtitle: 'C Language, Stacks, Queues, Trees & Heaps',
       category: 'core-cs',
       icon: '🗂️',
@@ -12143,7 +12141,8 @@ function renderSubjectTests(c, params={}) {
     return;
   }
 
-  const selectedSubject = params.subject || state.subjectTestFilter || 'all';
+  let selectedSubject = params.subject || state.subjectTestFilter || 'all';
+  if (selectedSubject === 'Data Structures') selectedSubject = 'Programming and Data Structures';
   const selectedDiff = state.subjectTestDiffFilter || 'all';
   const selectedLevel = state.subjectTestLevelFilter || 'all';
   const search = (state.subjectTestSearch || '').trim().toLowerCase();
@@ -12173,7 +12172,7 @@ function renderSubjectTests(c, params={}) {
 
   const uniqueSubjects = [
     'Operating Systems', 'Algorithms', 'Computer Networks', 'DBMS',
-    'Theory of Computation', 'Computer Organization', 'Programming and Data Structures', 'Data Structures',
+    'Theory of Computation', 'Computer Organization', 'Programming and Data Structures',
     'Digital Logic', 'Discrete Mathematics', 'Engineering Mathematics',
     'Compiler Design', 'C Programming', 'Aptitude'
   ];
@@ -14375,7 +14374,7 @@ function getTopicPYQChapter(q) {
 
     }
 
-  } else if (sub === 'Data Structures') {
+  } else if (sub === 'Data Structures' || sub === 'Programming and Data Structures') {
 
     if (/bst|binary search tree|avl|b-tree|balanced/i.test(top) || /binary search tree|bst|avl tree|rotation|balanced tree/i.test(txt)) {
 
@@ -14602,6 +14601,7 @@ const TOPIC_SUBJECT_META = {
   'Theory of Computation':   { icon: '🔣', color: '#ec4899' },
 
   'Data Structures':         { icon: '🌲', color: '#10b981' },
+  'Programming and Data Structures': { icon: '🗂️', color: '#6366f1' },
 
   'Digital Logic':           { icon: '🔌', color: '#f59e0b' },
 
@@ -26105,7 +26105,7 @@ function buildMasteryRadarChartSVG() {
 
     { key: 'Computer Organization', label: 'COA' },
 
-    { key: 'Data Structures', label: 'C & Data Structures' },
+    { key: 'Programming and Data Structures', label: 'C & Data Structures' },
 
     { key: 'Algorithms', label: 'Algorithms' },
 
